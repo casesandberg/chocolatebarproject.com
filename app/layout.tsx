@@ -1,6 +1,9 @@
-import { Inter, Roboto_Mono } from '@next/font/google'
+import { PageFrame } from '#/components/PageFrame'
+import '#/styles/globals.css'
 
-import '../styles/globals.css'
+import { Inter, Roboto_Mono } from '@next/font/google'
+import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
@@ -22,7 +25,17 @@ export default function RootLayout({
       className={`${robotoMono.variable} font-mono ${inter.variable} font-sans`}
     >
       <head />
-      <body>{children}</body>
+      <body>
+        <div className="bg-background">
+          <Header />
+
+          <main className="overflow-hidden">
+            <PageFrame>{children}</PageFrame>
+          </main>
+
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }
