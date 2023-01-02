@@ -29,6 +29,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.5.0",
+    "piexifjs": "^1.0.6",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "prettier-plugin-organize-imports": "^3.2.1",

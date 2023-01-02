@@ -78,27 +78,23 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/dominican-republic-dark-72-schoki-chocolate.jpg',
-        alt: 'Dominican Republic Dark 72% bar from Schoki Chocolate on a background with coffee',
+        alt: 'Dominican Republic Dark 72% bar from Schoki Chocolate on a green background',
       },
       BAR_FRONT: {
-        src: '/bars/dominican-republic-dark-72-schoki-chocolate-bar-front.png',
-        alt: 'Front of Dominican Republic Dark 72% bar from Schoki Chocolate with a custom geometric design',
+        src: '/bars/dominican-republic-dark-72-schoki-chocolate-bar-front.jpg',
+        alt: 'Front of Dominican Republic Dark 72% bar from Schoki Chocolate with a traditional mold pattern',
       },
       BAR_BACK: {
-        src: '/bars/dominican-republic-dark-72-schoki-chocolate-bar-back.png',
-        alt: 'Back of Dominican Republic Dark 72% bar from Schoki Chocolate with nibs visible',
+        src: '/bars/dominican-republic-dark-72-schoki-chocolate-bar-back.jpg',
+        alt: 'Back of Dominican Republic Dark 72% bar from Schoki Chocolate',
       },
       PACKAGE_FRONT: {
-        src: '/bars/dominican-republic-dark-72-schoki-chocolate-package-front.png',
-        alt: 'Front of Dominican Republic Dark 72% bar from Schoki Chocolate with a custom geometric design',
+        src: '/bars/dominican-republic-dark-72-schoki-chocolate-package-front.jpg',
+        alt: 'Front of Dominican Republic Dark 72% bar from Schoki Chocolate package',
       },
       PACKAGE_BACK: {
-        src: '/bars/dominican-republic-dark-72-schoki-chocolate-package-back.png',
-        alt: 'Back of Dominican Republic Dark 72% bar from Schoki Chocolate with nibs visible',
-      },
-      PACKAGE_INSIDE: {
-        src: '/bars/dominican-republic-dark-72-schoki-chocolate-package-front.png',
-        alt: 'Front of Dominican Republic Dark 72% bar from Schoki Chocolate with a custom geometric design',
+        src: '/bars/dominican-republic-dark-72-schoki-chocolate-package-back.jpg',
+        alt: 'Back of Dominican Republic Dark 72% bar from Schoki Chocolate package',
       },
     },
 
