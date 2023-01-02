@@ -6,26 +6,26 @@ function getCategoryValues(
 ): Array<CategoryItem> {
   const values: Record<string, number> = {}
 
-  bars.forEach((bar) => {
-    const [first, second] = pointer.split('.')
-    const value = bar[first][second]
+  // bars.forEach((bar) => {
+  //   const [first, second] = pointer.split('.')
+  //   const value = bar[first][second]
 
-    if (Array.isArray(value)) {
-      value.map((singleValue) => {
-        if (values[singleValue]) {
-          values[singleValue] += 1
-        } else {
-          values[singleValue] = 1
-        }
-      })
-    } else {
-      if (values[value]) {
-        values[value] += 1
-      } else {
-        values[value] = 1
-      }
-    }
-  })
+  //   if (Array.isArray(value)) {
+  //     value.map((singleValue) => {
+  //       if (values[singleValue]) {
+  //         values[singleValue] += 1
+  //       } else {
+  //         values[singleValue] = 1
+  //       }
+  //     })
+  //   } else {
+  //     if (values[value]) {
+  //       values[value] += 1
+  //     } else {
+  //       values[value] = 1
+  //     }
+  //   }
+  // })
 
   return Object.keys(values).map((key) => ({
     name: key,
