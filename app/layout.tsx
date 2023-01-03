@@ -1,5 +1,6 @@
 import { PageFrame } from '#/components/PageFrame'
 import '#/styles/globals.css'
+import PlausibleProvider from 'next-plausible'
 
 import { Inter, Roboto_Mono } from '@next/font/google'
 import { Footer } from '../components/Footer'
@@ -24,7 +25,9 @@ export default function RootLayout({
     <html
       className={`${robotoMono.variable} font-mono ${inter.variable} font-sans`}
     >
-      <head />
+      <head>
+        <PlausibleProvider domain="chocolatebarproject.com" />
+      </head>
       <body>
         <div className="bg-background">
           <Header />
