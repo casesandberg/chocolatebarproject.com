@@ -1,6 +1,5 @@
 import { cache } from 'react'
 import bars, { Bar } from './data/bars'
-import { generateSlug } from './helpers'
 
 export type PageProps = {
   params?: any
@@ -16,7 +15,7 @@ export type Category = {
 export const getBars = cache((): Array<Bar> => bars)
 
 export async function fetchBarBySlug(slug: string | undefined) {
-  return getBars().find((bar) => generateSlug(bar) === slug)
+  return getBars().find((bar) => bar.slug === slug)
 }
 
 export async function fetchBarById(id: string | undefined) {

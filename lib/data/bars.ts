@@ -70,6 +70,62 @@ export interface Bar {
 
 const bars: Array<Bar> = [
   {
+    id: '3b2e8a2a3d',
+    name: 'Kope Coffee 60% Dark Milk Chocolate & Nibs',
+    slug: 'kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate',
+    maker: 'Manoa Chocolate',
+
+    images: {
+      HERO: {
+        src: '/bars/kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate.jpg',
+        alt: 'Kope Coffee 60% Dark Milk Chocolate & Nibs bar from Manoa Chocolate exploded with nibs on a brown background',
+      },
+      BAR_FRONT: {
+        src: '/bars/kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate-bar-front.jpg',
+        alt: 'Front of Kope Coffee 60% Dark Milk Chocolate & Nibs bar from Manoa Chocolate with a geometric triangle pattern',
+      },
+      BAR_BACK: {
+        src: '/bars/kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate-bar-back.jpg',
+        alt: 'Back of Kope Coffee 60% Dark Milk Chocolate & Nibs bar from Manoa Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate-package-front.jpg',
+        alt: 'Front of Kope Coffee 60% Dark Milk Chocolate & Nibs bar from Manoa Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate-package-back.jpg',
+        alt: 'Back of Kope Coffee 60% Dark Milk Chocolate & Nibs bar from Manoa Chocolate package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 60,
+    barWeight: 60,
+    ingredients: [
+      'Cacao',
+      'Organic Cane Sugar',
+      'Organic Whole Milk Powder',
+      'Cocoa Butter',
+      'Hawaiian Coffee',
+    ],
+    facilityAllergen: ['Dairy', 'Nuts'],
+
+    packagingType: 'Envelope',
+    wrapper: 'Plant-based Cellulose',
+    marketingTerms: [
+      'Bean to Bar',
+      'Pairings',
+      'Artwork by',
+      'Biodegradable',
+      'Recycled',
+    ],
+    insidePrinting: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: '1f81c6b0b3',
     name: 'Dominican Republic Dark 72%',
     slug: 'dominican-republic-dark-72-schoki-chocolate',
