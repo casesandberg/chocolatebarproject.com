@@ -61,6 +61,7 @@ export interface Bar {
   marketingTerms?: Array<string>
   tastingNotes?: Array<string>
   insidePrinting?: boolean
+  productionLocationHighlighted?: boolean
 
   retailer: string
   location: string
@@ -124,6 +125,7 @@ const bars: Array<Bar> = [
       'Hand Crafted',
     ],
     uncertifiedLabels: ['Non GMO', 'All Natural', 'Gluten Free'],
+    productionLocationHighlighted: true,
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -188,6 +190,7 @@ const bars: Array<Bar> = [
       'Recycled',
     ],
     insidePrinting: true,
+    productionLocationHighlighted: true,
 
     retailer: 'Kilauea Market + Cafe',
     location: '2555 Ala Namahana Pkwy B1, Kilauea, HI 96754',
@@ -243,6 +246,7 @@ const bars: Array<Bar> = [
     wrapper: 'Foil',
     marketingTerms: ['Bean to Bar', 'Crafted', 'Ethically Sourced'],
     insidePrinting: true,
+    productionLocationHighlighted: true,
 
     retailer: 'les amis du FROMAGE',
     location: '843 E Hastings St, Vancouver, BC V6A 1R8, Canada',
