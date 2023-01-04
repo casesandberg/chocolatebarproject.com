@@ -70,6 +70,56 @@ export interface Bar {
 
 const bars: Array<Bar> = [
   {
+    id: 'd8e2e9afee',
+    name: 'Coffee Crunch',
+    slug: 'coffee-crunch-olive-and-sinclair-chocolate-co',
+    maker: 'Olive & Sinclair Chocolate Co',
+
+    images: {
+      HERO: {
+        src: '/bars/coffee-crunch-olive-and-sinclair-chocolate-co.jpg',
+        alt: 'Coffee Crunch bar from Olive & Sinclair Chocolate Co on a marble table with a laptop and coffee cup',
+      },
+      BAR_FRONT: {
+        src: '/bars/coffee-crunch-olive-and-sinclair-chocolate-co-bar-front.jpg',
+        alt: 'Front of Coffee Crunch bar from Olive & Sinclair Chocolate Co with a custom branded bar',
+      },
+      BAR_BACK: {
+        src: '/bars/coffee-crunch-olive-and-sinclair-chocolate-co-bar-back.jpg',
+        alt: 'Back of Coffee Crunch bar from Olive & Sinclair Chocolate Co',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/coffee-crunch-olive-and-sinclair-chocolate-co-package-front.jpg',
+        alt: 'Front of Coffee Crunch bar from Olive & Sinclair Chocolate Co package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/coffee-crunch-olive-and-sinclair-chocolate-co-package-back.jpg',
+        alt: 'Back of Coffee Crunch bar from Olive & Sinclair Chocolate Co package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 67,
+    barWeight: 71,
+    ingredients: ['Cacao Beans', 'Brown Sugar', 'Coffee Beans'],
+    foodAllergen: ['Nuts'],
+
+    packagingType: 'Box',
+    wrapper: 'Metallised plastic',
+    marketingTerms: [
+      'Small Batch',
+      'Artisan',
+      'Slow Roasted',
+      'Stone Ground',
+      'Hand Crafted',
+    ],
+    uncertifiedLabels: ['Non GMO', 'All Natural', 'Gluten Free'],
+
+    origin: {
+      country: 'Dominican Republic',
+    },
+  },
+  {
     id: '3b2e8a2a3d',
     name: 'Kope Coffee 60% Dark Milk Chocolate & Nibs',
     slug: 'kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate',
