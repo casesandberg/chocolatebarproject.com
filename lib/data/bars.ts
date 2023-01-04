@@ -107,10 +107,10 @@ const bars: Array<Bar> = [
       },
     },
 
-    barType: 'Dark',
+    barType: 'Dark', // Not listed, inferred from percent
     percent: 67,
     barWeight: 71,
-    barDimensions: [0, 0, 0],
+    barDimensions: [94, 132, 7],
     ingredients: ['Cacao Beans', 'Brown Sugar', 'Coffee Beans'],
     foodAllergen: ['Nuts'],
 
@@ -169,7 +169,7 @@ const bars: Array<Bar> = [
     barType: 'Dark Milk',
     percent: 60,
     barWeight: 60,
-    barDimensions: [0, 0, 0],
+    barDimensions: [141, 73, 7],
     ingredients: [
       'Cacao',
       'Organic Cane Sugar',
@@ -242,7 +242,7 @@ const bars: Array<Bar> = [
     facilityAllergen: ['Peanuts', 'Tree Nuts', 'Dairy'],
 
     packagingType: 'Envelope',
-    packagingDimensions: [175, 82, 11],
+    packagingDimensions: [155, 76, 8],
     wrapper: 'Foil',
     marketingTerms: ['Bean to Bar', 'Crafted', 'Ethically Sourced'],
     insidePrinting: true,

@@ -5,7 +5,9 @@ import { ItemBlock } from '#/components/ItemBlock'
 import { ItemBlockSupportingImages } from '#/components/ItemBlockSupportingImages'
 import { Metadata } from '#/components/Metadata'
 import {
+  DimensionsMetadataItem,
   MetadataItem,
+  transformDimensions,
   transformPercent,
   transformWeight,
 } from '#/components/MetadataItem'
@@ -48,6 +50,9 @@ export default async function BarSlugPage({ params }: { params?: any }) {
           )}
         >
           {bar.name}
+          {bar.subtitle ? (
+            <span className="opacity-50">{` ${bar.subtitle}`}</span>
+          ) : null}
         </div>
 
         <ItemBlock
@@ -70,6 +75,11 @@ export default async function BarSlugPage({ params }: { params?: any }) {
               value={bar.barWeight}
               transformValue={transformWeight}
             />
+            <DimensionsMetadataItem
+              label="Dimensions"
+              value={bar.barDimensions}
+              transformValue={transformDimensions}
+            />
             <MetadataItem label="Ingredients" value={bar.ingredients} />
             <MetadataItem label="Food Allergen" value={bar.foodAllergen} />
             <MetadataItem
@@ -89,6 +99,11 @@ export default async function BarSlugPage({ params }: { params?: any }) {
         >
           <Metadata>
             <MetadataItem label="Type" value={bar.packagingType} />
+            <DimensionsMetadataItem
+              label="Dimensions"
+              value={bar.packagingDimensions}
+              transformValue={transformDimensions}
+            />
             <MetadataItem label="Wrapper" value={bar.wrapper} />
             <MetadataItem
               label="Certified Labels"
