@@ -119,6 +119,14 @@ export default async function BarSlugPage({ params }: { params?: any }) {
               <MetadataItem label="Country" value={origin.country} />
             </Metadata>
           </ItemBlock>
+        ) : typeof bar.origin !== 'string' ? (
+          <ItemBlock title="Origin">
+            <Metadata>
+              <MetadataItem label="Producer" value={bar.origin.producer} />
+              <MetadataItem label="Region" value={bar.origin.region} />
+              <MetadataItem label="Country" value={bar.origin.country} />
+            </Metadata>
+          </ItemBlock>
         ) : null}
       </Container>
     </section>
