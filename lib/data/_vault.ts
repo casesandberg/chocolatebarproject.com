@@ -111,14 +111,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Dominican Republic',
-    maker: 'Schoki Chocolate',
-    retailer: 'les amis du FROMAGE',
-    location: 'E Hastings',
-    retailPrice: 0,
-    dateObtained: '2022-12-27',
-  },
-  {
     name: 'Dark Milk',
     maker: 'Schoki Chocolate',
     retailer: 'les amis du FROMAGE',
@@ -269,14 +261,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Coffee Crunch',
-    maker: 'Olive & Sinclair',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 7,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: '67% Cacao Nibs',
     maker: 'Olive & Sinclair',
     retailer: 'Blackmarket Bakery',
@@ -375,14 +359,6 @@ const vault: Array<Bar> = [
   },
 
   //
-  {
-    name: 'Kope Coffee',
-    maker: 'Manoa',
-    retailer: 'Kilauea Market + Cafe',
-    location: 'Kilauea',
-    retailPrice: 0, // ?
-    dateObtained: '2022-12-5',
-  },
   {
     name: 'Kona',
     maker: 'Manoa',

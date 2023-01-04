@@ -32,6 +32,7 @@ export interface Image {
 export interface Bar {
   id: string
   name: string
+  subtitle?: string
   slug: string
   maker: MakerNames
 
@@ -60,6 +61,11 @@ export interface Bar {
   marketingTerms?: Array<string>
   tastingNotes?: Array<string>
   insidePrinting?: boolean
+
+  retailer: string
+  location: string
+  retailPrice: number // USD
+  dateObtained: string
 
   origin:
     | OriginNames
@@ -119,14 +125,20 @@ const bars: Array<Bar> = [
     ],
     uncertifiedLabels: ['Non GMO', 'All Natural', 'Gluten Free'],
 
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7,
+    dateObtained: '2022-12-16',
+
     origin: {
       country: 'Dominican Republic',
     },
   },
   {
     id: '3b2e8a2a3d',
-    name: 'Kope Coffee 60% Dark Milk Chocolate & Nibs',
-    slug: 'kope-coffee-60-dark-milk-chocolate-nibs-manoa-chocolate',
+    name: 'Kope X Coffee',
+    subtitle: '60% Dark Milk Chocolate & Nibs',
+    slug: 'kope-x-coffee-60-dark-milk-chocolate-and-nibs-manoa-chocolate',
     maker: 'Manoa Chocolate',
 
     images: {
@@ -177,14 +189,19 @@ const bars: Array<Bar> = [
     ],
     insidePrinting: true,
 
+    retailer: 'Kilauea Market + Cafe',
+    location: '2555 Ala Namahana Pkwy B1, Kilauea, HI 96754',
+    retailPrice: 10,
+    dateObtained: '2022-12-5',
+
     origin: {
       country: 'unknown',
     },
   },
   {
     id: '1f81c6b0b3',
-    name: 'Dominican Republic Dark 72%',
-    slug: 'dominican-republic-dark-72-schoki-chocolate',
+    name: 'Dominican Republic 72%',
+    slug: 'dominican-republic-72-schoki-chocolate',
     maker: 'Schoki Chocolate',
 
     images: {
@@ -226,6 +243,11 @@ const bars: Array<Bar> = [
     wrapper: 'Foil',
     marketingTerms: ['Bean to Bar', 'Crafted', 'Ethically Sourced'],
     insidePrinting: true,
+
+    retailer: 'les amis du FROMAGE',
+    location: '843 E Hastings St, Vancouver, BC V6A 1R8, Canada',
+    retailPrice: 6.96,
+    dateObtained: '2022-12-27',
 
     origin: 'Zorzal Reserve',
   },
