@@ -47,11 +47,13 @@ export interface Bar {
   barType: 'Dark' | 'Dark Milk' | 'Milk' | 'White'
   percent: number
   barWeight: number // in grams
+  barDimensions: [number, number, number] // as Height, Width, Depth, in mm
   ingredients: Array<string>
   foodAllergen?: Array<string>
   facilityAllergen?: Array<string>
 
   packagingType: string
+  packagingDimensions: [number, number, number] // as Height, Width, Depth, in mm
   wrapper?: string
   certifiedLabels?: Array<string>
   uncertifiedLabels?: Array<string>
@@ -101,10 +103,12 @@ const bars: Array<Bar> = [
     barType: 'Dark',
     percent: 67,
     barWeight: 71,
+    barDimensions: [0, 0, 0],
     ingredients: ['Cacao Beans', 'Brown Sugar', 'Coffee Beans'],
     foodAllergen: ['Nuts'],
 
     packagingType: 'Box',
+    packagingDimensions: [98, 135, 10],
     wrapper: 'Metallised plastic',
     marketingTerms: [
       'Small Batch',
@@ -151,6 +155,7 @@ const bars: Array<Bar> = [
     barType: 'Dark Milk',
     percent: 60,
     barWeight: 60,
+    barDimensions: [0, 0, 0],
     ingredients: [
       'Cacao',
       'Organic Cane Sugar',
@@ -161,6 +166,7 @@ const bars: Array<Bar> = [
     facilityAllergen: ['Dairy', 'Nuts'],
 
     packagingType: 'Envelope',
+    packagingDimensions: [158, 90, 9],
     wrapper: 'Plant-based Cellulose',
     marketingTerms: [
       'Bean to Bar',
@@ -207,6 +213,7 @@ const bars: Array<Bar> = [
     barType: 'Dark',
     percent: 72,
     barWeight: 65,
+    barDimensions: [0, 0, 0],
     ingredients: [
       'Organic Cacao Beans',
       'Organic Cane Sugar',
@@ -214,7 +221,8 @@ const bars: Array<Bar> = [
     ],
     facilityAllergen: ['Peanuts', 'Tree Nuts', 'Dairy'],
 
-    packagingType: 'Box',
+    packagingType: 'Envelope',
+    packagingDimensions: [175, 82, 11],
     wrapper: 'Foil',
     marketingTerms: ['Bean to Bar', 'Crafted', 'Ethically Sourced'],
     insidePrinting: true,
