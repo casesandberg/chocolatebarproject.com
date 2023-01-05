@@ -10,6 +10,7 @@ export default async function Page() {
     <Container className="relative h-[90vh]">
       <Link href={`/bars/${mostRecentBar.slug}`}>
         <Image
+          priority
           src={mostRecentBar.images.HERO.src}
           alt={mostRecentBar.images.HERO.alt}
           fill
