@@ -24,6 +24,7 @@ console.log(nanoid())
 // TODO: What happens if given bar, still want to list obtained/price right?
 // TODO: filter by published: true? last updated date?
 // TODO: Packaging print language? Shine/Matte/Linen. Colors: Dual-tone, full-color, monotone.
+// TODO: Google Structured Data for Product
 
 export interface Image {
   src: `/${string}`

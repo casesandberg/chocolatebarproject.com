@@ -1,8 +1,8 @@
+import { AnalyticsWrapper } from '#/components/Analytics'
 import { PageFrame } from '#/components/PageFrame'
 import '#/styles/globals.css'
-import PlausibleProvider from 'next-plausible'
-
 import { Inter, Roboto_Mono } from '@next/font/google'
+import PlausibleProvider from 'next-plausible'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 
@@ -38,6 +38,8 @@ export default function RootLayout({
 
           <Footer />
         </div>
+
+        <AnalyticsWrapper />
       </body>
     </html>
   )
