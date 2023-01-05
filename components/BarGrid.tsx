@@ -23,17 +23,22 @@ export function BarGrid({ title, hideTitle, data }: BarGridProps) {
       >
         {data.map((bar) => (
           <Link key={bar.id} href={`/bars/${bar.slug}`} className="group">
-            <div className="aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8 relative w-full overflow-hidden rounded-lg bg-gray-200">
+            {/*  aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8  */}
+            <div className="relative h-[300px] w-full overflow-hidden">
               <Image
                 src={bar.images.PACKAGE_FRONT.src}
                 alt={bar.images.PACKAGE_FRONT.alt}
                 width={300}
                 height={400}
-                className="h-full w-full object-cover object-center group-hover:opacity-75"
+                className="h-full w-full object-contain object-center group-hover:opacity-75"
               />
             </div>
-            <h3 className="mt-4 text-sm text-gray-700">{bar.maker}</h3>
-            <p className="text-md mt-1 font-medium text-gray-900">{bar.name}</p>
+            <div className="text-center">
+              <h3 className="text-gray-700 mt-4 text-sm">{bar.maker}</h3>
+              <p className="text-md text-gray-900 mt-1 font-medium">
+                {bar.name}
+              </p>
+            </div>
           </Link>
         ))}
       </div>
