@@ -229,14 +229,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Pink Sea Salt',
-    maker: 'Raaka',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 7,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: 'Maple & Nibs',
     maker: 'Raaka',
     retailer: 'Blackmarket Bakery',

@@ -1,9 +1,10 @@
+import { customAlphabet } from 'nanoid'
 import { MakerNames } from './makers'
 import { OriginNames } from './origins'
 
 // Generate Random ID
-// const nanoid = customAlphabet('1234567890abcdef', 10)
-// console.log(nanoid())
+const nanoid = customAlphabet('1234567890abcdef', 10)
+console.log(nanoid())
 
 // Generate URL Safe Slug
 // console.log(urlSlug('Dominican Republic Dark 72% Schoki Chocolate'))
@@ -78,6 +79,63 @@ export interface Bar {
 }
 
 const bars: Array<Bar> = [
+  {
+    id: 'dab435f9c9',
+    name: 'Pink Sea Salt',
+    subtitle: 'Unroasted Dark Chocolate',
+    slug: 'pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate',
+    maker: 'Raaka Chocolate',
+
+    images: {
+      HERO: {
+        src: '/bars/pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate.jpg',
+        alt: 'Pink Sea Salt Unroasted Dark Chocolate bar from Raaka Chocolate on rippled linen tablecloth',
+      },
+      BAR_FRONT: {
+        src: '/bars/pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate-bar-front.jpg',
+        alt: 'Front of Pink Sea Salt Unroasted Dark Chocolate bar from Raaka Chocolate with a custom branded bar',
+      },
+      BAR_BACK: {
+        src: '/bars/pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate-bar-back.jpg',
+        alt: 'Back of Pink Sea Salt Unroasted Dark Chocolate bar from Raaka Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate-package-front.jpg',
+        alt: 'Front of Pink Sea Salt Unroasted Dark Chocolate bar from Raaka Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate-package-back.jpg',
+        alt: 'Back of Pink Sea Salt Unroasted Dark Chocolate bar from Raaka Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 71,
+    barWeight: 51,
+    barDimensions: [134, 61, 6],
+    ingredients: [
+      'Organic Cacao Beans',
+      'Organic Cane Sugar',
+      'Organic Maple Sugar',
+      'Organic Cocoa Butter',
+      'Peruvian Pink Sea Salt',
+    ],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [136, 63, 7],
+    wrapper: 'Foil with Paper Backing',
+    marketingTerms: ['Bean to Bar', 'Unroasted', 'Transparent'],
+    certifiedLabels: ['Non GMO', 'USDA Organic', 'Transparent Trade'],
+    uncertifiedLabels: ['Vegan', 'Gluten Free', 'Soy Free', 'Nut Free'],
+    productionLocationHighlighted: true,
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7,
+    dateObtained: '2022-12-16',
+
+    origin: 'Zorzal Reserve',
+  },
   {
     id: 'd8e2e9afee',
     name: 'Coffee Crunch',
