@@ -26,6 +26,7 @@ export default function RootLayout({
       className={`${robotoMono.variable} font-mono ${inter.variable} font-sans`}
     >
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <PlausibleProvider domain="chocolatebarproject.com" />
       </head>
       <body>
