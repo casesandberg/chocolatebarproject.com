@@ -81,6 +81,63 @@ export interface Bar {
 
 const bars: Array<Bar> = [
   {
+    id: '2d32855f96',
+    name: 'Dark & Salty',
+    subtitle: 'Dark Chocolate & Vanilla-Infused Sea Salt',
+    slug: 'dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate',
+    maker: 'Xocolatl Small Batch Chocolate',
+
+    images: {
+      HERO: {
+        src: '/bars/dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate.jpg',
+        alt: 'Dark & Salty Dark Chocolate & Vanilla-Infused Sea Salt bar from Xocolatl Small Batch Chocolate in cast iron pan with salt',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate-bar-front.jpg',
+        alt: 'Front of Dark & Salty Dark Chocolate & Vanilla-Infused Sea Salt bar from Xocolatl Small Batch Chocolate with a custom branded bar',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate-bar-back.jpg',
+        alt: 'Back of Dark & Salty Dark Chocolate & Vanilla-Infused Sea Salt bar from Xocolatl Small Batch Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate-package-front.jpg',
+        alt: 'Front of Dark & Salty Dark Chocolate & Vanilla-Infused Sea Salt bar from Xocolatl Small Batch Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate-package-back.jpg',
+        alt: 'Back of Dark & Salty Dark Chocolate & Vanilla-Infused Sea Salt bar from Xocolatl Small Batch Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 80,
+    barWeight: 75,
+    barDimensions: [148, 72, 7],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Cane Sugar',
+      'Vanilla-infused Sea Salt',
+    ],
+    facilityAllergen: ['Peanuts', 'Tree Nuts'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [152, 76, 10],
+    wrapper: 'Foil with Paper Backing',
+    marketingTerms: ['Small Batch', 'Fair Trade'],
+    uncertifiedLabels: ['Gluten-free', 'Soy-free', 'Dairy-free'],
+    productionLocationHighlighted: true,
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 10,
+    dateObtained: '2022-12-16',
+
+    origin: {
+      country: 'Uganda',
+    },
+  },
+  {
     id: 'dab435f9c9',
     name: 'Pink Sea Salt',
     subtitle: 'Unroasted Dark Chocolate',

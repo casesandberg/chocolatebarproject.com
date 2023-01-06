@@ -237,14 +237,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Dark & Salty',
-    maker: 'Xocolatl',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 10,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: 'Commuter',
     maker: 'Xocolatl',
     retailer: 'Blackmarket Bakery',
