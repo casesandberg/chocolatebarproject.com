@@ -51,7 +51,7 @@ export interface Bar {
   percent: number
   barWeight: number // in grams
   barDimensions: [number, number, number] // as Height, Width, Depth, in mm
-  ingredients: Array<string | [string, Array<string>]>
+  ingredients: Ingridients
   foodAllergen?: Array<string>
   facilityAllergen?: Array<string>
   barDamaged?: boolean
@@ -79,6 +79,10 @@ export interface Bar {
         country: string
       }
 }
+
+export type Ingredient = string
+export type CompoundIngredient = [string, Array<Ingredient>]
+export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {

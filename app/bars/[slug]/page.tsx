@@ -6,6 +6,7 @@ import { ItemBlockSupportingImages } from '#/components/ItemBlockSupportingImage
 import { Metadata } from '#/components/Metadata'
 import {
   DimensionsMetadataItem,
+  IngredientMetadataItem,
   MetadataItem,
   transformDimensions,
   transformPercent,
@@ -80,7 +81,10 @@ export default async function BarSlugPage({ params }: { params?: any }) {
               value={bar.barDimensions}
               transformValue={transformDimensions}
             />
-            <MetadataItem label="Ingredients" value={bar.ingredients} />
+            <IngredientMetadataItem
+              label="Ingredients"
+              value={bar.ingredients}
+            />
             <MetadataItem label="Food Allergen" value={bar.foodAllergen} />
             <MetadataItem
               label="Facility Allergen"

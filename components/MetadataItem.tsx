@@ -1,9 +1,10 @@
+import { Ingridients } from '#/lib/data/bars'
 import { e } from 'easy-tailwind'
 
 export type MetadataItemProps = {
   label: string
   hint?: string
-  value?: string | number | Array<string | [string, Array<string>]>
+  value?: string | number | Array<string>
   transformValue?: (value: string | number) => string
 }
 
@@ -19,22 +20,41 @@ export function MetadataItem({
       <dd className="text-gray-900 mt-1 text-sm sm:col-span-2 sm:mt-0">
         <TagList>
           {Array.isArray(value) ? (
-            value.map((item) => {
-              if (Array.isArray(item)) {
-                const [ingredient, subIngridients] = item
-
-                return (
-                  <Tag key={ingredient}>
-                    {transformValue(ingredient)} ({subIngridients.join(', ')})
-                  </Tag>
-                )
-              }
-
-              return <Tag key={item}>{transformValue(item)}</Tag>
-            })
+            value.map((item) => <Tag key={item}>{transformValue(item)}</Tag>)
           ) : (
             <Tag>{transformValue(value)}</Tag>
           )}
+        </TagList>
+      </dd>
+    </div>
+  ) : null
+}
+
+export function IngredientMetadataItem({
+  label,
+  hint,
+  value,
+}: Omit<MetadataItemProps, 'value' | 'transformValue'> & {
+  value: Ingridients
+}) {
+  return value ? (
+    <div className="py-1 font-mono sm:grid sm:grid-cols-3 sm:gap-1 sm:py-1">
+      <dt className="text-gray-500 p-0.5 pl-0 text-sm">{label}</dt>
+      <dd className="text-gray-900 mt-1 text-sm sm:col-span-2 sm:mt-0">
+        <TagList>
+          {value.map((item) => {
+            if (Array.isArray(item)) {
+              const [ingredient, subIngridients] = item
+
+              return (
+                <Tag key={ingredient}>
+                  {ingredient} ({subIngridients.join(', ')})
+                </Tag>
+              )
+            }
+
+            return <Tag key={item}>{item}</Tag>
+          })}
         </TagList>
       </dd>
     </div>
