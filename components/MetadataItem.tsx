@@ -3,7 +3,7 @@ import { e } from 'easy-tailwind'
 export type MetadataItemProps = {
   label: string
   hint?: string
-  value?: string | number | Array<string>
+  value?: string | number | Array<string | [string, Array<string>]>
   transformValue?: (value: string | number) => string
 }
 
@@ -19,7 +19,19 @@ export function MetadataItem({
       <dd className="text-gray-900 mt-1 text-sm sm:col-span-2 sm:mt-0">
         <TagList>
           {Array.isArray(value) ? (
-            value.map((item) => <Tag key={item}>{transformValue(item)}</Tag>)
+            value.map((item) => {
+              if (Array.isArray(item)) {
+                const [ingredient, subIngridients] = item
+
+                return (
+                  <Tag key={ingredient}>
+                    {transformValue(ingredient)} ({subIngridients.join(', ')})
+                  </Tag>
+                )
+              }
+
+              return <Tag key={item}>{transformValue(item)}</Tag>
+            })
           ) : (
             <Tag>{transformValue(value)}</Tag>
           )}
@@ -65,11 +77,13 @@ function TagList({ children }: { children: React.ReactNode }) {
 function Tag({
   children,
   className,
+  as: As = 'div',
 }: {
   children: React.ReactNode
   className?: string
+  as?: keyof React.ReactHTML
 }) {
-  return <div className={e(`bg-medium p-0.5 ${className}`)}>{children}</div>
+  return <As className={e(`bg-medium p-0.5 ${className}`)}>{children}</As>
 }
 
 export function transformPercent(value: string | number) {

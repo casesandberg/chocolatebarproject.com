@@ -253,14 +253,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Caramel Crack',
-    maker: 'Terroir Chocolate',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 7.5,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: 'Cardamom Krumkake',
     maker: 'Terroir Chocolate',
     retailer: 'Blackmarket Bakery',

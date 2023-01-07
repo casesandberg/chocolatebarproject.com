@@ -51,9 +51,10 @@ export interface Bar {
   percent: number
   barWeight: number // in grams
   barDimensions: [number, number, number] // as Height, Width, Depth, in mm
-  ingredients: Array<string>
+  ingredients: Array<string | [string, Array<string>]>
   foodAllergen?: Array<string>
   facilityAllergen?: Array<string>
+  barDamaged?: boolean
 
   packagingType: string
   packagingDimensions: [number, number, number] // as Height, Width, Depth, in mm
@@ -80,6 +81,82 @@ export interface Bar {
 }
 
 const bars: Array<Bar> = [
+  {
+    id: 'cdc0143f5b',
+    name: 'Caramel Crack',
+    subtitle: 'Organic 50% dark milk chocolate',
+    slug: 'caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate',
+    maker: 'Terroir Chocolate',
+
+    images: {
+      HERO: {
+        src: '/bars/caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate.jpg',
+        alt: 'Caramel Crack Organic 50% dark milk chocolate bar from Terroir Chocolate on shattered sugar glass and a red background',
+      },
+      BAR_FRONT: {
+        src: '/bars/caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate-bar-front.jpg',
+        alt: 'Front of Caramel Crack Organic 50% dark milk chocolate bar from Terroir Chocolate with a custom branded bar',
+      },
+      BAR_BACK: {
+        src: '/bars/caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate-bar-back.jpg',
+        alt: 'Back of Caramel Crack Organic 50% dark milk chocolate bar from Terroir Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate-package-front.jpg',
+        alt: 'Front of Caramel Crack Organic 50% dark milk chocolate bar from Terroir Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate-package-back.jpg',
+        alt: 'Back of Caramel Crack Organic 50% dark milk chocolate bar from Terroir Chocolate package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 50,
+    barWeight: 57,
+    barDimensions: [150, 76, 5],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Organic Whole Milk Powder',
+      [
+        'MN Maple Toffee',
+        [
+          'Organic Cane Sugar',
+          'Organic Butter',
+          'Organic Maple Syrup',
+          'Sea Salt',
+        ],
+      ],
+    ],
+    foodAllergen: ['Milk'],
+    barDamaged: true,
+
+    packagingType: 'Envelope',
+    packagingDimensions: [165, 80, 8],
+    wrapper: 'Foil with Paper Backing',
+    marketingTerms: [
+      'Organic',
+      'Tasting Notes',
+      'Texture',
+      'Finish',
+      'Crafted',
+      'Bean to Bar',
+    ],
+    certifiedLabels: ['USDA Organic'], // MCIA
+    uncertifiedLabels: ['Gluten-free', 'Soy-free'],
+    productionLocationHighlighted: true,
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7.5,
+    dateObtained: '2022-12-16',
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
   {
     id: '2d32855f96',
     name: 'Dark & Salty',
