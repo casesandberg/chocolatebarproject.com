@@ -66,6 +66,7 @@ export interface Bar {
   tastingNotes?: Array<string>
   insidePrinting?: boolean
   productionLocationHighlighted?: boolean
+  packageLanguages?: Array<string>
 
   retailer: string
   location: string
@@ -145,6 +146,7 @@ const bars: Array<Bar> = [
     certifiedLabels: ['Kosher'], // International Kosher Council
     uncertifiedLabels: ['Gluten-free', 'Vegan'],
     productionLocationHighlighted: true,
+    packageLanguages: ['English', 'German', 'French'],
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
