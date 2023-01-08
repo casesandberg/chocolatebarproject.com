@@ -46,22 +46,26 @@ export default async function BarSlugPage({ params }: { params?: any }) {
       <Container as="article" className="">
         <div
           className={e(
-            'flex flex-row',
-            '-mt-4 bg-brown-600 p-4 text-white',
+            'flex flex-row items-center gap-1',
+            '-mt-4 min-h-[80px] bg-brown-600 px-4 py-1 text-white',
             'relative' // To ensure its above the absolute image above
           )}
         >
-          {bar.name}
-          {bar.subtitle ? (
-            <span className="opacity-50">{` ${bar.subtitle}`}</span>
-          ) : null}
+          <div className="flex flex-col justify-center">
+            <h1>{bar.name}</h1>
+            {bar.subtitle ? (
+              <p role="doc-subtitle" className="opacity-50">
+                {bar.subtitle}
+              </p>
+            ) : null}
+          </div>
 
           {bar.productUrl ? (
             <a
               rel="noreferrer"
               target="_blank"
               href={bar.productUrl}
-              className="ml-auto rounded font-bold"
+              className="ml-auto flex-shrink-0 rounded font-bold"
             >
               Buy Now
             </a>
