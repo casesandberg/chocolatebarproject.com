@@ -37,6 +37,7 @@ export interface Bar {
   subtitle?: string
   slug: string
   maker: MakerNames
+  productUrl?: string
 
   images: {
     HERO: Image
@@ -91,6 +92,7 @@ const bars: Array<Bar> = [
     name: 'Lavender Flowers + Red Salt',
     slug: 'lavender-flowers-plus-red-salt-antidote-chocolate',
     maker: 'Antidote Chocolate',
+    productUrl: 'https://antidotechoco.com/products/lavender-red-salt-84',
 
     images: {
       HERO: {
@@ -139,7 +141,6 @@ const bars: Array<Bar> = [
       'Minimal Processing',
       'Mood',
       'Female Creator',
-      '',
     ],
     certifiedLabels: ['Kosher'], // International Kosher Council
     uncertifiedLabels: ['Gluten-free', 'Vegan'],
@@ -162,6 +163,8 @@ const bars: Array<Bar> = [
     subtitle: 'Organic 50% dark milk chocolate',
     slug: 'caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate',
     maker: 'Terroir Chocolate',
+    productUrl:
+      'https://www.tcchocolate.com/products/caramel-crack-60-dark-milk',
 
     images: {
       HERO: {
@@ -238,6 +241,7 @@ const bars: Array<Bar> = [
     subtitle: 'Dark Chocolate & Vanilla-Infused Sea Salt',
     slug: 'dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate',
     maker: 'Xocolatl Small Batch Chocolate',
+    productUrl: 'https://xocolatlchocolate.com/products/dark-salty',
 
     images: {
       HERO: {
@@ -295,6 +299,7 @@ const bars: Array<Bar> = [
     subtitle: 'Unroasted Dark Chocolate',
     slug: 'pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate',
     maker: 'Raaka Chocolate',
+    productUrl: 'https://www.raakachocolate.com/products/pink-sea-salt',
 
     images: {
       HERO: {
@@ -351,6 +356,7 @@ const bars: Array<Bar> = [
     name: 'Coffee Crunch',
     slug: 'coffee-crunch-olive-and-sinclair-chocolate-co',
     maker: 'Olive & Sinclair Chocolate Co',
+    productUrl: 'https://www.oliveandsinclair.com/shop/coffee-chocolate-bar',
 
     images: {
       HERO: {
@@ -410,6 +416,8 @@ const bars: Array<Bar> = [
     subtitle: '60% Dark Milk Chocolate & Nibs',
     slug: 'kope-x-coffee-60-dark-milk-chocolate-and-nibs-manoa-chocolate',
     maker: 'Manoa Chocolate',
+    productUrl:
+      'https://manoachocolate.com/products/breakfast-chocolate-bar-kona-coffee-cacao-nibs',
 
     images: {
       HERO: {
@@ -474,6 +482,8 @@ const bars: Array<Bar> = [
     name: 'Dominican Republic 72%',
     slug: 'dominican-republic-72-schoki-chocolate',
     maker: 'Schoki Chocolate',
+    productUrl:
+      'https://www.schokichocolate.com/products/dominican-republic-dark-72',
 
     images: {
       HERO: {
