@@ -78,6 +78,7 @@ export interface Bar {
         region?: string
         country: string
       }
+  beanVariety?: string
 }
 
 export type Ingredient = string
@@ -85,6 +86,76 @@ export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
+  {
+    id: '9548da595f',
+    name: 'Lavender Flowers + Red Salt',
+    slug: 'lavender-flowers-plus-red-salt-antidote-chocolate',
+    maker: 'Antidote Chocolate',
+
+    images: {
+      HERO: {
+        src: '/bars/lavender-flowers-plus-red-salt-antidote-chocolate.jpg',
+        alt: 'Lavender Flowers + Red Salt bar from Antidote Chocolate floating on a teal background',
+      },
+      BAR_FRONT: {
+        src: '/bars/lavender-flowers-plus-red-salt-antidote-chocolate-bar-front.jpg',
+        alt: 'Front of Lavender Flowers + Red Salt bar from Antidote Chocolate with a custom branded bar',
+      },
+      BAR_BACK: {
+        src: '/bars/lavender-flowers-plus-red-salt-antidote-chocolate-bar-back.jpg',
+        alt: 'Back of Lavender Flowers + Red Salt bar from Antidote Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/lavender-flowers-plus-red-salt-antidote-chocolate-package-front.jpg',
+        alt: 'Front of Lavender Flowers + Red Salt bar from Antidote Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/lavender-flowers-plus-red-salt-antidote-chocolate-package-back.jpg',
+        alt: 'Back of Lavender Flowers + Red Salt bar from Antidote Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 84,
+    barWeight: 65,
+    barDimensions: [155, 62, 8],
+    ingredients: [
+      'Cacao Beans',
+      'Whole Cane Sugar',
+      'Cacao Butter',
+      'Lavender Flowers',
+      'Red Alaea Salt',
+      'Sunflower Lecithin',
+    ],
+    facilityAllergen: ['Milk', 'Soy', 'Nuts'],
+
+    packagingType: 'Box',
+    packagingDimensions: [182, 69, 10],
+    wrapper: 'Metallised plastic',
+    marketingTerms: [
+      'Love',
+      'Less Sugar',
+      'Endorphin Boosting',
+      'Minimal Processing',
+      'Mood',
+      'Female Creator',
+      '',
+    ],
+    certifiedLabels: ['Kosher'], // International Kosher Council
+    uncertifiedLabels: ['Gluten-free', 'Vegan'],
+    productionLocationHighlighted: true,
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7.5,
+    dateObtained: '2022-12-16',
+
+    origin: {
+      region: 'Manabi Province',
+      country: 'Ecuador',
+    },
+    beanVariety: 'Arriba Nacional',
+  },
   {
     id: 'cdc0143f5b',
     name: 'Caramel Crack',
