@@ -74,6 +74,9 @@ export interface Bar {
   retailPrice: number // USD
   dateObtained: string
 
+  favorite?: boolean
+  wouldEatAgain: boolean
+
   origin:
     | OriginNames
     | {
@@ -137,6 +140,7 @@ const bars: Array<Bar> = [
     packagingDimensions: [160, 76, 6],
     wrapper: 'Foil with Paper Backing',
     marketingTerms: [
+      '50% Roast & 50% Raw',
       'Bean to Bar',
       '100% Organic',
       'Ethically Sourced',
@@ -149,6 +153,8 @@ const bars: Array<Bar> = [
     location: 'North Park',
     retailPrice: 9.5,
     dateObtained: '2022-12-16',
+
+    wouldEatAgain: false, // Not sure if its the bloom or not, but I didn't like it.
 
     origin: {
       country: 'Unknown',
@@ -217,6 +223,8 @@ const bars: Array<Bar> = [
     location: 'Ocean Beach',
     retailPrice: 6.49,
     dateObtained: '2023-01-07',
+
+    wouldEatAgain: false,
 
     origin: {
       region: 'Udzungwa Park',
@@ -288,6 +296,8 @@ const bars: Array<Bar> = [
     location: 'North Park',
     retailPrice: 7.5,
     dateObtained: '2022-12-16',
+
+    wouldEatAgain: true,
 
     origin: {
       region: 'Manabi Province',
@@ -369,6 +379,8 @@ const bars: Array<Bar> = [
     retailPrice: 7.5,
     dateObtained: '2022-12-16',
 
+    wouldEatAgain: true,
+
     origin: {
       country: 'Unknown',
     },
@@ -426,6 +438,8 @@ const bars: Array<Bar> = [
     location: 'North Park',
     retailPrice: 10,
     dateObtained: '2022-12-16',
+
+    wouldEatAgain: true,
 
     origin: {
       country: 'Uganda',
@@ -487,6 +501,9 @@ const bars: Array<Bar> = [
     retailPrice: 7,
     dateObtained: '2022-12-16',
 
+    favorite: true,
+    wouldEatAgain: true,
+
     origin: 'Zorzal Reserve',
   },
   {
@@ -543,6 +560,8 @@ const bars: Array<Bar> = [
     location: 'North Park',
     retailPrice: 7,
     dateObtained: '2022-12-16',
+
+    wouldEatAgain: true,
 
     origin: {
       country: 'Dominican Republic',
@@ -611,6 +630,8 @@ const bars: Array<Bar> = [
     retailPrice: 10,
     dateObtained: '2022-12-5',
 
+    wouldEatAgain: true,
+
     origin: {
       country: 'unknown',
     },
@@ -668,6 +689,9 @@ const bars: Array<Bar> = [
     location: '843 E Hastings St, Vancouver, BC V6A 1R8, Canada',
     retailPrice: 6.96,
     dateObtained: '2022-12-27',
+
+    favorite: true,
+    wouldEatAgain: true,
 
     origin: 'Zorzal Reserve',
   },
