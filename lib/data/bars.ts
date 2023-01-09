@@ -56,6 +56,7 @@ export interface Bar {
   foodAllergen?: Array<string>
   facilityAllergen?: Array<string>
   barDamaged?: boolean
+  barBloom?: boolean
 
   packagingType: string
   packagingDimensions: [number, number, number] // as Height, Width, Depth, in mm
@@ -88,6 +89,71 @@ export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
+  {
+    id: '027bdf6bb7',
+    name: 'Sea Salt 70%',
+    slug: 'sea-salt-70-fine-and-raw-chocolate',
+    maker: 'Fine & Raw Chocolate',
+    productUrl:
+      'https://www.fineandraw.com/collections/bars/products/sea-salt-bar-brooklyn-bonnie-collection',
+
+    images: {
+      HERO: {
+        src: '/bars/sea-salt-70-fine-and-raw-chocolate.jpg',
+        alt: 'Sea Salt 70% bar from Fine & Raw Chocolate stood up in front of board games',
+      },
+      BAR_FRONT: {
+        src: '/bars/sea-salt-70-fine-and-raw-chocolate-bar-front.jpg',
+        alt: 'Front of Sea Salt 70% bar from Fine & Raw Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/sea-salt-70-fine-and-raw-chocolate-bar-back.jpg',
+        alt: 'Back of Sea Salt 70% bar from Fine & Raw Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/sea-salt-70-fine-and-raw-chocolate-package-front.jpg',
+        alt: 'Front of Sea Salt 70% bar from Fine & Raw Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/sea-salt-70-fine-and-raw-chocolate-package-back.jpg',
+        alt: 'Back of Sea Salt 70% bar from Fine & Raw Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 56,
+    barDimensions: [159, 76, 6],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Coconut Sugar',
+      'Organic Cacao Butter',
+      'Sea Salt',
+    ],
+    facilityAllergen: ['Nuts'],
+    barBloom: true,
+
+    packagingType: 'Sleeve',
+    packagingDimensions: [160, 76, 6],
+    wrapper: 'Foil with Paper Backing',
+    marketingTerms: [
+      'Bean to Bar',
+      '100% Organic',
+      'Ethically Sourced',
+      'No Refined Sugar',
+      'Plant Based',
+    ],
+    certifiedLabels: ['Gluten Free', 'Kosher'],
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 9.5,
+    dateObtained: '2022-12-16',
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
   {
     id: '65bd8cb329',
     name: 'Udzungwa 70% with Nibs',
