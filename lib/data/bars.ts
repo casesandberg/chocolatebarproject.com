@@ -89,6 +89,76 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '65bd8cb329',
+    name: 'Udzungwa 70% with Nibs',
+    subtitle: 'Organic Vegan Dark',
+    slug: 'udzungwa-70-with-nibs-organic-vegan-dark-original-beans',
+    maker: 'Original Beans',
+    productUrl: 'https://originalbeans.com/shop/bars/udzungwa-70-chocolate',
+
+    images: {
+      HERO: {
+        src: '/bars/udzungwa-70-with-nibs-organic-vegan-dark-original-beans.jpg',
+        alt: 'Udzungwa 70% with Nibs Organic Vegan Dark bar from Original Beans embedded in a pile of cacao beans',
+      },
+      BAR_FRONT: {
+        src: '/bars/udzungwa-70-with-nibs-organic-vegan-dark-original-beans-bar-front.jpg',
+        alt: 'Front of Udzungwa 70% with Nibs Organic Vegan Dark bar from Original Beans with a radiating pattern',
+      },
+      BAR_BACK: {
+        src: '/bars/udzungwa-70-with-nibs-organic-vegan-dark-original-beans-bar-back.jpg',
+        alt: 'Back of Udzungwa 70% with Nibs Organic Vegan Dark bar from Original Beans',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/udzungwa-70-with-nibs-organic-vegan-dark-original-beans-package-front.jpg',
+        alt: 'Front of Udzungwa 70% with Nibs Organic Vegan Dark bar from Original Beans package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/udzungwa-70-with-nibs-organic-vegan-dark-original-beans-package-back.jpg',
+        alt: 'Back of Udzungwa 70% with Nibs Organic Vegan Dark bar from Original Beans package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 70,
+    barDimensions: [155, 75, 8],
+    ingredients: [
+      'Organic Cacao Mass',
+      'Organic Raw Cane Sugar',
+      'Organic Cacao Butter',
+      'Organic Cacao Beans',
+    ],
+    facilityAllergen: ['Nuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [158, 80, 9],
+    wrapper: 'Biodegradable',
+    marketingTerms: ['On Bar One Tree', 'Rare', 'Ultra Rare'],
+    certifiedLabels: ['Organic'], // CH-BIO-006
+    packageLanguages: [
+      'English',
+      'German',
+      'French',
+      'Portuguese',
+      'Dutch',
+      'Danish',
+      'Russian',
+      'Arabic',
+    ],
+
+    retailer: 'Olive Tree Marketplace',
+    location: 'Ocean Beach',
+    retailPrice: 6.49,
+    dateObtained: '2023-01-07',
+
+    origin: {
+      region: 'Udzungwa Park',
+      country: 'Tanzania',
+    },
+    beanVariety: 'Trinitario',
+  },
+  {
     id: '9548da595f',
     name: 'Lavender Flowers + Red Salt',
     slug: 'lavender-flowers-plus-red-salt-antidote-chocolate',
