@@ -13,10 +13,13 @@ export type Category = {
   items: Omit<Category, 'items'>[]
 }
 
+const START_OF_DAY_PST = 'T00:00:01-0800'
+
 export const getBars = cache(
   (): Array<Bar> =>
     bars.filter(
-      ({ releaseDate }) => new Date(releaseDate + ' 00:00:01') <= new Date()
+      ({ releaseDate }) =>
+        new Date(releaseDate + START_OF_DAY_PST) <= new Date()
     )
 )
 
@@ -34,7 +37,8 @@ export async function fetchMostRecentBar() {
 
   const closestBar = _.minBy(
     bars,
-    (bar) => today.getTime() - new Date(bar.releaseDate + ' 00:00:01').getTime()
+    (bar) =>
+      today.getTime() - new Date(bar.releaseDate + START_OF_DAY_PST).getTime()
   )
 
   return closestBar
