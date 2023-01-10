@@ -48,8 +48,8 @@ export interface Bar {
     PACKAGE_INSIDE?: Image
   }
 
-  barType: 'Dark' | 'Dark Milk' | 'Milk' | 'White'
-  percent: number
+  barType?: 'Dark' | 'Dark Milk' | 'Milk' | 'White'
+  percent?: number
   barWeight: number // in grams
   barDimensions: [number, number, number] // as Height, Width, Depth, in mm
   ingredients: Ingridients
@@ -81,6 +81,7 @@ export interface Bar {
     | OriginNames
     | {
         producer?: string
+        town?: string
         region?: string
         country: string
       }
@@ -92,6 +93,76 @@ export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
+  {
+    id: 'f45e36f312',
+    name: 'Milk Chocolate & Toasted Hazelnuts',
+    subtitle: 'with Gohar World',
+    slug: 'milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates',
+    maker: 'Casa Bosques Chocolates',
+    productUrl:
+      'https://casabosques.co/products/gohar-world-milk-chocolate-and-hazelnuts',
+
+    images: {
+      HERO: {
+        src: '/bars/milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates.jpg',
+        alt: 'Milk Chocolate & Toasted Hazelnuts with Gohar World bar from Casa Bosques Chocolates cleverly hidden behind a leaf',
+      },
+      BAR_FRONT: {
+        src: '/bars/milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates-bar-front.jpg',
+        alt: 'Front of Milk Chocolate & Toasted Hazelnuts with Gohar World bar from Casa Bosques Chocolates',
+      },
+      BAR_BACK: {
+        src: '/bars/milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates-bar-back.jpg',
+        alt: 'Back of Milk Chocolate & Toasted Hazelnuts with Gohar World bar from Casa Bosques Chocolates',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates-package-front.jpg',
+        alt: 'Front of Milk Chocolate & Toasted Hazelnuts with Gohar World bar from Casa Bosques Chocolates package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates-package-back.jpg',
+        alt: 'Back of Milk Chocolate & Toasted Hazelnuts with Gohar World bar from Casa Bosques Chocolates package',
+      },
+    },
+
+    barType: 'Milk',
+    barWeight: 60,
+    barDimensions: [66, 138, 13],
+    ingredients: [
+      'Organic Heirloom Bean Cacao',
+      'Powdered Milk',
+      'Organic Cacao Butter',
+      'Organic Cane Sugar',
+      'Toasted Hazelnuts',
+    ],
+    facilityAllergen: ['Nuts', 'Dairy'],
+    foodAllergen: ['Nuts', 'Dairy'], // Inferred from ingredients
+    barDamaged: true,
+
+    packagingType: 'Envelope',
+    packagingDimensions: [84, 157, 16],
+    wrapper: 'Foil with Paper Backing',
+    marketingTerms: [
+      'Bean to Bar',
+      'Organic',
+      'Artisanally Made',
+      'Single Origin Cacao',
+    ],
+
+    retailer: 'Casa Bosques Chocolates',
+    location: 'https://casabosques.co',
+    retailPrice: 22,
+    dateObtained: '2023-01-09',
+
+    wouldEatAgain: true,
+
+    origin: {
+      country: 'Mexico',
+      region: 'Chiapas',
+      town: 'Pichucalco',
+    },
+    beanVariety: 'Criollo',
+  },
   {
     id: '027bdf6bb7',
     name: 'Sea Salt 70%',
@@ -536,7 +607,6 @@ const bars: Array<Bar> = [
       },
     },
 
-    barType: 'Dark', // Not listed, inferred from percent
     percent: 67,
     barWeight: 71,
     barDimensions: [94, 132, 7],
@@ -680,7 +750,7 @@ const bars: Array<Bar> = [
 
     packagingType: 'Envelope',
     packagingDimensions: [155, 76, 8],
-    wrapper: 'Foil',
+    wrapper: 'Foil with Paper Backing',
     marketingTerms: ['Bean to Bar', 'Crafted', 'Ethically Sourced'],
     insidePrinting: true,
     productionLocationHighlighted: true,

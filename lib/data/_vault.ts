@@ -10,16 +10,6 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
-    name: 'Milk Chocolate & Toasted Hazelnuts',
-    maker: 'Casa Bosques Chocolates',
-    productUrl:
-      'https://casabosques.co/products/gohar-world-milk-chocolate-and-hazelnuts',
-    retailer: 'Casa Bosques Chocolates',
-    location: 'https://casabosques.co',
-    retailPrice: 22,
-    dateObtained: '2023-01-09',
-  },
-  {
     name: 'Black Toasted Sesame Seeds, Cacao Shell & Nibs',
     maker: 'Casa Bosques Chocolates',
     productUrl:
