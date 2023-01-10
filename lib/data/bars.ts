@@ -1,4 +1,5 @@
 import { customAlphabet } from 'nanoid'
+import { DateString } from '../types'
 import { MakerNames } from './makers'
 import { OriginNames } from './origins'
 
@@ -15,15 +16,11 @@ console.log(nanoid())
 // TODO: Strip location and add copywright to images with URL
 // TODO: Workflow for adding images with names to bars.
 // TODO: Where does roast-type go?
-// TODO: SEO best practices for naming images (bar name + maker?)
 // TODO: Track price and currency. Allow for currency selector for different regions.
 // TODO: I18N for labels.
-// TODO: Differentiate retailer and location purchased??
 // TODO: Differentiate guess? end with Question Mark?
-// TODO: Location if online? domain?
 // TODO: What happens if given bar, still want to list obtained/price right?
-// TODO: filter by published: true? last updated date?
-// TODO: Packaging print language? Shine/Matte/Linen. Colors: Dual-tone, full-color, monotone.
+// TODO: Shine/Matte/Linen. Colors: Dual-tone, full-color, monotone.
 // TODO: Google Structured Data for Product
 
 export interface Image {
@@ -33,6 +30,7 @@ export interface Image {
 
 export interface Bar {
   id: string
+  releaseDate?: DateString
   name: string
   subtitle?: string
   slug: string
@@ -95,6 +93,7 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 const bars: Array<Bar> = [
   {
     id: 'f45e36f312',
+    releaseDate: '2023-01-10',
     name: 'Milk Chocolate & Toasted Hazelnuts',
     subtitle: 'with Gohar World',
     slug: 'milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates',
@@ -165,6 +164,7 @@ const bars: Array<Bar> = [
   },
   {
     id: '027bdf6bb7',
+    releaseDate: '2023-01-09',
     name: 'Sea Salt 70%',
     slug: 'sea-salt-70-fine-and-raw-chocolate',
     maker: 'Fine & Raw Chocolate',
@@ -233,6 +233,7 @@ const bars: Array<Bar> = [
   },
   {
     id: '65bd8cb329',
+    releaseDate: '2023-01-08',
     name: 'Udzungwa 70% with Nibs',
     subtitle: 'Organic Vegan Dark',
     slug: 'udzungwa-70-with-nibs-organic-vegan-dark-original-beans',
@@ -305,6 +306,7 @@ const bars: Array<Bar> = [
   },
   {
     id: '9548da595f',
+    releaseDate: '2023-01-07',
     name: 'Lavender Flowers + Red Salt',
     slug: 'lavender-flowers-plus-red-salt-antidote-chocolate',
     maker: 'Antidote Chocolate',
@@ -378,6 +380,7 @@ const bars: Array<Bar> = [
   },
   {
     id: 'cdc0143f5b',
+    releaseDate: '2023-01-06',
     name: 'Caramel Crack',
     subtitle: 'Organic 50% dark milk chocolate',
     slug: 'caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate',
@@ -458,6 +461,7 @@ const bars: Array<Bar> = [
   },
   {
     id: '2d32855f96',
+    releaseDate: '2023-01-05',
     name: 'Dark & Salty',
     subtitle: 'Dark Chocolate & Vanilla-Infused Sea Salt',
     slug: 'dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate',
@@ -518,6 +522,7 @@ const bars: Array<Bar> = [
   },
   {
     id: 'dab435f9c9',
+    releaseDate: '2023-01-04',
     name: 'Pink Sea Salt',
     subtitle: 'Unroasted Dark Chocolate',
     slug: 'pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate',
@@ -579,6 +584,7 @@ const bars: Array<Bar> = [
   },
   {
     id: 'd8e2e9afee',
+    releaseDate: '2023-01-03',
     name: 'Coffee Crunch',
     slug: 'coffee-crunch-olive-and-sinclair-chocolate-co',
     maker: 'Olive & Sinclair Chocolate Co',
@@ -639,6 +645,7 @@ const bars: Array<Bar> = [
   },
   {
     id: '3b2e8a2a3d',
+    releaseDate: '2023-01-02',
     name: 'Kope X Coffee',
     subtitle: '60% Dark Milk Chocolate & Nibs',
     slug: 'kope-x-coffee-60-dark-milk-chocolate-and-nibs-manoa-chocolate',
@@ -708,6 +715,7 @@ const bars: Array<Bar> = [
   },
   {
     id: '1f81c6b0b3',
+    releaseDate: '2023-01-01',
     name: 'Dominican Republic 72%',
     slug: 'dominican-republic-72-schoki-chocolate',
     maker: 'Schoki Chocolate',
