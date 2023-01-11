@@ -190,14 +190,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-27',
   },
   {
-    name: 'a la Flor de Sal',
-    maker: 'SAL de Ibiza',
-    retailer: 'les amis du FROMAGE',
-    location: 'E Hastings',
-    retailPrice: 0,
-    dateObtained: '2022-12-27',
-  },
-  {
     name: 'Romeo"s Combover',
     maker: 'Mink',
     retailer: 'Mink',

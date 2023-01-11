@@ -92,6 +92,68 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'e1c6587355',
+    releaseDate: '2023-01-11',
+    name: 'Creamy White Chocolate 38%',
+    subtitle: 'a la Flor de Sal',
+    slug: 'creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza',
+    maker: 'SAL de IBIZA',
+    productUrl:
+      'https://www.saldeibiza.com/en/snacks/36-sal-de-ibiza-feinste-weisse-schokolade-80g-4260062060312.html',
+
+    images: {
+      HERO: {
+        src: '/bars/creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza.jpg',
+        alt: 'Creamy White Chocolate 38% a la Flor de Sal bar from SAL de IBIZA standing up with a blue background',
+      },
+      BAR_FRONT: {
+        src: '/bars/creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza-bar-front.jpg',
+        alt: 'Front of Creamy White Chocolate 38% a la Flor de Sal bar from SAL de IBIZA',
+      },
+      BAR_BACK: {
+        src: '/bars/creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza-bar-back.jpg',
+        alt: 'Back of Creamy White Chocolate 38% a la Flor de Sal bar from SAL de IBIZA',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza-package-front.jpg',
+        alt: 'Front of Creamy White Chocolate 38% a la Flor de Sal bar from SAL de IBIZA package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza-package-back.jpg',
+        alt: 'Back of Creamy White Chocolate 38% a la Flor de Sal bar from SAL de IBIZA package',
+      },
+    },
+
+    barType: 'White',
+    percent: 38,
+    barWeight: 80,
+    barDimensions: [160, 80, 7],
+    ingredients: [
+      'Organic Raw Cane Sugar',
+      'Organic Cocoa Butter',
+      'Organic Milk Powder',
+      'Sea Salt',
+    ],
+    foodAllergen: ['Nuts', 'Soy'],
+
+    packagingType: 'Box',
+    packagingDimensions: [164, 83, 12],
+    wrapper: 'Plastic Wrap',
+    marketingTerms: ['Organic', 'Hand-crafted'],
+
+    retailer: 'les amis du FROMAGE',
+    location: 'E Hastings',
+    retailPrice: 8.27,
+    dateObtained: '2022-12-27',
+
+    wouldEatAgain: true,
+
+    origin: {
+      country: 'unknown',
+    },
+    beanVariety: 'Criollo',
+  },
+  {
     id: 'f45e36f312',
     releaseDate: '2023-01-10',
     name: 'Milk Chocolate & Toasted Hazelnuts',
