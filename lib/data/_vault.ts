@@ -10,15 +10,6 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
-    name: '85% Dark Chocolate Bar from Uganda',
-    maker: 'ICAM Chocolate', // https://mokaorigins.com/pages/single-origin-uganda
-    productUrl: 'https://www.traderjoes.com/home/products/pdp/066292',
-    retailer: 'Trader Joes',
-    location: 'Hillcrest',
-    retailPrice: 1.99,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Organic Dark Chocolate Bar',
     maker: 'Unknown',
     productUrl:

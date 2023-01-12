@@ -92,6 +92,73 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '44de88bee9',
+    releaseDate: '2023-01-12',
+    name: '85% Dark Chocolate Bar from Uganda',
+    subtitle: 'for Trader Joes',
+    slug: '85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate',
+    maker: 'ICAM Chocolate',
+    productUrl: 'https://www.traderjoes.com/home/products/pdp/066292',
+
+    images: {
+      HERO: {
+        src: '/bars/85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate.jpg',
+        alt: '85% Dark Chocolate Bar from Uganda for Trader Joes bar from ICAM Chocolate surrounded by Trader Joes purchases',
+      },
+      BAR_FRONT: {
+        src: '/bars/85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate-bar-front.jpg',
+        alt: 'Front of 85% Dark Chocolate Bar from Uganda for Trader Joes bar from ICAM Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate-bar-back.jpg',
+        alt: 'Back of 85% Dark Chocolate Bar from Uganda for Trader Joes bar from ICAM Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate-package-front.jpg',
+        alt: 'Front of 85% Dark Chocolate Bar from Uganda for Trader Joes bar from ICAM Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate-package-back.jpg',
+        alt: 'Back of 85% Dark Chocolate Bar from Uganda for Trader Joes bar from ICAM Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 85,
+    barWeight: 100,
+    barDimensions: [188, 91, 6],
+    ingredients: ['Cocoa Mass', 'Sugar', 'Cocoa Butter'],
+    facilityAllergen: [
+      'Milk',
+      'Soy',
+      'Wheat',
+      'Almond',
+      'Cashew',
+      'Coconut',
+      'Hazelnut',
+      'Pistachio',
+    ],
+
+    packagingType: 'Envelope', // Glued. https://www.nuceriagroup.com/
+    packagingDimensions: [191, 93, 8],
+    wrapper: 'Foil',
+    marketingTerms: ['Single Origin'],
+
+    retailer: 'Trader Joes',
+    location: 'Hillcrest',
+    retailPrice: 1.99,
+    dateObtained: '2023-01-11',
+
+    wouldEatAgain: false, // Didnt taste good. Unlikely ethically sourced.
+
+    origin: {
+      country: 'Uganda',
+      region: 'Bundibugyo District',
+      town: 'Semuliki Forest', // TODO: Rename town to something more specific?
+    },
+    beanVariety: 'Forestero',
+  },
+  {
     id: 'e1c6587355',
     releaseDate: '2023-01-11',
     name: 'Creamy White Chocolate 38%',

@@ -19,3 +19,5 @@ const origins = [
 export type OriginNames = typeof origins[number]['producer']
 
 export default origins
+
+// https://mokaorigins.com/pages/single-origin-uganda

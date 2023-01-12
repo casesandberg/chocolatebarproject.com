@@ -48,6 +48,10 @@ const makers = [
     id: 'c633f63113',
     name: 'SAL de IBIZA' as const,
   },
+  {
+    id: 'c7c483b8ce',
+    name: 'ICAM Chocolate' as const,
+  },
 ]
 
 export type MakerNames = typeof makers[number]['name']
