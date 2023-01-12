@@ -6,6 +6,9 @@ import PlausibleProvider from 'next-plausible'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 
+// Bust cache every 4 hours
+export const revalidate = 60 * 60 * 4
+
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   variable: '--font-roboto-mono',
