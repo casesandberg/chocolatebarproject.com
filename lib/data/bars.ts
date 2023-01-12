@@ -92,6 +92,67 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '27231b9343',
+    releaseDate: '2023-01-13',
+    name: 'Peru',
+    subtitle: 'Gran Nativo Blanco',
+    slug: 'peru-gran-nativo-blanco-rozsavolgyi-csokolade',
+    maker: 'Rózsavölgyi Csokoládé',
+    productUrl:
+      'https://www.rozsavolgyi.com/en/chocolate/single-origin-tablets/104/peru-blanco',
+
+    images: {
+      HERO: {
+        src: '/bars/peru-gran-nativo-blanco-rozsavolgyi-csokolade.jpg',
+        alt: 'Peru Gran Nativo Blanco bar from Rózsavölgyi Csokoládé in a fuzzy off-white fabric',
+      },
+      BAR_FRONT: {
+        src: '/bars/peru-gran-nativo-blanco-rozsavolgyi-csokolade-bar-front.jpg',
+        alt: 'Front of Peru Gran Nativo Blanco bar from Rózsavölgyi Csokoládé',
+      },
+      BAR_BACK: {
+        src: '/bars/peru-gran-nativo-blanco-rozsavolgyi-csokolade-bar-back.jpg',
+        alt: 'Back of Peru Gran Nativo Blanco bar from Rózsavölgyi Csokoládé',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/peru-gran-nativo-blanco-rozsavolgyi-csokolade-package-front.jpg',
+        alt: 'Front of Peru Gran Nativo Blanco bar from Rózsavölgyi Csokoládé package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/peru-gran-nativo-blanco-rozsavolgyi-csokolade-package-back.jpg',
+        alt: 'Back of Peru Gran Nativo Blanco bar from Rózsavölgyi Csokoládé package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 72,
+    barWeight: 70,
+    barDimensions: [112, 110, 6],
+    ingredients: ['Cocoa Beans', 'Organic Cane Sugar', 'Organic Cocoa Butter'],
+    facilityAllergen: ['Nuts', 'Oats', 'Milk Powder'],
+
+    packagingType: 'Box',
+    packagingDimensions: [115, 115, 10],
+    wrapper: 'Parchment Paper',
+    marketingTerms: ['From cocoa bean to chocolate'],
+    packageLanguages: ['English', 'Hungarian'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 20,
+    dateObtained: '2023-01-11',
+
+    wouldEatAgain: true,
+    favorite: true,
+
+    origin: {
+      country: 'Peru',
+      region: 'Piura',
+      producer: 'Norandino Cooperative',
+    },
+    beanVariety: 'Gran Nativo Blanco',
+  },
+  {
     id: '44de88bee9',
     releaseDate: '2023-01-12',
     name: '85% Dark Chocolate Bar from Uganda',
