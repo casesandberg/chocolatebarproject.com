@@ -34,8 +34,8 @@ export function BarGrid({ title, hideTitle, data }: BarGridProps) {
               />
             </div>
             <div className="text-center">
-              <h3 className="text-gray-700 mt-4 text-sm">{bar.maker}</h3>
-              <p className="text-md text-gray-900 mt-1 font-medium">
+              <h3 className="mt-4 text-sm text-primary-900/50">{bar.maker}</h3>
+              <p className="text-md mt-1 font-medium text-primary-900">
                 {bar.name}
               </p>
             </div>

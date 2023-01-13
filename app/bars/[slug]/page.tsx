@@ -32,7 +32,7 @@ export default async function BarSlugPage({ params }: { params?: any }) {
   }
 
   return (
-    <section className="relative min-h-screen bg-white">
+    <section className="relative min-h-screen">
       <Container className="relative h-full h-[80vh]">
         <Image
           priority
@@ -47,14 +47,14 @@ export default async function BarSlugPage({ params }: { params?: any }) {
         <div
           className={e(
             'flex flex-row items-center gap-1',
-            '-mt-4 min-h-[80px] bg-brown-600 px-4 py-1 text-white',
+            '-mt-4 min-h-[80px] bg-primary-800 px-4 py-1',
             'relative' // To ensure its above the absolute image above
           )}
         >
           <div className="flex flex-col justify-center">
-            <h1>{bar.name}</h1>
+            <h1 className="text-primary-50">{bar.name}</h1>
             {bar.subtitle ? (
-              <p role="doc-subtitle" className="opacity-50">
+              <p role="doc-subtitle" className="text-primary-50/50">
                 {bar.subtitle}
               </p>
             ) : null}
@@ -65,7 +65,7 @@ export default async function BarSlugPage({ params }: { params?: any }) {
               rel="noreferrer"
               target="_blank"
               href={bar.productUrl}
-              className="ml-auto flex-shrink-0 rounded font-bold"
+              className="ml-auto flex-shrink-0 rounded font-bold text-primary-50"
             >
               Buy Now
             </a>

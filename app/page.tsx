@@ -19,13 +19,13 @@ export default async function Page() {
             className="object-cover object-center"
           />
 
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform cursor-pointer bg-brown-600 p-2 text-white">
-            <h1>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform cursor-pointer bg-primary-800 p-2">
+            <h1 className="text-primary-50">
               <Balancer>{mostRecentBar.name}</Balancer>
             </h1>
 
             {mostRecentBar.subtitle ? (
-              <p role="doc-subtitle" className="opacity-50">
+              <p role="doc-subtitle" className="text-primary-50/50">
                 <Balancer>{mostRecentBar.subtitle}</Balancer>
               </p>
             ) : null}

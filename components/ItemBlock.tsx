@@ -15,7 +15,7 @@ export function ItemBlock({
       <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:gap-10">
         <div className="flex-2 flex-shrink-0" />
 
-        <h3 className="flex-3 text-lg font-medium uppercase leading-6 text-gray-900">
+        <h3 className="flex-3 text-lg font-medium uppercase leading-6 text-primary-900">
           {title}
         </h3>
       </div>

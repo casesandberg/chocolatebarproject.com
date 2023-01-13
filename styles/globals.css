@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .zoom-image [data-rmiz-modal-overlay='visible'] {
-  @apply bg-background !important;
+  @apply bg-primary-50 !important;
 }

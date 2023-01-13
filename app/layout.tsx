@@ -26,22 +26,20 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className={`${robotoMono.variable} font-mono ${inter.variable} font-sans`}
+      className={`${robotoMono.variable} font-mono ${inter.variable} bg-primary-50 font-sans`}
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <PlausibleProvider domain="chocolatebarproject.com" />
       </head>
       <body>
-        <div className="bg-background">
-          <Header />
+        <Header />
 
-          <main className="overflow-hidden">
-            <PageFrame>{children}</PageFrame>
-          </main>
+        <main className="overflow-hidden">
+          <PageFrame>{children}</PageFrame>
+        </main>
 
-          <Footer />
-        </div>
+        <Footer />
 
         <AnalyticsWrapper />
       </body>

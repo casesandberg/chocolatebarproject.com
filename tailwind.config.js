@@ -1,5 +1,5 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
 const { replacer } = require('easy-tailwind/transform/react')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} \*/
 module.exports = {
@@ -34,16 +34,19 @@ module.exports = {
       },
 
       colors: {
-        background: '#f5f1eb',
-        'on-background': '#fff',
-        white: '#f5f1eb',
-        border: '#ece8e2',
-        medium: '#ece8e2',
-        'medium-hover': '#dbd6ce',
-        gray: '#999',
-        brown: {
-          600: '#53453e',
-          800: '#2c2724',
+        transparent: 'transparent',
+        current: 'currentColor',
+        primary: {
+          50: '#f5f1eb',
+          100: '#D7CCC8',
+          200: '#BCAAA4',
+          300: '#A1887F',
+          400: '#8D6E63',
+          500: '#795548',
+          600: '#6D4C41',
+          700: '#5D4037',
+          800: '#4E342E',
+          900: '#3E2723',
         },
       },
 
