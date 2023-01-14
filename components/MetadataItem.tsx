@@ -1,4 +1,4 @@
-import { Ingridients } from '#/lib/data/bars'
+import { Award, Ingridients } from '#/lib/data/bars'
 import { e } from 'easy-tailwind'
 
 export type MetadataItemProps = {
@@ -83,6 +83,26 @@ export function DimensionsMetadataItem({
               {transformValue(item)}
             </Tag>
           ))}
+        </TagList>
+      </dd>
+    </div>
+  ) : null
+}
+
+export function AwardsMetadataItem({
+  label,
+  hint,
+  value,
+}: Omit<MetadataItemProps, 'value'> & { value?: Array<Award> }) {
+  return value?.length ? (
+    <div className="py-1 font-mono sm:grid sm:grid-cols-3 sm:gap-1 sm:py-1">
+      <dt className="p-0.5 pl-0 text-sm text-primary-900/75">{label}</dt>
+      <dd className="mt-1 text-sm text-primary-900 sm:col-span-2 sm:mt-0">
+        <TagList>
+          {value.map((item) => {
+            const string = `${item.body}, ${item.level}, ${item.year}`
+            return <Tag key={string}>{string}</Tag>
+          })}
         </TagList>
       </dd>
     </div>

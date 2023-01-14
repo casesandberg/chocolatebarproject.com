@@ -28,6 +28,12 @@ export interface Image {
   alt: string
 }
 
+export interface Award {
+  body: string
+  level: string
+  year: number
+}
+
 export interface Bar {
   id: string
   releaseDate?: DateString
@@ -66,6 +72,7 @@ export interface Bar {
   insidePrinting?: boolean
   productionLocationHighlighted?: boolean
   packageLanguages?: Array<string>
+  awards?: Array<Award>
 
   retailer: string
   location: string
@@ -134,6 +141,13 @@ const bars: Array<Bar> = [
     wrapper: 'Foil with Paper Backing',
     marketingTerms: ['Single Terroir', 'above fair trade'],
     uncertifiedLabels: ['Gluten Free', 'Dairy Free'],
+    awards: [
+      {
+        body: 'Academy of Chocolate',
+        level: 'Gold',
+        year: 2017,
+      },
+    ],
 
     retailer: 'Bar & Cocoa',
     location: 'https://barandcocoa.com/',

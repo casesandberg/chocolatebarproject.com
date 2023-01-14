@@ -5,6 +5,7 @@ import { ItemBlock } from '#/components/ItemBlock'
 import { ItemBlockSupportingImages } from '#/components/ItemBlockSupportingImages'
 import { Metadata } from '#/components/Metadata'
 import {
+  AwardsMetadataItem,
   DimensionsMetadataItem,
   IngredientMetadataItem,
   MetadataItem,
@@ -135,6 +136,8 @@ export default async function BarSlugPage({ params }: { params?: any }) {
             />
             <MetadataItem label="Marketing Terms" value={bar.marketingTerms} />
             <MetadataItem label="Tasting Notes" value={bar.tastingNotes} />
+
+            <AwardsMetadataItem label="Awards" value={bar.awards} />
           </Metadata>
         </ItemBlock>
 
