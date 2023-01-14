@@ -3,6 +3,7 @@
 export interface Origin {
   id: string
   producer: OriginNames
+  locality: string
   region: string
   country: string
 }
@@ -11,6 +12,7 @@ const origins = [
   {
     id: '668ee3d1df',
     producer: 'Zorzal Reserve' as const,
+    locality: 'San Francisco de Macorís',
     region: 'Duarte Province',
     country: 'Dominican Republic',
   },

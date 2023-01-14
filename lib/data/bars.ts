@@ -80,14 +80,17 @@ export interface Bar {
   retailPrice: number // USD
   dateObtained: string
 
-  favorite?: boolean
-  wouldEatAgain: boolean
+  reviewerBarFavorite?: boolean
+  reviewerBarNotes?: string
+  reviewerWouldEatAgain: boolean
+  reviewerPackagingFavorite?: boolean
+  reviewerPackagingNotes?: string
 
   origin:
     | OriginNames
     | {
         producer?: string
-        town?: string
+        locality?: string
         region?: string
         country: string
       }
@@ -156,7 +159,8 @@ const bars: Array<Bar> = [
     retailPrice: 9,
     dateObtained: '2023-01-11',
 
-    wouldEatAgain: true,
+    reviewerBarNotes: 'Bar arrived cracked down the middle',
+    reviewerWouldEatAgain: true,
 
     origin: {
       country: 'Vietnam',
@@ -216,8 +220,8 @@ const bars: Array<Bar> = [
     retailPrice: 20,
     dateObtained: '2023-01-11',
 
-    wouldEatAgain: true,
-    favorite: true,
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
 
     origin: {
       country: 'Peru',
@@ -285,12 +289,13 @@ const bars: Array<Bar> = [
     retailPrice: 1.99,
     dateObtained: '2023-01-11',
 
-    wouldEatAgain: false, // Didnt taste good. Unlikely ethically sourced.
+    reviewerBarNotes: 'Didnt taste good. Unlikely ethically sourced.',
+    reviewerWouldEatAgain: false,
 
     origin: {
       country: 'Uganda',
       region: 'Bundibugyo District',
-      town: 'Semuliki Forest', // TODO: Rename town to something more specific?
+      locality: 'Semuliki Forest',
     },
     beanVariety: 'Forestero',
   },
@@ -350,7 +355,7 @@ const bars: Array<Bar> = [
     retailPrice: 8.27,
     dateObtained: '2022-12-27',
 
-    wouldEatAgain: true,
+    reviewerWouldEatAgain: true,
 
     origin: {
       country: 'unknown',
@@ -401,7 +406,6 @@ const bars: Array<Bar> = [
       'Toasted Hazelnuts',
     ],
     facilityAllergen: ['Nuts', 'Dairy'],
-    foodAllergen: ['Nuts', 'Dairy'], // Inferred from ingredients
     barDamaged: true,
 
     packagingType: 'Envelope',
@@ -420,12 +424,14 @@ const bars: Array<Bar> = [
     retailPrice: 22,
     dateObtained: '2023-01-09',
 
-    wouldEatAgain: true,
+    reviewerBarNotes: 'Bar arrived severly broken',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingNotes: 'Packaging malformed from Hazelnuts',
 
     origin: {
       country: 'Mexico',
       region: 'Chiapas',
-      town: 'Pichucalco',
+      locality: 'Pichucalco',
     },
     beanVariety: 'Criollo',
   },
@@ -493,7 +499,8 @@ const bars: Array<Bar> = [
     retailPrice: 9.5,
     dateObtained: '2022-12-16',
 
-    wouldEatAgain: false, // Not sure if its the bloom or not, but I didn't like it.
+    reviewerBarNotes: 'Bar had bloomed, did not like the taste',
+    reviewerWouldEatAgain: false,
 
     origin: {
       country: 'Unknown',
@@ -565,7 +572,7 @@ const bars: Array<Bar> = [
     retailPrice: 6.49,
     dateObtained: '2023-01-07',
 
-    wouldEatAgain: false,
+    reviewerWouldEatAgain: true,
 
     origin: {
       region: 'Udzungwa Park',
@@ -640,7 +647,7 @@ const bars: Array<Bar> = [
     retailPrice: 7.5,
     dateObtained: '2022-12-16',
 
-    wouldEatAgain: true,
+    reviewerWouldEatAgain: true,
 
     origin: {
       region: 'Manabi Province',
@@ -724,7 +731,7 @@ const bars: Array<Bar> = [
     retailPrice: 7.5,
     dateObtained: '2022-12-16',
 
-    wouldEatAgain: true,
+    reviewerWouldEatAgain: true,
 
     origin: {
       country: 'Unknown',
@@ -786,7 +793,7 @@ const bars: Array<Bar> = [
     retailPrice: 10,
     dateObtained: '2022-12-16',
 
-    wouldEatAgain: true,
+    reviewerWouldEatAgain: true,
 
     origin: {
       country: 'Uganda',
@@ -850,8 +857,8 @@ const bars: Array<Bar> = [
     retailPrice: 7,
     dateObtained: '2022-12-16',
 
-    favorite: true,
-    wouldEatAgain: true,
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
 
     origin: 'Zorzal Reserve',
   },
@@ -911,7 +918,7 @@ const bars: Array<Bar> = [
     retailPrice: 7,
     dateObtained: '2022-12-16',
 
-    wouldEatAgain: true,
+    reviewerWouldEatAgain: true,
 
     origin: {
       country: 'Dominican Republic',
@@ -982,7 +989,7 @@ const bars: Array<Bar> = [
     retailPrice: 10,
     dateObtained: '2022-12-5',
 
-    wouldEatAgain: true,
+    reviewerWouldEatAgain: true,
 
     origin: {
       country: 'unknown',
@@ -1044,8 +1051,8 @@ const bars: Array<Bar> = [
     retailPrice: 6.96,
     dateObtained: '2022-12-27',
 
-    favorite: true,
-    wouldEatAgain: true,
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
 
     origin: 'Zorzal Reserve',
   },

@@ -157,6 +157,7 @@ export default async function BarSlugPage({ params }: { params?: any }) {
           <ItemBlock title="Origin">
             <Metadata>
               <MetadataItem label="Producer" value={origin.producer} />
+              <MetadataItem label="Locality" value={origin.locality} />
               <MetadataItem label="Region" value={origin.region} />
               <MetadataItem label="Country" value={origin.country} />
             </Metadata>
@@ -165,6 +166,7 @@ export default async function BarSlugPage({ params }: { params?: any }) {
           <ItemBlock title="Origin">
             <Metadata>
               <MetadataItem label="Producer" value={bar.origin.producer} />
+              <MetadataItem label="Locality" value={bar.origin.locality} />
               <MetadataItem label="Region" value={bar.origin.region} />
               <MetadataItem label="Country" value={bar.origin.country} />
             </Metadata>
