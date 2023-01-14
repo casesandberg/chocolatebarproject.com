@@ -92,6 +92,63 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'b4c155854a',
+    releaseDate: '2023-01-14',
+    name: 'Terroir of Lam Dong',
+    slug: 'terroir-of-lam-dong-belvie-chocolate',
+    maker: 'Belvie Chocolate',
+    productUrl: 'http://www.belviechocolate.com/product/terroir-lam-dong/',
+
+    images: {
+      HERO: {
+        src: '/bars/terroir-of-lam-dong-belvie-chocolate.jpg',
+        alt: 'Terroir of Lam Dong bar made by Belvie Chocolate in the pocket of a backpack',
+      },
+      BAR_FRONT: {
+        src: '/bars/terroir-of-lam-dong-belvie-chocolate-bar-front.jpg',
+        alt: 'Front of Terroir of Lam Dong bar made by Belvie Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/terroir-of-lam-dong-belvie-chocolate-bar-back.jpg',
+        alt: 'Back of Terroir of Lam Dong bar made by Belvie Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/terroir-of-lam-dong-belvie-chocolate-package-front.jpg',
+        alt: 'Front of Terroir of Lam Dong bar made by Belvie Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/terroir-of-lam-dong-belvie-chocolate-package-back.jpg',
+        alt: 'Back of Terroir of Lam Dong bar made by Belvie Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 80,
+    barDimensions: [148, 78, 7],
+    ingredients: ['Cacao', 'Cane Sugar'],
+    facilityAllergen: ['Nuts'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [149, 79, 7],
+    wrapper: 'Foil with Paper Backing',
+    marketingTerms: ['Single Terroir', 'above fair trade'],
+    uncertifiedLabels: ['Gluten Free', 'Dairy Free'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-11',
+
+    wouldEatAgain: true,
+
+    origin: {
+      country: 'Vietnam',
+      region: 'Lam Dong',
+    },
+    beanVariety: 'Trinitario',
+  },
+  {
     id: '27231b9343',
     releaseDate: '2023-01-13',
     name: 'Peru',
