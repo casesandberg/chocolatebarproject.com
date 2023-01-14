@@ -145,6 +145,10 @@ export default async function BarSlugPage({ params }: { params?: any }) {
           <ItemBlock title="Maker">
             <Metadata>
               <MetadataItem label="Name" value={maker.name} />
+              <MetadataItem
+                label="Production Country"
+                value={bar.productionCountry}
+              />
             </Metadata>
           </ItemBlock>
         ) : null}

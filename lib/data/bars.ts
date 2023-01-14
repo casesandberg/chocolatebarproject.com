@@ -73,6 +73,7 @@ export interface Bar {
   productionLocationHighlighted?: boolean
   packageLanguages?: Array<string>
   awards?: Array<Award>
+  productionCountry: string
 
   retailer: string
   location: string
@@ -148,6 +149,7 @@ const bars: Array<Bar> = [
         year: 2017,
       },
     ],
+    productionCountry: 'Vietnam',
 
     retailer: 'Bar & Cocoa',
     location: 'https://barandcocoa.com/',
@@ -201,6 +203,7 @@ const bars: Array<Bar> = [
     barDimensions: [112, 110, 6],
     ingredients: ['Cocoa Beans', 'Organic Cane Sugar', 'Organic Cocoa Butter'],
     facilityAllergen: ['Nuts', 'Oats', 'Milk Powder'],
+    productionCountry: 'Hungary',
 
     packagingType: 'Box',
     packagingDimensions: [115, 115, 10],
@@ -270,6 +273,7 @@ const bars: Array<Bar> = [
       'Hazelnut',
       'Pistachio',
     ],
+    productionCountry: 'Italy',
 
     packagingType: 'Envelope', // Glued. https://www.nuceriagroup.com/
     packagingDimensions: [191, 93, 8],
@@ -339,6 +343,7 @@ const bars: Array<Bar> = [
     packagingDimensions: [164, 83, 12],
     wrapper: 'Plastic Wrap',
     marketingTerms: ['Organic', 'Hand-crafted'],
+    productionCountry: 'Spain',
 
     retailer: 'les amis du FROMAGE',
     location: 'E Hastings',
@@ -408,6 +413,7 @@ const bars: Array<Bar> = [
       'Artisanally Made',
       'Single Origin Cacao',
     ],
+    productionCountry: 'Mexico',
 
     retailer: 'Casa Bosques Chocolates',
     location: 'https://casabosques.co',
@@ -480,6 +486,7 @@ const bars: Array<Bar> = [
       'Plant Based',
     ],
     certifiedLabels: ['Gluten Free', 'Kosher'],
+    productionCountry: 'United States',
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -551,6 +558,7 @@ const bars: Array<Bar> = [
       'Russian',
       'Arabic',
     ],
+    productionCountry: 'Switzerland',
 
     retailer: 'Olive Tree Marketplace',
     location: 'Ocean Beach',
@@ -625,6 +633,7 @@ const bars: Array<Bar> = [
     uncertifiedLabels: ['Gluten-free', 'Vegan'],
     productionLocationHighlighted: true,
     packageLanguages: ['English', 'German', 'French'],
+    productionCountry: 'United States',
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -708,6 +717,7 @@ const bars: Array<Bar> = [
     certifiedLabels: ['USDA Organic'], // MCIA
     uncertifiedLabels: ['Gluten-free', 'Soy-free'],
     productionLocationHighlighted: true,
+    productionCountry: 'United States',
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -769,6 +779,7 @@ const bars: Array<Bar> = [
     marketingTerms: ['Small Batch', 'Fair Trade'],
     uncertifiedLabels: ['Gluten-free', 'Soy-free', 'Dairy-free'],
     productionLocationHighlighted: true,
+    productionCountry: 'United States',
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -832,6 +843,7 @@ const bars: Array<Bar> = [
     certifiedLabels: ['Non GMO', 'USDA Organic', 'Transparent Trade'],
     uncertifiedLabels: ['Vegan', 'Gluten Free', 'Soy Free', 'Nut Free'],
     productionLocationHighlighted: true,
+    productionCountry: 'United States',
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -892,6 +904,7 @@ const bars: Array<Bar> = [
     ],
     uncertifiedLabels: ['Non GMO', 'All Natural', 'Gluten Free'],
     productionLocationHighlighted: true,
+    productionCountry: 'United States',
 
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
@@ -962,6 +975,7 @@ const bars: Array<Bar> = [
     ],
     insidePrinting: true,
     productionLocationHighlighted: true,
+    productionCountry: 'United States',
 
     retailer: 'Kilauea Market + Cafe',
     location: '2555 Ala Namahana Pkwy B1, Kilauea, HI 96754',
@@ -1023,6 +1037,7 @@ const bars: Array<Bar> = [
     marketingTerms: ['Bean to Bar', 'Crafted', 'Ethically Sourced'],
     insidePrinting: true,
     productionLocationHighlighted: true,
+    productionCountry: 'Canada',
 
     retailer: 'les amis du FROMAGE',
     location: '843 E Hastings St, Vancouver, BC V6A 1R8, Canada',
