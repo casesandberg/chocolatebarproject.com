@@ -13,7 +13,7 @@ export type Category = {
   items: Omit<Category, 'items'>[]
 }
 
-const START_OF_DAY_PST = 'T00:00:01-0800'
+export const START_OF_DAY_PST = 'T00:00:01-0800'
 
 export const getBars = cache(
   (): Array<Bar> =>

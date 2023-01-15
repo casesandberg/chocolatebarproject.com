@@ -1,7 +1,7 @@
 import { AnalyticsWrapper } from '#/components/Analytics'
 import { PageFrame } from '#/components/PageFrame'
 import '#/styles/globals.css'
-import { Inter, Roboto_Mono } from '@next/font/google'
+import { Inter, Montserrat, Roboto_Mono } from '@next/font/google'
 import PlausibleProvider from 'next-plausible'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
@@ -19,6 +19,11 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
+
 export default function RootLayout({
   children,
 }: {
@@ -26,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className={`${robotoMono.variable} font-mono ${inter.variable} bg-primary-50 font-sans`}
+      className={`${robotoMono.variable} ${inter.variable} ${montserrat.variable} bg-primary-50 font-body`}
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
