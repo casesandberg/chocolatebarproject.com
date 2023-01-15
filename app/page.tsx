@@ -19,7 +19,7 @@ export default async function Page() {
   const mostRecentBar = await fetchMostRecentBar()
 
   return (
-    <Container className="relative min-h-[700px]">
+    <Container className="relative  h-px min-h-[700px]">
       <div className="grid h-full grid-cols-1 items-center gap-8 sm:grid-cols-2 sm:gap-2">
         <section className="grid gap-2 py-4">
           <h1 className="text-center font-heading text-5xl font-bold text-primary-800 sm:text-left sm:text-7xl">
