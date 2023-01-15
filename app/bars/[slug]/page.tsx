@@ -16,6 +16,7 @@ import {
 import { fetchBarBySlug } from '#/lib/getBars'
 import { fetchMakerByName } from '#/lib/getMakers'
 import { fetchOriginByProducer } from '#/lib/getOrigins'
+import { ArrowRightIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Balancer from 'react-wrap-balancer'
@@ -47,35 +48,50 @@ export default async function BarSlugPage({ params }: { params?: any }) {
       </div>
 
       <Container as="article" className="">
-        <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-3 sm:gap-0">
-          <section className="col-span-2 grid gap-2 ">
-            <h1 className="font-heading text-4xl font-bold text-primary-800">
-              <Balancer>{bar.name}</Balancer>
-            </h1>
-            {bar.subtitle ? (
-              <p
-                role="doc-subtitle"
-                className="font-heading text-lg text-primary-900/50"
-              >
-                <Balancer>{bar.subtitle}</Balancer>
-              </p>
-            ) : null}
-          </section>
-
-          <div className="sm:text-right">
-            <p className="mb-2 text-lg text-primary-900/50">
+        <div className="flex flex-col gap-2 py-4 sm:flex-row sm:gap-10">
+          <section className="flex-2">
+            <h1 className="mb-2 font-heading text-4xl font-bold text-primary-800">
               <Balancer>
-                Made by {bar.maker} in {bar.productionCountry}
+                {bar.name}{' '}
+                {bar.subtitle ? (
+                  <span className="font-normal text-primary-900/75">
+                    {bar.subtitle}
+                  </span>
+                ) : null}
+              </Balancer>
+            </h1>
+
+            <p className="mb-2 text-primary-900/50">
+              <Balancer>
+                by {bar.maker} in {bar.productionCountry}
               </Balancer>
             </p>
+          </section>
+
+          <div className="flex-3">
+            {bar.description ? (
+              Array.isArray(bar.description) ? (
+                bar.description.map((description, index) => (
+                  <p key={index} className="mb-2 text-primary-900/50">
+                    {description}
+                  </p>
+                ))
+              ) : (
+                <p className="mb-2 text-primary-900/50">{bar.description}</p>
+              )
+            ) : null}
+
             {bar.productUrl ? (
               <a
                 rel="noreferrer"
                 target="_blank"
                 href={bar.productUrl}
-                className="text-lg text-primary-900/50 underline"
+                className="flex items-center gap-1 text-primary-900/50 hover:text-primary-900"
               >
-                Buy Now
+                <ArrowRightIcon className="h-2.5 w-2.5" />
+                <span>
+                  {new URL(bar.productUrl).hostname.replace('www.', '')}
+                </span>
               </a>
             ) : null}
           </div>

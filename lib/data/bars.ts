@@ -39,6 +39,7 @@ export interface Bar {
   releaseDate?: DateString
   name: string
   subtitle?: string
+  description?: string | Array<string>
   slug: string
   maker: MakerNames
   productUrl?: string
@@ -106,6 +107,8 @@ const bars: Array<Bar> = [
     id: 'b4c155854a',
     releaseDate: '2023-01-14',
     name: 'Terroir of Lam Dong',
+    description:
+      'Lam Dong is a highland region, a mountainous province with a temperate, mild climate all year round. This stable climate rarely changes from year to year. Lam Dong has other weather phenomena of notice such as fog, salt flog, rain, thunderstorms and hail but these are not periodic. The result of growing in this area and being influenced by the weather make that cacao beans in Lam Dong result in a special type of chocolate. The taste starts with a hint of red berries and an intense chocolate flavour. Rich and very enjoyable, the flavour is dark and robust without tasting like being burnt.',
     slug: 'terroir-of-lam-dong-belvie-chocolate',
     maker: 'Belvie Chocolate',
     productUrl: 'http://www.belviechocolate.com/product/terroir-lam-dong/',
@@ -173,6 +176,8 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-13',
     name: 'Peru',
     subtitle: 'Gran Nativo Blanco',
+    description:
+      'Gran Nativo Blanco cocoa is grown by smallholder members of the Norandino cooperative in the Piura region, North of Peru. This criollo cacao varietal is completely white, with intense aroma of gooseberries and lime, which you can find luckily in our chocolate as well.',
     slug: 'peru-gran-nativo-blanco-rozsavolgyi-csokolade',
     maker: 'Rózsavölgyi Csokoládé',
     productUrl:
@@ -235,6 +240,7 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-12',
     name: '85% Dark Chocolate Bar from Uganda',
     subtitle: 'for Trader Joes',
+    description: `The beans are from a series of small farms in Western Uganda, located at the foot of the Rwenzori Mountains. In true bean-to-bar fashion, the cacao is harvested, dried, and fermented in partnership with a 3rd generation, family-owned Italian chocolatier. But don't assume this partnership is a long-distance relationship. In fact, one of the Italian Executive Directors is based in Uganda where he helps guarantee the origin of the beans from Ugandan farmers who still own the lands on which the cacao is cultivated. It's a symbiotic partnership that yields some stellar chocolate!`,
     slug: '85-dark-chocolate-bar-from-uganda-for-trader-joes-icam-chocolate',
     maker: 'ICAM Chocolate',
     productUrl: 'https://www.traderjoes.com/home/products/pdp/066292',
@@ -304,6 +310,7 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-11',
     name: 'Creamy White Chocolate 38%',
     subtitle: 'a la Flor de Sal',
+    description: `The “Creamy White Chocolate 38% a la Flor de Sal” from SAL de IBIZA is made from the highest quality organic whole milk powder, organic raw cane sugar and the finest organic cocoa butter. The light ivory colour, the pleasant creamy flavour and the elegant buttery note make this chocolate a delicious experience. If you thought "white chocolate is for children", that's about to change.`,
     slug: 'creamy-white-chocolate-38-a-la-flor-de-sal-sal-de-ibiza',
     maker: 'SAL de IBIZA',
     productUrl:
@@ -367,6 +374,10 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-10',
     name: 'Milk Chocolate & Toasted Hazelnuts',
     subtitle: 'with Gohar World',
+    description: [
+      `An indulgent homage to the classic Italian Gianduja, slow roasted hazelnuts added to a creamy milk chocolate.`,
+      `Born of the long standing friendship between Casa Bosques & Gohar World, the collaboration celebrates craft, beauty and time spent together around the table.`,
+    ],
     slug: 'milk-chocolate-and-toasted-hazelnuts-with-gohar-world-casa-bosques-chocolates',
     maker: 'Casa Bosques Chocolates',
     productUrl:
@@ -439,6 +450,7 @@ const bars: Array<Bar> = [
     id: '027bdf6bb7',
     releaseDate: '2023-01-09',
     name: 'Sea Salt 70%',
+    description: `For the salted chocolate lover: welcome home. Made with 50% roasted and 50% raw cacao, this 70% dark chocolate bar is topped with just enough sea salt to open up the incredible cacao flavor.`,
     slug: 'sea-salt-70-fine-and-raw-chocolate',
     maker: 'Fine & Raw Chocolate',
     productUrl:
@@ -511,6 +523,7 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-08',
     name: 'Udzungwa 70% with Nibs',
     subtitle: 'Organic Vegan Dark',
+    description: `Warm whispers of orange and toffee reverberate as an ultra rare Trinitario cacao makes its way through your senses, echoing the elephants’ playfully winding journey from the mountain forest to the savannah.`,
     slug: 'udzungwa-70-with-nibs-organic-vegan-dark-original-beans',
     maker: 'Original Beans',
     productUrl: 'https://originalbeans.com/shop/bars/udzungwa-70-chocolate',
@@ -575,7 +588,8 @@ const bars: Array<Bar> = [
     reviewerWouldEatAgain: true,
 
     origin: {
-      region: 'Udzungwa Park',
+      locality: 'Udzungwa Park',
+      region: 'Iringa Region',
       country: 'Tanzania',
     },
     beanVariety: 'Trinitario',
@@ -584,6 +598,7 @@ const bars: Array<Bar> = [
     id: '9548da595f',
     releaseDate: '2023-01-07',
     name: 'Lavender Flowers + Red Salt',
+    description: `Potent and floral. Heavenly lavender flowers sprinkled through grains of earthy red-alaea salt on dark chocolate of 84% slow-roasted cacao. Opposites attract, and a new pleasure is born from this perfect union.`,
     slug: 'lavender-flowers-plus-red-salt-antidote-chocolate',
     maker: 'Antidote Chocolate',
     productUrl: 'https://antidotechoco.com/products/lavender-red-salt-84',
@@ -660,6 +675,11 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-06',
     name: 'Caramel Crack',
     subtitle: 'Organic 50% dark milk chocolate',
+    description: [
+      `Tasting Notes — Dark milk chocolate set off with the "crack" of house-made maple toffee, using the finest Minnesota-harvested maple syrup straight from the sugar shack up the road.`,
+      `Texture — Smooth bar studded with toffee bits.`,
+      `Finish — This bar has a slow melt, accented with the butter from the maple toffee.`,
+    ],
     slug: 'caramel-crack-organic-50-dark-milk-chocolate-torroir-chocolate',
     maker: 'Terroir Chocolate',
     productUrl:
@@ -742,6 +762,7 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-05',
     name: 'Dark & Salty',
     subtitle: 'Dark Chocolate & Vanilla-Infused Sea Salt',
+    description: `Though 80% dark, this chocolate has surprisingly low bitterness and a lot of chocolate flavor.  The vanilla-infused sea salt sprinkled on the back brings out the magic in this Ugandan cacao with subtle flavors that remind us of cinnamon chocolate cake.`,
     slug: 'dark-and-salty-dark-chocolate-and-vanilla-infused-sea-salt-xocolatl-small-batch-chocolate',
     maker: 'Xocolatl Small Batch Chocolate',
     productUrl: 'https://xocolatlchocolate.com/products/dark-salty',
@@ -797,13 +818,18 @@ const bars: Array<Bar> = [
 
     origin: {
       country: 'Uganda',
+      region: 'Bundibugyo District',
+      locality: 'Semuliki Forest',
+      // Exporter: Latitude Trade Co
     },
+    beanVariety: 'Forestero',
   },
   {
     id: 'dab435f9c9',
     releaseDate: '2023-01-04',
     name: 'Pink Sea Salt',
     subtitle: 'Unroasted Dark Chocolate',
+    description: `A fruity, complex salted dark chocolate to end all salted dark chocolates. Made with single origin cacao from Zorzal Cacao, a farm and fermentary within a bird sanctuary in the Dominican Republic, and sprinkled with Peruvian pink salt sourced from Salt of the Earth Co. We think New York Magazine said it best: this bar has a “deep, dark, mysterious flavor with hints of cherry; and a finish as long as a David Foster Wallace footnote.”`,
     slug: 'pink-sea-salt-unroasted-dark-chocolate-raaka-chocolate',
     maker: 'Raaka Chocolate',
     productUrl: 'https://www.raakachocolate.com/products/pink-sea-salt',
@@ -866,6 +892,7 @@ const bars: Array<Bar> = [
     id: 'd8e2e9afee',
     releaseDate: '2023-01-03',
     name: 'Coffee Crunch',
+    description: `The fudgy backbone of our 67% chocolate with hints of red stone fruit and brown butter mixes and matches perfectly when studded with freshly-roasted coffee from our friends at Bongo Java Roasting Co. here in Nashville.`,
     slug: 'coffee-crunch-olive-and-sinclair-chocolate-co',
     maker: 'Olive & Sinclair Chocolate Co',
     productUrl: 'https://www.oliveandsinclair.com/shop/coffee-chocolate-bar',
@@ -929,6 +956,7 @@ const bars: Array<Bar> = [
     releaseDate: '2023-01-02',
     name: 'Kope X Coffee',
     subtitle: '60% Dark Milk Chocolate & Nibs',
+    description: `Coffee plantations first emerged in Hawaii in the mid 1800’s. From then the crop has thrived, with over 8,200 acres planted across the state. Here in Hawaii, more farms now grow coffee than any other crop, and we are proud to be able to source locally grown coffee for this bar. The infusion of Hawaiian coffee (kope) into creamy dark milk chocolate and a sprinkling of crunchy cacao nibs make this the ideal chocolate breakfast bar.`,
     slug: 'kope-x-coffee-60-dark-milk-chocolate-and-nibs-manoa-chocolate',
     maker: 'Manoa Chocolate',
     productUrl:
@@ -999,6 +1027,7 @@ const bars: Array<Bar> = [
     id: '1f81c6b0b3',
     releaseDate: '2023-01-01',
     name: 'Dominican Republic 72%',
+    description: `Handcrafted in Squamish, B.C., this 72% single-origin dark chocolate is made with ethically sourced cacao beans from the Zorzal Reserve, a cacao farm and bird sanctuary in the Dominican Republic.`,
     slug: 'dominican-republic-72-schoki-chocolate',
     maker: 'Schoki Chocolate',
     productUrl:
