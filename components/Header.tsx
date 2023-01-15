@@ -39,7 +39,10 @@ export function Header() {
       >
         <div className="flex flex-1 items-center">
           <div className="flex w-full items-center justify-between md:w-auto">
-            <Link href="#" className="text-primary-900">
+            <Link
+              href="#"
+              className="font-heading text-xl font-bold uppercase text-primary-800"
+            >
               The Chocolate Bar Project
             </Link>
             <div className="-mr-2 flex items-center md:hidden">
@@ -74,7 +77,9 @@ export function Header() {
         >
           <div className="overflow-hidden bg-primary-50">
             <div className="flex items-center justify-between px-2 pt-1">
-              <div className="text-primary-900">The Chocolate Bar Project</div>
+              <div className="font-heading text-xl font-bold uppercase text-primary-800">
+                The Chocolate Bar Project
+              </div>
               <div className="-mr-2 -mt-1">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-primary-900 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
                   <span className="sr-only">Close menu</span>

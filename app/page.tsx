@@ -30,8 +30,8 @@ export default async function Page() {
             className="font-heading text-lg text-primary-900/50"
           >
             <Balancer>
-              Join us as we discover and document the diversity of chocolate
-              from around the globe.
+              Exploring and documenting the diversity of chocolate from every
+              corner of the globe.
             </Balancer>
           </p>
         </section>
