@@ -16,9 +16,9 @@ import {
 import { fetchBarBySlug } from '#/lib/getBars'
 import { fetchMakerByName } from '#/lib/getMakers'
 import { fetchOriginByProducer } from '#/lib/getOrigins'
-import { e } from 'easy-tailwind'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
+import Balancer from 'react-wrap-balancer'
 
 export default async function BarSlugPage({ params }: { params?: any }) {
   const bar = await fetchBarBySlug(params.slug)
@@ -34,43 +34,51 @@ export default async function BarSlugPage({ params }: { params?: any }) {
 
   return (
     <section className="relative min-h-screen">
-      <Container className="relative h-full h-[80vh]">
-        <Image
-          priority
-          src={bar.images.HERO.src}
-          alt={bar.images.HERO.alt}
-          fill
-          className="object-cover object-center"
-        />
-      </Container>
+      <div className="bg-primary-100/25">
+        <Container className="relative h-full h-[80vh]">
+          <Image
+            priority
+            src={bar.images.HERO.src}
+            alt={bar.images.HERO.alt}
+            fill
+            className="object-cover object-center"
+          />
+        </Container>
+      </div>
 
       <Container as="article" className="">
-        <div
-          className={e(
-            'flex flex-row items-center gap-1',
-            '-mt-4 min-h-[80px] bg-primary-800 px-4 py-1',
-            'relative' // To ensure its above the absolute image above
-          )}
-        >
-          <div className="flex flex-col justify-center">
-            <h1 className="text-primary-50">{bar.name}</h1>
+        <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-3 sm:gap-0">
+          <section className="col-span-2 grid gap-2 ">
+            <h1 className="font-heading text-4xl font-bold text-primary-800">
+              <Balancer>{bar.name}</Balancer>
+            </h1>
             {bar.subtitle ? (
-              <p role="doc-subtitle" className="text-primary-50/50">
-                {bar.subtitle}
+              <p
+                role="doc-subtitle"
+                className="font-heading text-lg text-primary-900/50"
+              >
+                <Balancer>{bar.subtitle}</Balancer>
               </p>
             ) : null}
-          </div>
+          </section>
 
-          {bar.productUrl ? (
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href={bar.productUrl}
-              className="ml-auto flex-shrink-0 rounded font-bold text-primary-50"
-            >
-              Buy Now
-            </a>
-          ) : null}
+          <div className="sm:text-right">
+            <p className="mb-2 text-lg text-primary-900/50">
+              <Balancer>
+                Made by {bar.maker} in {bar.productionCountry}
+              </Balancer>
+            </p>
+            {bar.productUrl ? (
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={bar.productUrl}
+                className="text-lg text-primary-900/50 underline"
+              >
+                Buy Now
+              </a>
+            ) : null}
+          </div>
         </div>
 
         <ItemBlock
