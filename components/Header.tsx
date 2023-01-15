@@ -6,11 +6,21 @@ import Link from 'next/link'
 import { Fragment } from 'react'
 import { Container } from './Container'
 
-function NavItem({ href, children }: { href: string; children: string }) {
+function NavItem({
+  href,
+  children,
+  highlight,
+}: {
+  href: string
+  children: string
+  highlight?: boolean
+}) {
   return (
     <Link
       href={href}
-      className="text-base font-medium text-primary-800 hover:text-primary-900"
+      className={`p-0.5 text-base font-medium text-primary-800 hover:text-primary-900 ${
+        highlight ? 'bg-primary-100/25' : ''
+      }`}
     >
       {children}
     </Link>
@@ -21,6 +31,9 @@ function NavItems() {
   return (
     <>
       <NavItem href="/bars">Bars</NavItem>
+      <NavItem href="/support" highlight>
+        Support
+      </NavItem>
       {/* <NavItem href="/makers">Makers</NavItem>
       <NavItem href="/origins">Origins</NavItem>
       <NavItem href="/favorites">Favorites</NavItem>
