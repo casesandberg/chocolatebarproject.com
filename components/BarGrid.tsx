@@ -22,7 +22,11 @@ export function BarGrid({ title, hideTitle, data }: BarGridProps) {
         })}
       >
         {data.map((bar) => (
-          <Link key={bar.id} href={`/bars/${bar.slug}`} className="group">
+          <Link
+            key={bar.id}
+            href={`/bars/${bar.slug}`}
+            className="group cursor-pointer"
+          >
             {/*  aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8  */}
             <div className="relative h-[300px] w-full overflow-hidden">
               <Image
@@ -30,7 +34,14 @@ export function BarGrid({ title, hideTitle, data }: BarGridProps) {
                 alt={bar.images.PACKAGE_FRONT.alt}
                 width={300}
                 height={400}
-                className="h-full w-full object-contain object-center group-hover:opacity-75"
+                className="absolute h-full w-full object-contain object-center transition-opacity group-hover:opacity-0"
+              />
+              <Image
+                src={bar.images.PACKAGE_BACK.src}
+                alt={bar.images.PACKAGE_BACK.alt}
+                width={300}
+                height={400}
+                className="absolute h-full w-full object-contain object-center opacity-0 transition-opacity group-hover:opacity-100"
               />
             </div>
             <div className="text-center">
