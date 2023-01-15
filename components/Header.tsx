@@ -54,11 +54,11 @@ export function Header() {
           <div className="flex w-full items-center justify-between md:w-auto">
             <Link
               href="#"
-              className="font-heading text-xl font-bold uppercase text-primary-800"
+              className="text-l font-heading font-bold uppercase text-primary-800 sm:text-xl"
             >
               The Chocolate Bar Project
             </Link>
-            <div className="-mr-2 flex items-center md:hidden">
+            <div className="-mr-1 flex items-center md:hidden">
               <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md text-primary-900 hover:text-primary-600  focus:outline-none focus:ring-2 focus:ring-primary-500">
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon
@@ -89,18 +89,18 @@ export function Header() {
           className="absolute inset-x-0 top-0 z-30 origin-top transform p-1 transition md:hidden"
         >
           <div className="overflow-hidden bg-primary-50">
-            <div className="flex items-center justify-between px-2 pt-1">
-              <div className="font-heading text-xl font-bold uppercase text-primary-800">
+            <div className="flex items-center justify-between px-1 pt-1">
+              <div className="text-l font-heading font-bold uppercase text-primary-800 sm:text-xl">
                 The Chocolate Bar Project
               </div>
-              <div className="-mr-2 -mt-1">
+              <div className="-mr-1 -mt-1">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-primary-900 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
                   <span className="sr-only">Close menu</span>
                   <XMarkIcon className="h-2 w-2" aria-hidden="true" />
                 </Popover.Button>
               </div>
             </div>
-            <div className="flex flex-col p-2">
+            <div className="flex flex-col p-1">
               <NavItems />
             </div>
           </div>

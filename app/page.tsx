@@ -19,15 +19,15 @@ export default async function Page() {
   const mostRecentBar = await fetchMostRecentBar()
 
   return (
-    <Container className="relative h-[700px]">
+    <Container className="relative min-h-[700px]">
       <div className="grid h-full grid-cols-1 items-center gap-8 sm:grid-cols-2 sm:gap-2">
         <section className="grid gap-2 py-4">
-          <h1 className="font-heading text-7xl font-bold text-primary-800">
+          <h1 className="text-center font-heading text-5xl font-bold text-primary-800 sm:text-left sm:text-7xl">
             <Balancer>Cataloging the world{`'`}s chocolate</Balancer>
           </h1>
           <p
             role="doc-subtitle"
-            className="font-heading text-lg text-primary-900/50"
+            className="text-center font-heading text-lg text-primary-900/50 sm:text-left"
           >
             <Balancer>
               Exploring and documenting the diversity of chocolate from every

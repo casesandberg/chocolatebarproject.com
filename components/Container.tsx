@@ -15,7 +15,7 @@ export function Container({
       className={e(
         'mx-auto',
         'max-w-7xl',
-        'px-4 sm:px-6 lg:px-8',
+        'px-2 sm:px-6 lg:px-8',
         !!className && className
       )}
     >
