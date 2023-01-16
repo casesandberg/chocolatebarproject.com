@@ -834,7 +834,7 @@ const bars: Array<Bar> = [
     reviewerWouldEatAgain: true,
 
     origin: {
-      country: 'Unknown',
+      country: 'Dominican Republic', // Via Instagram post
     },
   },
   {
@@ -1100,7 +1100,8 @@ const bars: Array<Bar> = [
     reviewerWouldEatAgain: true,
 
     origin: {
-      country: 'unknown',
+      // TODO: Account for blends in origin as array
+      country: 'Blend of Uganca, Ecuador, and Dominican Republic', // Via Instagram message
     },
   },
   {
