@@ -29,7 +29,7 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
       />
       <meta
         property="og:image"
-        content={`https://chocolatebarproject.com/${bar.images.HERO.src}`}
+        content={`https://chocolatebarproject.com${bar.images.HERO.src}`}
       />
     </>
   )
