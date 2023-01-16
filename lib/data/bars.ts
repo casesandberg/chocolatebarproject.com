@@ -228,6 +228,7 @@ const bars: Array<Bar> = [
     wrapper: 'Foil with Paper Backing',
     marketingTerms: ['Single Terroir', 'above fair trade'],
     uncertifiedLabels: ['Gluten Free', 'Dairy Free'],
+    packageLanguages: ['English', 'Lithuanian'],
     awards: [
       {
         body: 'Academy of Chocolate',
