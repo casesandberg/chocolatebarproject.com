@@ -104,6 +104,78 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '6519f99552',
+    releaseDate: '2023-01-16',
+    name: 'Cafe Con Leche',
+    subtitle: "Milk Chocolate & Per'La Coffee",
+    description: `Creamy milk chocolate, roasted deep-flavored La Per'La Coffee, and unrefined cane sugar come together to create our irresistible “Cafe Con Leche” 63% bar. The organically-cultivated cacao beans ethically sourced from the coastal town of Guayaquil, Ecuador are roasted to perfection to produce the chocolate and coffee flavor that awakens your tastebuds. The bar’s flavor honors its origin and conserves the unique terroir of its farm.`,
+    slug: 'cafe-con-leche-milk-chocolate-and-perla-coffee-exquisito-chocolates',
+    maker: 'Exquisito Chocolates',
+    productUrl:
+      'https://www.exquisitochocolates.com/products/copy-of-73-gettin-nibby-wit-it-ecuador-dark-chocolate-nib-bar',
+
+    images: {
+      HERO: {
+        src: '/bars/cafe-con-leche-milk-chocolate-and-perla-coffee-exquisito-chocolates.jpg',
+        alt: "Cafe Con Leche Milk Chocolate & Per'La Coffee bar made by Exquisito Chocolates repeating on a pink background",
+      },
+      BAR_FRONT: {
+        src: '/bars/cafe-con-leche-milk-chocolate-and-perla-coffee-exquisito-chocolates-bar-front.jpg',
+        alt: "Front of Cafe Con Leche Milk Chocolate & Per'La Coffee bar made by Exquisito Chocolates",
+      },
+      BAR_BACK: {
+        src: '/bars/cafe-con-leche-milk-chocolate-and-perla-coffee-exquisito-chocolates-bar-back.jpg',
+        alt: "Back of Cafe Con Leche Milk Chocolate & Per'La Coffee bar made by Exquisito Chocolates",
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/cafe-con-leche-milk-chocolate-and-perla-coffee-exquisito-chocolates-package-front.jpg',
+        alt: "Front of Cafe Con Leche Milk Chocolate & Per'La Coffee bar made by Exquisito Chocolates package",
+      },
+      PACKAGE_BACK: {
+        src: '/bars/cafe-con-leche-milk-chocolate-and-perla-coffee-exquisito-chocolates-package-back.jpg',
+        alt: "Back of Cafe Con Leche Milk Chocolate & Per'La Coffee bar made by Exquisito Chocolates package",
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 63,
+    barWeight: 71,
+    barDimensions: [143, 70, 8],
+    ingredients: [
+      'Cacao Beans',
+      'Unrefined Cane Sugar',
+      'Cocoa Butter',
+      'Milk',
+      'Espresso',
+    ],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [145, 73, 9],
+    wrapper: 'Foil with Paper Backing', // Gold
+    marketingTerms: [
+      'Sustainably Sourced Cacao',
+      'Handcrafted',
+      'award-winning',
+    ],
+    insidePrinting: true,
+    productionCountry: 'United States',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.25,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Hacienda Victoria',
+      locality: 'Guayaquil',
+      region: 'Guayas',
+      country: 'Ecuador',
+    },
+    beanVariety: 'Arriba Cacao',
+  },
+  {
     id: '7d71e82380',
     releaseDate: '2023-01-15',
     name: 'Black Sauna',
@@ -154,7 +226,7 @@ const bars: Array<Bar> = [
 
     packagingType: 'Envelope',
     packagingDimensions: [157, 122, 9],
-    wrapper: 'Eco Bag',
+    wrapper: 'Eco Bag', // White
     marketingTerms: ['Limited Release', 'Made with Renewables'],
     packageLanguages: ['English', 'Lithuanian'],
     awards: [
