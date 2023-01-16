@@ -156,6 +156,7 @@ const bars: Array<Bar> = [
     packagingDimensions: [157, 122, 9],
     wrapper: 'Eco Bag',
     marketingTerms: ['Limited Release', 'Made with Renewables'],
+    packageLanguages: ['English', 'Lithuanian'],
     awards: [
       {
         body: 'NW Chocolate Festival',
@@ -228,7 +229,6 @@ const bars: Array<Bar> = [
     wrapper: 'Foil with Paper Backing',
     marketingTerms: ['Single Terroir', 'above fair trade'],
     uncertifiedLabels: ['Gluten Free', 'Dairy Free'],
-    packageLanguages: ['English', 'Lithuanian'],
     awards: [
       {
         body: 'Academy of Chocolate',
