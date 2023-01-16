@@ -104,6 +104,86 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '7d71e82380',
+    releaseDate: '2023-01-15',
+    name: 'Black Sauna',
+    subtitle: 'Smoked Chocolate',
+    description: `True Lithuanian smoke sauna is anything but spa procedure. It's an esoteric experience where bathers "die & resurrect". In pagan times, people used sauna's for bathing, birthing, preserving and worshipping. Pitch black walls, hot stones and steam enables bathers to build the spiritual bond with the basic elements of fire and water while a heady aroma of Siberian fir whisks and wormwood leaf rustle opens up their consciousness. As a black sauna enthusiast and chocolate maker, Naive's chocolatier tempted to interpret his black sauna experience through chocolate. Would you like to taste how?`,
+    slug: 'black-sauna-smoked-chocolate-chocolate-naive',
+    maker: 'Chocolate Naive',
+    productUrl:
+      'https://barandcocoa.com/products/naive-black-sauna-smoked-chocolate-70', // Not on https://chocolatenaive.com/
+
+    images: {
+      HERO: {
+        src: '/bars/black-sauna-smoked-chocolate-chocolate-naive.jpg',
+        alt: 'Black Sauna Smoked Chocolate bar made by Chocolate Naive on a smokey looking background',
+      },
+      BAR_FRONT: {
+        src: '/bars/black-sauna-smoked-chocolate-chocolate-naive-bar-front.jpg',
+        alt: 'Front of Black Sauna Smoked Chocolate bar made by Chocolate Naive',
+      },
+      BAR_BACK: {
+        src: '/bars/black-sauna-smoked-chocolate-chocolate-naive-bar-back.jpg',
+        alt: 'Back of Black Sauna Smoked Chocolate bar made by Chocolate Naive',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/black-sauna-smoked-chocolate-chocolate-naive-package-front.jpg',
+        alt: 'Front of Black Sauna Smoked Chocolate bar made by Chocolate Naive package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/black-sauna-smoked-chocolate-chocolate-naive-package-back.jpg',
+        alt: 'Back of Black Sauna Smoked Chocolate bar made by Chocolate Naive package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 57,
+    barDimensions: [113, 97, 8],
+    ingredients: [
+      'Organic Smoked Cacao',
+      'Organic Cane Sugar',
+      'Organic Pure Cacao Butter',
+      'Siberian Fir',
+      'Activated Birch Charcoal',
+      'Wormwood',
+      'Sea Salt',
+    ],
+    facilityAllergen: ['Milk', 'Wheat', 'Treenuts', 'Peanuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [157, 122, 9],
+    wrapper: 'Eco Bag',
+    marketingTerms: ['Limited Release', 'Made with Renewables'],
+    awards: [
+      {
+        body: 'NW Chocolate Festival',
+        level: 'Innovation Award',
+        year: 2014,
+      },
+      {
+        body: 'Next Organic Berlin',
+        level: 'Best Start-up',
+        year: 2013,
+      },
+    ],
+    insidePrinting: true,
+    productionCountry: 'Lithuania',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 15,
+    dateObtained: '2023-01-11',
+
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'unknown blend',
+    },
+  },
+  {
     id: 'b4c155854a',
     releaseDate: '2023-01-14',
     name: 'Terroir of Lam Dong',
