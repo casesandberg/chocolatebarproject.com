@@ -35,6 +35,7 @@ export interface Award {
 }
 
 export interface Bar {
+  status?: 'draft' | 'published'
   id: string
   releaseDate?: DateString
   name: string
