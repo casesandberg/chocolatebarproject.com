@@ -10,6 +10,137 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
+    name: 'Piura Select 70%',
+    maker: 'Cacaosuyo',
+    productUrl: 'https://cacaosuyo.pe/product/piura-select-70/',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.25,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Semuliki 70%',
+    maker: 'Latitude Craft Chocolate',
+    productUrl:
+      'https://latitudecraftchocolate.com/collections/all-products/products/copy-of-semuliki-70',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Dominican Rum',
+    maker: 'Definite Chocolate',
+    productUrl:
+      'https://definitechocolate.com/products/domincan-rum-75-finca-elvesia',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.0,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Nacional 70%',
+    maker: 'Domori',
+    productUrl:
+      'https://domori.com/en/the-origins-land/149-ecuador-arriba-cocoa-bar-100-50g.html',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.5,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Solomon Islands Guadalcanal Oat Milk',
+    maker: 'Firetree Chocolate',
+    productUrl:
+      'https://www.firetreechocolate.com/collections/innovations/products/solomon-islands-guadalcanal-oat-milk',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 8.0,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Taiwan #9 Double Ferment',
+    maker: 'Fu Wan Chocolate',
+    productUrl: 'https://www.fuwanshop.com/products/taiwanno9',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 13.5,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Dark Chocolate with Citrus and Licorice',
+    maker: 'Chocolate Naive',
+    productUrl:
+      'https://chocolatenaive.com/s/chocolates/equator/dark-chocolate-with-orange-and-liquorice/',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 10.25,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Japanese Sea Salt & Cocoa Nibs',
+    maker: 'Amano Chocolate',
+    productUrl:
+      'https://amanochocolate.com/product/japanese-sea-salt-and-cocoa-nibs/',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 10,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Dos Rios',
+    maker: 'Amano Chocolate',
+    productUrl:
+      'https://amanochocolate.com/product/dos-rios-dominican-republic/',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Mana',
+    maker: 'Auro Chocolate',
+    productUrl:
+      'https://aurochocolate.com/products/85-dark-chocolate-single-estate-mana-60g-reserve-bar?_pos=2&_sid=19c38cae5&_ss=r',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.5,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Arauca 70%',
+    maker: 'Cacao Hunters',
+    productUrl:
+      'https://www.cacaohunters.com/products/chocolate-negro-barras-arauca70',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 8,
+    dateObtained: '2023-01-11',
+  },
+  {
+    name: 'Dark Chocolate with Caipirinha',
+    maker: 'Chocolates Baiani',
+    productUrl: 'https://www.baiani.com.br/en/chocolate/65-cacao-caipirinha',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 11,
+    dateObtained: '2023-01-11',
+  },
+
+  //
+  {
     name: 'Organic Dark Chocolate Bar',
     maker: 'Unknown',
     productUrl:
