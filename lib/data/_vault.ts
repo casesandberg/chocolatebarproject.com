@@ -153,16 +153,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Black Toasted Sesame Seeds, Cacao Shell & Nibs',
-    maker: 'Casa Bosques Chocolates',
-    productUrl:
-      'https://casabosques.co/collections/cbb-bars/products/sesame-seeds',
-    retailer: 'Casa Bosques Chocolates',
-    location: 'https://casabosques.co',
-    retailPrice: 13,
-    dateObtained: '2023-01-09',
-  },
-  {
     name: 'Pure Dark Chocolate',
     maker: 'Casa Bosques Chocolates',
     productUrl:

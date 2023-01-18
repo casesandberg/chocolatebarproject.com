@@ -104,6 +104,80 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '0f7e2f38c2',
+    releaseDate: '2023-01-17',
+    name: 'Black Toasted Sesame Seeds, Cacao Shell & Nibs',
+    description: `Reworking is one of the first methods adopted by Casa Bosques to denfine an individual style, that is, adapting traditional chocolate-making methods to create something innovative. The Black Toasted Sesame Seed Chocolate uses all parts of the cacao, including the nib and the crunchy shell, the interior and exterior, to create an economy of taste and crunch. This chocolate is slightly bitter, and with the smokiness of the black toasted sesame seeds, its pleasant acidity hits the back of the tongue.`,
+    slug: 'black-toasted-sesame-seeds-cacao-shell-nibs-casa-bosques-chocolates',
+    maker: 'Casa Bosques Chocolates',
+    productUrl:
+      'https://casabosques.co/collections/cbb-bars/products/sesame-seeds',
+
+    images: {
+      HERO: {
+        src: '/bars/black-toasted-sesame-seeds-cacao-shell-nibs-casa-bosques-chocolates.jpg',
+        alt: 'Black Toasted Sesame Seeds, Cacao Shell & Nibs bar made by Casa Bosques Chocolates broken into pieces with shells, nibs, and sesame seeds scattered around',
+      },
+      BAR_FRONT: {
+        src: '/bars/black-toasted-sesame-seeds-cacao-shell-nibs-casa-bosques-chocolates-bar-front.jpg',
+        alt: 'Front of Black Toasted Sesame Seeds, Cacao Shell & Nibs bar made by Casa Bosques Chocolates',
+      },
+      BAR_BACK: {
+        src: '/bars/black-toasted-sesame-seeds-cacao-shell-nibs-casa-bosques-chocolates-bar-back.jpg',
+        alt: 'Back of Black Toasted Sesame Seeds, Cacao Shell & Nibs bar made by Casa Bosques Chocolates',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/black-toasted-sesame-seeds-cacao-shell-nibs-casa-bosques-chocolates-package-front.jpg',
+        alt: 'Front of Black Toasted Sesame Seeds, Cacao Shell & Nibs bar made by Casa Bosques Chocolates package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/black-toasted-sesame-seeds-cacao-shell-nibs-casa-bosques-chocolates-package-back.jpg',
+        alt: 'Back of Black Toasted Sesame Seeds, Cacao Shell & Nibs bar made by Casa Bosques Chocolates package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 74,
+    barWeight: 60,
+    barDimensions: [65, 137, 7],
+    ingredients: [
+      'Black Sesame Seeds',
+      'Cacao Nibs',
+      'Sea Salt',
+      'Cacao Shell',
+      'Organic Cacao',
+      'Organic Cane Sugar',
+    ],
+    facilityAllergen: ['Peanuts', 'Tree nuts', 'Dairy'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [85, 157, 12],
+    wrapper: 'Foil with Paper Backing', // Gold
+    marketingTerms: [
+      'Handcrafted',
+      'Bean to Bar',
+      'Organic',
+      'Artisanally Made',
+    ],
+    uncertifiedLabels: ['Organic', 'Vegan'],
+    productionCountry: 'Mexico',
+
+    retailer: 'Casa Bosques Chocolates',
+    location: 'https://casabosques.co',
+    retailPrice: 13,
+    dateObtained: '2023-01-09',
+
+    reviewerBarNotes: 'Bar arrived broken',
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Mexico',
+      region: 'Chiapas',
+      locality: 'Pichucalco',
+    },
+    beanVariety: 'Criollo',
+  },
+  {
     id: '6519f99552',
     releaseDate: '2023-01-16',
     name: 'Cafe Con Leche',
