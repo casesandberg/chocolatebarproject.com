@@ -104,6 +104,81 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '81b2b84d37',
+    releaseDate: '2023-01-18',
+    name: 'Solomon Islands, Guadalcanal',
+    subtitle: 'Oat Milk',
+    description: `The Innovations Collection has been created to explore new and exotic chocolate experiences. Our plant-based milk chocolate alternative. Crafted from gluten-free oats, providing the smooth, buttery richness of toasted oats with Solomon Islands Single-Estate dark chocolate, creating a rich creamy alternative to milk chocolate.`,
+    slug: 'solomon-islands-guadalcanal-oat-milk-firetree-chocolate',
+    maker: 'Firetree Chocolate',
+    productUrl:
+      'https://www.firetreechocolate.com/collections/innovations/products/solomon-islands-guadalcanal-oat-milk',
+
+    images: {
+      HERO: {
+        src: '/bars/solomon-islands-guadalcanal-oat-milk-firetree-chocolate.jpg',
+        alt: 'Solomon Islands, Guadalcanal Oat Milk bar made by Firetree Chocolate on a yellow background with ripped paper texture',
+      },
+      BAR_FRONT: {
+        src: '/bars/solomon-islands-guadalcanal-oat-milk-firetree-chocolate-bar-front.jpg',
+        alt: 'Front of Solomon Islands, Guadalcanal Oat Milk bar made by Firetree Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/solomon-islands-guadalcanal-oat-milk-firetree-chocolate-bar-back.jpg',
+        alt: 'Back of Solomon Islands, Guadalcanal Oat Milk bar made by Firetree Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/solomon-islands-guadalcanal-oat-milk-firetree-chocolate-package-front.jpg',
+        alt: 'Front of Solomon Islands, Guadalcanal Oat Milk bar made by Firetree Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/solomon-islands-guadalcanal-oat-milk-firetree-chocolate-package-back.jpg',
+        alt: 'Back of Solomon Islands, Guadalcanal Oat Milk bar made by Firetree Chocolate package',
+      },
+    },
+
+    barType: 'Milk',
+    barWeight: 65,
+    barDimensions: [143, 71, 8],
+    ingredients: [
+      'Unrefined Sugar',
+      'Cocoa Butter',
+      'Oat Milk Powder',
+      'Rice Flour',
+      ['Solomon Islands Chocolate', ['Cocoa Mass', 'Sugar', 'Cocoa Butter']],
+      'Cocoa Powder',
+      'Vegetable Oil',
+      'Sunflower Lecithin',
+      'Natural Flavorings',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [168, 93, 10],
+    wrapper: 'Parchment Paper Bag',
+    marketingTerms: [
+      'Single-estate',
+      'Plant-based',
+      'Tasting Notes',
+      'Crafted',
+    ],
+    uncertifiedLabels: ['Dairy free', 'Vegan'],
+    certifiedLabels: ['Kosher'], // KLBD
+    productionCountry: 'United Kingdom',
+    packageLanguages: ['English', 'German', 'French'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 8.0,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Solomon Islands',
+      region: 'Guadalcanal',
+    },
+  },
+  {
     id: '0f7e2f38c2',
     releaseDate: '2023-01-17',
     name: 'Black Toasted Sesame Seeds, Cacao Shell & Nibs',

@@ -53,17 +53,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-11',
   },
   {
-    name: 'Solomon Islands Guadalcanal Oat Milk',
-    maker: 'Firetree Chocolate',
-    productUrl:
-      'https://www.firetreechocolate.com/collections/innovations/products/solomon-islands-guadalcanal-oat-milk',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 8.0,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Taiwan #9 Double Ferment',
     maker: 'Fu Wan Chocolate',
     productUrl: 'https://www.fuwanshop.com/products/taiwanno9',
