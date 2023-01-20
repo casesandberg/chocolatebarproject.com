@@ -385,14 +385,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Matcha Chocolate with Caramelized Sesame',
-    maker: 'Deux Cranes',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 11,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: 'Strawberry and Dark Chocolate',
     maker: 'Deux Cranes',
     retailer: 'Blackmarket Bakery',

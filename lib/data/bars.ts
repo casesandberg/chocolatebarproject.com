@@ -53,7 +53,7 @@ export interface Bar {
     PACKAGE_INSIDE?: Image
   }
 
-  barType?: 'Dark' | 'Dark Milk' | 'Milk' | 'White'
+  barType?: 'Dark' | 'Dark Milk' | 'Milk' | 'White' | 'Flavored'
   percent?: number
   barWeight: number // in grams
   barDimensions: [number, number, number] // as Height, Width, Depth, in mm
@@ -104,6 +104,83 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '3fc071f734',
+    releaseDate: '2023-01-20',
+    name: 'Matcha Chocolate with Caramelized Sesame',
+    description: `Finely ground Japanese green tea mixed with creamy, milky white chocolate. White sesame seeds are caramelized and toasted for extra crunch and bite. Like a matcha latte, but better.`,
+    slug: 'matcha-chocolate-with-caramelized-sesame-deux-cranes',
+    maker: 'Deux Cranes',
+    productUrl:
+      'https://www.deuxcranes.com/products/matcha-chocolate-with-caramelized-sesame',
+
+    images: {
+      HERO: {
+        src: '/bars/matcha-chocolate-with-caramelized-sesame-deux-cranes.jpg',
+        alt: 'Pair of Matcha Chocolate with Caramelized Sesame bars made by Deux Cranes floating on a green background',
+      },
+      BAR_FRONT: {
+        src: '/bars/matcha-chocolate-with-caramelized-sesame-deux-cranes-bar-front.jpg',
+        alt: 'Front of Matcha Chocolate with Caramelized Sesame bar made by Deux Cranes',
+      },
+      BAR_BACK: {
+        src: '/bars/matcha-chocolate-with-caramelized-sesame-deux-cranes-bar-back.jpg',
+        alt: 'Back of Matcha Chocolate with Caramelized Sesame bar made by Deux Cranes',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/matcha-chocolate-with-caramelized-sesame-deux-cranes-package-front.jpg',
+        alt: 'Front of Matcha Chocolate with Caramelized Sesame bar made by Deux Cranes package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/matcha-chocolate-with-caramelized-sesame-deux-cranes-package-back.jpg',
+        alt: 'Back of Matcha Chocolate with Caramelized Sesame bar made by Deux Cranes package',
+      },
+    },
+
+    barType: 'Flavored',
+    barWeight: 70,
+    barDimensions: [137, 72, 11],
+    ingredients: [
+      [
+        'White Chocolate',
+        [
+          'Sugar',
+          'Cocoa Butter',
+          'Whole Milk Powder',
+          'Sunflower Lecithin',
+          'Natural Vanilla Extract',
+        ],
+      ],
+      ['Candied Sesame Seeds', ['White Sesame', 'Sugar', 'Salt']],
+      'Matcha Green Tea',
+    ],
+    foodAllergen: ['Soy', 'Nuts', 'Milk', 'Gluten'],
+    facilityAllergen: [
+      'Soy',
+      'Peanuts',
+      'Tree Nuts',
+      'Wheat',
+      'Sesame',
+      'Milk Products',
+    ],
+
+    packagingType: 'Box', // With Top Flap and Window
+    packagingDimensions: [157, 84, 18],
+    wrapper: 'Plastic',
+    marketingTerms: ['Handcrafted', 'Flavor Notes'],
+    productionCountry: 'United States',
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 11,
+    dateObtained: '2022-12-16',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'b165f01a0c',
     releaseDate: '2023-01-19',
     name: 'Hacienda Azul, Costa Rica',
@@ -138,6 +215,7 @@ const bars: Array<Bar> = [
     },
 
     barType: 'Dark',
+    percent: 70,
     barWeight: 56,
     barDimensions: [144, 65, 7],
     ingredients: ['Cocoa Beans', 'Cane Sugar'],
@@ -1369,7 +1447,7 @@ const bars: Array<Bar> = [
 
     packagingType: 'Envelope',
     packagingDimensions: [158, 90, 9],
-    wrapper: 'Plant-based Cellulose',
+    wrapper: 'Cellulose',
     marketingTerms: [
       'Bean to Bar',
       'Pairings',
