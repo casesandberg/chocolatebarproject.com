@@ -104,6 +104,73 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'b165f01a0c',
+    releaseDate: '2023-01-19',
+    name: 'Hacienda Azul, Costa Rica',
+    subtitle: '2018 Harvest',
+    description: `The beans in this bar come from Hacienda Azul, a single estate near Turrialba, Costa Rica. Dandelion Japan Chocolate Maker Mariko loves the diverse range of herbal notes in the 2018 harvest, as well as the gradual increase in flavor upon tasting. We taste notes of caramelized almonds, milk tea, and a hint of ginger.`,
+    slug: 'hacienda-azul-costa-rica-2018-harvest-dandelion-chocolate',
+    maker: 'Dandelion Chocolate',
+    productUrl:
+      'https://store.dandelionchocolate.com/products/hacienda-azul-costa-rica-70-chocolate-bar-japan',
+
+    images: {
+      HERO: {
+        src: '/bars/hacienda-azul-costa-rica-2018-harvest-dandelion-chocolate.jpg',
+        alt: 'Hacienda Azul, Costa Rica 2018 Harvest bar made by Dandelion Chocolate heald in a hand',
+      },
+      BAR_FRONT: {
+        src: '/bars/hacienda-azul-costa-rica-2018-harvest-dandelion-chocolate-bar-front.jpg',
+        alt: 'Front of Hacienda Azul, Costa Rica 2018 Harvest bar made by Dandelion Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/hacienda-azul-costa-rica-2018-harvest-dandelion-chocolate-bar-back.jpg',
+        alt: 'Back of Hacienda Azul, Costa Rica 2018 Harvest bar made by Dandelion Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/hacienda-azul-costa-rica-2018-harvest-dandelion-chocolate-package-front.jpg',
+        alt: 'Front of Hacienda Azul, Costa Rica 2018 Harvest bar made by Dandelion Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/hacienda-azul-costa-rica-2018-harvest-dandelion-chocolate-package-back.jpg',
+        alt: 'Back of Hacienda Azul, Costa Rica 2018 Harvest bar made by Dandelion Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    barWeight: 56,
+    barDimensions: [144, 65, 7],
+    ingredients: ['Cocoa Beans', 'Cane Sugar'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [145, 67, 8],
+    wrapper: 'Foil', // Gold outside, Silver inside
+    marketingTerms: [
+      'Small Batch',
+      'Crafting',
+      'Single Estate',
+      'Roast Profile',
+    ],
+    productionCountry: 'Japan',
+    packageLanguages: ['English', 'Japanese'],
+
+    retailer: 'Dandelion Chocolate',
+    location: 'https://dandelionchocolate.com/',
+    retailPrice: 15,
+    dateObtained: '2023-01-19',
+
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+
+    origin: {
+      country: 'Costa Rica',
+      region: 'Cartago',
+      locality: 'Turrialba',
+      producer: 'Hacienda Azul',
+    },
+  },
+  {
     id: '81b2b84d37',
     releaseDate: '2023-01-18',
     name: 'Solomon Islands, Guadalcanal',
