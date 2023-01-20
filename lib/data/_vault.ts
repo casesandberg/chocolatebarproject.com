@@ -10,6 +10,17 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
+    name: 'Zorzal Comunitario',
+    maker: 'Dandelion Chocolate',
+    productUrl:
+      'https://store.dandelionchocolate.com/products/zorzal-comunitario-dominican-republic-70-chocolate-bar',
+
+    retailer: 'Dandelion Chocolate',
+    location: 'https://dandelionchocolate.com/',
+    retailPrice: 11,
+    dateObtained: '2023-01-19',
+  },
+  {
     name: 'Piura Select 70%',
     maker: 'Cacaosuyo',
     productUrl: 'https://cacaosuyo.pe/product/piura-select-70/',
