@@ -10,16 +10,6 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
-    name: 'Purple Yam Mochi',
-    maker: 'Raaka',
-    productUrl: 'https://www.raakachocolate.com/pages/first-nibs',
-
-    retailer: 'Raaka',
-    location: 'https://www.raakachocolate.com',
-    retailPrice: 9, // Part of first-nibs program, 25$ for 3 bars
-    dateObtained: '2023-01-20',
-  },
-  {
     name: 'Momofuku Chili Chocolate Crunch',
     maker: 'Raaka',
     productUrl: 'https://www.raakachocolate.com/pages/first-nibs',

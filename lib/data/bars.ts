@@ -104,6 +104,82 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '969bffbfcd',
+    releaseDate: '2023-01-22',
+    name: 'Purple Yam Mochi',
+    subtitle: 'Vegan White Chocolate',
+    description: `We infused our vegan white chocolate with purple yam (also known as ube) and rice four, creating a surreal, lilac purple bar with a mochi-like chew and hits of almond, vanilla and violet. There's a little hint of acai bowl in there too. Single origina cacao butter from our parters at Kokoa Kamili lends a rich, buttery melt.`,
+    slug: 'purple-yam-mochi-vegan-white-chocolate-raaka-chocolate',
+    maker: 'Raaka Chocolate',
+    productUrl: 'https://www.raakachocolate.com/pages/first-nibs',
+
+    images: {
+      HERO: {
+        src: '/bars/purple-yam-mochi-vegan-white-chocolate-raaka-chocolate.jpg',
+        alt: 'Purple Yam Mochi Vegan White Chocolate bar made by Raaka Chocolate Chocolate lined up with other bars on a red background',
+      },
+      BAR_FRONT: {
+        src: '/bars/purple-yam-mochi-vegan-white-chocolate-raaka-chocolate-bar-front.jpg',
+        alt: 'Front of Purple Yam Mochi Vegan White Chocolate bar made by Raaka Chocolate Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/purple-yam-mochi-vegan-white-chocolate-raaka-chocolate-bar-back.jpg',
+        alt: 'Back of Purple Yam Mochi Vegan White Chocolate bar made by Raaka Chocolate Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/purple-yam-mochi-vegan-white-chocolate-raaka-chocolate-package-front.jpg',
+        alt: 'Front of Purple Yam Mochi Vegan White Chocolate bar made by Raaka Chocolate Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/purple-yam-mochi-vegan-white-chocolate-raaka-chocolate-package-back.jpg',
+        alt: 'Back of Purple Yam Mochi Vegan White Chocolate bar made by Raaka Chocolate Chocolate package',
+      },
+    },
+
+    barType: 'White',
+    percent: 29,
+    barWeight: 51,
+    barDimensions: [134, 61, 6],
+    ingredients: [
+      'Organic Cane Sugar',
+      'Organic Cacao Butter',
+      'Organic Coconut Milk Powder',
+      'Organic Rice Flour',
+      'Organic Purple Yam Powder',
+      'Organic Brown Rice Syrup',
+      'Organic Lemon Powder',
+      'Organic Sunflower Lecithin',
+      'Organic Beetroot Powder',
+    ],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [136, 62, 13],
+    wrapper: 'Foil with Paper Backing', // Silver
+    marketingTerms: ['Batch', 'Bean to Bar', 'Transparent Trade', 'Unroasted'],
+    productionCountry: 'United States',
+    uncertifiedLabels: [
+      'Transparent Trade',
+      'Vegan',
+      'Gluten Free',
+      'Soy Free',
+    ],
+
+    retailer: 'Raaka',
+    location: 'https://www.raakachocolate.com',
+    retailPrice: 9, // Part of first-nibs program, 25$ for 3 bars
+    dateObtained: '2023-01-20',
+
+    reviewerWouldEatAgain: true,
+
+    // https://www.raakachocolate.com/pages/kokoa-kamili-tanzania
+    origin: {
+      country: 'Tanzania',
+      region: 'Morogoro Region',
+      locality: 'Kilombero Valley',
+      producer: 'Kokoa Kamili',
+    },
+  },
+  {
     id: '9c96d1778d',
     releaseDate: '2023-01-21',
     name: 'Semuliki 70%',
