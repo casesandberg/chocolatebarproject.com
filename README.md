@@ -25,3 +25,8 @@ TCBP uses [Next.js](https://nextjs.org/) for its documentation. Here is how you 
    ```sh
    npm run dev
    ```
+
+### Advanced Setup
+
+- Link to Vercel: `npx vercel link`
+- Pull Env Vars: `npx vercel env pull`
