@@ -104,6 +104,68 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '9c96d1778d',
+    releaseDate: '2023-01-21',
+    name: 'Semuliki 70%',
+    description: `Our signature flavor is a cocoa-first, dark chocolate with hints of panela, fig, and browned fruits.`,
+    slug: 'semuliki-70-latitute-craft-chocolate',
+    maker: 'Latitude Craft Chocolate',
+    productUrl:
+      'https://latitudecraftchocolate.com/collections/all-products/products/copy-of-semuliki-70',
+
+    images: {
+      HERO: {
+        src: '/bars/semuliki-70-latitute-craft-chocolate.jpg',
+        alt: 'Semuliki 70% bar made by Latitude Craft Chocolate on a console table with sunglasses and keys',
+      },
+      BAR_FRONT: {
+        src: '/bars/semuliki-70-latitute-craft-chocolate-bar-front.jpg',
+        alt: 'Front of Semuliki 70% bar made by Latitude Craft Chocolate',
+      },
+      BAR_BACK: {
+        src: '/bars/semuliki-70-latitute-craft-chocolate-bar-back.jpg',
+        alt: 'Back of Semuliki 70% bar made by Latitude Craft Chocolate',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/semuliki-70-latitute-craft-chocolate-package-front.jpg',
+        alt: 'Front of Semuliki 70% bar made by Latitude Craft Chocolate package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/semuliki-70-latitute-craft-chocolate-package-back.jpg',
+        alt: 'Back of Semuliki 70% bar made by Latitude Craft Chocolate package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 70,
+    barDimensions: [149, 70, 6],
+    ingredients: ['Organic Cocoa Beans', 'Cane Sugar'],
+    facilityAllergen: ['Tree Nuts', 'Wheat', 'Dairy', 'Eggs', 'Peanuts', 'Soy'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [149, 72, 9],
+    wrapper: 'Foil', // Black outside, Silver inside
+    marketingTerms: ['Bean to Bar', 'Source'],
+    productionCountry: 'Uganda',
+    certifiedLabels: ['B Corp'],
+    uncertifiedLabels: ['Vegan', 'Direct Trade'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Uganda',
+      region: 'Bundibugyo District',
+      locality: 'Semuliki Forest',
+    },
+    beanVariety: 'Forestero',
+  },
+  {
     id: '3fc071f734',
     releaseDate: '2023-01-20',
     name: 'Matcha Chocolate with Caramelized Sesame',

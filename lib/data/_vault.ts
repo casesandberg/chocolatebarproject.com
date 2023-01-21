@@ -31,17 +31,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-11',
   },
   {
-    name: 'Semuliki 70%',
-    maker: 'Latitude Craft Chocolate',
-    productUrl:
-      'https://latitudecraftchocolate.com/collections/all-products/products/copy-of-semuliki-70',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Dominican Rum',
     maker: 'Definite Chocolate',
     productUrl:
