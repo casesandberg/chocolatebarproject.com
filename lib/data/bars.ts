@@ -102,7 +102,84 @@ export type Ingredient = string
 export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
+// {
+//   name: 'Chocolate Nib"d',
+//   maker: 'Zimt',
+//   retailer: 'Zimt',
+//   location: 'Vancouver Factory',
+//   retailPrice: 0,
+//   dateObtained: '2022-12-29',
+// },
+
 const bars: Array<Bar> = [
+  {
+    id: '2519a08b89',
+    releaseDate: '2023-01-23',
+    name: "Chocolate Nib'd",
+    description: `Smooth dark chocolate and crunchy cacao nibs- a complete delight! Totally understated but once you try it... there's a good chance it'll become your favourite child.`,
+    slug: 'chocolate-nibd-zimt-chocolates',
+    maker: 'Zimt Chocolates',
+    productUrl: 'https://zimtchocolates.com/products/chocolate-nibd-bar-2',
+
+    images: {
+      HERO: {
+        src: '/bars/chocolate-nibd-zimt-chocolates.jpg',
+        alt: "Chocolate Nib'd bar made by Zimt Chocolates in a bucket of cacao nibs",
+      },
+      BAR_FRONT: {
+        src: '/bars/chocolate-nibd-zimt-chocolates-bar-front.jpg',
+        alt: "Front of Chocolate Nib'd bar made by Zimt Chocolates",
+      },
+      BAR_BACK: {
+        src: '/bars/chocolate-nibd-zimt-chocolates-bar-back.jpg',
+        alt: "Back of Chocolate Nib'd bar made by Zimt Chocolates",
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/chocolate-nibd-zimt-chocolates-package-front.jpg',
+        alt: "Front of Chocolate Nib'd bar made by Zimt Chocolates package",
+      },
+      PACKAGE_BACK: {
+        src: '/bars/chocolate-nibd-zimt-chocolates-package-back.jpg',
+        alt: "Back of Chocolate Nib'd bar made by Zimt Chocolates package",
+      },
+    },
+
+    barType: 'Dark',
+    percent: 80,
+    barWeight: 40,
+    barDimensions: [124, 56, 6],
+    ingredients: [
+      'Organic Cacao Nibs',
+      'Organic Coconut Sugar',
+      'Organic Cacao Butter',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [136, 62, 13],
+    wrapper: 'Cellulose',
+    marketingTerms: ['Raw', 'Ethical', 'Vegan'],
+    productionCountry: 'Canada',
+    certifiedLabels: ['USDA Organic'],
+    facilityAllergen: [
+      'Nuts',
+      'Peanuts',
+      'Coconuts',
+      'Sesame',
+      'Gluten',
+      'Soy',
+    ],
+
+    retailer: 'Zimt',
+    location: 'Vancouver Factory',
+    retailPrice: 0,
+    dateObtained: '2022-12-29',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
   {
     id: '969bffbfcd',
     releaseDate: '2023-01-22',

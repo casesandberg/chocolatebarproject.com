@@ -305,14 +305,6 @@ const vault: Array<Bar> = [
     retailPrice: 0,
     dateObtained: '2022-12-29',
   },
-  {
-    name: 'Chocolate Nib"d',
-    maker: 'Zimt',
-    retailer: 'Zimt',
-    location: 'Vancouver Factory',
-    retailPrice: 0,
-    dateObtained: '2022-12-29',
-  },
 
   //
   {
