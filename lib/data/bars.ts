@@ -168,6 +168,7 @@ const bars: Array<Bar> = [
       'Gluten',
       'Soy',
     ],
+    packageLanguages: ['English', 'French'],
 
     retailer: 'Zimt',
     location: 'Vancouver Factory',
