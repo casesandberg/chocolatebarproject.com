@@ -17,6 +17,7 @@ import { fetchBarBySlug } from '#/lib/getBars'
 import { fetchMakerByName } from '#/lib/getMakers'
 import { fetchOriginByProducer } from '#/lib/getOrigins'
 import { ArrowRightIcon } from '@heroicons/react/20/solid'
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Balancer from 'react-wrap-balancer'
@@ -33,6 +34,9 @@ export default async function BarSlugPage({ params }: { params?: any }) {
     return notFound()
   }
 
+  const isUnreleased =
+    new Date(bar.releaseDate + 'T00:00:01-0800') >= new Date()
+
   return (
     <section className="relative min-h-screen">
       <div className="bg-primary-100/25">
@@ -47,7 +51,7 @@ export default async function BarSlugPage({ params }: { params?: any }) {
         </Container>
       </div>
 
-      <Container as="article" className="">
+      <Container as="article">
         <div className="flex flex-col gap-2 py-4 sm:flex-row sm:gap-10">
           <section className="flex-2">
             <h1 className="mb-2 font-heading text-4xl font-bold text-primary-800">
@@ -69,6 +73,16 @@ export default async function BarSlugPage({ params }: { params?: any }) {
           </section>
 
           <div className="flex-3">
+            {isUnreleased ? (
+              <div className="mb-2 inline-flex items-center gap-1 bg-primary-700 p-0.5 text-primary-100">
+                <ExclamationTriangleIcon className="h-2.5 w-2.5" />
+                <span>
+                  This bar hasn{`'`}t been published yet, information may
+                  change.
+                </span>
+              </div>
+            ) : null}
+
             {bar.description ? (
               Array.isArray(bar.description) ? (
                 bar.description.map((description, index) => (

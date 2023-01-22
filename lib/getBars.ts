@@ -23,8 +23,9 @@ export const getBars = cache(
     )
 )
 
+// Dont filter out by released.
 export async function fetchBarBySlug(slug: string | undefined) {
-  return getBars().find((bar) => bar.slug === slug)
+  return bars.find((bar) => bar.slug === slug)
 }
 
 export async function fetchBarById(id: string | undefined) {
