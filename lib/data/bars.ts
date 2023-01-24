@@ -102,16 +102,84 @@ export type Ingredient = string
 export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
-// {
-//   name: 'Chocolate Nib"d',
-//   maker: 'Zimt',
-//   retailer: 'Zimt',
-//   location: 'Vancouver Factory',
-//   retailPrice: 0,
-//   dateObtained: '2022-12-29',
-// },
-
 const bars: Array<Bar> = [
+  {
+    id: 'a1eeca2ea1',
+    releaseDate: '2023-01-24',
+    name: 'Dos Rios',
+    subtitle: 'Dominican Republic',
+    description: [
+      `"One day a friend called me excitedly about some very special cocoa beans he found in the Dominican Republic. He said they were truly unique, and I was the perfect person to make them into chocolate. This is that chocolate.`,
+      `Industrial chocolate companies like their chocolate to taste simply like “traditional chocolate.” This does not. This chocolate has a haunting flavor like bergamot, orange and lavender. These natural flavors are due to the unique way the coca beans are fermented. It took all of my skills to do these beans justice. I believe you will be thrilled by the results. If you want to try a chocolate with that extra bit of “magic,” this is it."`,
+    ],
+    slug: 'dos-rios-dominican-republic-amano-artisan-chocolate',
+    maker: 'Amano Artisan Chocolate',
+    productionCountry: 'United States',
+    productUrl:
+      'https://amanochocolate.com/product/dos-rios-dominican-republic/',
+
+    images: {
+      HERO: {
+        src: '/bars/dos-rios-dominican-republic-amano-artisan-chocolate.jpg',
+        alt: 'Dos Rios Dominican Republic bar made by Amano Artisan Chocolate in the United States propped up against a light gray circular tile background',
+      },
+      BAR_FRONT: {
+        src: '/bars/dos-rios-dominican-republic-amano-artisan-chocolate-bar-front.jpg',
+        alt: 'Front of Dos Rios Dominican Republic bar made by Amano Artisan Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/dos-rios-dominican-republic-amano-artisan-chocolate-bar-back.jpg',
+        alt: 'Back of Dos Rios Dominican Republic bar made by Amano Artisan Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dos-rios-dominican-republic-amano-artisan-chocolate-package-front.jpg',
+        alt: 'Front of Dos Rios Dominican Republic bar made by Amano Artisan Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dos-rios-dominican-republic-amano-artisan-chocolate-package-back.jpg',
+        alt: 'Back of Dos Rios Dominican Republic bar made by Amano Artisan Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 85,
+    barDimensions: [161, 78, 7],
+    ingredients: [
+      'Cocoa Beans',
+      'Pure Cane Sugar',
+      'Cocoa Butter',
+      'Whole Vanilla Beans',
+    ],
+
+    packagingType: 'Box',
+    packagingDimensions: [199, 82, 13],
+    wrapper: 'Metallised plastic', // Black outside, silver inside
+    marketingTerms: [
+      'Fairly Traded',
+      'Hand Crafted',
+      'Single Origin',
+      'Small Batch',
+      'Tasting Notes',
+      'Highly Awarded',
+      'Four Pure & Simple Ingredients',
+      'Artist',
+    ],
+    facilityAllergen: ['Peanuts', 'Tree Nuts', 'Soy', 'Wheat', 'Milk'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Dominican Republic',
+      region: 'Hato Mayor',
+      locality: 'Dos Rios',
+    },
+  },
   {
     id: '2519a08b89',
     releaseDate: '2023-01-23',

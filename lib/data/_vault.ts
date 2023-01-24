@@ -105,17 +105,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-11',
   },
   {
-    name: 'Dos Rios',
-    maker: 'Amano Chocolate',
-    productUrl:
-      'https://amanochocolate.com/product/dos-rios-dominican-republic/',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Mana',
     maker: 'Auro Chocolate',
     productUrl:
