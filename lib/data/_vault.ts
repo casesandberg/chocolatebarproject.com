@@ -62,17 +62,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-11',
   },
   {
-    name: 'Nacional 70%',
-    maker: 'Domori',
-    productUrl:
-      'https://domori.com/en/the-origins-land/149-ecuador-arriba-cocoa-bar-100-50g.html',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9.5,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Taiwan #9 Double Ferment',
     maker: 'Fu Wan Chocolate',
     productUrl: 'https://www.fuwanshop.com/products/taiwanno9',

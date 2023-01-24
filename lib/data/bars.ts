@@ -104,6 +104,71 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '0789723dc0',
+    releaseDate: '2023-01-25',
+    name: 'Nacional 70%',
+    subtitle: 'Ecuador',
+    description: [
+      `"Chocolate bar originating from lands considered sacred in Ecuador. Arriba Nacional variety cocoa, has particular aromatic notes of white flowers.`,
+      `Cultivated in the recovery of the most ancient tradition of cultivation of the "fruit of the gods", in tasting it unfolds an extreme elegance and a note of absolute white flowers."`,
+    ],
+    slug: 'nacional-70-ecuador-domori',
+    maker: 'Domori',
+    productionCountry: 'Italy',
+    productUrl:
+      'https://domori.com/en/the-origins-land/148-ecuador-dark-chocolate-bar-70-50g.html',
+
+    images: {
+      HERO: {
+        src: '/bars/nacional-70-ecuador-domori.jpg',
+        alt: 'Nacional 70% Ecuador bar made by Domori in Italy on a rattan background',
+      },
+      BAR_FRONT: {
+        src: '/bars/nacional-70-ecuador-domori-bar-front.jpg',
+        alt: 'Front of Nacional 70% Ecuador bar made by Domori in Italy',
+      },
+      BAR_BACK: {
+        src: '/bars/nacional-70-ecuador-domori-bar-back.jpg',
+        alt: 'Back of Nacional 70% Ecuador bar made by Domori in Italy',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/nacional-70-ecuador-domori-package-front.jpg',
+        alt: 'Front of Nacional 70% Ecuador bar made by Domori in Italy package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/nacional-70-ecuador-domori-package-back.jpg',
+        alt: 'Back of Nacional 70% Ecuador bar made by Domori in Italy package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 50,
+    barDimensions: [94, 94, 5],
+    ingredients: ['Cocoa mass', 'Cane Sugar'],
+    uncertifiedLabels: ['Gluten Free'],
+
+    packagingType: 'Box',
+    packagingDimensions: [115, 114, 10],
+    wrapper: 'Metallised plastic', // Red logo checker outside, silver inside
+    facilityAllergen: ['Nuts', 'Milk', 'Soy'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.5,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+    reviewerBarFavorite: true, // I think?
+
+    origin: {
+      producer: 'Hacienda Victoria',
+      locality: 'Guayaquil',
+      region: 'Guayas',
+      country: 'Ecuador',
+    },
+  },
+  {
     id: 'a1eeca2ea1',
     releaseDate: '2023-01-24',
     name: 'Dos Rios',
