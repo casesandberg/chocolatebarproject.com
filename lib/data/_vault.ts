@@ -268,14 +268,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-29',
   },
   {
-    name: 'Technicolour Crunch',
-    maker: 'Beta 5',
-    retailer: 'Beta 5',
-    location: 'Vancouver Factory',
-    retailPrice: 0,
-    dateObtained: '2022-12-29',
-  },
-  {
     name: 'The London Fog',
     maker: 'Zimt',
     retailer: 'Zimt',

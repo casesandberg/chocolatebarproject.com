@@ -104,6 +104,85 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'a7deee02d0',
+    releaseDate: '2023-01-26',
+    name: 'Technicolour Crunch',
+    description: [
+      `"Developed in collaboration with our coffee partner, House of Funk, this bar reminds us of a delicious cup of coffee and a bowl of sugary, crisp cereal.`,
+      `Caramelized white chocolate infused with House of Funk's Technicolour Espresso, and caramelized puffed wheat.`,
+      `Ridiculously tasty."`,
+    ],
+    slug: 'technicolour-crunch-beta5',
+    maker: 'BETA5',
+    productionCountry: 'Canada',
+    productUrl:
+      'https://shop.beta5chocolates.com/collections/polygon-bars-2017/products/technicolour-crunch',
+
+    images: {
+      HERO: {
+        src: '/bars/technicolour-crunch-beta5.jpg',
+        alt: 'Technicolour Crunch bar made by BETA5 in Canada on a table with an oculus rift headset and controllers',
+      },
+      BAR_FRONT: {
+        src: '/bars/technicolour-crunch-beta5-bar-front.jpg',
+        alt: 'Front of Technicolour Crunch bar made by BETA5 in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/technicolour-crunch-beta5-bar-back.jpg',
+        alt: 'Back of Technicolour Crunch bar made by BETA5 in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/technicolour-crunch-beta5-package-front.jpg',
+        alt: 'Front of Technicolour Crunch bar made by BETA5 in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/technicolour-crunch-beta5-package-back.jpg',
+        alt: 'Back of Technicolour Crunch bar made by BETA5 in Canada package',
+      },
+    },
+
+    barType: 'Flavored',
+    barWeight: 65,
+    barDimensions: [151, 76, 10],
+    ingredients: [
+      [
+        'Caramelized White Chocolate',
+        [
+          'Cocoa Butter',
+          'Sugar',
+          'Whole Milk Powder',
+          'Dried Skimmed Milk',
+          'Whey',
+          'Butter',
+          'Soy Lecithin',
+          'Natural Vanilla Extract',
+        ],
+      ],
+      [
+        'Caramelized Puffed Wheat',
+        ['Organic Puffed Kamut', 'Sugar', 'Cocoa Butter'],
+      ],
+      'Coffee Beans',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [162, 85, 12],
+    wrapper: 'Plastic Bag',
+    facilityAllergen: ['Tree Nuts', 'Peanuts', 'Sesame', 'Wheat'],
+
+    retailer: 'Beta 5',
+    location: 'Vancouver Factory',
+    retailPrice: 8.22, // Purchased for 11 CAD
+    dateObtained: '2022-12-29',
+
+    reviewerWouldEatAgain: true,
+    reviewerBarFavorite: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: '0789723dc0',
     releaseDate: '2023-01-25',
     name: 'Nacional 70%',
