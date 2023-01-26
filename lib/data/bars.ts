@@ -104,6 +104,86 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '3b7453595a',
+    releaseDate: '2023-01-27',
+    name: 'Salty',
+    subtitle: 'Dark Chocolate',
+    description: `"It's salty. It's chocolatey. It's salty dark chocolate."`,
+    slug: 'salty-dark-chocolate-hu',
+    maker: 'Hu',
+    productionCountry: 'Italy',
+    productUrl: 'https://hukitchen.com/products/hu-salty',
+
+    images: {
+      HERO: {
+        src: '/bars/salty-dark-chocolate-hu.jpg',
+        alt: 'Salty Dark Chocolate bar made by Hu in Italy on crumpled butcher paper',
+      },
+      BAR_FRONT: {
+        src: '/bars/salty-dark-chocolate-hu-bar-front.jpg',
+        alt: 'Front of Salty Dark Chocolate bar made by Hu in Italy',
+      },
+      BAR_BACK: {
+        src: '/bars/salty-dark-chocolate-hu-bar-back.jpg',
+        alt: 'Back of Salty Dark Chocolate bar made by Hu in Italy',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/salty-dark-chocolate-hu-package-front.jpg',
+        alt: 'Front of Salty Dark Chocolate bar made by Hu in Italy package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/salty-dark-chocolate-hu-package-back.jpg',
+        alt: 'Back of Salty Dark Chocolate bar made by Hu in Italy package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 60,
+    barDimensions: [117, 50, 11],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Unrefined Coconut Sugar',
+      'Organic Cocoa Butter',
+      'Sea Salt',
+    ],
+
+    packagingType: 'Envelope', // Paper
+    packagingDimensions: [159, 71, 13],
+    wrapper: 'Biodegradable Bag',
+    marketingTerms: [
+      'No Refined Sugar',
+      'No Lecithins',
+      'Vegan',
+      'Paleo',
+      'Organic',
+      'Fair Trade',
+    ],
+    foodAllergen: ['Coconut'],
+    facilityAllergen: [
+      'Almond',
+      'Cashew',
+      'Hazelnut',
+      'Pistachio',
+      'Dairy',
+      'Tree Nuts',
+      'Soy',
+      'Wheat',
+    ],
+    certifiedLabels: ['Vegan', 'Paleo', 'Non GMO', 'Kosher'], // Vegan.org, Paleo Foundation, NonGmoProject.org, CUK-G-187
+
+    retailer: 'Wholefoods',
+    location: 'Hillcrest',
+    retailPrice: 5.99,
+    dateObtained: '2022-12-13',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: 'a7deee02d0',
     releaseDate: '2023-01-26',
     name: 'Technicolour Crunch',

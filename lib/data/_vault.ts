@@ -469,14 +469,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-13',
   },
   {
-    name: 'Salty Dark Chocolate',
-    maker: 'Hu',
-    retailer: 'Wholefoods',
-    location: 'Hillcrest',
-    retailPrice: 0, // ?
-    dateObtained: '2022-12-13',
-  },
-  {
     name: 'Simple Milk Chocolate',
     maker: 'Hu',
     retailer: 'Wholefoods',
