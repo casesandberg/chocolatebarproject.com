@@ -2,7 +2,6 @@ import { AnalyticsWrapper } from '#/components/Analytics'
 import { PageFrame } from '#/components/PageFrame'
 import '#/styles/globals.css'
 import { Inter, Montserrat, Roboto_Mono } from '@next/font/google'
-import PlausibleProvider from 'next-plausible'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 
@@ -36,7 +35,6 @@ export default function RootLayout({
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <PlausibleProvider domain="chocolatebarproject.com" />
       </head>
       <body>
         <Header />
