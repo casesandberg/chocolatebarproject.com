@@ -10,6 +10,24 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
+    name: '58% Colombia Oatnog',
+    maker: 'Spinnaker Chocolate',
+    retailer: 'Spinnaker Chocolate',
+    location: 'spinnakerchocolate.com',
+    retailPrice: 11,
+    dateObtained: '2023-01-25',
+  },
+  {
+    name: '70% Belize with Bourbon',
+    maker: 'Spinnaker Chocolate',
+    retailer: 'Spinnaker Chocolate',
+    location: 'spinnakerchocolate.com',
+    retailPrice: 13,
+    dateObtained: '2023-01-25',
+  },
+
+  //
+  {
     name: 'Momofuku Chili Chocolate Crunch',
     maker: 'Raaka',
     productUrl: 'https://www.raakachocolate.com/pages/first-nibs',
