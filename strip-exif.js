@@ -16,13 +16,25 @@ const deleteExifFromJpegFile = (filename) => {
 ;(async () => {
   try {
     const files = await fs.promises.opendir('./public/bars')
+    let filesStripped = 0
 
     for await (const file of files) {
       if (file.name.includes('.jpg')) {
-        deleteExifFromJpegFile(`./public/bars/${file.name}`)
+        const { Exif } = getExifFromJpegFile(`./public/bars/${file.name}`)
+
+        if (Object.keys(Exif).length !== 0) {
+          deleteExifFromJpegFile(`./public/bars/${file.name}`)
+          filesStripped++
+        }
       }
     }
-    console.log('Success')
+
+    if (filesStripped) {
+      console.log('Files Stripped')
+      process.exit(1)
+    } else {
+      console.log('All Files Clean')
+    }
   } catch (error) {
     console.log(error)
   }

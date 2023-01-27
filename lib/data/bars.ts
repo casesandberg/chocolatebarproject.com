@@ -104,6 +104,69 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '84955337d7',
+    releaseDate: '2023-01-28',
+    name: '70% Belize',
+    description: `"A hint of fruit blended with classic chocolate notes. Each flavor note on its own is subtle, but when combined, the overall flavor profile is quite powerful."`,
+    slug: '70-belize-spinnaker-chocolate',
+    maker: 'Spinnaker Chocolate',
+    productionCountry: 'United States',
+    productUrl: 'https://www.spinnakerchocolate.com/shop/70-belize',
+
+    images: {
+      HERO: {
+        src: '/bars/70-belize-spinnaker-chocolate.jpg',
+        alt: '70% Belize bar made by Spinnaker Chocolate in the United States in front of warn deck boards',
+      },
+      BAR_FRONT: {
+        src: '/bars/70-belize-spinnaker-chocolate-bar-front.jpg',
+        alt: 'Front of 70% Belize bar made by Spinnaker Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/70-belize-spinnaker-chocolate-bar-back.jpg',
+        alt: 'Back of 70% Belize bar made by Spinnaker Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/70-belize-spinnaker-chocolate-package-front.jpg',
+        alt: 'Front of 70% Belize bar made by Spinnaker Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/70-belize-spinnaker-chocolate-package-back.jpg',
+        alt: 'Back of 70% Belize bar made by Spinnaker Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 57,
+    barDimensions: [130, 77, 6],
+    ingredients: ['Cacao', 'Organic Cane Sugar'],
+
+    packagingType: 'Biodegradable Bag',
+    packagingDimensions: [170, 108, 7],
+    facilityAllergen: ['Milk Powder', 'Nuts'],
+    awards: [
+      {
+        body: 'Academy Of Chocolate',
+        level: 'Silver',
+        year: 2022,
+      },
+    ],
+
+    retailer: 'Spinnaker Chocolate',
+    location: 'spinnakerchocolate.com',
+    retailPrice: 12,
+    dateObtained: '2023-01-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Belize',
+      region: 'Toledo District',
+      producer: 'Maya Mountain',
+    },
+  },
+  {
     id: '3b7453595a',
     releaseDate: '2023-01-27',
     name: 'Salty',
