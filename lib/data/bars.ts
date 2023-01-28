@@ -104,6 +104,90 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '49e57529f9',
+    releaseDate: '2023-01-29',
+    name: 'Pacific Razz Crisp',
+    description: `"Pacific Razz began as a whimsical way to get crispy bits into our Pacific Original. What developed from the raspberry is much more elegant than we intended, and thankfully so. The interplay of raspberry tartness and creamy caramel notes is perfectly matched for a milk chocolate with a light and crispy crunch."`,
+    slug: 'pacific-razz-crisp-pacific-chocolate-company',
+    maker: 'Pacific Chocolate Company',
+    productionCountry: 'United States',
+    productUrl:
+      'https://pacificchocolatecompany.com/product/pacific-razz-crisp-3-pack',
+
+    images: {
+      HERO: {
+        src: '/bars/pacific-razz-crisp-pacific-chocolate-company.jpg',
+        alt: 'Pacific Razz Crisp bar made by Pacific Chocolate Company in the United States on a yellow background with raspberries',
+      },
+      BAR_FRONT: {
+        src: '/bars/pacific-razz-crisp-pacific-chocolate-company-bar-front.jpg',
+        alt: 'Front of Pacific Razz Crisp bar made by Pacific Chocolate Company in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/pacific-razz-crisp-pacific-chocolate-company-bar-back.jpg',
+        alt: 'Back of Pacific Razz Crisp bar made by Pacific Chocolate Company in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/pacific-razz-crisp-pacific-chocolate-company-package-front.jpg',
+        alt: 'Front of Pacific Razz Crisp bar made by Pacific Chocolate Company in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/pacific-razz-crisp-pacific-chocolate-company-package-back.jpg',
+        alt: 'Back of Pacific Razz Crisp bar made by Pacific Chocolate Company in the United States package',
+      },
+    },
+
+    barType: 'Milk',
+    barWeight: 85,
+    barDimensions: [158, 70, 10],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Raw Cane Sugar',
+      'Milk Powder',
+      'Organic Cocoa Butter',
+      [
+        'Crisp Rice',
+        [
+          'Rice',
+          'Flour',
+          'Sugar',
+          'Barley Malt Extract',
+          'Salt',
+          'Ruce Extract',
+          'Distilled Monoglycerides',
+        ],
+      ],
+      'Clarified Butter',
+      [
+        'Raspberry Juice Powder',
+        [
+          'Sugar',
+          'Raspberry Juice Solids',
+          'Natural Raspberry Flavor',
+          'Malic Acid',
+        ],
+      ],
+      'Salt',
+      'Soy Lecithin',
+    ],
+
+    packagingType: 'Metallised plastic', // Gold outside, silver inside
+    packagingDimensions: [184, 83, 11],
+    foodAllergen: ['Milk', 'Soy'],
+    facilityAllergen: ['Milk', 'Wheat', 'Soy', 'Tree Nuts'],
+
+    retailer: 'Olive Tree Marketplace',
+    location: 'Ocean Beach',
+    retailPrice: 7.99,
+    dateObtained: '2023-01-07',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: '84955337d7',
     releaseDate: '2023-01-28',
     name: '70% Belize',

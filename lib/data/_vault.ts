@@ -170,16 +170,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Pacific Razz Crisp',
-    maker: 'Pacific Chocoalte Company',
-    productUrl:
-      'https://pacificchocolatecompany.com/product/pacific-razz-crisp-3-pack',
-    retailer: 'Olive Tree Marketplace',
-    location: 'Ocean Beach',
-    retailPrice: 7.99,
-    dateObtained: '2023-01-07',
-  },
-  {
     name: 'Udzungwa 70% with Nibs',
     maker: 'Original Beans',
     productUrl: 'https://originalbeans.com/shop/bars/udzungwa-70-chocolate',
