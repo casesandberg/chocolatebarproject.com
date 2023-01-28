@@ -171,8 +171,9 @@ const bars: Array<Bar> = [
       'Soy Lecithin',
     ],
 
-    packagingType: 'Metallised plastic', // Gold outside, silver inside
+    packagingType: 'Box',
     packagingDimensions: [184, 83, 11],
+    wrapper: 'Metallised plastic', // Gold outside, silver inside
     foodAllergen: ['Milk', 'Soy'],
     facilityAllergen: ['Milk', 'Wheat', 'Soy', 'Tree Nuts'],
 
