@@ -10,6 +10,71 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
+    name: 'Black Fig',
+    maker: 'Dick Taylor',
+    productUrl: 'https://dicktaylorchocolate.com/products/black-fig',
+
+    retailer: 'Dick Taylor',
+    location: 'https://dicktaylorchocolate.com',
+    retailPrice: 10,
+    dateObtained: '2023-01-28',
+  },
+  {
+    name: 'Strawberries & Cream',
+    maker: 'Dick Taylor',
+    productUrl:
+      'https://dicktaylorchocolate.com/collections/all/products/strawberries-cream',
+
+    retailer: 'Dick Taylor',
+    location: 'https://dicktaylorchocolate.com',
+    retailPrice: 14,
+    dateObtained: '2023-01-28',
+  },
+  {
+    name: '70% Ben Tre',
+    maker: 'Solstice Chocolate',
+    productUrl: 'https://www.solsticechocolate.com/shop/70vietnam',
+
+    retailer: 'Solstice Chocolate',
+    location: 'https://www.solsticechocolate.com',
+    retailPrice: 14,
+    dateObtained: '2023-01-28',
+  },
+  {
+    name: '70% Rio Claro',
+    maker: 'Solstice Chocolate',
+    productUrl: 'https://www.solsticechocolate.com/shop/trini',
+
+    retailer: 'Solstice Chocolate',
+    location: 'https://www.solsticechocolate.com',
+    retailPrice: 16,
+    dateObtained: '2023-01-28',
+  },
+  {
+    name: '75% Vietnam Dark Chocolate',
+    maker: 'Maverick Chocolate Co',
+    productUrl:
+      'https://maverickchocolate.com/products/75-vietnam-dark-chocolate',
+
+    retailer: 'Maverick Chocolate Co',
+    location: 'https://maverickchocolate.com',
+    retailPrice: 12,
+    dateObtained: '2023-01-28',
+  },
+  {
+    name: 'Peanut Butter Dark Chocolate',
+    maker: 'Maverick Chocolate Co',
+    productUrl:
+      'https://maverickchocolate.com/products/peanut-butter-dark-chocolate',
+
+    retailer: 'Maverick Chocolate Co',
+    location: 'https://maverickchocolate.com',
+    retailPrice: 12,
+    dateObtained: '2023-01-28',
+  },
+
+  //
+  {
     name: '58% Colombia Oatnog',
     maker: 'Spinnaker Chocolate',
     retailer: 'Spinnaker Chocolate',
