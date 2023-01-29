@@ -1,11 +1,10 @@
-import { customAlphabet } from 'nanoid'
 import { DateString } from '../types'
 import { MakerNames } from './makers'
 import { OriginNames } from './origins'
 
 // Generate Random ID
-const nanoid = customAlphabet('1234567890abcdef', 10)
-console.log(nanoid())
+// const nanoid = customAlphabet('1234567890abcdef', 10)
+// console.log(nanoid())
 
 // Generate URL Safe Slug
 // console.log(urlSlug('Dominican Republic Dark 72% Schoki Chocolate'))

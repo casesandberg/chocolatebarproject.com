@@ -13,7 +13,7 @@
     "typecheck": "tsc",
     "lint": "eslint --max-warnings 0 --ext .ts,.tsx .",
     "format": "prettier \"**/*.{ts,tsx}\" --check --loglevel \"warn\"",
-    "build-algolia": "node ./scripts/build-algolia.js"
+    "build-algolia": "npx ts-node ./scripts/build-algolia.ts"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
