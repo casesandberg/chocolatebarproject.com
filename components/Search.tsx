@@ -133,6 +133,11 @@ function BarGridItem({ hit: bar }: { hit: BarHit }) {
   )
 }
 
+const now = Date.now()
+
+// TODO: Display Facets without matches https://www.algolia.com/doc/guides/building-search-ui/widgets/customize-an-existing-widget/react-hooks/#displaying-facets-with-no-matches
+// TODO: Format Ingredients for nested faceted filtering
+
 export function Search({ initialState }: { initialState: any }) {
   return (
     <InstantSearch
@@ -142,7 +147,7 @@ export function Search({ initialState }: { initialState: any }) {
         bars: initialState,
       }}
     >
-      <Configure hitsPerPage={30} />
+      <Configure hitsPerPage={30} filters={`releaseDate <= ${now}`} />
 
       <section aria-labelledby="products-heading" className="pt-6 pb-24">
         <h2 id="products-heading" className="sr-only">

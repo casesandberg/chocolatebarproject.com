@@ -7,6 +7,8 @@ const searchClient = algoliasearch(
   process.env.ALGOLIA_SEARCH_ADMIN_KEY!
 )
 
+const now = Date.now()
+
 export default async function BarsPage() {
   // const bars = await fetchBars()
 
@@ -15,6 +17,7 @@ export default async function BarsPage() {
       {
         indexName: 'bars',
         query: '',
+        filters: `releaseDate <= ${now}`,
         facets: ['*'],
       },
     ],

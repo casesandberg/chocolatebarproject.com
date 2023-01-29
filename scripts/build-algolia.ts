@@ -10,23 +10,18 @@ import bars from '../lib/data/bars'
       process.env.ALGOLIA_SEARCH_ADMIN_KEY!
     )
 
-    const requests = bars
-      .filter(
-        ({ releaseDate }) =>
-          new Date(releaseDate + 'T00:00:01-0800') <= new Date()
-      )
-      .map((record) => {
-        return {
-          action: 'addObject',
-          objectID: record.id,
-          body: {
-            ...record,
-            releaseDate: new Date(
-              record.releaseDate + 'T00:00:01-0800'
-            ).getTime(),
-          },
-        }
-      }) as any
+    const requests = bars.map((record) => {
+      return {
+        action: 'addObject',
+        objectID: record.id,
+        body: {
+          ...record,
+          releaseDate: new Date(
+            record.releaseDate + 'T00:00:01-0800'
+          ).getTime(),
+        },
+      }
+    }) as any
 
     const { taskID } = await client.batch({
       indexName: 'bars',
