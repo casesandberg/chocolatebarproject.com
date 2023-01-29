@@ -133,10 +133,16 @@ function BarGridItem({ hit: bar }: { hit: BarHit }) {
   )
 }
 
-export function Search() {
+export function Search({ initialState }: { initialState: any }) {
   return (
-    <InstantSearch searchClient={searchClient} indexName="bars">
-      <Configure hitsPerPage={20} />
+    <InstantSearch
+      searchClient={searchClient}
+      indexName="bars"
+      initialUiState={{
+        bars: initialState,
+      }}
+    >
+      <Configure hitsPerPage={30} />
 
       <section aria-labelledby="products-heading" className="pt-6 pb-24">
         <h2 id="products-heading" className="sr-only">
