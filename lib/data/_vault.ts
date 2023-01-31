@@ -187,16 +187,6 @@ const vault: Array<Bar> = [
     retailPrice: 9.5,
     dateObtained: '2023-01-11',
   },
-  {
-    name: 'Dark Chocolate with Caipirinha',
-    maker: 'Chocolates Baiani',
-    productUrl: 'https://www.baiani.com.br/en/chocolate/65-cacao-caipirinha',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 11,
-    dateObtained: '2023-01-11',
-  },
 
   //
   {

@@ -103,8 +103,84 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '852dc2327d',
+    releaseDate: '2023-01-31',
+    name: 'Dark Chocolate with Caipirinha',
+    description: [
+      `"The exotic flavor that is typical of the cacao originated in the southern part of the State of Bahia, where our origin Vale Potumuju is located, is considered a true Brazilian flavor. So, we decided to enhance it even more by adding it to a worldwide famous Brazilian recipe, the Caipirinha.`,
+      `To manufacture this bar requires time, 3 different processes and a lot of labor, but in the end it is so worth it! The cacao nibs, used as the base for our chocolate, is infused in Cachaça for at least 30 days. After that we grind, conch and mold the chocolate bars that get on their backs a sprinkle of caramelized sugar and dehydrated lime zests that were also quickly infused in Cachaça.`,
+      `To keep with our Baianí style and standard of excellence, we chose one of the best cachaças from famous Da Tulha Destillers. This one, aged in Jequitibá wood barrels, brings out the complexities and aromas of this Brazilian spirit. The harmonious result of this charming recipe is precious and delicious!"`,
+    ],
+    slug: 'dark-chocolate-with-caipirinha-baiani-chocolates',
+    maker: 'Baianí Chocolates',
+    productionCountry: 'Brazil',
+    productUrl: 'https://www.baiani.com.br/en/chocolate/65-cacao-caipirinha',
+
+    images: {
+      HERO: {
+        src: '/bars/dark-chocolate-with-caipirinha-baiani-chocolates.jpg',
+        alt: 'Dark Chocolate with Caipirinha bar made by Baianí Chocolates in Brazil arranged as a grid on a blue background',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-chocolate-with-caipirinha-baiani-chocolates-bar-front.jpg',
+        alt: 'Front of Dark Chocolate with Caipirinha bar made by Baianí Chocolates in Brazil',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-chocolate-with-caipirinha-baiani-chocolates-bar-back.jpg',
+        alt: 'Back of Dark Chocolate with Caipirinha bar made by Baianí Chocolates in Brazil',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-chocolate-with-caipirinha-baiani-chocolates-package-front.jpg',
+        alt: 'Front of Dark Chocolate with Caipirinha bar made by Baianí Chocolates in Brazil package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-chocolate-with-caipirinha-baiani-chocolates-package-back.jpg',
+        alt: 'Back of Dark Chocolate with Caipirinha bar made by Baianí Chocolates in Brazil package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 65,
+    barWeight: 58,
+    barDimensions: [142, 70, 6],
+    ingredients: [
+      'Single Origin Cacao Beans',
+      'Organic Cane Sugar',
+      'Cocoa Butter',
+      'Lime Zest',
+      'Aged Cachaça',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [167, 100, 12],
+    wrapper: 'Foil with Paper Backing', // Gold
+    marketingTerms: [
+      'Small Batch',
+      'Terroir',
+      'Soil',
+      'Fermentation',
+      'Drying',
+      'Inclusion',
+    ],
+    facilityAllergen: ['Tree Nuts', 'Milk'],
+    insidePrinting: true,
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 11,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Brazil',
+      region: 'Bahia',
+      producer: 'Vale Potumuju',
+    },
+  },
+  {
     id: '56c68f25e7',
-    releaseDate: '2023-01-20',
+    releaseDate: '2023-01-30',
     name: '70% Arauca',
     description: `"In a land surrounded by radiant and endless rivers, a variety of cocoa is cultivated that gives life to a chocolate with aromas of honey, mandarins and flowers."`,
     slug: '70-arauca-cacao-hunters',
@@ -145,7 +221,9 @@ const bars: Array<Bar> = [
     packagingType: 'Box',
     packagingDimensions: [96, 96, 15],
     wrapper: 'Metallised plastic', // Silver
+    marketingTerms: ['Heritage'],
     facilityAllergen: ['Milk'],
+    packageLanguages: ['English', 'Spanish'],
 
     retailer: 'Bar & Cocoa',
     location: 'https://barandcocoa.com/',
