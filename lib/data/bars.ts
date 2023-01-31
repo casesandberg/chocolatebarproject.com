@@ -103,6 +103,70 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '8e2069ea30',
+    releaseDate: '2023-02-01',
+    name: 'Bolivia Wild Forest',
+    subtitle: 'Dark 74%',
+    description: `"Rare cacao gathered in the wild forests of Itenez, Bolivia after being fermented and dried, and is finally dried again and sorted at the renowned Hacienda Tranquilidad. This bar is pleasantly complex with an earthy and bright, yet chocolate-centric flavor profile."`,
+    slug: 'bolivia-wild-forest-dark-74-fruition-chocolate-works',
+    maker: 'Fruition Chocolate Works',
+    productionCountry: 'United States',
+    productUrl:
+      'https://www.fruitionchocolateworks.com/products/bolivia-wild-forest-74',
+
+    images: {
+      HERO: {
+        src: '/bars/bolivia-wild-forest-dark-74-fruition-chocolate-works.jpg',
+        alt: 'Bolivia Wild Forest Dark 74% bar made by Fruition Chocolate Works in the United States arranged torn open with the bar exposed',
+      },
+      BAR_FRONT: {
+        src: '/bars/bolivia-wild-forest-dark-74-fruition-chocolate-works-bar-front.jpg',
+        alt: 'Front of Bolivia Wild Forest Dark 74% bar made by Fruition Chocolate Works in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/bolivia-wild-forest-dark-74-fruition-chocolate-works-bar-back.jpg',
+        alt: 'Back of Bolivia Wild Forest Dark 74% bar made by Fruition Chocolate Works in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/bolivia-wild-forest-dark-74-fruition-chocolate-works-package-front.jpg',
+        alt: 'Front of Bolivia Wild Forest Dark 74% bar made by Fruition Chocolate Works in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/bolivia-wild-forest-dark-74-fruition-chocolate-works-package-back.jpg',
+        alt: 'Back of Bolivia Wild Forest Dark 74% bar made by Fruition Chocolate Works in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 74,
+    barWeight: 60,
+    barDimensions: [151, 66, 8],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [175, 82, 9],
+    wrapper: 'Plastic', // With printed pattern
+    marketingTerms: ['New Edition', 'Crafted', 'Bean to Bar'],
+    facilityAllergen: ['Milk', 'Peanuts', 'Tree Nuts', 'Wheat'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 17.0,
+    dateObtained: '2023-01-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Bolivia', // https://www.uncommoncacao.com/wilditenezbolivia
+      region: 'Baures',
+      producer: 'Wild Itenez',
+    },
+  },
+  {
     id: '852dc2327d',
     releaseDate: '2023-01-31',
     name: 'Dark Chocolate with Caipirinha',
@@ -171,6 +235,8 @@ const bars: Array<Bar> = [
     dateObtained: '2023-01-11',
 
     reviewerWouldEatAgain: true,
+    reviewerBarFavorite: true,
+    reviewerPackagingFavorite: true, // Esp Bar
 
     origin: {
       country: 'Brazil',
