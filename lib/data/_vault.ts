@@ -188,17 +188,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-11',
   },
   {
-    name: 'Arauca 70%',
-    maker: 'Cacao Hunters',
-    productUrl:
-      'https://www.cacaohunters.com/products/chocolate-negro-barras-arauca70',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 8,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Dark Chocolate with Caipirinha',
     maker: 'Chocolates Baiani',
     productUrl: 'https://www.baiani.com.br/en/chocolate/65-cacao-caipirinha',

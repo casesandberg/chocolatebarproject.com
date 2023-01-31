@@ -103,6 +103,63 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '56c68f25e7',
+    releaseDate: '2023-01-20',
+    name: '70% Arauca',
+    description: `"In a land surrounded by radiant and endless rivers, a variety of cocoa is cultivated that gives life to a chocolate with aromas of honey, mandarins and flowers."`,
+    slug: '70-arauca-cacao-hunters',
+    maker: 'Cacao Hunters',
+    productionCountry: 'Colombia',
+    productUrl:
+      'https://www.cacaohunters.com/products/chocolate-negro-barras-arauca70',
+
+    images: {
+      HERO: {
+        src: '/bars/70-arauca-cacao-hunters.jpg',
+        alt: '70% Arauca bar made by Cacao Hunters in Colombia arranged as a grid on a blue background',
+      },
+      BAR_FRONT: {
+        src: '/bars/70-arauca-cacao-hunters-bar-front.jpg',
+        alt: 'Front of 70% Arauca bar made by Cacao Hunters in Colombia',
+      },
+      BAR_BACK: {
+        src: '/bars/70-arauca-cacao-hunters-bar-back.jpg',
+        alt: 'Back of 70% Arauca bar made by Cacao Hunters in Colombia',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/70-arauca-cacao-hunters-package-front.jpg',
+        alt: 'Front of 70% Arauca bar made by Cacao Hunters in Colombia package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/70-arauca-cacao-hunters-package-back.jpg',
+        alt: 'Back of 70% Arauca bar made by Cacao Hunters in Colombia package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 56,
+    barDimensions: [77, 77, 5], // Packaged as Two Bars
+    ingredients: ['Cocoa Beans', 'Cane Sugar', 'Cocoa Butter', 'Soy Lecithin'],
+
+    packagingType: 'Box',
+    packagingDimensions: [96, 96, 15],
+    wrapper: 'Metallised plastic', // Silver
+    facilityAllergen: ['Milk'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 8,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Colombia',
+      region: 'Arauca',
+    },
+  },
+  {
     id: '49e57529f9',
     releaseDate: '2023-01-29',
     name: 'Pacific Razz Crisp',

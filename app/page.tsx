@@ -5,6 +5,11 @@ import Balancer from 'react-wrap-balancer'
 import { Container } from '../components/Container'
 
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import { customAlphabet } from 'nanoid'
+
+// Generate Random ID
+const nanoid = customAlphabet('1234567890abcdef', 10)
+console.log(nanoid())
 
 const isToday = (someDate: Date) => {
   const now = new Date()
