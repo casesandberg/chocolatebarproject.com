@@ -103,6 +103,65 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '48209f242f',
+    releaseDate: '2023-02-02',
+    name: 'Sea Salt',
+    subtitle: 'Dark Chocolate',
+    maker: 'Videri Chocolate Factory',
+    productionCountry: 'United States',
+    slug: 'sea-salt-dark-chocolate-videri-chocolate-factory',
+    productUrl: 'https://viderichocolatefactory.com/shop/p/70-sea-salt-bar',
+    description: `"Our Classic Dark Chocolate Bar with a little coarse sea salt sprinkled on the back. Smooth, delicious, and just salty enough to get that irresistible sweet-salty combo. Like a chocolate covered pretzel without the pretzel, this is our year round best selling chocolate bar."`,
+
+    images: {
+      HERO: {
+        src: '/bars/sea-salt-dark-chocolate-videri-chocolate-factory.jpg',
+        alt: 'Sea Salt Dark Chocolate bar made by Videri Chocolate Factory in the United States on a brown paper background',
+      },
+      BAR_FRONT: {
+        src: '/bars/sea-salt-dark-chocolate-videri-chocolate-factory-bar-front.jpg',
+        alt: 'Front of Sea Salt Dark Chocolate bar made by Videri Chocolate Factory in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/sea-salt-dark-chocolate-videri-chocolate-factory-bar-back.jpg',
+        alt: 'Back of Sea Salt Dark Chocolate bar made by Videri Chocolate Factory in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/sea-salt-dark-chocolate-videri-chocolate-factory-package-front.jpg',
+        alt: 'Front of Sea Salt Dark Chocolate bar made by Videri Chocolate Factory in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/sea-salt-dark-chocolate-videri-chocolate-factory-package-back.jpg',
+        alt: 'Back of Sea Salt Dark Chocolate bar made by Videri Chocolate Factory in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 60,
+    barDimensions: [140, 63, 6],
+    ingredients: [
+      'Organic Cocoa Nibs',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Sea Salt',
+    ],
+
+    packagingType: 'Bag',
+    packagingDimensions: [176, 112, 7],
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 9,
+    dateObtained: '2022-12-16',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: '8e2069ea30',
     releaseDate: '2023-02-01',
     name: 'Bolivia Wild Forest',

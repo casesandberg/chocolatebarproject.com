@@ -480,14 +480,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Sea Salt',
-    maker: 'Videri',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 9,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: '',
     maker: '',
     retailer: 'Blackmarket Bakery',
