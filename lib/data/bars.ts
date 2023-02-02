@@ -103,6 +103,75 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'a916f5b173',
+    releaseDate: '2023-02-03',
+    name: '85% Dark Chocolate',
+    subtitle: 'Mana Single-Estate',
+    maker: 'Auro Chocolate',
+    slug: '85-dark-chocolate-mana-single-estate-auro-chocolate',
+    productionCountry: 'Philippines',
+    productUrl:
+      'https://aurochocolate.com/products/85-dark-chocolate-single-estate-mana-60g-reserve-bar',
+    description: `"Our Reserve Collection is passionately crafted from the finest beans of a single harvest to bring out the rare, distinctive characteristics of each community and their land. Located in the lush tropical forests of Davao, Mana has notes of caramelized apple, rum, sweet banana & cashew apple."`,
+
+    images: {
+      HERO: {
+        src: '/bars/85-dark-chocolate-mana-single-estate-auro-chocolate.jpg',
+        alt: '85% Dark Chocolate Mana Single-Estate bar made by Auro Chocolate in the Philippines on a red ruffled background',
+      },
+      BAR_FRONT: {
+        src: '/bars/85-dark-chocolate-mana-single-estate-auro-chocolate-bar-front.jpg',
+        alt: 'Front of 85% Dark Chocolate Mana Single-Estate bar made by Auro Chocolate in the Philippines',
+      },
+      BAR_BACK: {
+        src: '/bars/85-dark-chocolate-mana-single-estate-auro-chocolate-bar-back.jpg',
+        alt: 'Back of 85% Dark Chocolate Mana Single-Estate bar made by Auro Chocolate in the Philippines',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/85-dark-chocolate-mana-single-estate-auro-chocolate-package-front.jpg',
+        alt: 'Front of 85% Dark Chocolate Mana Single-Estate bar made by Auro Chocolate in the Philippines package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/85-dark-chocolate-mana-single-estate-auro-chocolate-package-back.jpg',
+        alt: 'Back of 85% Dark Chocolate Mana Single-Estate bar made by Auro Chocolate in the Philippines package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 85,
+    barWeight: 60,
+    barDimensions: [139, 63, 7],
+    ingredients: ['Cacao Mass', 'Organic Muscovado Sugar'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [191, 94, 9],
+    wrapper: 'Metallised plastic', // Gold with printed pattern
+    marketingTerms: [
+      'Single Estate',
+      'Crafted',
+      'Single Harvest',
+      'Rare',
+      'Limited Edition',
+      'Tasting Notes',
+    ],
+    facilityAllergen: ['Milk', 'Soy', 'Tree Nuts', 'Peanuts'],
+    uncertifiedLabels: ['Vegan Friendly', 'Gluten Free'],
+    certifiedLabels: ['Kosher', 'HACCP', 'GMP Quality'], // IDCP
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.5,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Philippines', // https://www.chocolaterie.brussels/service/cacao-auro-philippines-mana/
+      region: 'Davao Region',
+      locality: 'Davao del Sur',
+    },
+  },
+  {
     id: '48209f242f',
     releaseDate: '2023-02-02',
     name: 'Sea Salt',

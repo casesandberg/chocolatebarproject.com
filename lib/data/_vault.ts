@@ -176,17 +176,6 @@ const vault: Array<Bar> = [
     retailPrice: 10,
     dateObtained: '2023-01-11',
   },
-  {
-    name: 'Mana',
-    maker: 'Auro Chocolate',
-    productUrl:
-      'https://aurochocolate.com/products/85-dark-chocolate-single-estate-mana-60g-reserve-bar?_pos=2&_sid=19c38cae5&_ss=r',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9.5,
-    dateObtained: '2023-01-11',
-  },
 
   //
   {
