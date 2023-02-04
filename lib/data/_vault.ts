@@ -1,6 +1,8 @@
 interface Bar {
   name: string
   maker: string
+  subtitle?: string
+  slug?: string
   productUrl?: string
   retailer: string
   location: string
@@ -9,6 +11,144 @@ interface Bar {
 }
 
 const vault: Array<Bar> = [
+  {
+    name: 'Japan Sea Salt',
+    subtitle: 'Chocolate Bar',
+    maker: 'Ranger Chocolate Co',
+    slug: 'japan-sea-salt-chocolate-bar-ranger-chocolate-co',
+    productUrl: 'https://rangerchocolate.co/shop/wa/shop?id=13&e=KHCItem',
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7,
+    dateObtained: '2023-01-31',
+  },
+  {
+    name: 'Brain Food',
+    maker: 'Markham & Fitz Chocolate Makers',
+    slug: 'brain-food-markham-fitz-chocolate-makers',
+    productUrl: 'https://markhamandfitz.com/products/brainfood',
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 10,
+    dateObtained: '2023-01-31',
+  },
+
+  //
+  {
+    name: '(White) Chocolate Covered Strawberry',
+    maker: 'Askinosie Chocolate',
+    slug: 'white-chocolate-covered-strawberry-askinosie-chocolate',
+    productUrl:
+      'https://askinosie.com/products/white-chocolate-covered-strawberry-bar',
+
+    retailer: 'Askinosie Chocolate',
+    location: 'https://askinosie.com/',
+    retailPrice: 14.0,
+    dateObtained: '2023-01-31',
+  },
+  {
+    name: 'Davao, Philippines',
+    subtitle: '77% Dark Chocolate',
+    maker: 'Askinosie Chocolate',
+    slug: 'davao-philippines-77-dark-chocolate-askinosie-chocolate',
+    productUrl:
+      'https://askinosie.com/products/77-davao-philippines-dark-chocolate-bar',
+
+    retailer: 'Askinosie Chocolate',
+    location: 'https://askinosie.com/',
+    retailPrice: 10.0,
+    dateObtained: '2023-01-31',
+  },
+  {
+    name: 'Dark Chocolate + Avocado & Rosemary',
+    subtitle: 'Heath Ceramics Collabaration Bar',
+    maker: 'Askinosie Chocolate',
+    slug: 'dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate',
+    productUrl:
+      'https://askinosie.com/products/dark-chocolate-avocado-rosemary-collabaration-bar',
+
+    retailer: 'Askinosie Chocolate',
+    location: 'https://askinosie.com/',
+    retailPrice: 10.5,
+    dateObtained: '2023-01-31',
+  },
+
+  //
+  {
+    name: "S'mores Bar",
+    subtitle: 'Graham Cracker and Caramelized Sugar',
+    maker: 'Ritual Chocolate',
+    slug: 'smores-bar-graham-cracker-and-caramelized-sugar-ritual-chocolate',
+    productUrl: 'https://www.ritualchocolate.com/shop/smoresbar',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 10.0,
+    dateObtained: '2023-01-30',
+  },
+  {
+    name: 'The Après Chocolate',
+    subtitle: 'Sparkling White Wine Infused Chocolate With Dried Raspberries',
+    maker: 'Ritual Chocolate',
+    slug: 'the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate',
+    productUrl: 'https://www.ritualchocolate.com/shop/apresbar',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 12.0,
+    dateObtained: '2023-01-30',
+  },
+  {
+    name: 'Wild Berry Pop',
+    subtitle: 'White Chocolate with Berries and Pop Rocks',
+    maker: 'SOMA Chocolatemaker',
+    slug: 'wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker',
+    productUrl: 'https://www.somachocolate.com/products/wild-berry-pop-bar',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 14.5,
+    dateObtained: '2023-01-30',
+  },
+  {
+    name: 'Lakkrís + Raspberry',
+    maker: 'Omnom Chocolate',
+    slug: 'lakkris-raspberry-omnom-chocolate',
+    productUrl: 'https://omnomchocolate.com/products/lakkris-raspberry',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-30',
+  },
+  {
+    name: 'Pavlova Party',
+    subtitle: 'White Chocolate, Festive Fruits & Meringue',
+    maker: 'Fjak Chocolate',
+    slug: 'pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate',
+    productUrl: 'https://fjaak.no/en/product/pavlova-party/',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 11,
+    dateObtained: '2023-01-30',
+  },
+  {
+    name: 'Strawberry Milk Chocolate',
+    maker: 'Honeymoon Chocolates',
+    slug: 'strawberry-milk-chocolate-honeymoon-chocolates',
+    productUrl:
+      'https://hmchocolates.com/products/belize-milk-chocolate-strawberry',
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 12,
+    dateObtained: '2023-01-30',
+  },
+
+  //
   {
     name: 'Black Fig',
     maker: 'Dick Taylor',
