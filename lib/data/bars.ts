@@ -103,6 +103,72 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '0dbf6777d6',
+    releaseDate: '2023-02-05',
+    name: 'Piura Select',
+    subtitle: 'Dark Chocolate',
+    maker: 'Cacaosuyo',
+    slug: 'piura-select-dark-chocolate-cacaosuyo',
+    productionCountry: 'Peru',
+    productUrl: 'https://cacaosuyo.pe/product/piura-select-70/',
+    description: `"70% Chocolate from Piura, with its fruity, citric profile, with notes of nuts, panela and malt."`,
+
+    images: {
+      HERO: {
+        src: '/bars/piura-select-dark-chocolate-cacaosuyo.jpg',
+        alt: 'Piura Select Dark Chocolate bar made by Cacaosuyo in Peru on a geometric red background',
+      },
+      BAR_FRONT: {
+        src: '/bars/piura-select-dark-chocolate-cacaosuyo-bar-front.jpg',
+        alt: 'Front of Piura Select Dark Chocolate bar made by Cacaosuyo in Peru',
+      },
+      BAR_BACK: {
+        src: '/bars/piura-select-dark-chocolate-cacaosuyo-bar-back.jpg',
+        alt: 'Back of Piura Select Dark Chocolate bar made by Cacaosuyo in Peru',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/piura-select-dark-chocolate-cacaosuyo-package-front.jpg',
+        alt: 'Front of Piura Select Dark Chocolate bar made by Cacaosuyo in Peru package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/piura-select-dark-chocolate-cacaosuyo-package-back.jpg',
+        alt: 'Back of Piura Select Dark Chocolate bar made by Cacaosuyo in Peru package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 70,
+    barDimensions: [131, 63, 8],
+    ingredients: ['Cocoa Paste', 'Sugar'],
+
+    packagingType: 'Box',
+    packagingDimensions: [150, 76, 12],
+    wrapper: 'Metallised plastic', // Gold printed
+    marketingTerms: ['Tree to Bar'],
+    facilityAllergen: ['Milk', 'Nuts', 'Peanuts'],
+    awards: [
+      {
+        body: 'International Chocolate Awards Americas',
+        level: 'Gold',
+        year: 2019,
+      },
+    ],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.25,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+
+    origin: {
+      country: 'Peru',
+      region: 'Piura Region',
+    },
+  },
+  {
     id: '026637ecf2',
     releaseDate: '2023-02-04',
     name: 'Dark Orange',

@@ -124,16 +124,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-19',
   },
   {
-    name: 'Piura Select 70%',
-    maker: 'Cacaosuyo',
-    productUrl: 'https://cacaosuyo.pe/product/piura-select-70/',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9.25,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Dominican Rum',
     maker: 'Definite Chocolate',
     productUrl:
