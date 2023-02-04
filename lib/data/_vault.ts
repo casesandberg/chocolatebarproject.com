@@ -290,14 +290,6 @@ const vault: Array<Bar> = [
     retailPrice: 5.49,
     dateObtained: '2022-12-30',
   },
-  {
-    name: 'Dark Orange',
-    maker: 'Whistler Chocolate',
-    retailer: 'Dufry',
-    location: 'YVR Airport',
-    retailPrice: 5.49,
-    dateObtained: '2022-12-30',
-  },
 
   //
   {

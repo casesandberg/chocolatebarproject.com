@@ -103,6 +103,71 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '026637ecf2',
+    releaseDate: '2023-02-04',
+    name: 'Dark Orange',
+    maker: 'Whistler Chocolate',
+    slug: 'dark-orange-whistler-chocolate',
+    productionCountry: 'Canada',
+    productUrl:
+      'https://whistlerchocolate.com/collections/all/products/dark-chocolate-case',
+    description: `"Our famous dark chocolate with an infusion of sweet Caribbean orange essence. The orange essence used in the chocolate is fully certified organic and imparts a very subtle but distinct orange flavour to our dark chocolate."`,
+
+    images: {
+      HERO: {
+        src: '/bars/dark-orange-whistler-chocolate.jpg',
+        alt: 'Dark Orange bar made by Whistler Chocolate in Canada standing up with a blue background',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-orange-whistler-chocolate-bar-front.jpg',
+        alt: 'Front of Dark Orange bar made by Whistler Chocolate in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-orange-whistler-chocolate-bar-back.jpg',
+        alt: 'Back of Dark Orange bar made by Whistler Chocolate in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-orange-whistler-chocolate-package-front.jpg',
+        alt: 'Front of Dark Orange bar made by Whistler Chocolate in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-orange-whistler-chocolate-package-back.jpg',
+        alt: 'Back of Dark Orange bar made by Whistler Chocolate in Canada package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 74,
+    barWeight: 80,
+    barDimensions: [153, 74, 7],
+    ingredients: [
+      'Organic Cococa Mass',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Organic Orange Essence',
+    ],
+
+    packagingType: 'Box',
+    packagingDimensions: [170, 84, 10],
+    wrapper: 'Metallised plastic', // Silver
+    marketingTerms: ['Organic', 'Fair Trade'],
+    facilityAllergen: ['Milk', 'Tree Nuts'],
+    uncertifiedLabels: ['Gluten Free'],
+    certifiedLabels: ['Organic'], // Pro-cert
+    packageLanguages: ['English', 'French'],
+
+    retailer: 'Dufry',
+    location: 'YVR Airport',
+    retailPrice: 5.49,
+    dateObtained: '2022-12-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: 'a916f5b173',
     releaseDate: '2023-02-03',
     name: '85% Dark Chocolate',
