@@ -103,6 +103,70 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'a81817c167',
+    releaseDate: '2023-02-06',
+    name: 'Vegan White Bar',
+    subtitle: 'With Organic Vanilla',
+    maker: 'Pascha Chocolate Co',
+    slug: 'vegan-white-bar-with-organic-vanilla-pascha-chocolate-co',
+    productionCountry: 'Peru',
+    productUrl:
+      'https://paschachocolate.com/collections/dark-chocolate-bars/products/new-product-pascha-white-bar-48-cacao-vegan-white-chocolate-alternative-2-8-oz-bar',
+    description: `"Seriously...A DAIRY-FREE White Bar! YAY! A vegan, organic white chocolate alternative, made with organic cocoa butter and using rice milk instead of dairy milk. We include a little vanilla to round out the yummy flavor of the organic cocoa butter. Made from the bean at the source in Peru, traveling from the growing region to the manufacturing plant so it's practically tree-to-bar. Keep it simple..Just say yes."`,
+
+    images: {
+      HERO: {
+        src: '/bars/vegan-white-bar-with-organic-vanilla-pascha-chocolate-co.jpg',
+        alt: 'Vegan White Bar With Organic Vanilla bar made by Pascha Chocolate Co in Peru on a geometric red background',
+      },
+      BAR_FRONT: {
+        src: '/bars/vegan-white-bar-with-organic-vanilla-pascha-chocolate-co-bar-front.jpg',
+        alt: 'Front of Vegan White Bar With Organic Vanilla bar made by Pascha Chocolate Co in Peru',
+      },
+      BAR_BACK: {
+        src: '/bars/vegan-white-bar-with-organic-vanilla-pascha-chocolate-co-bar-back.jpg',
+        alt: 'Back of Vegan White Bar With Organic Vanilla bar made by Pascha Chocolate Co in Peru',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/vegan-white-bar-with-organic-vanilla-pascha-chocolate-co-package-front.jpg',
+        alt: 'Front of Vegan White Bar With Organic Vanilla bar made by Pascha Chocolate Co in Peru package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/vegan-white-bar-with-organic-vanilla-pascha-chocolate-co-package-back.jpg',
+        alt: 'Back of Vegan White Bar With Organic Vanilla bar made by Pascha Chocolate Co in Peru package',
+      },
+    },
+
+    barType: 'White',
+    barWeight: 80,
+    barDimensions: [151, 72, 7],
+    ingredients: [
+      'Organic Cocoa Butter',
+      'Organic Cane Sugar',
+      'Organic Tapioca Starch',
+      'Organic Rice Syrup Solids',
+      'Organic Rice Maltodextrin',
+      'Organic Vanilla',
+      'Salt',
+    ],
+
+    packagingType: 'Box',
+    packagingDimensions: [165, 80, 12],
+    wrapper: 'Metallised plastic', // Silver printed
+    marketingTerms: ['Dairy-free', 'Plant-based', 'Bean to Bar', 'Certified'],
+
+    retailer: 'Lazy Acres',
+    location: 'Hillcrest',
+    retailPrice: 3.29,
+    dateObtained: '2023-01-03',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'unknown',
+    },
+  },
+  {
     id: '0dbf6777d6',
     releaseDate: '2023-02-05',
     name: 'Piura Select',

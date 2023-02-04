@@ -255,14 +255,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-03',
   },
   {
-    name: 'Vegan White Bar with Organic Vanilla',
-    maker: 'Pascha',
-    retailer: 'Lazy Acres',
-    location: 'Hillcrest',
-    retailPrice: 3.29,
-    dateObtained: '2023-01-03',
-  },
-  {
     name: '70% Cacao Classic Dark',
     maker: 'Pascha',
     retailer: 'Lazy Acres',
