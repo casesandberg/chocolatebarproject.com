@@ -218,17 +218,6 @@ const vault: Array<Bar> = [
     retailPrice: 12,
     dateObtained: '2023-01-28',
   },
-  {
-    name: 'Peanut Butter Dark Chocolate',
-    maker: 'Maverick Chocolate Co',
-    productUrl:
-      'https://maverickchocolate.com/products/peanut-butter-dark-chocolate',
-
-    retailer: 'Maverick Chocolate Co',
-    location: 'https://maverickchocolate.com',
-    retailPrice: 12,
-    dateObtained: '2023-01-28',
-  },
 
   //
   {

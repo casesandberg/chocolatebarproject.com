@@ -104,6 +104,84 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '1790a9b3fd',
+    releaseDate: '2023-02-08',
+    name: 'Peanut Butter',
+    subtitle: 'Dark Chocolate',
+    maker: 'Maverick Chocolate Co',
+    slug: 'peanut-butter-dark-chocolate-maverick-chocolate-co',
+    productUrl:
+      'https://maverickchocolate.com/products/peanut-butter-dark-chocolate',
+    productionCountry: 'United States',
+    description: `"This is our third batch of Peanut Butter Dark Chocolate and I think we perfected it. We increased the peanut butter in the recipe... a lot! And we changed the cocoa beans to our Ecuador and Tanzania cocoa beans to reduce the fruit note. The result is a delicious balance of dark chocolate and peanut butter!"`,
+
+    images: {
+      HERO: {
+        src: '/bars/peanut-butter-dark-chocolate-maverick-chocolate-co.jpg',
+        alt: 'Peanut Butter Dark Chocolate bar made by Maverick Chocolate Co in the United States on an orange background with peanuts',
+      },
+      BAR_FRONT: {
+        src: '/bars/peanut-butter-dark-chocolate-maverick-chocolate-co-bar-front.jpg',
+        alt: 'Front of Peanut Butter Dark Chocolate bar made by Maverick Chocolate Co in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/peanut-butter-dark-chocolate-maverick-chocolate-co-bar-back.jpg',
+        alt: 'Back of Peanut Butter Dark Chocolate bar made by Maverick Chocolate Co in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/peanut-butter-dark-chocolate-maverick-chocolate-co-package-front.jpg',
+        alt: 'Front of Peanut Butter Dark Chocolate bar made by Maverick Chocolate Co in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/peanut-butter-dark-chocolate-maverick-chocolate-co-package-back.jpg',
+        alt: 'Back of Peanut Butter Dark Chocolate bar made by Maverick Chocolate Co in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    barWeight: 65,
+    barDimensions: [148, 60, 9],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      ['Peanut Butter', ['Roasted Peanuts', 'Salt']],
+      'Organic Cocoa Butter',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [174, 79, 12],
+    wrapper: 'Plastic Bag',
+    marketingTerms: [
+      'Bean to Bar',
+      'Hand Crafted',
+      'Small Batch',
+      'Elevating the Chocolate Standard',
+    ],
+    facilityAllergen: [
+      'Milk',
+      'Eggs',
+      'Wheat',
+      'Peanuts',
+      'Almonds',
+      'Coconut',
+      'Hazelnuts',
+    ],
+    insidePrinting: true,
+
+    retailer: 'Maverick Chocolate Co',
+    location: 'https://maverickchocolate.com',
+    retailPrice: 12,
+    dateObtained: '2023-01-28',
+
+    reviewerWouldEatAgain: true,
+    reviewerBarFavorite: true,
+    reviewerBarNotes: 'So tasty.',
+
+    origin: {
+      country: 'Ecuador and Tanzania',
+    },
+  },
+  {
     id: '90aa882d1e',
     releaseDate: '2023-02-07',
     name: 'Brain Food',
@@ -111,7 +189,11 @@ const bars: Array<Bar> = [
     slug: 'brain-food-markham-fitz-chocolate-makers',
     productUrl: 'https://markhamandfitz.com/products/brainfood',
     productionCountry: 'United States',
-    description: `"Seriously...A DAIRY-FREE White Bar! YAY! A vegan, organic white chocolate alternative, made with organic cocoa butter and using rice milk instead of dairy milk. We include a little vanilla to round out the yummy flavor of the organic cocoa butter. Made from the bean at the source in Peru, traveling from the growing region to the manufacturing plant so it's practically tree-to-bar. Keep it simple..Just say yes."`,
+    description: [
+      `"Surprisingly sweet for an 85% dark chocolate, this natural superfood is loaded with healthy theobromine and antioxidants.`,
+      `Dark chocolate blended with blueberry, maca root & a̤çai berry powders, and topped with wild organic blueberries, almonds & cashews for the ultimate cognitive boost.`,
+      `Perfectly dark without the bite."`,
+    ],
 
     images: {
       HERO: {
