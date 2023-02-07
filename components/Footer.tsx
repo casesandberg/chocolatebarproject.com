@@ -4,7 +4,7 @@ import { Container } from './Container'
 export function Footer() {
   return (
     <Container as="footer">
-      <div className="mt-2 flex items-center justify-between border-t-[1px] border-primary-900/25 py-2 text-sm">
+      <div className="mt-2 flex flex-col items-start justify-between gap-2 border-t-[1px] border-primary-900/25 py-2 text-sm sm:flex-row sm:items-center">
         <div>
           <p className="pb-1 text-primary-900/50 xl:text-center">
             The Chocolate Bar Project
