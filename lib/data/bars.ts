@@ -74,6 +74,7 @@ export interface Bar {
   packageLanguages?: Array<string>
   awards?: Array<Award>
   productionCountry: string
+  mentionsRecycleOrCompost?: boolean
 
   retailer: string
   location: string
@@ -89,7 +90,7 @@ export interface Bar {
   origin:
     | OriginNames
     | {
-        producer?: string
+        producer?: string // Supplier?
         locality?: string
         region?: string
         country: string
@@ -102,6 +103,82 @@ export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
+  {
+    id: '90aa882d1e',
+    releaseDate: '2023-02-07',
+    name: 'Brain Food',
+    maker: 'MARKHAM & FITZ',
+    slug: 'brain-food-markham-fitz-chocolate-makers',
+    productUrl: 'https://markhamandfitz.com/products/brainfood',
+    productionCountry: 'United States',
+    description: `"Seriously...A DAIRY-FREE White Bar! YAY! A vegan, organic white chocolate alternative, made with organic cocoa butter and using rice milk instead of dairy milk. We include a little vanilla to round out the yummy flavor of the organic cocoa butter. Made from the bean at the source in Peru, traveling from the growing region to the manufacturing plant so it's practically tree-to-bar. Keep it simple..Just say yes."`,
+
+    images: {
+      HERO: {
+        src: '/bars/brain-food-markham-fitz-chocolate-makers.jpg',
+        alt: 'Brain Food bar made by MARKHAM & FITZ in the United States on with simple leaves on a tan background',
+      },
+      BAR_FRONT: {
+        src: '/bars/brain-food-markham-fitz-chocolate-makers-bar-front.jpg',
+        alt: 'Front of Brain Food bar made by MARKHAM & FITZ in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/brain-food-markham-fitz-chocolate-makers-bar-back.jpg',
+        alt: 'Back of Brain Food bar made by MARKHAM & FITZ in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/brain-food-markham-fitz-chocolate-makers-package-front.jpg',
+        alt: 'Front of Brain Food bar made by MARKHAM & FITZ in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/brain-food-markham-fitz-chocolate-makers-package-back.jpg',
+        alt: 'Back of Brain Food bar made by MARKHAM & FITZ in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 85,
+    barWeight: 57,
+    barDimensions: [149, 74, 7],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Cane Sugar',
+      'Organic Blueberries',
+      'Almonds',
+      'Cashews',
+      'Organic Blueberry Powder',
+      'Organic Acai Powder',
+      'Organic Maca Powder',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [168, 101, 11],
+    wrapper: 'Compostable Bag',
+    marketingTerms: [
+      'Nourish',
+      'Ethical Sourcing',
+      'Sustainability',
+      'Natural Superfood',
+      'Cognitive Boost',
+      'Pairs well with',
+    ],
+    facilityAllergen: ['Dairy', 'Nuts'],
+    foodAllergen: ['Nuts'],
+    mentionsRecycleOrCompost: true,
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 10,
+    dateObtained: '2023-01-31',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Öko Caribe', // Supplier. See: https://www.uncommoncacao.com/okocaribe
+      region: 'Duarte Province',
+      country: 'Dominican Republic',
+    },
+  },
   {
     id: 'a81817c167',
     releaseDate: '2023-02-06',

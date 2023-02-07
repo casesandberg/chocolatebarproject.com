@@ -51,17 +51,6 @@ const vault: Array<Bar> = [
     retailPrice: 7,
     dateObtained: '2023-01-31',
   },
-  {
-    name: 'Brain Food',
-    maker: 'Markham & Fitz Chocolate Makers',
-    slug: 'brain-food-markham-fitz-chocolate-makers',
-    productUrl: 'https://markhamandfitz.com/products/brainfood',
-
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 10,
-    dateObtained: '2023-01-31',
-  },
 
   //
   {
