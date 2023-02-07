@@ -104,6 +104,71 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '6efd363c4f',
+    releaseDate: '2023-02-09',
+    name: '70% Rio Claro',
+    subtitle: 'Dark Chocolate',
+    maker: 'Solstice Chocolate',
+    slug: '70-rio-claro-dark-chocolate-solstice-chocolate',
+    productUrl: 'https://www.solsticechocolate.com/shop/trini',
+    productionCountry: 'United States',
+    description: `"Our new micro-batch is made with exclusive cacao grown in Rio Claro-Mayaro Trinidad.  The results are a lovely bar with notes of pie crust, almonds, and berries."`,
+
+    images: {
+      HERO: {
+        src: '/bars/70-rio-claro-dark-chocolate-solstice-chocolate.jpg',
+        alt: '70% Rio Claro Dark Chocolate bar made by Solstice Chocolate in the United States floating on a gradient blue background',
+      },
+      BAR_FRONT: {
+        src: '/bars/70-rio-claro-dark-chocolate-solstice-chocolate-bar-front.jpg',
+        alt: 'Front of 70% Rio Claro Dark Chocolate bar made by Solstice Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/70-rio-claro-dark-chocolate-solstice-chocolate-bar-back.jpg',
+        alt: 'Back of 70% Rio Claro Dark Chocolate bar made by Solstice Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/70-rio-claro-dark-chocolate-solstice-chocolate-package-front.jpg',
+        alt: 'Front of 70% Rio Claro Dark Chocolate bar made by Solstice Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/70-rio-claro-dark-chocolate-solstice-chocolate-package-back.jpg',
+        alt: 'Back of 70% Rio Claro Dark Chocolate bar made by Solstice Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    barWeight: 65,
+    percent: 70,
+    barDimensions: [147, 69, 6],
+    ingredients: ['Cacao Bean', 'Organic Cane Sugar', 'Cocoa Butter'],
+
+    packagingType: 'Box',
+    packagingDimensions: [154, 81, 9],
+    wrapper: 'Plastic Bag',
+    marketingTerms: [
+      'Bean to Bar',
+      'Handcrafted',
+      'Limited Edition',
+      'Tasting Notes',
+    ],
+    tastingNotes: ['Berries', 'Pie Crust', 'Almonds'],
+
+    retailer: 'Solstice Chocolate',
+    location: 'https://www.solsticechocolate.com',
+    retailPrice: 16,
+    dateObtained: '2023-01-28',
+
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+    reviewerBarNotes: 'Both the bar and the box',
+
+    origin: {
+      region: 'Rio Claro',
+      country: 'Trinidad',
+    },
+  },
+  {
     id: '1790a9b3fd',
     releaseDate: '2023-02-08',
     name: 'Peanut Butter',

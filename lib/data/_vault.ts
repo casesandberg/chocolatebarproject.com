@@ -198,16 +198,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-28',
   },
   {
-    name: '70% Rio Claro',
-    maker: 'Solstice Chocolate',
-    productUrl: 'https://www.solsticechocolate.com/shop/trini',
-
-    retailer: 'Solstice Chocolate',
-    location: 'https://www.solsticechocolate.com',
-    retailPrice: 16,
-    dateObtained: '2023-01-28',
-  },
-  {
     name: '75% Vietnam Dark Chocolate',
     maker: 'Maverick Chocolate Co',
     productUrl:
