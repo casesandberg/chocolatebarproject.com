@@ -12,19 +12,6 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
-    name: 'Dark Horse Coffee',
-    subtitle: 'Dark Chocolate',
-    maker: 'Nibble Chocolate',
-    slug: 'dark-horse-coffee-dark-chocolate-nibble-chocolate',
-    productUrl:
-      'https://nibblechocolate.com/products/nibble-brazil-72-infused-coffee',
-
-    retailer: 'Nibble Chocolate',
-    location: 'Hillcrest Farmers Market',
-    retailPrice: 6,
-    dateObtained: '2023-02-05',
-  },
-  {
     name: '72% Cocoa',
     subtitle: 'Brazil',
     maker: 'Nibble Chocolate',

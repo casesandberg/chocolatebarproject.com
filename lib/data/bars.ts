@@ -104,6 +104,74 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '4590fdbbff',
+    releaseDate: '2023-02-10',
+    name: 'Dark Horse Coffee',
+    subtitle: 'Dark Chocolate',
+    maker: 'Nibble Chocolate',
+    slug: 'dark-horse-coffee-dark-chocolate-nibble-chocolate',
+    productUrl:
+      'https://nibblechocolate.com/products/nibble-brazil-72-infused-coffee',
+    productionCountry: 'United States',
+    description: `"Just the right amount of coffee and chocolate to create a super smooth, balanced and awakening bar. Coffee was provided by our amazing local partner Dark Horse Coffee Roasters featuring Brazil as our single origin for the cacao and the coffee."`,
+
+    images: {
+      HERO: {
+        src: '/bars/dark-horse-coffee-dark-chocolate-nibble-chocolate.jpg',
+        alt: 'Dark Horse Coffee Dark Chocolate bar made by Nibble Chocolate in the United States on a table with dark horse coffee and a pastry',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-horse-coffee-dark-chocolate-nibble-chocolate-bar-front.jpg',
+        alt: 'Front of Dark Horse Coffee Dark Chocolate bar made by Nibble Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-horse-coffee-dark-chocolate-nibble-chocolate-bar-back.jpg',
+        alt: 'Back of Dark Horse Coffee Dark Chocolate bar made by Nibble Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-horse-coffee-dark-chocolate-nibble-chocolate-package-front.jpg',
+        alt: 'Front of Dark Horse Coffee Dark Chocolate bar made by Nibble Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-horse-coffee-dark-chocolate-nibble-chocolate-package-back.jpg',
+        alt: 'Back of Dark Horse Coffee Dark Chocolate bar made by Nibble Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    barWeight: 65,
+    percent: 72,
+    barDimensions: [106, 106, 5],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Coffee',
+      'Organic Vanilla',
+      'Sea Salt',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [123, 123, 9],
+    wrapper: 'Plastic Bag',
+    marketingTerms: ['Single Origin', 'Art', 'Quality'],
+
+    retailer: 'Nibble Chocolate',
+    location: 'Hillcrest Farmers Market',
+    retailPrice: 6,
+    dateObtained: '2023-02-05',
+
+    reviewerWouldEatAgain: true,
+    reviewerPackagingNotes: 'Bar arrived broken.',
+
+    origin: {
+      // small family estate https://nibblechocolate.com/collections/brazil
+      region: 'Bahia',
+      country: 'Brazil',
+    },
+    beanVariety: 'Trinitario',
+  },
+  {
     id: '6efd363c4f',
     releaseDate: '2023-02-09',
     name: '70% Rio Claro',
