@@ -247,17 +247,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-19',
   },
   {
-    name: 'Dominican Rum',
-    maker: 'Definite Chocolate',
-    productUrl:
-      'https://definitechocolate.com/products/domincan-rum-75-finca-elvesia',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9.0,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Taiwan #9 Double Ferment',
     maker: 'Fu Wan Chocolate',
     productUrl: 'https://www.fuwanshop.com/products/taiwanno9',

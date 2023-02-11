@@ -104,6 +104,80 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '851d4b05ac',
+    releaseDate: '2023-02-11',
+    name: 'Dominican Rum',
+    subtitle: 'Finca Elvesia',
+    maker: 'definite chocolate',
+    slug: 'dominic-rum-finca-elvesia-definite-chocolate',
+    productUrl:
+      'https://definitechocolate.com/products/domincan-rum-75-finca-elvesia',
+    productionCountry: 'Dominican Republic',
+    description: [
+      `"This chocolate bar was infused with rum from Brugal. Let this bar melt slowly on your tongue and feel the flavor of the rum in your mouth.`,
+      `The cacao used for this chocolate comes from Finca Elvesia, a plantation located in the northeastern part of the Dominican Republic which was established in the 19th century. It became the largest cacao plantation in the Caribbean and had even its own railroad system for the transportation of the cacao to the port.`,
+      `The tasting notes of this chocolate are dried fruits and molasses."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/dominic-rum-finca-elvesia-definite-chocolate.jpg',
+        alt: 'Dominican Rum Finca Elvesia bar made by definite chocolate in the Dominican Republic hanging on a wall with a to go bag',
+      },
+      BAR_FRONT: {
+        src: '/bars/dominic-rum-finca-elvesia-definite-chocolate-bar-front.jpg',
+        alt: 'Front of Dominican Rum Finca Elvesia bar made by definite chocolate in the Dominican Republic',
+      },
+      BAR_BACK: {
+        src: '/bars/dominic-rum-finca-elvesia-definite-chocolate-bar-back.jpg',
+        alt: 'Back of Dominican Rum Finca Elvesia bar made by definite chocolate in the Dominican Republic',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dominic-rum-finca-elvesia-definite-chocolate-package-front.jpg',
+        alt: 'Front of Dominican Rum Finca Elvesia bar made by definite chocolate in the Dominican Republic package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dominic-rum-finca-elvesia-definite-chocolate-package-back.jpg',
+        alt: 'Back of Dominican Rum Finca Elvesia bar made by definite chocolate in the Dominican Republic package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 75,
+    barWeight: 60,
+    barDimensions: [145, 70, 6],
+    ingredients: ['Organic Cacao Beans', 'Organic Cane Sugar', 'Rum'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [152, 78, 10],
+    wrapper: 'Plastic Bag',
+    marketingTerms: [
+      'Single Origin',
+      'Organic',
+      'Family Run',
+      'Micro Batch',
+      'Bean to Bar',
+      'Tasting Notes',
+    ],
+    tastingNotes: ['Dried Fruits', 'Molasses'],
+    insidePrinting: true,
+    packageLanguages: ['English', 'Spanish'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9.0,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Finca Elvesia', // https://barandcocoa.com/collections/estate-finca-elvesia
+      locality: 'El Valle',
+      region: 'Hato Mayor',
+      country: 'Dominican Republic',
+    },
+  },
+  {
     id: '4590fdbbff',
     releaseDate: '2023-02-10',
     name: 'Dark Horse Coffee',
