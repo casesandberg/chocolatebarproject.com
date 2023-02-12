@@ -27,20 +27,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Japan Sea Salt',
-    subtitle: 'Chocolate Bar',
-    maker: 'Ranger Chocolate Co',
-    slug: 'japan-sea-salt-chocolate-bar-ranger-chocolate-co',
-    productUrl: 'https://rangerchocolate.co/shop/wa/shop?id=13&e=KHCItem',
-
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 7,
-    dateObtained: '2023-01-31',
-  },
-
-  //
-  {
     name: '(White) Chocolate Covered Strawberry',
     maker: 'Askinosie Chocolate',
     slug: 'white-chocolate-covered-strawberry-askinosie-chocolate',

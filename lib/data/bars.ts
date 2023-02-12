@@ -104,6 +104,65 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'f7636346e6',
+    releaseDate: '2023-02-12',
+    name: 'Japan Sea Salt',
+    subtitle: 'Chocolate Bar',
+    maker: 'Ranger Chocolate Co',
+    slug: 'japan-sea-salt-chocolate-bar-ranger-chocolate-co',
+    productUrl: 'https://rangerchocolate.co/shop/wa/shop?id=13&e=KHCItem',
+    productionCountry: 'United States',
+    description: [
+      `"Our Japan Sea Salt Chocolate Bar is one of three bars in our sea salt adventure series - where we explore salt harvested from the Pacific Ocean. We teamed up with our friends at Bitterman Salt Co to pair the exquisite Japanese Hana Flake Sea Salt with cacao beans from the Semuliki Forest in Uganda. Sea salt is turned into the chocolate to add texture and retain its true flavor."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co.jpg',
+        alt: 'Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States hanging on a wall with a to go bag',
+      },
+      BAR_FRONT: {
+        src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co-bar-front.jpg',
+        alt: 'Front of Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co-bar-back.jpg',
+        alt: 'Back of Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co-package-front.jpg',
+        alt: 'Front of Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co-package-back.jpg',
+        alt: 'Back of Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States package',
+      },
+    },
+
+    barWeight: 64,
+    barDimensions: [140, 57, 8],
+    ingredients: ['Organic Cacao', 'Organic Sugar', 'Cacao Butter', 'Sea Salt'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [152, 78, 10],
+    wrapper: 'Foil with Paper Backing', // Silver
+    marketingTerms: ['Paired'],
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7,
+    dateObtained: '2023-01-31',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Uganda',
+      region: 'Bundibugyo District',
+      locality: 'Semuliki Forest',
+    },
+    beanVariety: 'Forestero',
+  },
+  {
     id: '851d4b05ac',
     releaseDate: '2023-02-11',
     name: 'Dominican Rum',
