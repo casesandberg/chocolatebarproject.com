@@ -102,20 +102,97 @@ export type Ingredient = string
 export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
-// {
-//   name: 'Raspberry Waffle Cone',
-//   subtitle: 'Vegan White Chocolate Waffle Cone Bar',
-//   maker: 'Raaka Chocolate',
-//   productUrl: 'https://www.raakachocolate.com/collections/all-raaka-chocolate/products/raspberry-waffle-cone-box-of-10',
-//   slug: 'raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate',
-
-//   retailer: 'Raaka Chocolate',
-//   location: 'https://www.raakachocolate.com',
-//   retailPrice: 38,
-//   dateObtained: '2023-01-26',
-// },
-
 const bars: Array<Bar> = [
+  {
+    id: '4fd7a063f4',
+    releaseDate: '2023-02-14',
+    name: 'Raspberry Waffle Cone',
+    subtitle: 'Vegan White Chocolate Waffle Cone Bar',
+    maker: 'Raaka Chocolate',
+    slug: 'raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate',
+    productUrl:
+      'https://www.raakachocolate.com/collections/all-raaka-chocolate/products/raspberry-waffle-cone-box-of-10',
+    productionCountry: 'United States',
+    description: [
+      `"Our crisp chocolate waffle cone cookie set in a pink, raspberry infused vegan white chocolate. The first bite will make you swoon."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate.jpg',
+        alt: 'Raspberry Waffle Cone Vegan White Chocolate Waffle Cone bar made by Raaka Chocolate in the United States in a big pile of bars',
+      },
+      BAR_FRONT: {
+        src: '/bars/raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate-bar-front.jpg',
+        alt: 'Front of Raspberry Waffle Cone Vegan White Chocolate Waffle Cone bar made by Raaka Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate-bar-back.jpg',
+        alt: 'Back of Raspberry Waffle Cone Vegan White Chocolate Waffle Cone bar made by Raaka Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate-package-front.jpg',
+        alt: 'Front of Raspberry Waffle Cone Vegan White Chocolate Waffle Cone bar made by Raaka Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate-package-back.jpg',
+        alt: 'Back of Raspberry Waffle Cone Vegan White Chocolate Waffle Cone bar made by Raaka Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Flavored',
+    barWeight: 28,
+    barDimensions: [73, 73, 6],
+    ingredients: [
+      'Organic Cane Sugar',
+      'Organic Cacao Butter',
+      'Organic Coconut Milk Powder',
+      [
+        'Organic Waffle Cone',
+        [
+          'Organic Coconut Oil',
+          'Organic Cane Sugar',
+          'Organic Fice Flour',
+          'Organic Brown Rice Flour',
+          'Organic Tapoica Powder',
+          'Organic Millet Flour',
+          'Organic Apple Sauce',
+          'Organic Flax Seed',
+          'Organic Cacao Powder',
+          'Organic Arrowroot Powder',
+          'Baking Powder',
+          'Organic Inulin',
+          'Ascorbic Acid',
+          'Xanthan Gum',
+        ],
+      ],
+      'Organic Tapoica Flour',
+      'Organic Raspberries',
+      'Organic Brown Rice Syrup',
+      'Organic Sunflower Lecithin',
+    ],
+
+    packagingType: 'Bag',
+    packagingDimensions: [101, 81, 7],
+    marketingTerms: ['Transparent Trade'],
+    uncertifiedLabels: ['Gluten Free', 'Dairy Free'],
+    certifiedLabels: ['USDA Organic'],
+
+    retailer: 'Raaka Chocolate',
+    location: 'https://www.raakachocolate.com',
+    retailPrice: 38,
+    dateObtained: '2023-01-26',
+
+    reviewerWouldEatAgain: true,
+
+    // https://www.raakachocolate.com/pages/kokoa-kamili-tanzania
+    origin: {
+      country: 'Tanzania',
+      region: 'Morogoro Region',
+      locality: 'Kilombero Valley',
+      producer: 'Kokoa Kamili',
+    },
+  },
   {
     id: 'd162a7eb3d',
     releaseDate: '2023-02-13',
