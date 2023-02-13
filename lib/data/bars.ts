@@ -119,7 +119,7 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co.jpg',
-        alt: 'Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States hanging on a wall with a to go bag',
+        alt: 'Japan Sea Salt Chocolate bar made by Ranger Chocolate Co in the United States in a bookshelf',
       },
       BAR_FRONT: {
         src: '/bars/japan-sea-salt-chocolate-bar-ranger-chocolate-co-bar-front.jpg',
