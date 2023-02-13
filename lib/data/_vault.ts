@@ -79,18 +79,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-30',
   },
   {
-    name: 'The Après Chocolate',
-    subtitle: 'Sparkling White Wine Infused Chocolate With Dried Raspberries',
-    maker: 'Ritual Chocolate',
-    slug: 'the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate',
-    productUrl: 'https://www.ritualchocolate.com/shop/apresbar',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 12.0,
-    dateObtained: '2023-01-30',
-  },
-  {
     name: 'Wild Berry Pop',
     subtitle: 'White Chocolate with Berries and Pop Rocks',
     maker: 'SOMA Chocolatemaker',

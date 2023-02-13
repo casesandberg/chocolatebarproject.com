@@ -102,7 +102,87 @@ export type Ingredient = string
 export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
+// {
+//   name: 'Raspberry Waffle Cone',
+//   subtitle: 'Vegan White Chocolate Waffle Cone Bar',
+//   maker: 'Raaka Chocolate',
+//   productUrl: 'https://www.raakachocolate.com/collections/all-raaka-chocolate/products/raspberry-waffle-cone-box-of-10',
+//   slug: 'raspberry-waffle-cone-vegan-white-chocolate-waffle-cone-bar-raaka-chocolate',
+
+//   retailer: 'Raaka Chocolate',
+//   location: 'https://www.raakachocolate.com',
+//   retailPrice: 38,
+//   dateObtained: '2023-01-26',
+// },
+
 const bars: Array<Bar> = [
+  {
+    id: 'd162a7eb3d',
+    releaseDate: '2023-02-13',
+    name: 'The Après Chocolate',
+    subtitle: 'Sparkling White Wine Infused Chocolate With Dried Raspberries',
+    maker: 'Ritual Chocolate',
+    slug: 'the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate',
+    productUrl: 'https://www.ritualchocolate.com/shop/apresbar',
+    productionCountry: 'United States',
+    description: [
+      `"We are excited to announce the addition of our Après Bar to our Utah Mountain Line! This raspberry–topped bar was such a hit as our Limited Edition Berries and Bubbly Bar that we decided to add it permanently to our Mountain Line as the Après Bar.`,
+      `This bar is the perfect celebratory treat—the tasting notes of sparkling white wine infused cacao complement the sweet tartness of the raspberries. Whether you’re celebrating the end of a day on the ski hill, toasting a birthday, or cheering at midnight on New Year’s Eve, this bar is sure to bring you cheer & chocolate. This bar is best paired with a long day in the mountains.`,
+      `So why Après? Après is the French word for “after”, as in, the party after a great day playing in the mountains. We originally launched our Limited Edition Berries and Bubbly bar in early 2020 as a celebratory bar for Valentine’s Day and Mother’s Day. We quickly realized that it became the go-to celebration bar and would be great year-round! As for the Après name... as a chocolate factory based in a part of the world that loves to party after a day of skiing, the Après name is close to our home & hearts."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate.jpg',
+        alt: 'The Après Chocolate Sparkling White Wine Infused Chocolate With Dried Raspberries bar made by Ritual Chocolate in the United States on a gradient background with candy hearts',
+      },
+      BAR_FRONT: {
+        src: '/bars/the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate-bar-front.jpg',
+        alt: 'Front of The Après Chocolate Sparkling White Wine Infused Chocolate With Dried Raspberries bar made by Ritual Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate-bar-back.jpg',
+        alt: 'Back of The Après Chocolate Sparkling White Wine Infused Chocolate With Dried Raspberries bar made by Ritual Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate-package-front.jpg',
+        alt: 'Front of The Après Chocolate Sparkling White Wine Infused Chocolate With Dried Raspberries bar made by Ritual Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/the-apres-chocolate-sparkling-white-wine-infused-chocolate-with-dried-raspberries-ritual-chocolate-package-back.jpg',
+        alt: 'Back of The Après Chocolate Sparkling White Wine Infused Chocolate With Dried Raspberries bar made by Ritual Chocolate in the United States package',
+      },
+    },
+
+    percent: 70,
+    barWeight: 60,
+    barDimensions: [158, 75, 6],
+    ingredients: [
+      'Cacao',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Freeze-dried Raspberries',
+      'Sparkling White Wine',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [180, 93, 11],
+    wrapper: 'Craft Paper Bag',
+    marketingTerms: ['Bean to Bar', 'Tasting Notes', 'Craft Chocolate'],
+    facilityAllergen: ['Peanuts', 'Tree Nuts', 'Wheat'],
+    uncertifiedLabels: ['Vegan'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 12.0,
+    dateObtained: '2023-01-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
   {
     id: 'f7636346e6',
     releaseDate: '2023-02-12',
