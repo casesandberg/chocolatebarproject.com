@@ -104,6 +104,80 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'c6c2acdbe7',
+    releaseDate: '2023-02-15',
+    name: '(White) Chocolate Covered Strawberry',
+    maker: 'Askinosie Chocolate',
+    slug: 'white-chocolate-covered-strawberry-askinosie-chocolate',
+    productUrl:
+      'https://askinosie.com/products/white-chocolate-covered-strawberry-bar',
+    productionCountry: 'United States',
+    description: [
+      `"Step aside, conversation hearts. Our brand new (White) Chocolate Covered Strawberry Bar is the treat your Valentine really wants. Featuring organic juicy strawberries and a dash of organic beets and black pepper, we make this vegan bar with our hand-pressed cocoa butter made from cocoa beans we source directly from farmers in Tanzania and the Philippines."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/white-chocolate-covered-strawberry-askinosie-chocolate.jpg',
+        alt: '(White) Chocolate Covered Strawberry bar made by Askinosie Chocolate in the United States with scrabble tiles spelling out "Love"',
+      },
+      BAR_FRONT: {
+        src: '/bars/white-chocolate-covered-strawberry-askinosie-chocolate-bar-front.jpg',
+        alt: 'Front of (White) Chocolate Covered Strawberry bar made by Askinosie Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/white-chocolate-covered-strawberry-askinosie-chocolate-bar-back.jpg',
+        alt: 'Back of (White) Chocolate Covered Strawberry bar made by Askinosie Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/white-chocolate-covered-strawberry-askinosie-chocolate-package-front.jpg',
+        alt: 'Front of (White) Chocolate Covered Strawberry bar made by Askinosie Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/white-chocolate-covered-strawberry-askinosie-chocolate-package-back.jpg',
+        alt: 'Back of (White) Chocolate Covered Strawberry bar made by Askinosie Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Flavored',
+    barWeight: 85,
+    barDimensions: [162, 73, 7],
+    ingredients: [
+      'Davao, Philippines Cocoa Butter',
+      'Mababu, Tanzania Cocoa Butter',
+      'Organic Cane Sugar',
+      'Organic Strawberry',
+      'Organic Turbinado Sugar',
+      'Organic Coconut',
+      'Organic Beet',
+      'Organic Black Pepper',
+    ],
+
+    packagingType: 'Bag',
+    packagingDimensions: [200, 92, 9],
+    marketingTerms: [
+      'House-made Cocoa Butter',
+      'Limited Edition',
+      'Handcraft',
+      'Small Batches',
+    ],
+    uncertifiedLabels: ['Vegan Friendly'],
+    certifiedLabels: ['Kosher'],
+    facilityAllergen: ['Milk', 'Peanuts', 'Tree Nuts', 'Wheat'],
+    foodAllergen: ['Coconut'],
+
+    retailer: 'Askinosie Chocolate',
+    location: 'https://askinosie.com/',
+    retailPrice: 14.0,
+    dateObtained: '2023-01-31',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Mababu, Tanzania and Davao, Philippines',
+    },
+  },
+  {
     id: '4fd7a063f4',
     releaseDate: '2023-02-14',
     name: 'Raspberry Waffle Cone',

@@ -27,18 +27,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: '(White) Chocolate Covered Strawberry',
-    maker: 'Askinosie Chocolate',
-    slug: 'white-chocolate-covered-strawberry-askinosie-chocolate',
-    productUrl:
-      'https://askinosie.com/products/white-chocolate-covered-strawberry-bar',
-
-    retailer: 'Askinosie Chocolate',
-    location: 'https://askinosie.com/',
-    retailPrice: 14.0,
-    dateObtained: '2023-01-31',
-  },
-  {
     name: 'Davao, Philippines',
     subtitle: '77% Dark Chocolate',
     maker: 'Askinosie Chocolate',
