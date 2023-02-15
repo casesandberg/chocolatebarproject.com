@@ -79,17 +79,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-30',
   },
   {
-    name: 'Lakkrís + Raspberry',
-    maker: 'Omnom Chocolate',
-    slug: 'lakkris-raspberry-omnom-chocolate',
-    productUrl: 'https://omnomchocolate.com/products/lakkris-raspberry',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 9,
-    dateObtained: '2023-01-30',
-  },
-  {
     name: 'Pavlova Party',
     subtitle: 'White Chocolate, Festive Fruits & Meringue',
     maker: 'Fjak Chocolate',

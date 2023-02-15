@@ -104,6 +104,67 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '777e75d5de',
+    releaseDate: '2023-02-16',
+    name: 'Lakkrís + Raspberry',
+    maker: 'Omnom Chocolate',
+    slug: 'lakkris-raspberry-omnom-chocolate',
+    productUrl: 'https://omnomchocolate.com/products/lakkris-raspberry',
+    productionCountry: 'Iceland',
+    description: [`"Liquorice and raspberry chocolate."`],
+
+    images: {
+      HERO: {
+        src: '/bars/lakkris-raspberry-omnom-chocolate.jpg',
+        alt: 'Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland with scrabble tiles spelling out "Love"',
+      },
+      BAR_FRONT: {
+        src: '/bars/lakkris-raspberry-omnom-chocolate-bar-front.jpg',
+        alt: 'Front of Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland',
+      },
+      BAR_BACK: {
+        src: '/bars/lakkris-raspberry-omnom-chocolate-bar-back.jpg',
+        alt: 'Back of Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/lakkris-raspberry-omnom-chocolate-package-front.jpg',
+        alt: 'Front of Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/lakkris-raspberry-omnom-chocolate-package-back.jpg',
+        alt: 'Back of Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland package',
+      },
+    },
+
+    barType: 'Flavored',
+    barWeight: 60,
+    barDimensions: [61, 141, 6],
+    ingredients: [
+      'Cocoa Butter',
+      'Cane Sugar',
+      'Icelandic Whole Milk Powder',
+      'Liquorice Powder',
+      ['Crispy Raspberries', ['Sugar', 'Raspberries', 'Tapioca Starch']],
+      'Sunflower Lecithin',
+      'Salmiak',
+    ],
+
+    packagingType: 'Envelope with Sleeve',
+    packagingDimensions: [73, 147, 11],
+    facilityAllergen: ['Nuts', 'Dairy', 'Gluten'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 9,
+    dateObtained: '2023-01-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'c6c2acdbe7',
     releaseDate: '2023-02-15',
     name: '(White) Chocolate Covered Strawberry',
