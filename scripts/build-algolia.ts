@@ -61,14 +61,14 @@ import bars from '../lib/data/bars'
         attributesForFaceting: [
           'barType',
           // 'percent',
-          // 'packagingType',
-          // 'marketingTerms',
+          'packagingType',
+          'marketingTerms',
           'productionCountry',
           'ingredients',
           // 'certifiedLabels',
           // 'uncertifiedLabels',
           'maker',
-          // 'origin.country',
+          'origin.country',
           // 'origin.region',
           // 'origin.locality',
           // 'origin.producer',
@@ -80,7 +80,15 @@ import bars from '../lib/data/bars'
         renderingContent: {
           facetOrdering: {
             facets: {
-              order: ['barType', 'maker', 'ingredients', 'productionCountry'],
+              order: [
+                'barType',
+                'maker',
+                'ingredients',
+                'productionCountry',
+                'marketingTerms',
+                'packagingType',
+                'origin.country',
+              ],
             },
             values: {
               barType: {
