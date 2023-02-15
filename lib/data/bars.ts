@@ -104,6 +104,81 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '81f3e12ffd',
+    releaseDate: '2023-02-17',
+    name: 'Pavlova Party',
+    subtitle: 'White Chocolate, Festive Fruits & Meringue',
+    maker: 'Fjak Chocolate',
+    slug: 'pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate',
+    productUrl: 'https://fjaak.no/en/product/pavlova-party/',
+    productionCountry: 'Norway',
+    description: [
+      `"Our Pavlova party bar is a creamy merengue white chocolate topped with dry merengue and Nordic berries, blueberries, raspberries and strawberries. The colour of the fresh berries are the perfect combination of the Norwegian flag.`,
+      `Pavlova cake is originally from Australia ans new Zealand, in the early 20th century but it has become a tradition in Norway for the constitution day in the 17th of May."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate.jpg',
+        alt: 'Pavlova Party White Chocolate, Festive Fruits & Meringue bar made by Fjak Chocolate in Norway with with dots on a red background',
+      },
+      BAR_FRONT: {
+        src: '/bars/pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate-bar-front.jpg',
+        alt: 'Front of Pavlova Party White Chocolate, Festive Fruits & Meringue bar made by Fjak Chocolate in Norway',
+      },
+      BAR_BACK: {
+        src: '/bars/pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate-bar-back.jpg',
+        alt: 'Back of Pavlova Party White Chocolate, Festive Fruits & Meringue bar made by Fjak Chocolate in Norway',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate-package-front.jpg',
+        alt: 'Front of Pavlova Party White Chocolate, Festive Fruits & Meringue bar made by Fjak Chocolate in Norway package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate-package-back.jpg',
+        alt: 'Back of Pavlova Party White Chocolate, Festive Fruits & Meringue bar made by Fjak Chocolate in Norway package',
+      },
+    },
+
+    barType: 'White',
+    barWeight: 53,
+    barDimensions: [138, 56, 8],
+    ingredients: [
+      'Organic Cocoa Butter',
+      'Organic Cane Sugar',
+      'Organic Milk Powder',
+      'Albumine',
+      'Organic Strawberry',
+      'Organic Blueberry',
+      'Organic Raspberry',
+      ['Organic Meringue', ['Organic Sugar', 'Organic Egg White']],
+    ],
+
+    packagingType: 'Envelope with Sleeve',
+    packagingDimensions: [150, 66, 11],
+    marketingTerms: [
+      'Single Origin',
+      'Small Batches',
+      'Handcrafted',
+      'Bean to Bar',
+      '100% Organic',
+    ],
+    facilityAllergen: ['Nuts', 'Dairy', 'Gluten'],
+    packageLanguages: ['English', 'Norwegian'],
+    certifiedLabels: ['Organic'], // NO-OKO-01
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 11,
+    dateObtained: '2023-01-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: '777e75d5de',
     releaseDate: '2023-02-16',
     name: 'Lakkrís + Raspberry',
@@ -116,7 +191,7 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/lakkris-raspberry-omnom-chocolate.jpg',
-        alt: 'Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland with scrabble tiles spelling out "Love"',
+        alt: 'Lakkrís + Raspberry bar made by Omnom Chocolate in Iceland on a gray background with red and gold hearts',
       },
       BAR_FRONT: {
         src: '/bars/lakkris-raspberry-omnom-chocolate-bar-front.jpg',

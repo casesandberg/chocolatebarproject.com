@@ -79,18 +79,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-30',
   },
   {
-    name: 'Pavlova Party',
-    subtitle: 'White Chocolate, Festive Fruits & Meringue',
-    maker: 'Fjak Chocolate',
-    slug: 'pavlova-party-white-chocolate-festive-fruits-meringue-fjak-chocolate',
-    productUrl: 'https://fjaak.no/en/product/pavlova-party/',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 11,
-    dateObtained: '2023-01-30',
-  },
-  {
     name: 'Strawberry Milk Chocolate',
     maker: 'Honeymoon Chocolates',
     slug: 'strawberry-milk-chocolate-honeymoon-chocolates',
