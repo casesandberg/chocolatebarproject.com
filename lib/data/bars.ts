@@ -104,6 +104,80 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '2ad64b65e2',
+    releaseDate: '2023-02-18',
+    name: 'Strawberries & Cream',
+    maker: 'Dick Taylor',
+    slug: 'strawberries-cream-dick-taylor',
+    productUrl:
+      'https://dicktaylorchocolate.com/collections/all/products/strawberries-cream',
+    productionCountry: 'United States',
+    description: [
+      `"Once a year, for Valentine’s Day, we make the ever-coveted treat; ‘Chocolate Dipped Strawberries’ to sell to our local customers. This year we thought it would be fun to turn it into a chocolate bar for everyone to enjoy! We are not exaggerating when we say it tastes JUST like the real thing. This bar has two delicious layers starting with our 72% Belize single origin dark chocolate. The other layer is a Peruvian white chocolate, made with Alexandre Family Farm A2/A2 whole milk and freeze-dried strawberries. The strawberry white chocolate is fruity, creamy and sweet with the perfect level of tartness to round it out."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/strawberries-cream-dick-taylor.jpg',
+        alt: 'Strawberries & Cream bar made by Dick Taylor in the United States with rose petals',
+      },
+      BAR_FRONT: {
+        src: '/bars/strawberries-cream-dick-taylor-bar-front.jpg',
+        alt: 'Front of Strawberries & Cream bar made by Dick Taylor in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/strawberries-cream-dick-taylor-bar-back.jpg',
+        alt: 'Back of Strawberries & Cream bar made by Dick Taylor in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/strawberries-cream-dick-taylor-package-front.jpg',
+        alt: 'Front of Strawberries & Cream bar made by Dick Taylor in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/strawberries-cream-dick-taylor-package-back.jpg',
+        alt: 'Back of Strawberries & Cream bar made by Dick Taylor in the United States package',
+      },
+    },
+
+    barType: 'Dark', // Mixed?
+    percent: 72,
+    barWeight: 57,
+    barDimensions: [125, 75, 6],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Freeze Dried Strawberries',
+      'Organic A2/A2 Whole Milk Powder',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [164, 100, 9],
+    wrapper: 'Metallised plastic', // Color printed
+    marketingTerms: [
+      'Craft',
+      'Award-winning',
+      'Single origin',
+      'Ethically Sourced',
+      'Bean to Bar',
+    ],
+    facilityAllergen: ['Nuts', 'Wheat', 'Peanuts'],
+    foodAllergen: ['Milk'],
+
+    retailer: 'Dick Taylor',
+    location: 'https://dicktaylorchocolate.com',
+    retailPrice: 14,
+    dateObtained: '2023-01-28',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Belize',
+      region: 'Toledo District',
+      producer: 'Maya Mountain', // https://dicktaylorchocolate.com/pages/belize-toldeo
+    },
+  },
+  {
     id: '81f3e12ffd',
     releaseDate: '2023-02-17',
     name: 'Pavlova Party',
@@ -156,6 +230,7 @@ const bars: Array<Bar> = [
 
     packagingType: 'Envelope with Sleeve',
     packagingDimensions: [150, 66, 11],
+    wrapper: 'Plastic',
     marketingTerms: [
       'Single Origin',
       'Small Batches',

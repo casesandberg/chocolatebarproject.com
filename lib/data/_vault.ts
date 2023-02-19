@@ -103,17 +103,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-28',
   },
   {
-    name: 'Strawberries & Cream',
-    maker: 'Dick Taylor',
-    productUrl:
-      'https://dicktaylorchocolate.com/collections/all/products/strawberries-cream',
-
-    retailer: 'Dick Taylor',
-    location: 'https://dicktaylorchocolate.com',
-    retailPrice: 14,
-    dateObtained: '2023-01-28',
-  },
-  {
     name: '70% Ben Tre',
     maker: 'Solstice Chocolate',
     productUrl: 'https://www.solsticechocolate.com/shop/70vietnam',
