@@ -78,18 +78,6 @@ const vault: Array<Bar> = [
     retailPrice: 14.5,
     dateObtained: '2023-01-30',
   },
-  {
-    name: 'Strawberry Milk Chocolate',
-    maker: 'Honeymoon Chocolates',
-    slug: 'strawberry-milk-chocolate-honeymoon-chocolates',
-    productUrl:
-      'https://hmchocolates.com/products/belize-milk-chocolate-strawberry',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 12,
-    dateObtained: '2023-01-30',
-  },
 
   //
   {

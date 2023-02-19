@@ -104,6 +104,79 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '99f2eaecc1',
+    releaseDate: '2023-02-19',
+    name: 'Strawberry Milk Chocolate',
+    maker: 'Honeymoon Chocolates',
+    slug: 'strawberry-milk-chocolate-honeymoon-chocolates',
+    productUrl:
+      'https://hmchocolates.com/products/belize-milk-chocolate-strawberry',
+    productionCountry: 'United States',
+    description: [
+      `"We taste Dutched Cocoa, Strawberry Milk, and Dark Chocolate S'mores. What will you taste?`,
+      `We mastered a blend of 65% Milk Chocolate that boasts zero refined sugars- only raw honey is used. This 2.2 oz. bar is free of refined sugars, gluten, and soy. All cacao used for this bar is sourced at a $3.15/kg farmgate price from Maya Mountain Cacao in Belize."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/strawberry-milk-chocolate-honeymoon-chocolates.jpg',
+        alt: 'Strawberry Milk Chocolate bar made by Honeymoon Chocolates in the United States floating on a gray background',
+      },
+      BAR_FRONT: {
+        src: '/bars/strawberry-milk-chocolate-honeymoon-chocolates-bar-front.jpg',
+        alt: 'Front of Strawberry Milk Chocolate bar made by Honeymoon Chocolates in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/strawberry-milk-chocolate-honeymoon-chocolates-bar-back.jpg',
+        alt: 'Back of Strawberry Milk Chocolate bar made by Honeymoon Chocolates in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/strawberry-milk-chocolate-honeymoon-chocolates-package-front.jpg',
+        alt: 'Front of Strawberry Milk Chocolate bar made by Honeymoon Chocolates in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/strawberry-milk-chocolate-honeymoon-chocolates-package-back.jpg',
+        alt: 'Back of Strawberry Milk Chocolate bar made by Honeymoon Chocolates in the United States package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 65,
+    barWeight: 62,
+    barDimensions: [150, 75, 6],
+    ingredients: [
+      'Organic Cacao',
+      'Raw Honey',
+      'Organic Cacao Butter',
+      'Organic Milk Powder',
+      'Organic Strawberry',
+    ],
+
+    packagingType: 'Bag',
+    packagingDimensions: [212, 118, 6],
+    marketingTerms: [
+      'Ethical',
+      'Transparently Sourced',
+      'Sweetened',
+      'Bean to Bar',
+      'Craft Chocolate',
+    ],
+    uncertifiedLabels: ['100% Compostable', 'Transparent Traded Cacao'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 12,
+    dateObtained: '2023-01-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Belize',
+      region: 'Toledo District',
+      producer: 'Maya Mountain',
+    },
+  },
+  {
     id: '2ad64b65e2',
     releaseDate: '2023-02-18',
     name: 'Strawberries & Cream',
