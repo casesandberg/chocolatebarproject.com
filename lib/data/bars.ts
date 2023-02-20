@@ -104,6 +104,66 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '263628fcda',
+    releaseDate: '2023-02-20',
+    name: '80% Trinidad',
+    subtitle: 'Grand Cru Noir',
+    maker: 'Laderach',
+    slug: '80-trinidad-grand-cru-noir-laderach',
+    productUrl:
+      'https://laderach.com/us-en/tablet-grand-cru-trinidad-80-single-origin',
+    productionCountry: 'Switzerland',
+    description: [
+      `"This chocolate has a full-bodied, deeply-roasted cocoa flavour and a dark brown colour. This “tropical” variety features rich roasted aromas and notes of tobacco that are balanced out by a hint of red berries and complex fruity and floral nuances. The chocolate bar is rounded out by a pleasant, drier finish."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/80-trinidad-grand-cru-noir-laderach.jpg',
+        alt: '80% Trinidad Grand Cru Noir bar made by Laderach in Switzerland centered in a moody scene with bars out of focus on the left and right',
+      },
+      BAR_FRONT: {
+        src: '/bars/80-trinidad-grand-cru-noir-laderach-bar-front.jpg',
+        alt: 'Front of 80% Trinidad Grand Cru Noir bar made by Laderach in Switzerland',
+      },
+      BAR_BACK: {
+        src: '/bars/80-trinidad-grand-cru-noir-laderach-bar-back.jpg',
+        alt: 'Back of 80% Trinidad Grand Cru Noir bar made by Laderach in Switzerland',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/80-trinidad-grand-cru-noir-laderach-package-front.jpg',
+        alt: 'Front of 80% Trinidad Grand Cru Noir bar made by Laderach in Switzerland package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/80-trinidad-grand-cru-noir-laderach-package-back.jpg',
+        alt: 'Back of 80% Trinidad Grand Cru Noir bar made by Laderach in Switzerland package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 80,
+    barWeight: 64,
+    barDimensions: [196, 54, 6],
+    ingredients: ['Cocoa Paste', 'Sugar', 'Cocoa Butter', 'Natural Flavors'],
+
+    packagingType: 'Box',
+    packagingDimensions: [204, 58, 10],
+    wrapper: 'Parchment Paper', // Pattern printed
+    marketingTerms: ['Single Origin'],
+    facilityAllergen: ['Egg', 'Milk', 'Wheat', 'Nuts', 'Soy'],
+
+    retailer: 'Laderach',
+    location: 'Fashion Valley',
+    retailPrice: 7.9,
+    dateObtained: '2023-02-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Trinidad',
+    },
+  },
+  {
     id: '99f2eaecc1',
     releaseDate: '2023-02-19',
     name: 'Strawberry Milk Chocolate',

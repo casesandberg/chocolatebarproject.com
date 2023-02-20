@@ -25,19 +25,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: '80% Trinidad',
-    subtitle: 'Grand Cru Noir',
-    maker: 'Laderach',
-    slug: '80-trinidad-grand-cru-noir-laderach',
-    productUrl:
-      'https://laderach.com/us-en/tablet-grand-cru-trinidad-80-single-origin',
-
-    retailer: 'Laderach',
-    location: 'Fashion Valley',
-    retailPrice: 7.9,
-    dateObtained: '2023-02-11',
-  },
-  {
     name: '70% Ecuador',
     subtitle: 'Grand Cru Noir',
     maker: 'Laderach',
