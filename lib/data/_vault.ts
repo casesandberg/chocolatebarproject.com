@@ -191,16 +191,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-19',
   },
   {
-    name: 'Taiwan #9 Double Ferment',
-    maker: 'Fu Wan Chocolate',
-    productUrl: 'https://www.fuwanshop.com/products/taiwanno9',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 13.5,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Dark Chocolate with Citrus and Licorice',
     maker: 'Chocolate Naive',
     productUrl:

@@ -1,4 +1,4 @@
-import { DateString } from '../types'
+import { DateString, YYYY } from '../types'
 import { MakerNames } from './makers'
 import { OriginNames } from './origins'
 
@@ -96,6 +96,7 @@ export interface Bar {
         country: string
       }
   beanVariety?: string
+  harvestYear?: YYYY
 }
 
 export type Ingredient = string
@@ -103,6 +104,84 @@ export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
+  {
+    id: '62b73e0bad',
+    releaseDate: '2023-02-21',
+    name: 'Taiwan #9 Ping Tung',
+    subtitle: 'Double Ferment, Rough Ground Chocolate',
+    maker: 'Fu Wan Chocolate',
+    slug: 'taiwan-9-ping-tung-double-ferment-rough-ground-chocolate-fu-wan-chocolate',
+    productUrl: 'https://www.fuwanshop.com/products/taiwanno9',
+    productionCountry: 'Taiwan',
+    description: [
+      `"Tasting Notes: Strawberry, Apple, Balsamico, Champagne, Nuts"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/taiwan-9-ping-tung-double-ferment-rough-ground-chocolate-fu-wan-chocolate.jpg',
+        alt: 'Taiwan #9 Ping Tung Double Ferment, Rough Ground Chocolate bar made by Fu Wan Chocolate in Taiwan close up macro shot',
+      },
+      BAR_FRONT: {
+        src: '/bars/taiwan-9-ping-tung-double-ferment-rough-ground-chocolate-fu-wan-chocolate-bar-front.jpg',
+        alt: 'Front of Taiwan #9 Ping Tung Double Ferment, Rough Ground Chocolate bar made by Fu Wan Chocolate in Taiwan',
+      },
+      BAR_BACK: {
+        src: '/bars/taiwan-9-ping-tung-double-ferment-rough-ground-chocolate-fu-wan-chocolate-bar-back.jpg',
+        alt: 'Back of Taiwan #9 Ping Tung Double Ferment, Rough Ground Chocolate bar made by Fu Wan Chocolate in Taiwan',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/taiwan-9-ping-tung-double-ferment-rough-ground-chocolate-fu-wan-chocolate-package-front.jpg',
+        alt: 'Front of Taiwan #9 Ping Tung Double Ferment, Rough Ground Chocolate bar made by Fu Wan Chocolate in Taiwan package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/taiwan-9-ping-tung-double-ferment-rough-ground-chocolate-fu-wan-chocolate-package-back.jpg',
+        alt: 'Back of Taiwan #9 Ping Tung Double Ferment, Rough Ground Chocolate bar made by Fu Wan Chocolate in Taiwan package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 45,
+    barDimensions: [116, 50, 8],
+    ingredients: ['Cacao Bean', 'Sugar', 'Cacao Butter'],
+
+    packagingType: 'Box',
+    packagingDimensions: [132, 68, 14],
+    wrapper: 'Plastic', // Printed
+    marketingTerms: ['Tasting Notes', 'Tree to Bar'],
+    facilityAllergen: ['Nuts', 'Peanuts'],
+    tastingNotes: ['Strawberry', 'Apple', 'Balsamico', 'Champagne', 'Nuts'],
+    awards: [
+      {
+        body: 'International Chocolate Awards World',
+        level: 'Gold',
+        year: 2018,
+      },
+      {
+        body: 'International Chocolate Awards Asia-Pacific',
+        level: 'Gold',
+        year: 2018,
+      },
+      {
+        body: 'Academy Of Chocolate',
+        level: 'Silver',
+        year: 2019,
+      },
+    ],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 13.5,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Taiwan',
+    },
+    harvestYear: '2019',
+  },
   {
     id: '263628fcda',
     releaseDate: '2023-02-20',
@@ -158,6 +237,7 @@ const bars: Array<Bar> = [
     dateObtained: '2023-02-11',
 
     reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
 
     origin: {
       country: 'Trinidad',
