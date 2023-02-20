@@ -105,6 +105,82 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'f1e3dbb325',
+    releaseDate: '2023-02-22',
+    name: 'Salted Brown Butter Texas Pecan Brittle',
+    maker: 'Wildwood Chocolate',
+    slug: 'salted-brown-butter-texas-pecan-brittle-wildwood-chocolate',
+    productUrl: 'https://wildwoodchocolate.com/products/pecanbrittlebar',
+    productionCountry: 'United States',
+    description: [
+      `"Inspired by time in Austin, Texas, this bar brings you a touch of the heartland with crunchy brown butter pecan brittle covering rich 70% dark chocolate. This bar has it all!"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/salted-brown-butter-texas-pecan-brittle-wildwood-chocolate.jpg',
+        alt: 'Salted Brown Butter Texas Pecan Brittle bar made by Wildwood Chocolate in the United States close up macro shot of the brittle toppings',
+      },
+      BAR_FRONT: {
+        src: '/bars/salted-brown-butter-texas-pecan-brittle-wildwood-chocolate-bar-front.jpg',
+        alt: 'Front of Salted Brown Butter Texas Pecan Brittle bar made by Wildwood Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/salted-brown-butter-texas-pecan-brittle-wildwood-chocolate-bar-back.jpg',
+        alt: 'Back of Salted Brown Butter Texas Pecan Brittle bar made by Wildwood Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/salted-brown-butter-texas-pecan-brittle-wildwood-chocolate-package-front.jpg',
+        alt: 'Front of Salted Brown Butter Texas Pecan Brittle bar made by Wildwood Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/salted-brown-butter-texas-pecan-brittle-wildwood-chocolate-package-back.jpg',
+        alt: 'Back of Salted Brown Butter Texas Pecan Brittle bar made by Wildwood Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 100,
+    barDimensions: [148, 76, 15],
+    ingredients: [
+      'Cocoa Laqur',
+      'Cocoa Butter',
+      'Sugar',
+      'Sunflower Lecithin',
+      'Natural Vanilla Extract',
+      [
+        'Pecan Brittle',
+        [
+          'Sugar',
+          'Pecans',
+          'Butter',
+          'Natural Flavor',
+          'Vanilla Extract',
+          'Sea Salt',
+          'Cream of Tartar',
+        ],
+      ],
+    ],
+
+    packagingType: 'Tray with Plastic Wrap',
+    packagingDimensions: [148, 76, 15],
+    marketingTerms: ['Hand Crafted', 'Share'],
+    foodAllergen: ['Milk', 'Tree Nuts'],
+    facilityAllergen: ['Soy', 'Peanuts', 'Wheat', 'Eggs'],
+
+    retailer: 'Extraordinary Desserts',
+    location: 'Balboa Park',
+    retailPrice: 14.95,
+    dateObtained: '2023-02-15',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: '62b73e0bad',
     releaseDate: '2023-02-21',
     name: 'Taiwan #9 Ping Tung',
