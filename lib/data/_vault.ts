@@ -12,6 +12,47 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
+    name: 'Salted Brown Butter Texas Pecan Brittle',
+    maker: 'Wildwood Chocolate',
+    slug: 'salted-brown-butter-texas-pecan-brittle-wildwood-chocolate',
+    productUrl: 'https://wildwoodchocolate.com/products/pecanbrittlebar',
+
+    retailer: 'Extraordinary Desserts',
+    location: 'Balboa Park',
+    retailPrice: 14.95,
+    dateObtained: '2023-02-15',
+  },
+
+  //
+  {
+    name: '80% Trinidad',
+    subtitle: 'Grand Cru Noir',
+    maker: 'Laderach',
+    slug: '80-trinidad-grand-cru-noir-laderach',
+    productUrl:
+      'https://laderach.com/us-en/tablet-grand-cru-trinidad-80-single-origin',
+
+    retailer: 'Laderach',
+    location: 'Fashion Valley',
+    retailPrice: 7.9,
+    dateObtained: '2023-02-11',
+  },
+  {
+    name: '70% Ecuador',
+    subtitle: 'Grand Cru Noir',
+    maker: 'Laderach',
+    slug: '70-ecuador-grand-cru-noir-laderach',
+    productUrl:
+      'https://laderach.com/us-en/tablet-grand-cru-ecuador-70-single-origin',
+
+    retailer: 'Laderach',
+    location: 'Fashion Valley',
+    retailPrice: 7.9,
+    dateObtained: '2023-02-11',
+  },
+
+  //
+  {
     name: '72% Cocoa',
     subtitle: 'Brazil',
     maker: 'Nibble Chocolate',
