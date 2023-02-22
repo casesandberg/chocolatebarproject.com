@@ -105,6 +105,68 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'ddb2da598b',
+    releaseDate: '2023-02-24',
+    name: 'Vanilla Bean Bar',
+    maker: 'Those Girls at the Market',
+    slug: 'vanilla-bean-bar-those-girls-at-the-market',
+    productUrl:
+      'https://www.thosegirlsatthemarket.com/product/lmb-vanilla-bean-special/46',
+    productionCountry: 'Canada',
+    description: [
+      `"Stoneground for 48 hours to produce a smooth & silky 80% dark chocolate molded into gorgeous prism bar."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/vanilla-bean-bar-those-girls-at-the-market.jpg',
+        alt: 'Vanilla Bean bar made by Those Girls at the Market in Canada on a marble table',
+      },
+      BAR_FRONT: {
+        src: '/bars/vanilla-bean-bar-those-girls-at-the-market-bar-front.jpg',
+        alt: 'Front of Vanilla Bean bar made by Those Girls at the Market in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/vanilla-bean-bar-those-girls-at-the-market-bar-back.jpg',
+        alt: 'Back of Vanilla Bean bar made by Those Girls at the Market in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/vanilla-bean-bar-those-girls-at-the-market-package-front.jpg',
+        alt: 'Front of Vanilla Bean bar made by Those Girls at the Market in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/vanilla-bean-bar-those-girls-at-the-market-package-back.jpg',
+        alt: 'Back of Vanilla Bean bar made by Those Girls at the Market in Canada package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 80,
+    barWeight: 65, // Guessed from weight of technicolor
+    barDimensions: [151, 76, 9],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Maple Sugar',
+      'Organic Vanilla Bean',
+    ],
+
+    packagingType: 'Craft Bag',
+    packagingDimensions: [170, 147, 9],
+    wrapper: 'Wax Paper Bag', // Unsealed
+    marketingTerms: ['Stoneground'],
+
+    retailer: 'The Little Market Box',
+    location: 'Saskatoon',
+    retailPrice: 9.52,
+    dateObtained: '2022-12-21',
+
+    reviewerWouldEatAgain: true, // Very tasty.
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'e475501783',
     releaseDate: '2023-02-23',
     name: 'Royal Dark 88',

@@ -378,14 +378,6 @@ const vault: Array<Bar> = [
     retailPrice: 5.86,
     dateObtained: '2022-12-21',
   },
-  {
-    name: 'LMB Vanilla Bean Special',
-    maker: 'Whistler Chocolate',
-    retailer: 'The Little Market Box',
-    location: 'Saskatoon',
-    retailPrice: 9.52,
-    dateObtained: '2022-12-21',
-  },
 
   //
   {
