@@ -105,6 +105,71 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'e475501783',
+    releaseDate: '2023-02-23',
+    name: 'Royal Dark 88',
+    maker: 'Cocoa Parlor',
+    slug: 'royal-dark-88-cocoa-parlor',
+    productUrl: 'https://www.cocoaparlor.com/products/royal-dark-88',
+    productionCountry: 'United States',
+    description: [
+      `"Our Royal Dark bar is for the hardcore dark chocolate lovers. A regal blend of our signature 70% and our classic 100% makes this bar our second darkest bar. Still smooth and creamy with every bite but with a slight bitterness that keeps your tastebuds craving more."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/royal-dark-88-cocoa-parlor.jpg',
+        alt: 'Royal Dark 88 bar made by Cocoa Parlor in the United States with a patterned fish background',
+      },
+      BAR_FRONT: {
+        src: '/bars/royal-dark-88-cocoa-parlor-bar-front.jpg',
+        alt: 'Front of Royal Dark 88 bar made by Cocoa Parlor in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/royal-dark-88-cocoa-parlor-bar-back.jpg',
+        alt: 'Back of Royal Dark 88 bar made by Cocoa Parlor in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/royal-dark-88-cocoa-parlor-package-front.jpg',
+        alt: 'Front of Royal Dark 88 bar made by Cocoa Parlor in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/royal-dark-88-cocoa-parlor-package-back.jpg',
+        alt: 'Back of Royal Dark 88 bar made by Cocoa Parlor in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 88,
+    barWeight: 80,
+    barDimensions: [150, 69, 8],
+    ingredients: [
+      'Premium Organica Cacao Mass',
+      'Organic Raw Cane Sugar',
+      'Organic Cacao Butter',
+      'Organic Cacao Powder',
+    ],
+
+    packagingType: 'Bag',
+    packagingDimensions: [176, 73, 9],
+    marketingTerms: ['Organic', 'Vegan', 'Premium', 'Hand Made'],
+    facilityAllergen: ['Nuts', 'Milk', 'Seeds', 'Shells', 'Real Food'],
+    certifiedLabels: ['USDA Organic'],
+    uncertifiedLabels: ['Gluten Free', 'No Soy', 'Vegan'],
+
+    retailer: 'Lazy Acres',
+    location: 'Hillcrest',
+    retailPrice: 4.99,
+    dateObtained: '2023-01-03',
+
+    reviewerWouldEatAgain: false,
+    reviewerBarNotes: 'Bloom',
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'f1e3dbb325',
     releaseDate: '2023-02-22',
     name: 'Salted Brown Butter Texas Pecan Brittle',

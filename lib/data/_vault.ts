@@ -281,14 +281,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-03',
   },
   {
-    name: 'Royal Dark 88',
-    maker: 'Cocoa Parlor',
-    retailer: 'Lazy Acres',
-    location: 'Hillcrest',
-    retailPrice: 4.99,
-    dateObtained: '2023-01-03',
-  },
-  {
     name: '70% Cacao Classic Dark',
     maker: 'Pascha',
     retailer: 'Lazy Acres',
