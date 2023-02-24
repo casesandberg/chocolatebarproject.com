@@ -105,6 +105,75 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '4627e29a08',
+    releaseDate: '2023-02-26',
+    name: 'Wild Berry Pop',
+    subtitle: 'White Chocolate with Berries and Pop Rocks',
+    maker: 'SOMA Chocolatemaker',
+    slug: 'wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker',
+    productUrl: 'https://www.somachocolate.com/products/wild-berry-pop-bar',
+    productionCountry: 'Canada',
+    description: [
+      `"Summertime is for exploring twisty forests and meadows, stuffing your face with smooshy handfuls of perfectly ripe, wild berries. All sorts- sweet and tart, different shapes and colours—happily stained faces and hands smelling like a berry patch.`,
+      `This bar is a lovely mash up of Raspberries, Cherries, Strawberries, Blueberries, and Cranberries mixed with cream and pop rocks for a fun bubbly effect. Perfect as a pocket dessert, crack one open anytime you need a dose of Summer. It’s like a ray of sunshine through the trees that hits you when you least suspect it."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker.jpg',
+        alt: 'Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada on a on a talbe with other Lumineux bars',
+      },
+      BAR_FRONT: {
+        src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker-bar-front.jpg',
+        alt: 'Front of Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker-bar-back.jpg',
+        alt: 'Back of Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker-package-front.jpg',
+        alt: 'Front of Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker-package-back.jpg',
+        alt: 'Back of Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada package',
+      },
+    },
+
+    barType: 'White',
+    barWeight: 65,
+    barDimensions: [98, 121, 5],
+    ingredients: [
+      'Organic Cane Sugar',
+      'Cocoa Butter',
+      'Milk Powder',
+      'Pop Rocks',
+      'Raspberries',
+      'Strawberries',
+      'Cherries',
+      'Cranberries',
+      'Blurberries',
+      'Natural Vanilla',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [153, 105, 8],
+    wrapper: 'Plastic',
+    packageLanguages: ['English', 'French'],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 14.5,
+    dateObtained: '2023-01-30',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'f1b93d2756',
     releaseDate: '2023-02-25',
     name: 'Smoked Sea Salt',

@@ -109,18 +109,6 @@ const vault: Array<Bar> = [
     retailPrice: 10.0,
     dateObtained: '2023-01-30',
   },
-  {
-    name: 'Wild Berry Pop',
-    subtitle: 'White Chocolate with Berries and Pop Rocks',
-    maker: 'SOMA Chocolatemaker',
-    slug: 'wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker',
-    productUrl: 'https://www.somachocolate.com/products/wild-berry-pop-bar',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 14.5,
-    dateObtained: '2023-01-30',
-  },
 
   //
   {
