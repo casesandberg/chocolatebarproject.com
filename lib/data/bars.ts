@@ -105,6 +105,74 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'f1b93d2756',
+    releaseDate: '2023-02-25',
+    name: 'Smoked Sea Salt',
+    subtitle: '60% Dark Chocolate',
+    maker: 'Lumineux Chocolate',
+    slug: 'smoked-sea-salt-60-dark-chocolate-lumineux-chocolate',
+    productUrl:
+      'https://www.lumineuxchocolate.com/product/gingerbread-white-chocolate-tablet/',
+    productionCountry: 'United States',
+    description: [
+      `"Bourbon-barrel smoked sea salt from Bulls Bay Saltworks adds just the right amount of salt to this deliciously sweet 60% Ghana dark chocolate. High on notes of honey and vanilla, the chocolate mixed with the smokiness of the salt adds wonderful balance to this tablet."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate.jpg',
+        alt: 'Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States on a on a talbe with other Lumineux bars',
+      },
+      BAR_FRONT: {
+        src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate-bar-front.jpg',
+        alt: 'Front of Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate-bar-back.jpg',
+        alt: 'Back of Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate-package-front.jpg',
+        alt: 'Front of Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate-package-back.jpg',
+        alt: 'Back of Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 60,
+    barWeight: 50,
+    barDimensions: [137, 55, 6],
+    ingredients: [
+      'Cocoa Nibs',
+      'Cane Sugar',
+      'Cocoa Butter',
+      'Bourbon Barrel Smoked Sea Salt',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [150, 60, 8],
+    wrapper: 'Foil with Paper Backing', // Silver
+    tastingNotes: ['Honey', 'Vanilla', 'Hickory'],
+    uncertifiedLabels: ['Goof Food Guild'],
+
+    retailer: 'Lumineux Chocolate',
+    location: 'https://www.lumineuxchocolate.com/',
+    retailPrice: 8,
+    dateObtained: '2023-02-23',
+
+    reviewerWouldEatAgain: true,
+    reviewerBarFavorite: true,
+
+    origin: {
+      country: 'Ghana', // https://www.lumineuxchocolate.com/product/60-ghana-sea-salt-tablet/
+      region: 'Suhum',
+      producer: 'ABOCFA',
+    },
+  },
+  {
     id: 'ddb2da598b',
     releaseDate: '2023-02-24',
     name: 'Vanilla Bean Bar',

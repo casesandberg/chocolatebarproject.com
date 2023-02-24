@@ -13,19 +13,6 @@ interface Bar {
 const vault: Array<Bar> = [
   //
   {
-    name: 'Smoked Sea Salt',
-    subtitle: '60% Dark Chocolate',
-    maker: 'Lumineux Chocolate',
-    slug: 'smoked-sea-salt-60-dark-chocolate-lumineux-chocolate',
-    productUrl:
-      'https://www.lumineuxchocolate.com/product/gingerbread-white-chocolate-tablet/',
-
-    retailer: 'Lumineux Chocolate',
-    location: 'https://www.lumineuxchocolate.com/',
-    retailPrice: 8,
-    dateObtained: '2023-02-23',
-  },
-  {
     name: '65% Dark Chocolate',
     subtitle: 'Cote d’Ivoire',
     maker: 'Lumineux Chocolate',
