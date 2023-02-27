@@ -183,17 +183,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-20',
   },
   {
-    name: 'Zorzal Comunitario',
-    maker: 'Dandelion Chocolate',
-    productUrl:
-      'https://store.dandelionchocolate.com/products/zorzal-comunitario-dominican-republic-70-chocolate-bar',
-
-    retailer: 'Dandelion Chocolate',
-    location: 'https://dandelionchocolate.com/',
-    retailPrice: 11,
-    dateObtained: '2023-01-19',
-  },
-  {
     name: 'Dark Chocolate with Citrus and Licorice',
     maker: 'Chocolate Naive',
     productUrl:

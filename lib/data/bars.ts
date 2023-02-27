@@ -105,6 +105,65 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '7e20b8221b',
+    releaseDate: '2023-02-27',
+    name: 'Zorzal Comunitario Dominican Republic',
+    subtitle: '2021 Harvest',
+    maker: 'Dandelion Chocolate',
+    slug: 'zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate',
+    productUrl:
+      'https://store.dandelionchocolate.com/products/zorzal-comunitario-dominican-republic-70-chocolate-bar',
+    productionCountry: 'United States',
+    description: [
+      `"These cocoa beans come from a collection of farms surrounding Reserva Zorzal, a bird sanctuary in the Dominican Republic. The sanctuary protects Bicknell’s thrush, an endangered bird that migrates between Vermont and the Dominican Republic each year. The sale of cocoa produced on and around the sanctuary serves to fund the project.`,
+      `This chocolate, which we share with our Dandelion Japan team, represents a new step in our evolving relationship with Zorzal Cacao, and we’re thrilled as ever to explore the flavor potential of these beans, while supporting the Reserva’s mission. To develop refined flavors suited to the Japanese palate, Trevor roasts this 2021 harvest lightly, bringing out delicate fruit notes."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate.jpg',
+        alt: 'Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States on a on a talbe with other Lumineux bars',
+      },
+      BAR_FRONT: {
+        src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate-bar-front.jpg',
+        alt: 'Front of Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate-bar-back.jpg',
+        alt: 'Back of Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate-package-front.jpg',
+        alt: 'Front of Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate-package-back.jpg',
+        alt: 'Back of Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 56,
+    barDimensions: [143, 65, 7],
+    ingredients: ['Cocoa Beans', 'Organic Cane Sugar'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [145, 66, 9],
+    wrapper: 'Foil', // Gold faced
+    tastingNotes: ['Golden Caramel', 'Chocolate Syrup', 'Tart Cherry'],
+    marketingTerms: ['Small Batch'],
+
+    retailer: 'Dandelion Chocolate',
+    location: 'https://dandelionchocolate.com/',
+    retailPrice: 11,
+    dateObtained: '2023-01-19',
+
+    reviewerWouldEatAgain: true,
+
+    origin: 'Zorzal Reserve',
+  },
+  {
     id: '4627e29a08',
     releaseDate: '2023-02-26',
     name: 'Wild Berry Pop',
@@ -121,7 +180,7 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker.jpg',
-        alt: 'Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada on a on a talbe with other Lumineux bars',
+        alt: 'Wild Berry Pop White Chocolate with Berries and Pop Rocks bar made by SOMA Chocolatemaker in Canada in a snake plant between the leaves',
       },
       BAR_FRONT: {
         src: '/bars/wild-berry-pop-white-chocolate-with-berries-and-pop-rocks-soma-chocolatemaker-bar-front.jpg',
@@ -190,7 +249,7 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate.jpg',
-        alt: 'Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States on a on a talbe with other Lumineux bars',
+        alt: 'Smoked Sea Salt 60% Dark Chocolate bar made by Lumineux Chocolate in the United States on a on a table with other Lumineux bars',
       },
       BAR_FRONT: {
         src: '/bars/smoked-sea-salt-60-dark-chocolate-lumineux-chocolate-bar-front.jpg',
