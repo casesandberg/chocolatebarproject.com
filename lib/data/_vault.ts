@@ -41,18 +41,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-02-25',
   },
   {
-    name: 'Yuzu Sea Salt',
-    maker: 'Fossa Chocolate',
-    slug: 'yumz-sea-salt-fossa-chocolate',
-    productUrl: 'https://www.fossachocolate.com/shop/yuzu-sea-salt',
-    productionCountry: 'Singapore',
-
-    retailer: 'Gjusta Grocer',
-    location: 'Venice',
-    retailPrice: 15,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Dreams of Cashmere',
     subtitle: 'Goat Milk Chocolate',
     maker: 'Qantu',

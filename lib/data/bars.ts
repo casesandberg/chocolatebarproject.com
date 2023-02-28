@@ -105,6 +105,74 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '030a019164',
+    releaseDate: '2023-02-28',
+    name: 'Yuzu Sea Salt',
+    maker: 'Fossa Chocolate',
+    slug: 'yuzu-sea-salt-fossa-chocolate',
+    productUrl: 'https://www.fossachocolate.com/shop/yuzu-sea-salt',
+    productionCountry: 'Singapore',
+    description: [
+      `"Yuzu is an incredibly aromatic citrus fruit that has the ability to brighten any dish and is commonly used in traditional Japanese cuisine.`,
+      `Chewy dehydrated yuzu peel with sea salt flakes on a bed of creamy, biscuity Tanzania 54% Dark Milk Chocolate makes for the perfect refreshing afternoon snack with a cup of tea."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/yuzu-sea-salt-fossa-chocolate.jpg',
+        alt: 'Yuzu Sea Salt bar made by Fossa Chocolate in Singapore on on a cutting board with lemons and salt',
+      },
+      BAR_FRONT: {
+        src: '/bars/yuzu-sea-salt-fossa-chocolate-bar-front.jpg',
+        alt: 'Front of Yuzu Sea Salt bar made by Fossa Chocolate in Singapore',
+      },
+      BAR_BACK: {
+        src: '/bars/yuzu-sea-salt-fossa-chocolate-bar-back.jpg',
+        alt: 'Back of Yuzu Sea Salt bar made by Fossa Chocolate in Singapore',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/yuzu-sea-salt-fossa-chocolate-package-front.jpg',
+        alt: 'Front of Yuzu Sea Salt bar made by Fossa Chocolate in Singapore package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/yuzu-sea-salt-fossa-chocolate-package-back.jpg',
+        alt: 'Back of Yuzu Sea Salt bar made by Fossa Chocolate in Singapore package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 54,
+    barWeight: 50,
+    barDimensions: [113, 73, 8],
+    ingredients: [
+      'Cacao',
+      'Cane Sugar',
+      'Cocoa Butter',
+      'Milk Powder',
+      ['Yuzu Peel', ['Yuzu Peel', 'Sugar', 'Vitamin C']],
+      'Sea Salt',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [119, 85, 10],
+    wrapper: 'Foil with Plastic Backing', // Gold
+    tastingNotes: ['Creamy, Biscuity Chocolate', 'Refreshing Citrusy Aroma'],
+    marketingTerms: ['Handcrafted', 'Small Batch', 'Quality'],
+    facilityAllergen: ['Nuts', 'Dairy'],
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 15,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+
+    origin: {
+      country: 'Tanzania',
+    },
+  },
+  {
     id: '7e20b8221b',
     releaseDate: '2023-02-27',
     name: 'Zorzal Comunitario Dominican Republic',
@@ -122,7 +190,7 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate.jpg',
-        alt: 'Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States on a on a talbe with other Lumineux bars',
+        alt: 'Zorzal Comunitario Dominican Republic 2021 Harvest bar made by Dandelion Chocolate in the United States with other dandelion branded materials like bags, tasting notes, sugar and cocoa nibs',
       },
       BAR_FRONT: {
         src: '/bars/zorzal-comunitario-dominican-republic-2021-harvest-dandelion-chocolate-bar-front.jpg',
