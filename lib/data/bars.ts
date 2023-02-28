@@ -105,6 +105,76 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'f0a0f1fc1f',
+    releaseDate: '2023-02-29',
+    name: 'Dreams of Cashmere',
+    subtitle: 'Goat Milk Chocolate',
+    maker: 'Qantu',
+    slug: 'dreams-of-cashmere-goat-milk-chocolate-qantu',
+    productUrl:
+      'https://en.qantuchocolate.com/product-page/chocolat-au-lait-de-ch%C3%A8vre-55-cacao',
+    productionCountry: 'Canada',
+    description: [
+      `"This chocolate bar highlights the sophistication of goat milk. Its ingredients join in a ballet of delectable flavours, without one encroaching on the other. Canadian goat milk provides an elegance that beautifully envelops the aromas of cacao, all in a barely sweet bite. Elfi and Maxime concocted this bar with ancestral Bagua cacao beans, which is bound to will delight lovers of goat milk and cheeses. We dare you not to eat the entire bar all at once!"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/dreams-of-cashmere-goat-milk-chocolate-qantu.jpg',
+        alt: 'Dreams of Cashmere Goat Milk Chocolate bar made by Qantu in Canada on a orange patterned background',
+      },
+      BAR_FRONT: {
+        src: '/bars/dreams-of-cashmere-goat-milk-chocolate-qantu-bar-front.jpg',
+        alt: 'Front of Dreams of Cashmere Goat Milk Chocolate bar made by Qantu in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/dreams-of-cashmere-goat-milk-chocolate-qantu-bar-back.jpg',
+        alt: 'Back of Dreams of Cashmere Goat Milk Chocolate bar made by Qantu in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dreams-of-cashmere-goat-milk-chocolate-qantu-package-front.jpg',
+        alt: 'Front of Dreams of Cashmere Goat Milk Chocolate bar made by Qantu in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dreams-of-cashmere-goat-milk-chocolate-qantu-package-back.jpg',
+        alt: 'Back of Dreams of Cashmere Goat Milk Chocolate bar made by Qantu in Canada package',
+      },
+    },
+
+    barType: 'Milk',
+    percent: 55,
+    barWeight: 50,
+    barDimensions: [146, 60, 6],
+    ingredients: [
+      'Bagua Cocoa Beans',
+      'Cane Sugar',
+      'Goat Milk Powder',
+      'Cocoa Butter',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [177, 87, 11],
+    wrapper: 'Plastic Bag',
+    tastingNotes: ['Slightly Fruity', 'Reminiscent of Pear'],
+    facilityAllergen: ['Nuts'],
+    foodAllergen: ['Milk'],
+    packageLanguages: ['English', 'French'],
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 13,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Peru',
+      region: 'San Martin',
+      producer: 'Cocoa Cru Pachiza', // https://www.icamprofessionale.com/en/origins/peru
+    },
+    beanVariety: 'Bagua',
+  },
+  {
     id: '030a019164',
     releaseDate: '2023-02-28',
     name: 'Yuzu Sea Salt',
@@ -120,7 +190,7 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/yuzu-sea-salt-fossa-chocolate.jpg',
-        alt: 'Yuzu Sea Salt bar made by Fossa Chocolate in Singapore on on a cutting board with lemons and salt',
+        alt: 'Yuzu Sea Salt bar made by Fossa Chocolate in Singapore on a cutting board with lemons and salt',
       },
       BAR_FRONT: {
         src: '/bars/yuzu-sea-salt-fossa-chocolate-bar-front.jpg',

@@ -41,20 +41,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-02-25',
   },
   {
-    name: 'Dreams of Cashmere',
-    subtitle: 'Goat Milk Chocolate',
-    maker: 'Qantu',
-    slug: 'dreams-of-cashmere-goat-milk-chocolate-qantu',
-    productUrl:
-      'https://en.qantuchocolate.com/product-page/chocolat-au-lait-de-ch%C3%A8vre-55-cacao',
-    productionCountry: 'Canada',
-
-    retailer: 'Gjusta Grocer',
-    location: 'Venice',
-    retailPrice: 13,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Amazon 70%',
     maker: 'Mission Chocolate',
     slug: 'amazon-70-mission-chocolate',
