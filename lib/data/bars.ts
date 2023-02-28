@@ -105,8 +105,96 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'b3ce23e608',
+    releaseDate: '2023-03-02',
+    name: 'São Tomé',
+    subtitle: 'Limited Edition 70% Dark Chocolate',
+    maker: 'LetterPress Chocolate',
+    slug: 'sao-tome-limited-edition-70-dark-letterpress-chocolate',
+    productUrl:
+      'https://www.letterpresschocolate.com/products/sao-tome-limited-edition-70-dark',
+    productionCountry: 'United States',
+    description: [
+      `"The first and only Satocao São Tomé bar made in North America - we had to air freight it in.`,
+      `São Tomé and Príncipe  is located on the western equatorial coast of Africa.  The former Portuguese colony, the country has a terrible cast of slavery. Now one of the most stable democracies in Africa, São Tomé  has some of the most unique soil and climate conditions for cacao,  but remains extremely poor.`,
+      `Satocao was established in 2015 as a certified organic co-op of over 400 farmers from seven communities.  We were able to secure a very small amount of the very best beans we sampled to create a unique blend for this limited edition!"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/sao-tome-limited-edition-70-dark-letterpress-chocolate.jpg',
+        alt: 'São Tomé Limited Edition 70% Dark Chocolate bar made by LetterPress Chocolate in the United States on an arcade fire Vinyl record with an OP-1',
+      },
+      BAR_FRONT: {
+        src: '/bars/sao-tome-limited-edition-70-dark-letterpress-chocolate-bar-front.jpg',
+        alt: 'Front of São Tomé Limited Edition 70% Dark Chocolate bar made by LetterPress Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/sao-tome-limited-edition-70-dark-letterpress-chocolate-bar-back.jpg',
+        alt: 'Back of São Tomé Limited Edition 70% Dark Chocolate bar made by LetterPress Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/sao-tome-limited-edition-70-dark-letterpress-chocolate-package-front.jpg',
+        alt: 'Front of São Tomé Limited Edition 70% Dark Chocolate bar made by LetterPress Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/sao-tome-limited-edition-70-dark-letterpress-chocolate-package-back.jpg',
+        alt: 'Back of São Tomé Limited Edition 70% Dark Chocolate bar made by LetterPress Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 57,
+    barDimensions: [136, 69, 6],
+    ingredients: [
+      'Organic Cacao Beans',
+      'Organic Unrefined Cane Sugar',
+      'Organic Cocoa Butter',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [151, 88, 9],
+    wrapper: 'Plastic Bag',
+    marketingTerms: ['Tasting Notes', 'Small Batch', 'Bean to Bar'],
+    tastingNotes: ['Caramel', 'Peanut Butter Cup'],
+    facilityAllergen: ['Nuts', 'Dairy'],
+    certifiedLabels: ['Kosher'], // Parve Kosher LA
+    awards: [
+      {
+        body: 'Academy Of Chocolate',
+        level: 'Gold',
+        year: 2021,
+      },
+      {
+        body: 'Good Food Awards',
+        level: 'Finalist',
+        year: 2021,
+      },
+      {
+        body: 'Academy Of Chocolate',
+        level: 'Silver',
+        year: 2020,
+      },
+    ],
+
+    retailer: 'LetterPress Chocolate',
+    location: '2835 S Robertson Blvd, Los Angeles, CA 90034',
+    retailPrice: 18,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Peru',
+      region: 'San Martin',
+      producer: 'Cocoa Cru Pachiza', // https://www.icamprofessionale.com/en/origins/peru
+    },
+    beanVariety: 'Bagua',
+  },
+  {
     id: 'f0a0f1fc1f',
-    releaseDate: '2023-02-29',
+    releaseDate: '2023-03-01',
     name: 'Dreams of Cashmere',
     subtitle: 'Goat Milk Chocolate',
     maker: 'Qantu',

@@ -205,20 +205,6 @@ const vault: Array<Bar> = [
   },
 
   {
-    name: 'São Tomé',
-    subtitle: 'Limited Edition 70% Dark Chocolate',
-    maker: 'LetterPress Chocolate',
-    slug: 'sao-tome-limited-edition-70-dark-letterpress-chocolate',
-    productUrl:
-      'https://www.letterpresschocolate.com/products/sao-tome-limited-edition-70-dark',
-    productionCountry: 'United States',
-
-    retailer: 'LetterPress Chocolate',
-    location: '2835 S Robertson Blvd, Los Angeles, CA 90034',
-    retailPrice: 18,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Tranquilidad',
     subtitle: '70% Dark Chocolate',
     maker: 'LetterPress Chocolate',
