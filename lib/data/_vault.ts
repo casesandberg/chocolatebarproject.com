@@ -8,9 +8,256 @@ interface Bar {
   location: string
   retailPrice: number // USD
   dateObtained: string
+  productionCountry?: string
 }
 
 const vault: Array<Bar> = [
+  //
+  {
+    name: 'Crystal Label',
+    subtitle: '100% Bean-To-Bar',
+    maker: 'Marsatta Chocolate',
+    slug: 'crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate',
+    productUrl:
+      'https://marsatta.com/products/crystal-label-100-bean-to-bar-chocolate',
+    productionCountry: 'United States',
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 14,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Venezuela Rio Caribe 100%',
+    maker: 'Chapon Chocolatier',
+    slug: 'venezuela-rio-caribe-100-chapon-chocolatier',
+    productUrl:
+      'https://chapon.com/products/pure-origine-rio-caribe-venezuela-100',
+    productionCountry: 'France',
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 15,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Yuzu Sea Salt',
+    maker: 'Fossa Chocolate',
+    slug: 'yumz-sea-salt-fossa-chocolate',
+    productUrl: 'https://www.fossachocolate.com/shop/yuzu-sea-salt',
+    productionCountry: 'Singapore',
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 15,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Dreams of Cashmere',
+    subtitle: 'Goat Milk Chocolate',
+    maker: 'Qantu',
+    slug: 'dreams-of-cashmere-goat-milk-chocolate-qantu',
+    productUrl:
+      'https://en.qantuchocolate.com/product-page/chocolat-au-lait-de-ch%C3%A8vre-55-cacao',
+    productionCountry: 'Canada',
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 13,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Amazon 70%',
+    maker: 'Mission Chocolate',
+    slug: 'amazon-70-mission-chocolate',
+    productUrl:
+      'https://www.missionchocolate.com.br/products/amazonia-70-chocolate-escuro',
+    productionCountry: 'Brazil',
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 9,
+    dateObtained: '2023-02-25',
+  },
+
+  {
+    name: '70% Rio Acará',
+    maker: 'Luisa Abram',
+    slug: '70-rio-acara-luisa-abram',
+    productUrl: 'https://barandcocoa.com/products/luisa-abram-rio-acara-70', // https://luisaabram.com/product/rio-acara-70-cacau/
+    productionCountry: 'Brazil',
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 12.99,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Bejofo Estate MADAGASCAR',
+    subtitle: '64% Dark Milk Chocolate',
+    maker: 'Monsoon Chocolate',
+    slug: 'bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate',
+    productUrl:
+      'https://monsoonchocolate.com/products/bejofo-estate-madagascar-64-dark-chocolate',
+    productionCountry: 'United States',
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 12.99,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Big Orgasm',
+    maker: 'Eat Gold Organics',
+    slug: 'big-orgasm-eat-gold-organics',
+    productUrl: 'https://eatgoldorganics.com/products/big-orgasm',
+    productionCountry: 'Unknown', // Does not say... How?
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 8.99,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Ghana',
+    subtitle: 'Dark Chocolate',
+    maker: 'Moka Origins',
+    slug: 'ghana-dark-chocolate-moka-origins',
+    productUrl: 'https://mokaorigins.com/products/ghana-72-dark-chocolate-1',
+    productionCountry: 'United States',
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 8.99,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Milk Chocolate',
+    subtitle: 'made with Maple Sugar',
+    maker: 'Rad Chocolate',
+    slug: 'milk-chocolate-made-with-maple-sugar-rad-chocolate',
+    productUrl:
+      'https://radchocolate.com/products/1-bar-organic-vegan-milk-chocolate-maple-sugar',
+    productionCountry: 'United States',
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 5.99,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Almond Butter Crunch',
+    maker: 'Erewhon', // Made by unknown, distributed by Erewhon
+    slug: 'almond-butter-crunch-erewhon',
+    productUrl:
+      'https://shipping.erewhonmarket.com/products/organic-chocolate-bar-almond-butter-crunch',
+    productionCountry: 'Canada',
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 6.99,
+    dateObtained: '2023-02-25',
+  },
+
+  {
+    name: 'Dark Chocolate + Coffee',
+    subtitle: 'Intelligentsia Collabaration Bar',
+    maker: 'Askinosie Chocolate',
+    slug: 'dark-chocolate-coffee-intelligentsia-collabaration-bar-askinosie-chocolate',
+    productUrl:
+      'https://askinosie.com/products/dark-chocolate-coffee-collabaration-bar',
+    productionCountry: 'United States',
+
+    retailer: 'Farmshop',
+    location: 'Santa Monica',
+    retailPrice: 12,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'The Lost City Honduras',
+    subtitle: '60% Dark Milk with Sea Salt',
+    maker: 'Castronovo Chocolate',
+    slug: 'the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate',
+    productUrl:
+      'https://www.castronovochocolate.com/store/p18/sea-salt-dark-milk-chocolate.html#/',
+    productionCountry: 'United States',
+
+    retailer: 'Farmshop',
+    location: 'Santa Monica',
+    retailPrice: 13,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Oat Milk Chocolate',
+    subtitle: '61% Cacao',
+    maker: 'Goodnow Farms Chocolate',
+    slug: 'oat-milk-chocolate-61-cacao-goodnow-farms-chocolate',
+    productUrl: 'https://goodnowfarms.com/product/oat-milk/',
+    productionCountry: 'United States',
+
+    retailer: 'Farmshop',
+    location: 'Santa Monica',
+    retailPrice: 16,
+    dateObtained: '2023-02-25',
+  },
+
+  {
+    name: 'Cookie Butter',
+    subtitle: 'Milk Chocolate Cookie Butter',
+    maker: 'Compartés',
+    slug: 'caramel-crunch-milk-chocolate-salted-caramel-crunch-compartes',
+    productUrl:
+      'https://compartes.com/products/cookie-butter-milk-chocolate-bar',
+    productionCountry: 'United States',
+
+    retailer: 'Burro',
+    location: 'Venice Beach',
+    retailPrice: 11.25,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Caramel Crunch',
+    subtitle: 'Milk Chocolate Salted Caramel Crunch',
+    maker: 'Compartés',
+    slug: 'caramel-crunch-milk-chocolate-salted-caramel-crunch-compartes',
+    productUrl:
+      'https://compartes.com/products/salted-caramel-crunch-gourmet-chocolate-bar',
+    productionCountry: 'United States',
+
+    retailer: 'Burro',
+    location: 'Venice Beach',
+    retailPrice: 11.25,
+    dateObtained: '2023-02-25',
+  },
+
+  {
+    name: 'São Tomé',
+    subtitle: 'Limited Edition 70% Dark Chocolate',
+    maker: 'LetterPress Chocolate',
+    slug: 'sao-tome-limited-edition-70-dark-letterpress-chocolate',
+    productUrl:
+      'https://www.letterpresschocolate.com/products/sao-tome-limited-edition-70-dark',
+    productionCountry: 'United States',
+
+    retailer: 'LetterPress Chocolate',
+    location: '2835 S Robertson Blvd, Los Angeles, CA 90034',
+    retailPrice: 18,
+    dateObtained: '2023-02-25',
+  },
+  {
+    name: 'Tranquilidad',
+    subtitle: '70% Dark Chocolate',
+    maker: 'LetterPress Chocolate',
+    slug: 'tranquilidad-70-dark-chocolate-letterpress-chocolate',
+    productUrl: 'https://www.letterpresschocolate.com/products/tranquilidad-70',
+    productionCountry: 'United States',
+
+    retailer: 'LetterPress Chocolate',
+    location: '2835 S Robertson Blvd, Los Angeles, CA 90034',
+    retailPrice: 18,
+    dateObtained: '2023-02-25',
+  },
+
   //
   {
     name: '65% Dark Chocolate',
