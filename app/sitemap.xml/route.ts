@@ -20,6 +20,21 @@ export async function GET() {
       <url>
         <lastmod>${bar.releaseDate}</lastmod>
         <loc>https://chocolatebarproject.com/bars/${bar.slug}</loc>
+        <image:image>
+          <image:loc>https://chocolatebarproject.com${bar.images.HERO.src}</image:loc>
+        </image:image>
+        <image:image>
+          <image:loc>https://chocolatebarproject.com${bar.images.PACKAGE_FRONT.src}</image:loc>
+        </image:image>
+        <image:image>
+          <image:loc>https://chocolatebarproject.com${bar.images.PACKAGE_BACK.src}</image:loc>
+        </image:image>
+        <image:image>
+          <image:loc>https://chocolatebarproject.com${bar.images.BAR_FRONT.src}</image:loc>
+        </image:image>
+        <image:image>
+          <image:loc>https://chocolatebarproject.com${bar.images.BAR_BACK.src}</image:loc>
+        </image:image>
       </url>
     `
       })
