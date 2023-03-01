@@ -7,6 +7,53 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
     return null
   }
 
+  // https://schema.org/Product
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    description: bar.description,
+    name: `${bar.name} ${bar.subtitle}`,
+    image: `http://chocolatebarproject.com${bar.images.HERO.src}`,
+    brand: {
+      '@type': 'Brand',
+      name: bar.maker,
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: bar.maker,
+    },
+
+    countryOfOrigin: {
+      '@type': 'Country',
+      name: bar.productionCountry,
+    },
+
+    height: `${bar.packagingDimensions[0]} mm`,
+    width: `${bar.packagingDimensions[1]} mm`,
+    depth: `${bar.packagingDimensions[2]} mm`,
+    weight: `${bar.barWeight} g`,
+
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      price: bar.retailPrice,
+      priceCurrency: 'USD',
+    },
+
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Chocolate Type',
+        value: bar.barType,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Origin',
+        value: typeof bar.origin === 'string' ? bar.origin : bar.origin.country,
+      },
+    ],
+  }
+
   return (
     <>
       <title>
@@ -60,6 +107,10 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
 
       <meta name="twitter:site" content="@chocobarproject" />
       <meta name="twitter:card" content="summary_large_image" />
+
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
     </>
   )
 }
