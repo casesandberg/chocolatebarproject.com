@@ -12,7 +12,7 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     description: bar.description,
-    name: `${bar.name} ${bar.subtitle}`,
+    name: `${bar.name} ${bar.subtitle || ''}`,
     image: `http://chocolatebarproject.com${bar.images.HERO.src}`,
     brand: {
       '@type': 'Brand',
@@ -57,9 +57,11 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
   return (
     <>
       <title>
-        {`${bar.name} ${bar.subtitle} - The Chocolate Bar Project | Cataloging the Worlds Chocolate`}
+        {`${bar.name} ${
+          bar.subtitle || ''
+        } - The Chocolate Bar Project | Cataloging the Worlds Chocolate`}
       </title>
-      <meta name="title" content={`${bar.name} ${bar.subtitle}`} />
+      <meta name="title" content={`${bar.name} ${bar.subtitle || ''}`} />
       <meta
         property="og:site_name"
         content="The Chocolate Bar Project | Cataloging the Worlds Chocolate"
@@ -73,7 +75,7 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
         property="og:url"
         content={`https://chocolatebarproject.com/bars/${bar.slug}`}
       />
-      <meta property="og:title" content={`${bar.name} ${bar.subtitle}`} />
+      <meta property="og:title" content={`${bar.name} ${bar.subtitle || ''}`} />
       <meta
         property="og:description"
         content={`${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`}
@@ -108,9 +110,10 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
       <meta name="twitter:site" content="@chocobarproject" />
       <meta name="twitter:card" content="summary_large_image" />
 
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
     </>
   )
 }
