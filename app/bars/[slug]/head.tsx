@@ -10,32 +10,56 @@ export default async function BarSlugPageHead({ params }: { params?: any }) {
   return (
     <>
       <title>
-        {`${bar.name} - The Chocolate Bar Project | Cataloging the Worlds Chocolate`}
+        {`${bar.name} ${bar.subtitle} - The Chocolate Bar Project | Cataloging the Worlds Chocolate`}
       </title>
-      <meta name="title" content={`${bar.name} - The Chocolate Bar Project`} />
+      <meta name="title" content={`${bar.name} ${bar.subtitle}`} />
+      <meta
+        property="og:site_name"
+        content="The Chocolate Bar Project | Cataloging the Worlds Chocolate"
+      />
       <meta
         name="description"
-        content={`${bar.barType} chocolate bar by ${bar.maker}`}
+        content={`${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`}
       />
 
-      <meta property="og:type" content="website" />
       <meta
         property="og:url"
         content={`https://chocolatebarproject.com/bars/${bar.slug}`}
       />
-      <meta
-        property="og:title"
-        content={`${bar.name} - The Chocolate Bar Project`}
-      />
+      <meta property="og:title" content={`${bar.name} ${bar.subtitle}`} />
       <meta
         property="og:description"
-        content={`${bar.barType} chocolate bar by ${bar.maker}`}
+        content={`${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`}
+      />
+
+      <meta property="og:image:alt" content={bar.images.HERO.alt} />
+      <meta
+        property="og:image"
+        content={`http://chocolatebarproject.com${bar.images.HERO.src}`}
       />
       <meta
         property="og:image"
-        content={`https://chocolatebarproject.com${bar.images.HERO.src}`}
+        content={`http://chocolatebarproject.com${bar.images.PACKAGE_FRONT.src}`}
       />
-      <meta property="og:image:alt" content={bar.images.HERO.alt} />
+      <meta
+        property="og:image"
+        content={`http://chocolatebarproject.com${bar.images.PACKAGE_BACK.src}`}
+      />
+      <meta
+        property="og:image"
+        content={`http://chocolatebarproject.com${bar.images.BAR_FRONT.src}`}
+      />
+      <meta
+        property="og:image"
+        content={`http://chocolatebarproject.com${bar.images.BAR_BACK.src}`}
+      />
+
+      <meta property="og:type" content="product" />
+      <meta property="og:price:amount" content={String(bar.retailPrice)} />
+      <meta property="og:price:currency" content="USD" />
+
+      <meta name="twitter:site" content="@chocobarproject" />
+      <meta name="twitter:card" content="summary_large_image" />
     </>
   )
 }
