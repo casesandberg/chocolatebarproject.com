@@ -176,20 +176,6 @@ const vault: Array<Bar> = [
   },
 
   {
-    name: 'Cookie Butter',
-    subtitle: 'Milk Chocolate Cookie Butter',
-    maker: 'Compartés',
-    slug: 'caramel-crunch-milk-chocolate-salted-caramel-crunch-compartes',
-    productUrl:
-      'https://compartes.com/products/cookie-butter-milk-chocolate-bar',
-    productionCountry: 'United States',
-
-    retailer: 'Burro',
-    location: 'Venice Beach',
-    retailPrice: 11.25,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Caramel Crunch',
     subtitle: 'Milk Chocolate Salted Caramel Crunch',
     maker: 'Compartés',

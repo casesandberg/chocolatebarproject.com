@@ -105,6 +105,77 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '51808b6cd1',
+    releaseDate: '2023-03-03',
+    name: 'Cookie Butter',
+    subtitle: 'Milk Chocolate Cookie Butter',
+    maker: 'Compartés',
+    slug: 'cookie-butter-milk-chocolate-cookie-butter-compartes',
+    productUrl:
+      'https://compartes.com/products/cookie-butter-milk-chocolate-bar',
+    productionCountry: 'United States',
+    description: [
+      `"Our best-selling milk chocolate blended with delicious cookie butter, this smooth and creamy delicious chocolate bar is bound to be Compartés next big hit. Filled with so much flavor, our Cookie Butter milk chocolate nostalgic premium gourmet chocolate bar features gorgeous packaging and our world famous chocolate. A new limited edition bar by Compartés Chocolatier."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes.jpg',
+        alt: 'Cookie Butter Milk Chocolate Cookie Butter bar made by Compartés in the United States with a gradient background to match the packaging',
+      },
+      BAR_FRONT: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-bar-front.jpg',
+        alt: 'Front of Cookie Butter Milk Chocolate Cookie Butter bar made by Compartés in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-bar-back.jpg',
+        alt: 'Back of Cookie Butter Milk Chocolate Cookie Butter bar made by Compartés in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-package-front.jpg',
+        alt: 'Front of Cookie Butter Milk Chocolate Cookie Butter bar made by Compartés in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-package-back.jpg',
+        alt: 'Back of Cookie Butter Milk Chocolate Cookie Butter bar made by Compartés in the United States package',
+      },
+    },
+
+    barType: 'Milk',
+    percent: 44,
+    barWeight: 85,
+    barDimensions: [163, 74, 7],
+    ingredients: [
+      'Cocoa Mass',
+      'Sugar',
+      'Cocoa Butter',
+      'Milk',
+      'Soy Lecithin',
+      'Vanilla',
+      [
+        'Cookie Butter',
+        ['Cane Sugar', 'Margarine', 'Butter Flavour', 'Cinnamon', 'Nutmeg'],
+      ],
+    ],
+
+    packagingType: 'Box',
+    packagingDimensions: [195, 82, 10],
+    wrapper: 'Metallised plastic', // Gold printed
+    marketingTerms: ['Chocolate Experience', 'Artisan'],
+    facilityAllergen: ['Dairy', 'Peanuts', 'Wheat', 'Egg', 'Soy', 'Tree Nuts'],
+
+    retailer: 'Burro',
+    location: 'Venice Beach',
+    retailPrice: 11.25,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'b3ce23e608',
     releaseDate: '2023-03-02',
     name: 'São Tomé',
