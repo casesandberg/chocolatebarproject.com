@@ -40,7 +40,7 @@ export default async function BarSlugPage({ params }: { params?: any }) {
   return (
     <section className="relative min-h-screen">
       <div className="bg-primary-100/25">
-        <Container className="relative h-[40vh] sm:h-[80vh]">
+        <Container className="relative h-[300px] sm:h-[80vh]">
           <Image
             priority
             src={bar.images.HERO.src}
