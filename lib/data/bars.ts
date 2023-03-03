@@ -117,23 +117,23 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
     images: {
       HERO: {
-        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes.jpg',
+        src: '/bars/_SLUG.jpg',
         alt: '_NAME _SUBTITLE bar made by _MAKER in _COUNTRY with _DESC',
       },
       BAR_FRONT: {
-        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-bar-front.jpg',
+        src: '/bars/_SLUG-bar-front.jpg',
         alt: 'Front of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY',
       },
       BAR_BACK: {
-        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-bar-back.jpg',
+        src: '/bars/_SLUG-bar-back.jpg',
         alt: 'Back of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY',
       },
       PACKAGE_FRONT: {
-        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-package-front.jpg',
+        src: '/bars/_SLUG-package-front.jpg',
         alt: 'Front of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY package',
       },
       PACKAGE_BACK: {
-        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-package-back.jpg',
+        src: '/bars/_SLUG-package-back.jpg',
         alt: 'Back of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY package',
       },
     },
@@ -180,6 +180,79 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 ] */
 
 const bars: Array<Bar> = [
+  {
+    id: '69078c06ff',
+    releaseDate: '2023-03-04',
+    name: 'Ghana',
+    subtitle: 'Dark Chocolate',
+    maker: 'Moka Origins',
+    slug: 'ghana-dark-chocolate-moka-origins',
+    productUrl: 'https://mokaorigins.com/products/ghana-72-dark-chocolate-1',
+    productionCountry: 'United States',
+    description: [
+      `"ABOCFA (which stands for Aponoapono Biakoye Organic Cocoa Farmer’ Association) is an organic and Fair Trade certified cooperative that is known for producing the highest quality and most transparently traded cocoa in the region. These farmers are paid 43% more than local market rates, and audited regularly to ensure high ethical practices are maintained on the farms, as well as complete traceability for their cacao beans."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/ghana-dark-chocolate-moka-origins.jpg',
+        alt: 'Ghana Dark Chocolate bar made by Moka Origins in the United States up close macro shot of the front of the bar',
+      },
+      BAR_FRONT: {
+        src: '/bars/ghana-dark-chocolate-moka-origins-bar-front.jpg',
+        alt: 'Front of Ghana Dark Chocolate bar made by Moka Origins in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/ghana-dark-chocolate-moka-origins-bar-back.jpg',
+        alt: 'Back of Ghana Dark Chocolate bar made by Moka Origins in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/ghana-dark-chocolate-moka-origins-package-front.jpg',
+        alt: 'Front of Ghana Dark Chocolate bar made by Moka Origins in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/ghana-dark-chocolate-moka-origins-package-back.jpg',
+        alt: 'Back of Ghana Dark Chocolate bar made by Moka Origins in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 72,
+    barWeight: 68,
+    barDimensions: [150, 75, 7],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+    ],
+    facilityAllergen: ['Dairy', 'Gluten', 'Coconut', 'Tree Nuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [156, 80, 12],
+    wrapper: 'Foil', // Gold outside, silver inside
+    certifiedLabels: ['USDA Organic', 'Fair Trade Certified', 'Kosher'], // Natural Food Certifiers
+    uncertifiedLabels: ['Gluten Free', 'Soy Free', 'Vegan'],
+    marketingTerms: ['Single Origin', 'Bean to Bar', 'Ethically Sourcing'],
+    tastingNotes: ['Raisin', 'Toasted Nuts'],
+    insidePrinting: true,
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 8.99,
+    dateObtained: '2023-02-25',
+
+    reviewerBarNotes: 'Arrived with bloom',
+    reviewerWouldEatAgain: false, // Would love to try again
+    reviewerPackagingNotes: 'Velvet feeling outside, very smooth',
+
+    origin: {
+      producer: 'ABOCFA', // Cooperative https://www.uncommoncacao.com/abocfaghana
+      locality: 'Suhum', // 6.0413N, 0.4550W
+      region: 'Suhum Municipal District',
+      country: 'Ghana',
+    },
+    beanVariety: 'Hybrid of Amelonado and Trinitario', // Elevation: 610 above sea level
+  },
   {
     id: '51808b6cd1',
     releaseDate: '2023-03-03',

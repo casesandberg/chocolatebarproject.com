@@ -93,19 +93,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-02-25',
   },
   {
-    name: 'Ghana',
-    subtitle: 'Dark Chocolate',
-    maker: 'Moka Origins',
-    slug: 'ghana-dark-chocolate-moka-origins',
-    productUrl: 'https://mokaorigins.com/products/ghana-72-dark-chocolate-1',
-    productionCountry: 'United States',
-
-    retailer: 'Erewhon',
-    location: 'Venice',
-    retailPrice: 8.99,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Milk Chocolate',
     subtitle: 'made with Maple Sugar',
     maker: 'Rad Chocolate',
