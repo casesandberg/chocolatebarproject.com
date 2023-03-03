@@ -181,6 +181,69 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '5359670ab6',
+    releaseDate: '2023-03-05',
+    name: 'Amazon 70%',
+    maker: 'Mission Chocolate',
+    slug: 'amazon-70-mission-chocolate',
+    productUrl:
+      'https://www.missionchocolate.com.br/products/amazonia-70-chocolate-escuro',
+    productionCountry: 'Brazil',
+    description: [
+      `"My first chocolate bar made with cacao from the Brazilian Amazon. The notes of this bar are very distinct from all the cocoa that comes from Bahia, a very pleasant surprise.`,
+      `In the last 5 years that I have been living in Brazil, I have dedicated my chocolate production to working with cacao from Bahia because Bahia is a cacao producing, well-oiled machine.  Always reliable and dependable. The opposite of what occurs in the Amazon Rainforest. Cocoa producers are always at a risk of harsh weather and travel delays, making cocoa production quality a coin toss, and storing and shipping cocoa unpredictable.`,
+      `I have been lucky enough to acquire this amazing cocoa from the Amazon but the saddest part is that there is no clear answer if I will ever have access to it again, and if I do, if it will be the same quality. So please enjoy while it lasts!"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/amazon-70-mission-chocolate.jpg',
+        alt: 'Amazon 70% bar made by Mission Chocolate in Brazil on a brown textured background',
+      },
+      BAR_FRONT: {
+        src: '/bars/amazon-70-mission-chocolate-bar-front.jpg',
+        alt: 'Front of Amazon 70% bar made by Mission Chocolate in Brazil',
+      },
+      BAR_BACK: {
+        src: '/bars/amazon-70-mission-chocolate-bar-back.jpg',
+        alt: 'Back of Amazon 70% bar made by Mission Chocolate in Brazil',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/amazon-70-mission-chocolate-package-front.jpg',
+        alt: 'Front of Amazon 70% bar made by Mission Chocolate in Brazil package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/amazon-70-mission-chocolate-package-back.jpg',
+        alt: 'Back of Amazon 70% bar made by Mission Chocolate in Brazil package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 60,
+    barDimensions: [126, 98, 5],
+    ingredients: ['Cacao', 'Organic Sugar', 'Cocoa Butter'],
+    facilityAllergen: ['Peanut', 'Coconut', 'Tree Nuts', 'Wheat'],
+
+    packagingType: 'Sleeve',
+    packagingDimensions: [126, 100, 6],
+    wrapper: 'Foil with Wax Paper Backing',
+    uncertifiedLabels: ['Gluten Free', 'Soy Free', 'Dairy Free'],
+    marketingTerms: ['3 Ingredients'],
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 9,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      region: 'Bahia',
+      country: 'Brazil',
+    },
+  },
+  {
     id: '69078c06ff',
     releaseDate: '2023-03-04',
     name: 'Ghana',

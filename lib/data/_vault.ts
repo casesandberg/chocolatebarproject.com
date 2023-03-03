@@ -40,19 +40,6 @@ const vault: Array<Bar> = [
     retailPrice: 15,
     dateObtained: '2023-02-25',
   },
-  {
-    name: 'Amazon 70%',
-    maker: 'Mission Chocolate',
-    slug: 'amazon-70-mission-chocolate',
-    productUrl:
-      'https://www.missionchocolate.com.br/products/amazonia-70-chocolate-escuro',
-    productionCountry: 'Brazil',
-
-    retailer: 'Gjusta Grocer',
-    location: 'Venice',
-    retailPrice: 9,
-    dateObtained: '2023-02-25',
-  },
 
   {
     name: '70% Rio Acará',
