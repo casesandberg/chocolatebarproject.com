@@ -103,6 +103,82 @@ export type Ingredient = string
 export type CompoundIngredient = [string, Array<Ingredient>]
 export type Ingridients = Array<Ingredient | CompoundIngredient>
 
+/** const empty = [
+  {
+    id: '',
+    releaseDate: '2023-MO-DA',
+    name: '',
+    subtitle: '',
+    maker: '',
+    slug: '',
+    productUrl: '',
+    productionCountry: '',
+    description: [`""`],
+
+    images: {
+      HERO: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes.jpg',
+        alt: '_NAME _SUBTITLE bar made by _MAKER in _COUNTRY with _DESC',
+      },
+      BAR_FRONT: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-bar-front.jpg',
+        alt: 'Front of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY',
+      },
+      BAR_BACK: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-bar-back.jpg',
+        alt: 'Back of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-package-front.jpg',
+        alt: 'Front of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/cookie-butter-milk-chocolate-cookie-butter-compartes-package-back.jpg',
+        alt: 'Back of _NAME _SUBTITLE bar made by _MAKER in _COUNTRY package',
+      },
+    },
+
+    barType: '',
+    percent: 0,
+    barWeight: 0,
+    barDimensions: [],
+    ingredients: [],
+    foodAllergen: [],
+    facilityAllergen: [],
+
+    packagingType: '',
+    packagingDimensions: [],
+    wrapper: '',
+    certifiedLabels: [],
+    uncertifiedLabels: [],
+    marketingTerms: [],
+    tastingNotes: [],
+    insidePrinting: true,
+    packageLanguages: [],
+    awards: [],
+
+    retailer: '',
+    location: '',
+    retailPrice: 0,
+    dateObtained: '',
+
+    reviewerBarFavorite: false,
+    reviewerBarNotes: '',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: false,
+    reviewerPackagingNotes: '',
+
+    origin: {
+      producer: '',
+      locality: '',
+      region: '',
+      country: '',
+    },
+    beanVariety: '',
+    harvestYear: '',
+  },
+] */
+
 const bars: Array<Bar> = [
   {
     id: '51808b6cd1',

@@ -238,6 +238,13 @@ const makers = [
   },
 ]
 
+/**
+{
+  id: '',
+  name: '' as const,
+},
+ */
+
 export type MakerNames = typeof makers[number]['name']
 
 export default makers
