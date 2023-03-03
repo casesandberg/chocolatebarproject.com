@@ -75,10 +75,9 @@ export function DimensionsMetadataItem({
           {value.map((item, i) => (
             <Tag
               key={item}
-              className={e(
-                'mr-2 before:absolute before:-ml-[20px] before:text-primary-200',
-                i !== 0 && 'before:content-["x"]'
-              )}
+              className={`mr-2 before:absolute before:-ml-[20px] before:text-primary-200 ${
+                i !== 0 ? 'before:content-["x"]' : ''
+              }`}
             >
               {transformValue(item)}
             </Tag>
@@ -123,9 +122,7 @@ function Tag({
   className?: string
   as?: keyof React.ReactHTML
 }) {
-  return (
-    <As className={e(`bg-primary-100/25 p-0.5 ${className}`)}>{children}</As>
-  )
+  return <As className={`bg-primary-100/25 p-0.5 ${className}`}>{children}</As>
 }
 
 export function transformPercent(value: string | number) {

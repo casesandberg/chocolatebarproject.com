@@ -21,6 +21,7 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Balancer from 'react-wrap-balancer'
+import { Product, WithContext } from 'schema-dts'
 
 export default async function BarSlugPage({ params }: { params?: any }) {
   const bar = await fetchBarBySlug(params.slug)
@@ -37,8 +38,114 @@ export default async function BarSlugPage({ params }: { params?: any }) {
   const isUnreleased =
     new Date(bar.releaseDate + 'T00:00:01-0800') >= new Date()
 
+  const jsonLd: WithContext<Product> = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    description: bar.description,
+    name: `${bar.name} ${bar.subtitle || ''}`,
+    image: [
+      {
+        '@type': 'ImageObject',
+        url: bar.images.HERO.src,
+        caption: bar.images.HERO.alt,
+        description: bar.images.HERO.alt,
+      },
+      {
+        '@type': 'ImageObject',
+        url: bar.images.PACKAGE_FRONT.src,
+        caption: bar.images.PACKAGE_FRONT.alt,
+        description: bar.images.PACKAGE_FRONT.alt,
+      },
+      {
+        '@type': 'ImageObject',
+        url: bar.images.PACKAGE_BACK.src,
+        caption: bar.images.PACKAGE_BACK.alt,
+        description: bar.images.PACKAGE_BACK.alt,
+      },
+      {
+        '@type': 'ImageObject',
+        url: bar.images.BAR_FRONT.src,
+        caption: bar.images.BAR_FRONT.alt,
+        description: bar.images.BAR_FRONT.alt,
+      },
+      {
+        '@type': 'ImageObject',
+        url: bar.images.BAR_BACK.src,
+        caption: bar.images.BAR_BACK.alt,
+        description: bar.images.BAR_BACK.alt,
+      },
+    ],
+    keywords: [
+      `${bar.barType} Chocolate`,
+      `${
+        typeof bar.origin === 'string' ? bar.origin : bar.origin.country
+      } Origin`,
+      ...(bar.marketingTerms || []),
+    ].join(', '),
+
+    brand: {
+      '@type': 'Brand',
+      name: bar.maker,
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: bar.maker,
+    },
+
+    countryOfOrigin: {
+      '@type': 'Country',
+      name: bar.productionCountry,
+    },
+
+    height: {
+      '@type': 'QuantitativeValue',
+      value: bar.packagingDimensions[0],
+      unitCode: 'MMT',
+    },
+    width: {
+      '@type': 'QuantitativeValue',
+      value: bar.packagingDimensions[1],
+      unitCode: 'MMT',
+    },
+    depth: {
+      '@type': 'QuantitativeValue',
+      value: bar.packagingDimensions[2],
+      unitCode: 'MMT',
+    },
+    weight: {
+      '@type': 'QuantitativeValue',
+      value: bar.barWeight,
+      unitCode: 'GRM',
+    },
+
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      price: bar.retailPrice,
+      priceCurrency: 'USD',
+    },
+
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Chocolate Type',
+        value: bar.barType,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Origin',
+        value: typeof bar.origin === 'string' ? bar.origin : bar.origin.country,
+      },
+    ],
+  }
+
   return (
     <section className="relative min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div className="bg-primary-100/25">
         <Container className="relative h-[300px] sm:h-[80vh]">
           <Image

@@ -2,6 +2,7 @@
 
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Route } from 'next'
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { Container } from './Container'
@@ -11,7 +12,7 @@ function NavItem({
   children,
   highlight,
 }: {
-  href: string
+  href: Route
   children: string
   highlight?: boolean
 }) {
@@ -53,7 +54,7 @@ export function Header() {
         <div className="flex flex-1 items-center">
           <div className="flex w-full items-center justify-between md:w-auto">
             <Link
-              href="#"
+              href="/"
               className="text-l font-heading font-bold uppercase text-primary-800 sm:text-xl"
             >
               The Chocolate Bar Project

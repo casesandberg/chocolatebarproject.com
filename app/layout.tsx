@@ -2,6 +2,7 @@ import { AnalyticsWrapper } from '#/components/Analytics'
 import { PageFrame } from '#/components/PageFrame'
 import '#/styles/globals.css'
 import { Inter, Montserrat, Roboto_Mono } from '@next/font/google'
+import type { Metadata } from 'next'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 
@@ -34,7 +35,7 @@ export default function RootLayout({
       className={`${robotoMono.variable} ${inter.variable} ${montserrat.variable} bg-primary-50 font-body`}
     >
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
         <Header />
@@ -49,4 +50,11 @@ export default function RootLayout({
       </body>
     </html>
   )
+}
+
+export const metadata: Metadata = {
+  viewport: 'width=device-width, initial-scale=1',
+  title: 'The Chocolate Bar Project | Cataloging the Worlds Chocolate',
+  description:
+    'Exploring and documenting the diversity of chocolate from every corner of the globe.',
 }
