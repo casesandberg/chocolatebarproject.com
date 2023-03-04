@@ -21,10 +21,12 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${bar.name} ${
-      bar.subtitle || ''
-    } - The Chocolate Bar Project | Cataloging the Worlds Chocolate`,
-    description: `${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`,
+    title: `${bar.name} ${bar.subtitle || ''} - The Chocolate Bar Project`,
+    description:
+      `${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`.substring(
+        0,
+        100
+      ),
 
     keywords: [
       `${bar.barType} Chocolate`,
@@ -36,10 +38,12 @@ export async function generateMetadata({
 
     openGraph: {
       siteName: 'The Chocolate Bar Project | Cataloging the Worlds Chocolate',
-      title: `${bar.name} ${
-        bar.subtitle || ''
-      } - The Chocolate Bar Project | Cataloging the Worlds Chocolate`,
-      description: `${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`,
+      title: `${bar.name} ${bar.subtitle || ''} - The Chocolate Bar Project`,
+      description:
+        `${bar.barType} chocolate bar by ${bar.maker} in ${bar.productionCountry}. ${bar.description}`.substring(
+          0,
+          100
+        ),
       url: `https://chocolatebarproject.com/bars/${bar.slug}`,
       images: [
         {

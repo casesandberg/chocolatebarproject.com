@@ -31,6 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html
+      lang="en"
       prefix="og: https://ogp.me/ns#"
       className={`${robotoMono.variable} ${inter.variable} ${montserrat.variable} bg-primary-50 font-body`}
     >
