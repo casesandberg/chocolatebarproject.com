@@ -10,10 +10,6 @@ const nextConfig = {
       transform: 'lodash/{{member}}',
     },
   },
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
 }
 
 module.exports = nextConfig
