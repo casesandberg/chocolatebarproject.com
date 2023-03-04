@@ -45,6 +45,16 @@ export async function fetchMostRecentBar() {
   return closestBar
 }
 
+export async function fetchNMostRecentBars(count = 5) {
+  const bars = getBars()
+  const today = new Date()
+
+  return _(getBars())
+    .orderBy(({ releaseDate }) => releaseDate, ['desc'])
+    .take(count)
+    .value()
+}
+
 export async function fetchBars(): Promise<Array<Bar>> {
   return getBars()
 }
