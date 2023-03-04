@@ -76,9 +76,9 @@ export default async function Page() {
 
                   <div>
                     <div className="flex items-center justify-between">
-                      <h1 className="font-bold text-primary-900">
+                      <h2 className="font-bold text-primary-900">
                         {mostRecentBar.name}
-                      </h1>
+                      </h2>
                       <ChevronRightIcon className="h-2.5 w-2.5" />
                     </div>
 

@@ -27,6 +27,7 @@ export default async function BarsPage() {
 
   return (
     <Container className="my-2">
+      <h1 className="sr-only">Cataloged Chocolate Bars</h1>
       <Search initialState={emptySearch} />
 
       {/* <BarGrid title="Bars" hideTitle data={bars} /> */}
