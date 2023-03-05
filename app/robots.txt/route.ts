@@ -3,6 +3,6 @@ export async function GET() {
 User-agent: *
 Allow: /
   
-Sitemap: http://chocolatebarproject.com/sitemap.xml
+Sitemap: https://chocolatebarproject.com/sitemap.xml
 `)
 }
