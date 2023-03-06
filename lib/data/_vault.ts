@@ -121,19 +121,6 @@ const vault: Array<Bar> = [
     retailPrice: 12,
     dateObtained: '2023-02-25',
   },
-  {
-    name: 'Oat Milk Chocolate',
-    subtitle: '61% Cacao',
-    maker: 'Goodnow Farms Chocolate',
-    slug: 'oat-milk-chocolate-61-cacao-goodnow-farms-chocolate',
-    productUrl: 'https://goodnowfarms.com/product/oat-milk/',
-    productionCountry: 'United States',
-
-    retailer: 'Farmshop',
-    location: 'Santa Monica',
-    retailPrice: 16,
-    dateObtained: '2023-02-25',
-  },
 
   {
     name: 'Caramel Crunch',

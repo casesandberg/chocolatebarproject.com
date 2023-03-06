@@ -181,6 +181,85 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'b238e290be',
+    releaseDate: '2023-03-07',
+    name: 'Oat Milk Chocolate',
+    subtitle: '61% Cacao',
+    maker: 'Goodnow Farms Chocolate',
+    slug: 'oat-milk-chocolate-61-cacao-goodnow-farms-chocolate',
+    productUrl: 'https://goodnowfarms.com/product/oat-milk/',
+    productionCountry: 'United States',
+    description: [
+      `"This 100% plant-based milk chocolate is uncompromisingly delicious.  That’s right, this rich and creamy is completely vegan!`,
+      `Wondering what our Oat Milk Chocolate tastes like?  Imagine the flavor combination of rich chocolate, a touch of honey and malty notes.`,
+      `We’ve honed the flavors in this bar and crafted a stellar treat for all chocolate lovers.  Whether you’re a dairy lover or dairy-free, this chocolate bar is a delight."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/oat-milk-chocolate-61-cacao-goodnow-farms-chocolate.jpg',
+        alt: 'Oat Milk Chocolate 61% Cacao bar made by Goodnow Farms Chocolate in the United States on a dark background with oats scattered bedhind it in an artful manner',
+      },
+      BAR_FRONT: {
+        src: '/bars/oat-milk-chocolate-61-cacao-goodnow-farms-chocolate-bar-front.jpg',
+        alt: 'Front of Oat Milk Chocolate 61% Cacao bar made by Goodnow Farms Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/oat-milk-chocolate-61-cacao-goodnow-farms-chocolate-bar-back.jpg',
+        alt: 'Back of Oat Milk Chocolate 61% Cacao bar made by Goodnow Farms Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/oat-milk-chocolate-61-cacao-goodnow-farms-chocolate-package-front.jpg',
+        alt: 'Front of Oat Milk Chocolate 61% Cacao bar made by Goodnow Farms Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/oat-milk-chocolate-61-cacao-goodnow-farms-chocolate-package-back.jpg',
+        alt: 'Back of Oat Milk Chocolate 61% Cacao bar made by Goodnow Farms Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Milk',
+    percent: 61,
+    barWeight: 55,
+    barDimensions: [69, 151, 6],
+    ingredients: [
+      'Single Origin Cacao Beans',
+      'Organic Cane Sugar',
+      'Single Origin Cocoa Butter',
+      'Organic Oat Milk Powder',
+    ],
+    facilityAllergen: ['Peanuts', 'Tree Nuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [177, 100, 12],
+    wrapper: 'Clear Bag',
+    uncertifiedLabels: ['Soy Free', 'Gluten Free', 'Vegan'],
+    marketingTerms: [
+      'Dairy Free',
+      '100% Vegan',
+      'Handcrafted',
+      'Single Origin',
+      'Freshly Pressed Cocoa Butter',
+      'Ethically Sourced',
+      'Direct Trade',
+      'Premium',
+    ],
+    insidePrinting: true,
+
+    retailer: 'Farmshop',
+    location: 'Santa Monica',
+    retailPrice: 16,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Impulsa Bacao',
+      region: 'Boyaca',
+      country: 'Colombia',
+    },
+  },
+  {
     id: 'c5f5c29d5e',
     releaseDate: '2023-03-06',
     name: 'The Lost City Honduras',
@@ -233,7 +312,7 @@ const bars: Array<Bar> = [
 
     packagingType: 'Envelope',
     packagingDimensions: [175, 78, 8],
-    wrapper: 'Clear Bag',
+    wrapper: 'Metallised plastic', // Gold
     marketingTerms: [
       'Direct Trade',
       'Ethical',

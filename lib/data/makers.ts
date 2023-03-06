@@ -248,6 +248,10 @@ const makers = [
     id: '3f29b1af81',
     name: 'Castronovo Chocolate' as const,
   },
+  {
+    id: 'c5241a2382',
+    name: 'Goodnow Farms Chocolate' as const,
+  },
 ]
 
 /**
