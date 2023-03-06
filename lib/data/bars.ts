@@ -181,6 +181,88 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'c5f5c29d5e',
+    releaseDate: '2023-03-06',
+    name: 'The Lost City Honduras',
+    subtitle: '60% Dark Milk with Sea Salt',
+    maker: 'Castronovo Chocolate',
+    slug: 'the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate',
+    productUrl:
+      'https://www.castronovochocolate.com/store/p18/sea-salt-dark-milk-chocolate.html#/',
+    productionCountry: 'United States',
+    description: [
+      `"This chocolate bar is a tribute to the Lost City of a vanished ancient civilization, discovered within Honduras' virgin tropical rainforest. The indigenous people living in the region protect the forest and make a sustainable living as harvesters of wild cacao. The cacao is processed in their village and put on hollowed-out tree log canoes, called pipantes, for a two-day voyage upstream to the nearest road. We are the first American craft chocolate maker to make a single-origin chocolate from these remote beans. We sprinkle fleur de sel from Guatemala onto this dark, rich, creamy milk chocolate. The sea salt complements the savory nutty flavors in the chocolate. It pairs well with whiskey. It's our homage to timelessness of this place."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate.jpg',
+        alt: 'The Lost City Honduras 60% Dark Milk with Sea Salt bar made by Castronovo Chocolate in the United States on a moody dark background',
+      },
+      BAR_FRONT: {
+        src: '/bars/the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate-bar-front.jpg',
+        alt: 'Front of The Lost City Honduras 60% Dark Milk with Sea Salt bar made by Castronovo Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate-bar-back.jpg',
+        alt: 'Back of The Lost City Honduras 60% Dark Milk with Sea Salt bar made by Castronovo Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate-package-front.jpg',
+        alt: 'Front of The Lost City Honduras 60% Dark Milk with Sea Salt bar made by Castronovo Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate-package-back.jpg',
+        alt: 'Back of The Lost City Honduras 60% Dark Milk with Sea Salt bar made by Castronovo Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 60,
+    barWeight: 62,
+    barDimensions: [138, 62, 7],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Organic Whole Milk',
+      'Fleur de Sel',
+    ],
+    foodAllergen: ['Milk'],
+    facilityAllergen: ['Wheat'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [175, 78, 8],
+    wrapper: 'Clear Bag',
+    marketingTerms: [
+      'Direct Trade',
+      'Ethical',
+      'Sustainable',
+      'Small Batch',
+      'Craft Chocolate',
+    ],
+    awards: [
+      {
+        body: 'Academy Of Chocolate',
+        level: 'Gold',
+        year: 2021,
+      },
+    ],
+
+    retailer: 'Farmshop',
+    location: 'Santa Monica',
+    retailPrice: 13,
+    dateObtained: '2023-02-25',
+
+    reviewerBarNotes: 'Had some unpleasant notes to me. Should try again.',
+    reviewerWouldEatAgain: false,
+
+    origin: {
+      region: 'Mosquitia',
+      country: 'Honduras',
+    },
+  },
+  {
     id: '5359670ab6',
     releaseDate: '2023-03-05',
     name: 'Amazon 70%',

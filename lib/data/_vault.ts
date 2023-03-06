@@ -122,20 +122,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-02-25',
   },
   {
-    name: 'The Lost City Honduras',
-    subtitle: '60% Dark Milk with Sea Salt',
-    maker: 'Castronovo Chocolate',
-    slug: 'the-lost-city-honduras-60-dark-milk-with-sea-salt-castronovo-chocolate',
-    productUrl:
-      'https://www.castronovochocolate.com/store/p18/sea-salt-dark-milk-chocolate.html#/',
-    productionCountry: 'United States',
-
-    retailer: 'Farmshop',
-    location: 'Santa Monica',
-    retailPrice: 13,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Oat Milk Chocolate',
     subtitle: '61% Cacao',
     maker: 'Goodnow Farms Chocolate',
