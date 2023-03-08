@@ -181,6 +181,95 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '09bea6c5c4',
+    releaseDate: '2023-03-09',
+    name: 'Kona',
+    subtitle: `Hawai'i Island 70% Dark Chocolate`,
+    maker: 'Manoa Chocolate',
+    slug: 'kona-hawaii-island-70-dark-chocolate-manoa-chocolate',
+    productUrl:
+      'https://manoachocolate.com/products/hawaii-island-dark-chocolate-bar',
+    productionCountry: 'United States',
+    description: [
+      `"The Lika'o Kula Farm in Kona is one of our oldest sources of Hawaiian cacao. They have always been a reliable source for some of the highest quality beans in Hawaii. In 2017 at one of the largest chocolate festivals in the world, the Salon Du Chocolat in Paris, these Hawaiian grown beans from Kona won top 15 best flavored cacao in the world. "`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/kona-hawaii-island-70-dark-chocolate-manoa-chocolate.jpg',
+        alt: `Kona Hawai'i Island 70% Dark Chocolate bar made by Manoa Chocolate in the United States in a tikibar scene with rum and carved wood heads`,
+      },
+      BAR_FRONT: {
+        src: '/bars/kona-hawaii-island-70-dark-chocolate-manoa-chocolate-bar-front.jpg',
+        alt: `Front of Kona Hawai'i Island 70% Dark Chocolate bar made by Manoa Chocolate in the United States`,
+      },
+      BAR_BACK: {
+        src: '/bars/kona-hawaii-island-70-dark-chocolate-manoa-chocolate-bar-back.jpg',
+        alt: `Back of Kona Hawai'i Island 70% Dark Chocolate bar made by Manoa Chocolate in the United States`,
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/kona-hawaii-island-70-dark-chocolate-manoa-chocolate-package-front.jpg',
+        alt: `Front of Kona Hawai'i Island 70% Dark Chocolate bar made by Manoa Chocolate in the United States package`,
+      },
+      PACKAGE_BACK: {
+        src: '/bars/kona-hawaii-island-70-dark-chocolate-manoa-chocolate-package-back.jpg',
+        alt: `Back of Kona Hawai'i Island 70% Dark Chocolate bar made by Manoa Chocolate in the United States package`,
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70, // 60/10/30 split
+    barWeight: 60,
+    barDimensions: [141, 73, 7],
+    ingredients: ['Cacao', 'Organic Cane Sugar', 'Cocoa Butter'],
+    facilityAllergen: ['Milk Powder', 'Nuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [159, 90, 11],
+    wrapper: 'Cellulose',
+    marketingTerms: [
+      'Hawaiian Grown Cacao',
+      'Pairings',
+      'Bean to Bar',
+      'Single Origin',
+      'Vegan',
+    ],
+    tastingNotes: ['Caramel', 'Hibiscus', 'Hazelnut'],
+    insidePrinting: true,
+    packageLanguages: [],
+    awards: [
+      {
+        body: 'Salon Du Chocolat',
+        level: 'Award De Savor',
+        year: 2017,
+      },
+      {
+        body: 'International Chocolate Award',
+        level: 'Silver',
+        year: 2018,
+      },
+      {
+        body: 'Academy for Chocolate',
+        level: 'Silver',
+        year: 2018,
+      },
+    ],
+
+    retailer: 'Kilauea Market + Cafe',
+    location: 'Kilauea',
+    retailPrice: 12,
+    dateObtained: '2022-12-5',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: `Lika'o Kula Farm`,
+      locality: 'Kona',
+      region: 'Hawaii',
+      country: 'United States',
+    },
+  },
+  {
     id: 'd7d37d4fe5',
     releaseDate: '2023-03-08',
     name: 'Hokey Pokey',

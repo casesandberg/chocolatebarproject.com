@@ -640,14 +640,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Kona',
-    maker: 'Manoa',
-    retailer: 'Kilauea Market + Cafe',
-    location: 'Kilauea',
-    retailPrice: 0, // ?
-    dateObtained: '2022-12-5',
-  },
-  {
     name: 'Mililani',
     maker: 'Manoa',
     retailer: 'Kilauea Market + Cafe',
