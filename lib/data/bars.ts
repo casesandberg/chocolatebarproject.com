@@ -181,6 +181,78 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'd7d37d4fe5',
+    releaseDate: '2023-03-08',
+    name: 'Hokey Pokey',
+    subtitle: '66% Dark Chocolate Sponge Toffee',
+    maker: 'BETA5',
+    slug: 'hokey-pokey-66-dark-chocolate-sponge-toffee-beta5',
+    productUrl: 'https://shop.beta5chocolates.com/products/hokey-pokey-bar',
+    productionCountry: 'Canada',
+    description: [`"66% dark chocolate / sponge toffee / flaked sea salt"`],
+
+    images: {
+      HERO: {
+        src: '/bars/hokey-pokey-66-dark-chocolate-sponge-toffee-beta5.jpg',
+        alt: 'Hokey Pokey 66% Dark Chocolate Sponge Toffee bar made by BETA5 in Canada on a yellow background with a highlight to match the package',
+      },
+      BAR_FRONT: {
+        src: '/bars/hokey-pokey-66-dark-chocolate-sponge-toffee-beta5-bar-front.jpg',
+        alt: 'Front of Hokey Pokey 66% Dark Chocolate Sponge Toffee bar made by BETA5 in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/hokey-pokey-66-dark-chocolate-sponge-toffee-beta5-bar-back.jpg',
+        alt: 'Back of Hokey Pokey 66% Dark Chocolate Sponge Toffee bar made by BETA5 in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/hokey-pokey-66-dark-chocolate-sponge-toffee-beta5-package-front.jpg',
+        alt: 'Front of Hokey Pokey 66% Dark Chocolate Sponge Toffee bar made by BETA5 in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/hokey-pokey-66-dark-chocolate-sponge-toffee-beta5-package-back.jpg',
+        alt: 'Back of Hokey Pokey 66% Dark Chocolate Sponge Toffee bar made by BETA5 in Canada package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 66,
+    barWeight: 65,
+    barDimensions: [150, 75, 8],
+    ingredients: [
+      'Cocoa Mass',
+      'Sugar',
+      'Cocoa Butter',
+      'Vanilla',
+      'Soy Lecithin',
+      ['Sponge Toffee', ['Sugar', 'Glucose', 'Honey', 'Baking Soda']],
+      'Flaked Salt',
+    ],
+    facilityAllergen: [
+      'Tree Nuts',
+      'Peanuts',
+      'Sesame',
+      'Eggs',
+      'Milk',
+      'Wheat',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [160, 85, 12],
+    wrapper: 'Clear Bag',
+
+    retailer: 'BETA5',
+    location: 'Vancouver Factory',
+    retailPrice: 0,
+    dateObtained: '2022-12-29',
+
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true, // So Tasty
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'b238e290be',
     releaseDate: '2023-03-07',
     name: 'Oat Milk Chocolate',
