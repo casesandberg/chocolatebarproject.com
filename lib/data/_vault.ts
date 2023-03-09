@@ -14,20 +14,6 @@ interface Bar {
 const vault: Array<Bar> = [
   //
   {
-    name: 'Crystal Label',
-    subtitle: '100% Bean-To-Bar',
-    maker: 'Marsatta Chocolate',
-    slug: 'crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate',
-    productUrl:
-      'https://marsatta.com/products/crystal-label-100-bean-to-bar-chocolate',
-    productionCountry: 'United States',
-
-    retailer: 'Gjusta Grocer',
-    location: 'Venice',
-    retailPrice: 14,
-    dateObtained: '2023-02-25',
-  },
-  {
     name: 'Venezuela Rio Caribe 100%',
     maker: 'Chapon Chocolatier',
     slug: 'venezuela-rio-caribe-100-chapon-chocolatier',

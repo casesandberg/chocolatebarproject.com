@@ -181,6 +181,67 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '39e5e941ba',
+    releaseDate: '2023-03-10',
+    name: 'Crystal Label',
+    subtitle: '100% Bean-To-Bar',
+    maker: 'Marsatta Chocolate',
+    slug: 'crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate',
+    productUrl:
+      'https://marsatta.com/products/crystal-label-100-bean-to-bar-chocolate',
+    productionCountry: 'United States',
+    description: [
+      `"In 1965, the Beatles first launched the song "Yesterday" that changed the way we listen to Music. In 1977, Steve Jobs launches the Apple II, that changed the way we look at Electronics. For over 19 years, we have made a special chocolate with no sugar, no preservatives...just pure cacao.`,
+      `This is a chocolate so pure, it challenges the very definition of chocolate."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate.jpg',
+        alt: 'Crystal Label 100% Bean-To-Bar bar made by Marsatta Chocolate in the United States stood up on a marble table with a blue wall behind',
+      },
+      BAR_FRONT: {
+        src: '/bars/crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate-bar-front.jpg',
+        alt: 'Front of Crystal Label 100% Bean-To-Bar bar made by Marsatta Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate-bar-back.jpg',
+        alt: 'Back of Crystal Label 100% Bean-To-Bar bar made by Marsatta Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate-package-front.jpg',
+        alt: 'Front of Crystal Label 100% Bean-To-Bar bar made by Marsatta Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/crystal-label-100-bean-to-bar-chocolate-marsatta-chocolate-package-back.jpg',
+        alt: 'Back of Crystal Label 100% Bean-To-Bar bar made by Marsatta Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 1000,
+    barWeight: 50,
+    barDimensions: [138, 56, 7],
+    ingredients: ['Organic Cacao Beans'],
+    facilityAllergen: ['Electric Sportscars'],
+
+    packagingType: 'Box',
+    packagingDimensions: [177, 76, 11],
+    wrapper: 'Metallised plastic', // Gold
+    marketingTerms: ['Xocolatl', 'Aged', 'Bean to Bar', 'Sacrifice'],
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 14,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: false, // Not a 100% fan...
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: '09bea6c5c4',
     releaseDate: '2023-03-09',
     name: 'Kona',
