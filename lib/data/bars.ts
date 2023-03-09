@@ -181,6 +181,84 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '7d5e314a96',
+    releaseDate: '2023-03-11',
+    name: 'Dark Chocolate + Avocado & Rosemary',
+    subtitle: 'Heath Ceramics Collabaration Bar',
+    maker: 'Askinosie Chocolate',
+    slug: 'dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate',
+    productUrl:
+      'https://askinosie.com/products/dark-chocolate-avocado-rosemary-collabaration-bar',
+    productionCountry: 'United States',
+    description: [
+      `"We make this 61% dark chocolate with Trinitario cocoa beans we source directly from farmers in Mababu, Tanzania and blend with real Haas avocado pulp powder, organic rosemary, and a touch of organic black pepper. Inspired by Heath Ceramics' seventy-year legacy of craftsmanship, California roots and approachable designs, we created this unique bar, whose texture even mimics the smooth glazing of their ceramics. Savory and sweet, this bar makes a great snack and pairs well with salty crackers or hard cheese. "`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate.jpg',
+        alt: 'Dark Chocolate + Avocado & Rosemary Heath Ceramics Collabaration Bar bar made by Askinosie Chocolate in the United States on a green background with leaves',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate-bar-front.jpg',
+        alt: 'Front of Dark Chocolate + Avocado & Rosemary Heath Ceramics Collabaration Bar bar made by Askinosie Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate-bar-back.jpg',
+        alt: 'Back of Dark Chocolate + Avocado & Rosemary Heath Ceramics Collabaration Bar bar made by Askinosie Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate-package-front.jpg',
+        alt: 'Front of Dark Chocolate + Avocado & Rosemary Heath Ceramics Collabaration Bar bar made by Askinosie Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate-package-back.jpg',
+        alt: 'Back of Dark Chocolate + Avocado & Rosemary Heath Ceramics Collabaration Bar bar made by Askinosie Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 61,
+    barWeight: 85,
+    barDimensions: [163, 73, 6],
+    ingredients: [
+      'Mababu, Tanzania Cocoa Beans',
+      'Organic Cane Sugar',
+      'Cocoa Butter',
+      'Avocado',
+      'Organic Sucanat Cane Sugar',
+      'Organic Rosemary',
+      'Organic Black Better',
+      'Fleur de Sel Sea Salt',
+    ],
+    facilityAllergen: ['Milk', 'Peanuts', 'Tree Nuts', 'Wheat'],
+
+    packagingType: 'Brown Bag with Tag',
+    packagingDimensions: [200, 92, 10],
+    wrapper: 'Clear Bag',
+    marketingTerms: ['Partnered', 'Heath'],
+    tastingNotes: [
+      'Woody Herbs',
+      'Sweet Caramel',
+      'Spicy Pepper',
+      'Buttery Avocado',
+    ],
+
+    retailer: 'Askinosie Chocolate',
+    location: 'https://askinosie.com/',
+    retailPrice: 10.5,
+    dateObtained: '2023-01-31',
+
+    reviewerBarFavorite: true,
+    reviewerBarNotes: 'So tasty, love the hint of pepper. Couldnt stop eating.',
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      region: 'Mababu',
+      country: 'Tanzania',
+    },
+  },
+  {
     id: '39e5e941ba',
     releaseDate: '2023-03-10',
     name: 'Crystal Label',

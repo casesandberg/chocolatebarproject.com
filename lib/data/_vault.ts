@@ -208,19 +208,6 @@ const vault: Array<Bar> = [
     retailPrice: 10.0,
     dateObtained: '2023-01-31',
   },
-  {
-    name: 'Dark Chocolate + Avocado & Rosemary',
-    subtitle: 'Heath Ceramics Collabaration Bar',
-    maker: 'Askinosie Chocolate',
-    slug: 'dark-chocolate-avocado-rosemary-heath-ceramics-collabaration-bar-askinosie-chocolate',
-    productUrl:
-      'https://askinosie.com/products/dark-chocolate-avocado-rosemary-collabaration-bar',
-
-    retailer: 'Askinosie Chocolate',
-    location: 'https://askinosie.com/',
-    retailPrice: 10.5,
-    dateObtained: '2023-01-31',
-  },
 
   //
   {
