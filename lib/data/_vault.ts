@@ -12,6 +12,152 @@ interface Bar {
 }
 
 const vault: Array<Bar> = [
+  {
+    name: "Caputo's Wild Jurua 70%",
+    subtitle: 'by Luisa Abram',
+    maker: "Caputo's Market & Deli",
+    slug: 'caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli',
+    productUrl:
+      'https://caputos.com/product/caputos-wild-jurua-70-luisa-abram/',
+    productionCountry: 'United States',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 14.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Nicaliso 70%',
+    maker: 'Friis-Holm Chokolade',
+    slug: 'nicaliso-70-friis-holm-chokolade',
+    productUrl: 'https://www.friisholmchokolade.dk/product-page/nicaliso-70',
+    productionCountry: 'Denmark',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 19.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Nicaliso 70%',
+    maker: 'Friis-Holm Chokolade',
+    slug: 'nicaliso-70-friis-holm-chokolade',
+    productUrl: 'https://www.friisholmchokolade.dk/product-page/nicaliso-70',
+    productionCountry: 'Denmark',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 19.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Salted Honeycomb',
+    subtitle: 'Milk Chocolate 41%',
+    maker: 'Artisan du Chocolat',
+    slug: 'salted-honeycomb-milk-chocolate-41-artisan-du-chocolat',
+    productUrl:
+      'https://www.artisanduchocolat.com/products/salted-honeycomb-milk-bar',
+    productionCountry: 'England',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 6.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Pure Nacional',
+    subtitle: '80% Pure Nacional from Peru',
+    maker: 'Goodio',
+    slug: 'pure-nacional-80-pure-nacional-from-peru-goodio',
+    productUrl: 'https://caputos.com/product/goodio-pure-nacional-80/',
+    productionCountry: 'Finland',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 6.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Forest',
+    subtitle: 'Chocolate Topped with Birch Leaves & Forest Crystals',
+    maker: 'Goodio',
+    slug: 'forest-chocolate-topped-with-birch-leaves-forest-crystals-goodio',
+    productUrl: 'https://goodio.us/products/metsa',
+    productionCountry: 'Finland',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 9.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'The Big Gorilla Bar',
+    subtitle: 'Virunga Congo 77%',
+    maker: 'Rózsavölgyi Csokoládé',
+    slug: 'the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade',
+    productUrl:
+      'https://www.rozsavolgyi.com/en/chocolate/single-origin-tablets/123/virunga-77',
+    productionCountry: 'Hungary',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 13.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: '73% CACAO MEXICANO de Soconusco',
+    subtitle: 'Chiapas con Mezcal Joven',
+    maker: 'CUNA DE PIEDRA',
+    slug: '73-cacao-mexicano-de-soconusco-chiapas-con-mezcal-joven-cuna-de-piedra',
+    productUrl:
+      'https://shop.cunadepiedra.com/es/products/73-cacao-mexicano-de-soconusco-chiapas-con-mezcal-joven',
+    productionCountry: 'Mexico',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 12.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Haiti Cap-Haïtien 70%',
+    maker: 'Standout Chocolate',
+    slug: 'haiti-cap-haitien-70-standout-chocolate',
+    productUrl:
+      'https://www.standoutchocolate.com/en/shop/single-origin-bars/haiti-cap-haitien-70',
+    productionCountry: 'Sweden',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 9.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Milk Chocolate with Loqaimat',
+    maker: 'Mirzam Chocoalte Makers',
+    slug: 'milk-chocolate-with-loqaimat-mirzam-chocoalte-makers',
+    productUrl: 'https://mirzam.com/product/45-milk-chocolate-with-loqaimat/',
+    productionCountry: 'United Arab Emirates',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 10.99,
+    dateObtained: '2023-03-09',
+  },
+  {
+    name: 'Dong Nai 72%',
+    subtitle: 'Single Origin Dark Chocolate',
+    maker: 'Marou',
+    slug: 'dong-nai-72-single-origin-dark-chocolate-marou',
+    productUrl:
+      'https://caputos.com/product/marou-dong-nai-pod-to-bar-72-chocolate-bar/',
+    productionCountry: 'Vietnam',
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 7.99,
+    dateObtained: '2023-03-09',
+  },
+
   //
   {
     name: 'Venezuela Rio Caribe 100%',
