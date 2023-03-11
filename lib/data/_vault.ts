@@ -39,18 +39,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-03-09',
   },
   {
-    name: 'Nicaliso 70%',
-    maker: 'Friis-Holm Chokolade',
-    slug: 'nicaliso-70-friis-holm-chokolade',
-    productUrl: 'https://www.friisholmchokolade.dk/product-page/nicaliso-70',
-    productionCountry: 'Denmark',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 19.99,
-    dateObtained: '2023-03-09',
-  },
-  {
     name: 'Salted Honeycomb',
     subtitle: 'Milk Chocolate 41%',
     maker: 'Artisan du Chocolat',

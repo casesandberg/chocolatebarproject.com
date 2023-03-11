@@ -181,6 +181,69 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '5f4f79eb5b',
+    releaseDate: '2023-03-12',
+    name: 'Nicaliso 70%',
+    maker: 'Friis-Holm Chokolade',
+    slug: 'nicaliso-70-friis-holm-chokolade',
+    productUrl: 'https://www.friisholmchokolade.dk/product-page/nicaliso-70',
+    productionCountry: 'Denmark',
+    description: [
+      `"A cocoa tree originally found in small volumes in a single farm in Northern Nicaragua.`,
+      `Pleasant acidity. Notes of grapes and dried fruit. Long smooth aftertaste."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/nicaliso-70-friis-holm-chokolade.jpg',
+        alt: 'Nicaliso 70% bar made by Friis-Holm Chokolade in Denmark with slightly floating on an ornage background that matches the bar',
+      },
+      BAR_FRONT: {
+        src: '/bars/nicaliso-70-friis-holm-chokolade-bar-front.jpg',
+        alt: 'Front of Nicaliso 70% bar made by Friis-Holm Chokolade in Denmark',
+      },
+      BAR_BACK: {
+        src: '/bars/nicaliso-70-friis-holm-chokolade-bar-back.jpg',
+        alt: 'Back of Nicaliso 70% bar made by Friis-Holm Chokolade in Denmark',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/nicaliso-70-friis-holm-chokolade-package-front.jpg',
+        alt: 'Front of Nicaliso 70% bar made by Friis-Holm Chokolade in Denmark package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/nicaliso-70-friis-holm-chokolade-package-back.jpg',
+        alt: 'Back of Nicaliso 70% bar made by Friis-Holm Chokolade in Denmark package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 100,
+    barDimensions: [158, 79, 7],
+    ingredients: ['Cacao Beans', 'Sugar', 'Cacao Butter'],
+    facilityAllergen: ['Milk'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [160, 81, 10],
+    wrapper: 'Foil', // Silver
+    marketingTerms: ['Single Bean'],
+    tastingNotes: ['Grapes', 'Dried Fruit'],
+    packageLanguages: ['English', 'Danish'],
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 19.99,
+    dateObtained: '2023-03-09',
+
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Nicaragua',
+    },
+    beanVariety: 'Nicaliso', // https://barandcocoa.com/collections/nicalizo
+  },
+  {
     id: '7d5e314a96',
     releaseDate: '2023-03-11',
     name: 'Dark Chocolate + Avocado & Rosemary',
