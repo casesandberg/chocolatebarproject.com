@@ -242,7 +242,7 @@ const bars: Array<Bar> = [
     dateObtained: '2023-03-09',
 
     reviewerBarNotes:
-      'Not a fan of dates... Texture and design was great though.',
+      'Not a fan of dates... Texture and design was great though. Bar arrvied broken.',
     reviewerWouldEatAgain: false,
 
     origin: {
@@ -306,6 +306,7 @@ const bars: Array<Bar> = [
 
     reviewerBarFavorite: true,
     reviewerWouldEatAgain: true,
+    reviewerBarNotes: 'Bar arrvied broken.',
 
     origin: {
       country: 'Nicaragua',
