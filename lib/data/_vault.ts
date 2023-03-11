@@ -120,18 +120,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-03-09',
   },
   {
-    name: 'Milk Chocolate with Loqaimat',
-    maker: 'Mirzam Chocoalte Makers',
-    slug: 'milk-chocolate-with-loqaimat-mirzam-chocoalte-makers',
-    productUrl: 'https://mirzam.com/product/45-milk-chocolate-with-loqaimat/',
-    productionCountry: 'United Arab Emirates',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 10.99,
-    dateObtained: '2023-03-09',
-  },
-  {
     name: 'Dong Nai 72%',
     subtitle: 'Single Origin Dark Chocolate',
     maker: 'Marou',

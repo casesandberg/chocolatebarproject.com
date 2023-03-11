@@ -181,6 +181,75 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'a86be00860',
+    releaseDate: '2023-03-13',
+    name: 'Milk Chocolate with Loqaimat',
+    maker: 'Mirzam Chocolate Makers',
+    slug: 'milk-chocolate-with-loqaimat-mirzam-chocolate-makers',
+    productUrl: 'https://mirzam.com/product/45-milk-chocolate-with-loqaimat/',
+    productionCountry: 'United Arab Emirates',
+    description: [
+      `"Inspired by the iconic recipe, this bar contains puffed quinoa caramelised with date syrup"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/milk-chocolate-with-loqaimat-mirzam-chocolate-makers.jpg',
+        alt: 'Milk Chocolate with Loqaimat bar made by Mirzam Chocolate Makers in United Arab Emirates on a side table with rain outside the window',
+      },
+      BAR_FRONT: {
+        src: '/bars/milk-chocolate-with-loqaimat-mirzam-chocolate-makers-bar-front.jpg',
+        alt: 'Front of Milk Chocolate with Loqaimat bar made by Mirzam Chocolate Makers in United Arab Emirates',
+      },
+      BAR_BACK: {
+        src: '/bars/milk-chocolate-with-loqaimat-mirzam-chocolate-makers-bar-back.jpg',
+        alt: 'Back of Milk Chocolate with Loqaimat bar made by Mirzam Chocolate Makers in United Arab Emirates',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/milk-chocolate-with-loqaimat-mirzam-chocolate-makers-package-front.jpg',
+        alt: 'Front of Milk Chocolate with Loqaimat bar made by Mirzam Chocolate Makers in United Arab Emirates package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/milk-chocolate-with-loqaimat-mirzam-chocolate-makers-package-back.jpg',
+        alt: 'Back of Milk Chocolate with Loqaimat bar made by Mirzam Chocolate Makers in United Arab Emirates package',
+      },
+    },
+
+    barType: 'Milk',
+    percent: 45,
+    barWeight: 70,
+    barDimensions: [154, 79, 6],
+    ingredients: [
+      'Cocoa Beans',
+      'Cocoa Butter',
+      'Unrefined Cane Sugar',
+      'Skim Milk Powder',
+      'Quinoa',
+      'Date Syrup',
+    ],
+    foodAllergen: ['Dairy'],
+    facilityAllergen: ['Nuts', 'Gluten'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [155, 81, 7],
+    wrapper: 'Foil with Paper Backing', // Silver
+    marketingTerms: ['Bean to Bar'],
+    packageLanguages: ['English', 'Arabic'],
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 10.99,
+    dateObtained: '2023-03-09',
+
+    reviewerBarNotes:
+      'Not a fan of dates... Texture and design was great though.',
+    reviewerWouldEatAgain: false,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: '5f4f79eb5b',
     releaseDate: '2023-03-12',
     name: 'Nicaliso 70%',

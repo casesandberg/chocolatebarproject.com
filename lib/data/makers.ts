@@ -260,6 +260,10 @@ const makers = [
     id: 'd84cd284ef',
     name: 'Friis-Holm Chokolade' as const,
   },
+  {
+    id: '4f77220384',
+    name: 'Mirzam Chocolate Makers' as const,
+  },
 ]
 
 /**
