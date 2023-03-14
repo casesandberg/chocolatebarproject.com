@@ -181,6 +181,68 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'f235a15756',
+    releaseDate: '2023-03-15',
+    name: 'Dong Nai 72%',
+    subtitle: 'Single Origin Dark Chocolate',
+    maker: 'Marou',
+    slug: 'dong-nai-72-single-origin-dark-chocolate-marou',
+    productUrl:
+      'https://caputos.com/product/marou-dong-nai-pod-to-bar-72-chocolate-bar/',
+    productionCountry: 'Vietnam',
+    description: [
+      `"Cultivated by avocado farmers near Saigon, Dong Nai cacao lends an apparent ginger and clove spice with palate coating sweet and sour tropical fruit notes.`,
+      `Buttery and smooth like the Ba Ria bar, this bar is understated in its complexity."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/dong-nai-72-single-origin-dark-chocolate-marou.jpg',
+        alt: 'Dong Nai 72% Single Origin Dark Chocolate bar made by Marou in Vietnam on a black-to-white gradient knitted background',
+      },
+      BAR_FRONT: {
+        src: '/bars/dong-nai-72-single-origin-dark-chocolate-marou-bar-front.jpg',
+        alt: 'Front of Dong Nai 72% Single Origin Dark Chocolate bar made by Marou in Vietnam',
+      },
+      BAR_BACK: {
+        src: '/bars/dong-nai-72-single-origin-dark-chocolate-marou-bar-back.jpg',
+        alt: 'Back of Dong Nai 72% Single Origin Dark Chocolate bar made by Marou in Vietnam',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dong-nai-72-single-origin-dark-chocolate-marou-package-front.jpg',
+        alt: 'Front of Dong Nai 72% Single Origin Dark Chocolate bar made by Marou in Vietnam package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dong-nai-72-single-origin-dark-chocolate-marou-package-back.jpg',
+        alt: 'Back of Dong Nai 72% Single Origin Dark Chocolate bar made by Marou in Vietnam package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 72,
+    barWeight: 80,
+    barDimensions: [78, 148, 7],
+    ingredients: ['Cacao Nibs', 'Sugar', 'Cacao Butter'],
+    facilityAllergen: ['Coconut'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [149, 80, 8],
+    wrapper: 'Foil with Paper Backing', // Gold
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 7.99,
+    dateObtained: '2023-03-09',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      locality: 'Saigon',
+      region: 'Đồng Nai',
+      country: 'Vietnam',
+    },
+  },
+  {
     id: '9c6656015e',
     releaseDate: '2023-03-14',
     name: 'Almond Butter Crunch',

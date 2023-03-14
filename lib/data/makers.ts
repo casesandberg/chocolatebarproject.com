@@ -268,6 +268,10 @@ const makers = [
     id: 'b6a1e41bfe',
     name: 'Unknown' as const,
   },
+  {
+    id: 'bab0415fb7',
+    name: 'Marou' as const,
+  },
 ]
 
 /**

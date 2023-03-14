@@ -119,20 +119,6 @@ const vault: Array<Bar> = [
     retailPrice: 9.99,
     dateObtained: '2023-03-09',
   },
-  {
-    name: 'Dong Nai 72%',
-    subtitle: 'Single Origin Dark Chocolate',
-    maker: 'Marou',
-    slug: 'dong-nai-72-single-origin-dark-chocolate-marou',
-    productUrl:
-      'https://caputos.com/product/marou-dong-nai-pod-to-bar-72-chocolate-bar/',
-    productionCountry: 'Vietnam',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 7.99,
-    dateObtained: '2023-03-09',
-  },
 
   //
   {
