@@ -93,20 +93,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-03-09',
   },
   {
-    name: '73% CACAO MEXICANO de Soconusco',
-    subtitle: 'Chiapas con Mezcal Joven',
-    maker: 'CUNA DE PIEDRA',
-    slug: '73-cacao-mexicano-de-soconusco-chiapas-con-mezcal-joven-cuna-de-piedra',
-    productUrl:
-      'https://shop.cunadepiedra.com/es/products/73-cacao-mexicano-de-soconusco-chiapas-con-mezcal-joven',
-    productionCountry: 'Mexico',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 12.99,
-    dateObtained: '2023-03-09',
-  },
-  {
     name: 'Haiti Cap-Haïtien 70%',
     maker: 'Standout Chocolate',
     slug: 'haiti-cap-haitien-70-standout-chocolate',

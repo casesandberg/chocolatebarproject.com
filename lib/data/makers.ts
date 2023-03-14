@@ -272,6 +272,10 @@ const makers = [
     id: 'bab0415fb7',
     name: 'Marou' as const,
   },
+  {
+    id: '0acaffda51',
+    name: 'CUNA DE PIEDRA' as const,
+  },
 ]
 
 /**

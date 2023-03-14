@@ -181,6 +181,70 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '53bfaa7b7e',
+    releaseDate: '2023-03-16',
+    name: '73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven',
+    maker: 'CUNA DE PIEDRA',
+    slug: '73-mexican-cacao-from-soconusco-chiapas-with-mezcal-joven',
+    productUrl:
+      'https://shop.cunadepiedra.com/products/73-cacao-mexicano-de-soconusco-chiapas-con-mezcal-joven',
+    productionCountry: 'Mexico',
+    description: [
+      `"Young Mezcal made from 100% Maguey Espadín from Santiago Matatlán, a town located in the central valleys of Oaxaca, considered to be the “world capital of mezcal”. The agaves were crushed into an Egyptian stone mill, known as tahona, the liquid was fermented in oak vats and double distilled in clay pot stills to obtain the freshest citrus and herbal notes, which blend harmoniously with our Soconusco, Chiapas 73%."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/73-mexican-cacao-from-soconusco-chiapas-with-mezcal-joven.jpg',
+        alt: '73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven bar made by CUNA DE PIEDRA in Mexico with with the pink foil packaging torn on a pink background',
+      },
+      BAR_FRONT: {
+        src: '/bars/73-mexican-cacao-from-soconusco-chiapas-with-mezcal-joven-bar-front.jpg',
+        alt: 'Front of 73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven bar made by CUNA DE PIEDRA in Mexico',
+      },
+      BAR_BACK: {
+        src: '/bars/73-mexican-cacao-from-soconusco-chiapas-with-mezcal-joven-bar-back.jpg',
+        alt: 'Back of 73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven bar made by CUNA DE PIEDRA in Mexico',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/73-mexican-cacao-from-soconusco-chiapas-with-mezcal-joven-package-front.jpg',
+        alt: 'Front of 73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven bar made by CUNA DE PIEDRA in Mexico package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/73-mexican-cacao-from-soconusco-chiapas-with-mezcal-joven-package-back.jpg',
+        alt: 'Back of 73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven bar made by CUNA DE PIEDRA in Mexico package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 73,
+    barWeight: 60,
+    barDimensions: [147, 71, 6],
+    ingredients: ['Cacao Beans', 'Cane Sugar', 'Alcohol removed Mezcal Joven'],
+    facilityAllergen: ['Wheat', 'Milk', 'Soy', 'Peanuts', 'Tree Nuts', 'Eggs'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [149, 72, 9],
+    wrapper: 'Foil', // Pink outside
+    marketingTerms: ['Homage'],
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 12.99,
+    dateObtained: '2023-03-09',
+
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+
+    origin: {
+      locality: 'Soconusco',
+      region: 'Chiapas',
+      country: 'Mexico',
+    },
+    harvestYear: '2021', // Rainy Season
+  },
+  {
     id: 'f235a15756',
     releaseDate: '2023-03-15',
     name: 'Dong Nai 72%',
