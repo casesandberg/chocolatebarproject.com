@@ -181,6 +181,80 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '9c6656015e',
+    releaseDate: '2023-03-14',
+    name: 'Almond Butter Crunch',
+    maker: 'Unknown', // Distributed by Erewhon
+    slug: 'almond-butter-crunch-erewhon',
+    productUrl:
+      'https://shipping.erewhonmarket.com/products/organic-chocolate-bar-almond-butter-crunch',
+    productionCountry: 'Canada',
+    description: [
+      `"Organic chocolate sweetened with coconut sugar with a rich & crunchy Almond butter and buckwheat filling"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/almond-butter-crunch-erewhon.jpg',
+        alt: 'Almond Butter Crunch bar made by Unknown for Erewhon in Canada pictured on a messy desk leaning against a flower vase in the sun',
+      },
+      BAR_FRONT: {
+        src: '/bars/almond-butter-crunch-erewhon-bar-front.jpg',
+        alt: 'Front of Almond Butter Crunch bar made by Unknown for Erewhon in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/almond-butter-crunch-erewhon-bar-back.jpg',
+        alt: 'Back of Almond Butter Crunch bar made by Unknown for Erewhon in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/almond-butter-crunch-erewhon-package-front.jpg',
+        alt: 'Front of Almond Butter Crunch bar made by Unknown for Erewhon in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/almond-butter-crunch-erewhon-package-back.jpg',
+        alt: 'Back of Almond Butter Crunch bar made by Unknown for Erewhon in Canada package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 60,
+    barDimensions: [114, 50, 11],
+    ingredients: [
+      'Organic Unsweetened Chocolate',
+      'Organic Coconut Sugar',
+      'Organic Cocoa Butter',
+      'Organic Almonds',
+      'Organic Cocoa Butter',
+      'Organic Hulled Buckwheat',
+      'Himalayan Pink Salt',
+    ],
+    foodAllergen: ['Almonds', 'Coconut'],
+    facilityAllergen: ['Milk', 'Soy'],
+
+    packagingType: 'Paper Bag', // Lined with Metallised plastic
+    packagingDimensions: [150, 89, 12],
+    certifiedLabels: [
+      'USDA Organic',
+      'Certified B Corporation',
+      'Cocoa Horizons',
+    ],
+    uncertifiedLabels: ['Vegan', 'Gluten Free'],
+    marketingTerms: ['Organic'],
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 6.99,
+    dateObtained: '2023-02-25',
+
+    reviewerBarNotes: 'Was actually quite tasty. Filled with almond butter.',
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'a86be00860',
     releaseDate: '2023-03-13',
     name: 'Milk Chocolate with Loqaimat',

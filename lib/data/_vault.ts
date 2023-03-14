@@ -201,19 +201,6 @@ const vault: Array<Bar> = [
     retailPrice: 5.99,
     dateObtained: '2023-02-25',
   },
-  {
-    name: 'Almond Butter Crunch',
-    maker: 'Erewhon', // Made by unknown, distributed by Erewhon
-    slug: 'almond-butter-crunch-erewhon',
-    productUrl:
-      'https://shipping.erewhonmarket.com/products/organic-chocolate-bar-almond-butter-crunch',
-    productionCountry: 'Canada',
-
-    retailer: 'Erewhon',
-    location: 'Venice',
-    retailPrice: 6.99,
-    dateObtained: '2023-02-25',
-  },
 
   {
     name: 'Dark Chocolate + Coffee',
