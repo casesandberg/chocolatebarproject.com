@@ -181,6 +181,78 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '4993b5ab1d',
+    releaseDate: '2023-03-17',
+    name: 'Momofuku Chili Chocolate Crunch',
+    maker: 'Raaka Chocolate',
+    slug: 'momofuku-chili-chocolate-crunch-raaka-chocolate',
+    productUrl:
+      'https://www.raakachocolate.com/products/momofuku-chili-chocolate-crunch',
+    productionCountry: 'United States',
+    description: [
+      `"A shockingly delicious chocolate infused with chilis, mushrooms, and garlic, filled with crispy puffed quinoa, and topped with pink sea salt and sesame seeds. The ultimate umami crunch."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/momofuku-chili-chocolate-crunch-raaka-chocolate.jpg',
+        alt: 'Momofuku Chili Chocolate Crunch bar made by Raaka Chocolate in the United States with swirls of chili oil around it',
+      },
+      BAR_FRONT: {
+        src: '/bars/momofuku-chili-chocolate-crunch-raaka-chocolate-bar-front.jpg',
+        alt: 'Front of Momofuku Chili Chocolate Crunch bar made by Raaka Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/momofuku-chili-chocolate-crunch-raaka-chocolate-bar-back.jpg',
+        alt: 'Back of Momofuku Chili Chocolate Crunch bar made by Raaka Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/momofuku-chili-chocolate-crunch-raaka-chocolate-package-front.jpg',
+        alt: 'Front of Momofuku Chili Chocolate Crunch bar made by Raaka Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/momofuku-chili-chocolate-crunch-raaka-chocolate-package-back.jpg',
+        alt: 'Back of Momofuku Chili Chocolate Crunch bar made by Raaka Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 54,
+    barWeight: 51,
+    barDimensions: [134, 60, 8],
+    ingredients: [
+      'Organic Cacao Beans',
+      'Organic Coconut Sugar',
+      'Organic Cacao Butter',
+      'Organic Puffed Quinoa',
+      'Organic Chili Powder',
+      'Organic Guajillo Chilies',
+      'Organic Shitake Powder',
+      'Sea Salt',
+      'Organic Sesame Seeds',
+      'Organic Garlic Powder',
+      'Organic Onion Powder',
+    ],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [136, 62, 11],
+    wrapper: 'Foil with Paper Backing', // Silver
+    certifiedLabels: ['USDA Organic', 'Kosher'], //NFC
+    uncertifiedLabels: ['Vegan'],
+    marketingTerms: ['Transparent Trade', 'Unroasted', 'Bean to Bar'],
+
+    retailer: 'Raaka',
+    location: 'https://www.raakachocolate.com',
+    retailPrice: 8,
+    dateObtained: '2023-01-20',
+
+    reviewerBarFavorite: false,
+    reviewerBarNotes: 'Very Very tasty',
+    reviewerWouldEatAgain: true,
+
+    origin: 'Zorzal Reserve',
+  },
+  {
     id: '53bfaa7b7e',
     releaseDate: '2023-03-16',
     name: '73% MEXICAN CACAO from Soconusco, Chiapas with Mezcal Joven',
