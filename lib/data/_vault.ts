@@ -108,20 +108,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Venezuela Rio Caribe 100%',
-    maker: 'Chapon Chocolatier',
-    slug: 'venezuela-rio-caribe-100-chapon-chocolatier',
-    productUrl:
-      'https://chapon.com/products/pure-origine-rio-caribe-venezuela-100',
-    productionCountry: 'France',
-
-    retailer: 'Gjusta Grocer',
-    location: 'Venice',
-    retailPrice: 15,
-    dateObtained: '2023-02-25',
-  },
-
-  {
     name: '70% Rio Acará',
     maker: 'Luisa Abram',
     slug: '70-rio-acara-luisa-abram',

@@ -181,6 +181,78 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'd425bc9f89',
+    releaseDate: '2023-03-18',
+    name: 'Venezuela Rio Caribe 100%',
+    maker: 'Chapon Chocolatier',
+    slug: 'venezuela-rio-caribe-100-chapon-chocolatier',
+    productUrl:
+      'https://chapon.com/products/pure-origine-rio-caribe-venezuela-100',
+    productionCountry: 'France',
+    description: [
+      `"A 100% cocoa bar! Bean concentrate for purists.`,
+      `Aromatic power, low acid, medium bitterness and astringency.`,
+      `Coming from Venezuela, this bar reveals notes of dried fruits and wood."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/venezuela-rio-caribe-100-chapon-chocolatier.jpg',
+        alt: 'Venezuela Rio Caribe 100% bar made by Chapon Chocolatier in France up close macro shot of the front packaging',
+      },
+      BAR_FRONT: {
+        src: '/bars/venezuela-rio-caribe-100-chapon-chocolatier-bar-front.jpg',
+        alt: 'Front of Venezuela Rio Caribe 100% bar made by Chapon Chocolatier in France',
+      },
+      BAR_BACK: {
+        src: '/bars/venezuela-rio-caribe-100-chapon-chocolatier-bar-back.jpg',
+        alt: 'Back of Venezuela Rio Caribe 100% bar made by Chapon Chocolatier in France',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/venezuela-rio-caribe-100-chapon-chocolatier-package-front.jpg',
+        alt: 'Front of Venezuela Rio Caribe 100% bar made by Chapon Chocolatier in France package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/venezuela-rio-caribe-100-chapon-chocolatier-package-back.jpg',
+        alt: 'Back of Venezuela Rio Caribe 100% bar made by Chapon Chocolatier in France package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 100,
+    barWeight: 75,
+    barDimensions: [154, 71, 8],
+    ingredients: ['Cocoa Mass Origin Venezuela', 'Cocoa Butter'],
+    facilityAllergen: [
+      'Nuts',
+      'Eggs',
+      'Gluten',
+      'Soy',
+      'Milk',
+      'Sulphites',
+      'Sesame',
+    ],
+
+    packagingType: 'Metalic Bag',
+    packagingDimensions: [234, 107, 9],
+    tastingNotes: ['Dried Fruits', 'Wood'],
+    packageLanguages: ['English', 'French', 'German', 'Italian'],
+
+    retailer: 'Gjusta Grocer',
+    location: 'Venice',
+    retailPrice: 15,
+    dateObtained: '2023-02-25',
+
+    reviewerBarNotes: 'Not a fan of this 100%',
+    reviewerWouldEatAgain: false,
+
+    origin: {
+      locality: 'Rio Caribe',
+      region: 'Arismendi',
+      country: 'Venezuela',
+    },
+  },
+  {
     id: '4993b5ab1d',
     releaseDate: '2023-03-17',
     name: 'Momofuku Chili Chocolate Crunch',
