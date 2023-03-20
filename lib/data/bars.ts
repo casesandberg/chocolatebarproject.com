@@ -181,6 +181,584 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '0fb6e2d88e',
+    releaseDate: '2023-03-26',
+    name: '70% Dark with Black Fig',
+    maker: 'Dick Taylor',
+    slug: '70-dark-with-black-fig-dick-taylor',
+    productUrl: 'https://dicktaylorchocolate.com/products/black-fig',
+    productionCountry: 'United States',
+    description: [
+      `"Our bestselling BLACK FIG dark chocolate is made using cocoa beans from 'Akesson Plantation'; a cacao farm in northern Madagascar in the Sambirano Valley. We handcraft our 72% Madagascar dark chocolate with these beans alongside organic cane sugar from Brazil to bring out the subtle fruity & floral notes in the cacao. We honor this incredible cacao by pairing it with beautifully rich and chewy, dried California black mission figs that have been generously sprinkled on the back of the chocolate."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/70-dark-with-black-fig-dick-taylor.jpg',
+        alt: '70% Dark with Black Fig bar made by Dick Taylor in the United States macro shot of the front and back of the bar',
+      },
+      BAR_FRONT: {
+        src: '/bars/70-dark-with-black-fig-dick-taylor-bar-front.jpg',
+        alt: 'Front of 70% Dark with Black Fig bar made by Dick Taylor in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/70-dark-with-black-fig-dick-taylor-bar-back.jpg',
+        alt: 'Back of 70% Dark with Black Fig bar made by Dick Taylor in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/70-dark-with-black-fig-dick-taylor-package-front.jpg',
+        alt: 'Front of 70% Dark with Black Fig bar made by Dick Taylor in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/70-dark-with-black-fig-dick-taylor-package-back.jpg',
+        alt: 'Back of 70% Dark with Black Fig bar made by Dick Taylor in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 72,
+    barWeight: 57,
+    barDimensions: [126, 75, 6],
+    ingredients: [
+      'Organic Cacao',
+      'Organic Cane Sugar',
+      'Organic Black Mission Figs',
+    ],
+    foodAllergen: [],
+    facilityAllergen: ['Milk', 'Tree Nuts', 'Wheat', 'Peanuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [163, 100, 10],
+    wrapper: 'Metallised plastic', // Color printed
+    marketingTerms: [
+      'Craft',
+      'Organic',
+      'Pairing',
+      'Ethically Sourced',
+      'Award Winning',
+      'Expertly Crafted',
+      'Bean to Bar',
+      'Handcrafted',
+    ],
+
+    retailer: 'Dick Taylor',
+    location: 'https://dicktaylorchocolate.com',
+    retailPrice: 10,
+    dateObtained: '2023-01-28',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Akesson Estate',
+      region: 'Sambirano Valley',
+      country: 'Madagascar',
+    },
+  },
+  {
+    id: '6058862fd2',
+    releaseDate: '2023-03-25',
+    name: 'The Big Gorilla Bar',
+    subtitle: 'Virunga Congo 77%',
+    maker: 'Rózsavölgyi Csokoládé',
+    slug: 'the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade',
+    productUrl:
+      'https://www.rozsavolgyi.com/en/chocolate/single-origin-tablets/123/virunga-77',
+    productionCountry: 'Hungary',
+    description: [
+      `"The organic cocoa for this chocolate comes from the immediate vicinity of Virunga, Africa’s oldest national park, famous for its mountain gorillas. Its area of cultivation stretches from the foothills of the Rwenzori Mountains to the tropical forest of the Congo Basin. In addition to the chocolatey and tea aromas, so characteristic to Amelonado beans, cinnamon, passion fruit and fig notes are also present in this chocolate."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade.jpg',
+        alt: 'The Big Gorilla Bar Virunga Congo 77% bar made by Rózsavölgyi Csokoládé in Hungary with leaning against a wall next to the packaging',
+      },
+      BAR_FRONT: {
+        src: '/bars/the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade-bar-front.jpg',
+        alt: 'Front of The Big Gorilla Bar Virunga Congo 77% bar made by Rózsavölgyi Csokoládé in Hungary',
+      },
+      BAR_BACK: {
+        src: '/bars/the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade-bar-back.jpg',
+        alt: 'Back of The Big Gorilla Bar Virunga Congo 77% bar made by Rózsavölgyi Csokoládé in Hungary',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade-package-front.jpg',
+        alt: 'Front of The Big Gorilla Bar Virunga Congo 77% bar made by Rózsavölgyi Csokoládé in Hungary package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade-package-back.jpg',
+        alt: 'Back of The Big Gorilla Bar Virunga Congo 77% bar made by Rózsavölgyi Csokoládé in Hungary package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 77,
+    barWeight: 70,
+    barDimensions: [111, 111, 6],
+    ingredients: [
+      'Organic Amelondao Cacoa Bean from Congo',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+    ],
+    facilityAllergen: ['Nuts', 'Sesame', 'Milk'],
+
+    packagingType: 'Box',
+    packagingDimensions: [117, 116, 10],
+    wrapper: 'Parchment Paper',
+    marketingTerms: ['Organic', 'Sourced'],
+    tastingNotes: ['Cinnamon', 'Passion Fruit', 'Fig'],
+    packageLanguages: ['English', 'Hungarian'],
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 13.99,
+    dateObtained: '2023-03-09',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: '',
+      locality: 'Virunga National Park',
+      region: 'Bulambo',
+      country: 'Congo',
+    },
+  },
+  {
+    id: '05497975ef',
+    releaseDate: '2023-03-24',
+    name: 'Bejofo Estate MADAGASCAR',
+    subtitle: '64% Dark Milk Chocolate',
+    maker: 'Monsoon Chocolate',
+    slug: 'bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate',
+    productUrl:
+      'https://monsoonchocolate.com/products/bejofo-estate-madagascar-64-dark-chocolate',
+    productionCountry: 'United States',
+    description: [
+      `"Bejofo Estate is an organic cacao orchard that is part of the larger Akesson Estate in northwest Madagascar’s Sambirano valley. Managed by Bertil Akesson, who has specialized in growing ﬁne cocoa, pepper, and other spices for many years, Bejofo Estate produces 300 tons of cocoa a year. The cocoa has been designated as certified “Heirloom” by the Heirloom Cacao Preservation Initiative (HCP)."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate.jpg',
+        alt: 'Bejofo Estate MADAGASCAR 64% Dark Milk Chocolate bar made by Monsoon Chocolate in the United States with crashing water in the background',
+      },
+      BAR_FRONT: {
+        src: '/bars/bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate-bar-front.jpg',
+        alt: 'Front of Bejofo Estate MADAGASCAR 64% Dark Milk Chocolate bar made by Monsoon Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate-bar-back.jpg',
+        alt: 'Back of Bejofo Estate MADAGASCAR 64% Dark Milk Chocolate bar made by Monsoon Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate-package-front.jpg',
+        alt: 'Front of Bejofo Estate MADAGASCAR 64% Dark Milk Chocolate bar made by Monsoon Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate-package-back.jpg',
+        alt: 'Back of Bejofo Estate MADAGASCAR 64% Dark Milk Chocolate bar made by Monsoon Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 64,
+    barWeight: 50,
+    barDimensions: [138, 55, 6],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cocoa Butter',
+      'Organic Cane Sugar',
+      'Organic Milk Powder',
+    ],
+    foodAllergen: ['Dairy'],
+    facilityAllergen: ['Wheat', 'Nuts', 'Soy'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [157, 71, 10],
+    wrapper: 'Clear Bag',
+    marketingTerms: ['Origin', 'Series', 'Heirloom'],
+    tastingNotes: ['Chocolate Malt', 'Candied Lemon', 'Hojicha Latte'],
+    insidePrinting: true,
+    awards: [
+      {
+        body: 'Good Food Awards',
+        level: '',
+        year: 2021,
+      },
+    ],
+
+    retailer: 'Erewhon',
+    location: 'Venice',
+    retailPrice: 12.99,
+    dateObtained: '2023-02-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Bejofo Estate, Akesson Estate',
+      region: 'Sambirano Valley',
+      country: 'Madagascar',
+    },
+  },
+  {
+    id: '098300f14c',
+    releaseDate: '2023-03-23',
+    name: "Caputo's Wild Jurua 70%",
+    subtitle: 'by Luisa Abram',
+    maker: 'Luisa Abram',
+    slug: 'caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli',
+    productUrl:
+      'https://caputos.com/product/caputos-wild-jurua-70-luisa-abram/',
+    productionCountry: 'Brazil',
+    description: [
+      `"Wild about cacao? Hidden for centuries along the Amazon Rainforest's Juruá River, this extremely rare cacao is pure pleasure. Lush nuances of malt, sweet spice, and moss in a velvety finish.`,
+      `Magnificent and mysterious like the jaguar—a national symbol of Brazil—we cannot let this heirloom fruit disappear. Caputo's Wild Juruá 70% bar is sponsored by Caputo's Preservation Program which fights to preserve wild cacao and its biodiversity.`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli.jpg',
+        alt: "Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States with the packaging standing open and the postcard visible",
+      },
+      BAR_FRONT: {
+        src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-bar-front.jpg',
+        alt: "Front of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States",
+      },
+      BAR_BACK: {
+        src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-bar-back.jpg',
+        alt: "Back of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States",
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-package-front.jpg',
+        alt: "Front of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States package",
+      },
+      PACKAGE_BACK: {
+        src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-package-back.jpg',
+        alt: "Back of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States package",
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 60,
+    barDimensions: [124, 87, 5],
+    ingredients: ['Cocoa Mass', 'Organic Cane Sugar', 'Cocoa Butter'],
+    facilityAllergen: ['Milk', 'Nuts'],
+
+    packagingType: 'Passport',
+    packagingDimensions: [134, 94, 10],
+    wrapper: 'Foil with Wax Paper Backing', // Bronze
+    marketingTerms: [
+      'Wild-foraged',
+      'Biodiversity',
+      'Brazilian Amazon',
+      'Rare',
+      'Heirloom',
+    ],
+    tastingNotes: [
+      'Intensely floral',
+      'Tropical Fruit',
+      'Nutty',
+      'Fresh Baked Sourdough',
+    ],
+    insidePrinting: true,
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 14.99,
+    dateObtained: '2023-03-09',
+
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+
+    origin: {
+      locality: 'Jura River',
+      region: 'Amazon Rainforest',
+      country: 'Brazil',
+    },
+  },
+  {
+    id: '4f82c3b311',
+    releaseDate: '2023-03-22',
+    name: 'Dark Milk',
+    subtitle: 'Cacao Nibs 62%',
+    maker: 'Schoki Chocolate',
+    slug: 'dark-milk-cacao-nibs-62-schoki-chocolate',
+    productUrl:
+      'https://www.schokichocolate.com/products/dark-milk-cocoa-nibs-62',
+    productionCountry: 'Canada',
+    description: [
+      `"Handcrafted in Squamish, B.C., this 62% dark milk chocolate is made with ethically sourced cacao beans from Nicaragua, non-GMO B.C. milk that is free of antibiotics and growth hormones, and is sprinkled with roasted cocoa nibs."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/dark-milk-cacao-nibs-62-schoki-chocolate.jpg',
+        alt: 'Dark Milk Cacao Nibs 62% bar made by Schoki Chocolate in Canada with standing in a pile of cacao nibs',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-milk-cacao-nibs-62-schoki-chocolate-bar-front.jpg',
+        alt: 'Front of Dark Milk Cacao Nibs 62% bar made by Schoki Chocolate in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-milk-cacao-nibs-62-schoki-chocolate-bar-back.jpg',
+        alt: 'Back of Dark Milk Cacao Nibs 62% bar made by Schoki Chocolate in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-milk-cacao-nibs-62-schoki-chocolate-package-front.jpg',
+        alt: 'Front of Dark Milk Cacao Nibs 62% bar made by Schoki Chocolate in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-milk-cacao-nibs-62-schoki-chocolate-package-back.jpg',
+        alt: 'Back of Dark Milk Cacao Nibs 62% bar made by Schoki Chocolate in Canada package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 62,
+    barWeight: 65,
+    barDimensions: [154, 75, 7],
+    ingredients: [
+      'Organic Cacao Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'B.C. Whole Milk Powder',
+    ],
+    facilityAllergen: ['Peanuts', 'Tree Nuts', 'Dairy'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [174, 82, 11],
+    wrapper: 'Foil with Paper Backing', // Silver, Stamped
+    marketingTerms: ['Crafted', 'Ethicaly Sourced', 'Process'],
+    insidePrinting: true,
+
+    retailer: 'les amis du FROMAGE',
+    location: 'E Hastings',
+    retailPrice: 9.5,
+    dateObtained: '2022-12-27',
+
+    reviewerBarFavorite: true,
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Ingemann Fine Cacao',
+      country: 'Nicaragua',
+    },
+  },
+  {
+    id: 'd1b189815b',
+    releaseDate: '2023-03-21',
+    name: 'Dark Milk',
+    maker: 'French Broad Chocolate',
+    slug: 'dark-milk-french-broad-chocolate',
+    productUrl: 'https://www.frenchbroadchocolates.com/products/dark-milk',
+    productionCountry: 'United States',
+    description: [
+      `"Until recently, dark chocolate and milk chocolate did not really hang out in the same cliques. Chocolate connoisseurs turned their noses up at the candy-like approach to most milk chocolates, while those with a sweet tooth found dark chocolate too bitter to enjoy.`,
+      `Enter Dark Milk Chocolate. These high-cacao mass milk chocolates (generally greater than 50% cacao) possess the richness and complexity of dark chocolate, but are milder, smoother and creamier thanks to the addition of organic milk powder. Dark Milks are here to unite these two disparate worlds.`,
+      `In our version of dark milk chocolate, we use 53% cacao and organic browned butter. Deep fudgy flavor is layered over subtle banana to create a profile that resembles a rich chocolate banana pudding."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/dark-milk-french-broad-chocolate.jpg',
+        alt: 'Dark Milk bar made by French Broad Chocolate in the United States with on a white volume',
+      },
+      BAR_FRONT: {
+        src: '/bars/dark-milk-french-broad-chocolate-bar-front.jpg',
+        alt: 'Front of Dark Milk bar made by French Broad Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/dark-milk-french-broad-chocolate-bar-back.jpg',
+        alt: 'Back of Dark Milk bar made by French Broad Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dark-milk-french-broad-chocolate-package-front.jpg',
+        alt: 'Front of Dark Milk bar made by French Broad Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dark-milk-french-broad-chocolate-package-back.jpg',
+        alt: 'Back of Dark Milk bar made by French Broad Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark Milk',
+    percent: 53,
+    barWeight: 28,
+    barDimensions: [64, 64, 6],
+    ingredients: [
+      'Cacao',
+      'Organic Sugar',
+      'Organic Cacao Butter',
+      'Organic Non-fat Dry Milk',
+      'Organic Butter Milk',
+    ],
+    facilityAllergen: ['Tree Nuts', 'Wheat', 'Milk', 'Eggs', 'Peanuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [93, 94, 9],
+    wrapper: 'Cellulose Bag',
+    certifiedLabels: ['B Corp'],
+    uncertifiedLabels: [],
+    marketingTerms: [
+      'Sustainably Sourced',
+      'Handcrafted',
+      'Direct Sourced',
+      'Recycled',
+    ],
+    tastingNotes: ['Chocolate Pudding'],
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 5.5,
+    dateObtained: '2022-12-16',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
+    id: '1d27f6321f',
+    releaseDate: '2023-03-20',
+    name: 'Pure Nacional',
+    subtitle: '80% Pure Nacional from Peru',
+    maker: 'Goodio',
+    slug: 'pure-nacional-80-pure-nacional-from-peru-goodio',
+    productUrl: 'https://caputos.com/product/goodio-pure-nacional-80/',
+    productionCountry: 'Finland',
+    description: [
+      `"In 2017 Goodio traveled to Peru to meet the farmers behind one of the rarest cacao beans in the world Pure Nacional. The result of the trip was the creation of this savory 80% dark chocolate bar."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/pure-nacional-80-pure-nacional-from-peru-goodio.jpg',
+        alt: 'Pure Nacional 80% Pure Nacional from Peru bar made by Goodio in Finland with with the bar diagonally chopped up into many pieces',
+      },
+      BAR_FRONT: {
+        src: '/bars/pure-nacional-80-pure-nacional-from-peru-goodio-bar-front.jpg',
+        alt: 'Front of Pure Nacional 80% Pure Nacional from Peru bar made by Goodio in Finland',
+      },
+      BAR_BACK: {
+        src: '/bars/pure-nacional-80-pure-nacional-from-peru-goodio-bar-back.jpg',
+        alt: 'Back of Pure Nacional 80% Pure Nacional from Peru bar made by Goodio in Finland',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/pure-nacional-80-pure-nacional-from-peru-goodio-package-front.jpg',
+        alt: 'Front of Pure Nacional 80% Pure Nacional from Peru bar made by Goodio in Finland package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/pure-nacional-80-pure-nacional-from-peru-goodio-package-back.jpg',
+        alt: 'Back of Pure Nacional 80% Pure Nacional from Peru bar made by Goodio in Finland package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 80,
+    barWeight: 48,
+    barDimensions: [77, 77, 8],
+    ingredients: [
+      'Cacao Beans',
+      'Organic Coconut Plam Sugar',
+      'Organic Cacao Butter',
+    ],
+    facilityAllergen: ['Nuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [124, 108, 13],
+    wrapper: 'Plastic Bag', // Black
+    certifiedLabels: [],
+    uncertifiedLabels: ['Vegan'],
+    marketingTerms: ['Craft Chocolate', 'Stone Ground', 'Pure', 'Transparent'],
+    insidePrinting: true,
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 6.99,
+    dateObtained: '2023-03-09',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      region: 'Maranon River Canyon',
+      country: 'Peru',
+    },
+    beanVariety: 'Nacional',
+  },
+  {
+    id: '0e11a0c753',
+    releaseDate: '2023-03-19',
+    name: 'Commuter',
+    subtitle: 'East Pole Coffee with Coconut Milk',
+    maker: 'Xocolatl',
+    slug: 'commuter-east-pole-coffee-with-coconut-milk-xocolatl',
+    productUrl: 'https://xocolatlchocolate.com/products/commuter',
+    productionCountry: 'United States',
+    description: [
+      `"When Atlanta's East Pole Coffee Company asked us to create a dark milk chocolate bar that would showcase the classic flavors of their "Traffic" roast we were thrilled and got to work.`,
+      `A decidedly dark chocolate and black coffee bite on the front, this chocolate bar transitions into flavors of coconut, malt + brown sugar. With underlying dark berries in the crazy long finish, the low sweetness of the chocolate brings the coffee flavor forward."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/commuter-east-pole-coffee-with-coconut-milk-xocolatl.jpg',
+        alt: 'Commuter East Pole Coffee with Coconut Milk bar made by Xocolatl in the United States on a bike',
+      },
+      BAR_FRONT: {
+        src: '/bars/commuter-east-pole-coffee-with-coconut-milk-xocolatl-bar-front.jpg',
+        alt: 'Front of Commuter East Pole Coffee with Coconut Milk bar made by Xocolatl in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/commuter-east-pole-coffee-with-coconut-milk-xocolatl-bar-back.jpg',
+        alt: 'Back of Commuter East Pole Coffee with Coconut Milk bar made by Xocolatl in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/commuter-east-pole-coffee-with-coconut-milk-xocolatl-package-front.jpg',
+        alt: 'Front of Commuter East Pole Coffee with Coconut Milk bar made by Xocolatl in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/commuter-east-pole-coffee-with-coconut-milk-xocolatl-package-back.jpg',
+        alt: 'Back of Commuter East Pole Coffee with Coconut Milk bar made by Xocolatl in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 60,
+    barWeight: 75,
+    barDimensions: [149, 73, 8],
+    ingredients: [
+      'Cacao',
+      'Organic Cane Sugar',
+      'Organic Coconut Milk',
+      "Coffee from Costa Rica's West Valley roasted by East Pole in Atlanta",
+    ],
+    foodAllergen: ['Coconut'],
+    facilityAllergen: ['Peanuts', 'Tree Nuts'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [151, 76, 10],
+    wrapper: 'Foil with Paper Backing', // Silver
+    marketingTerms: ['Small Batch', 'Fairness', 'Quality'],
+    tastingNotes: ['Dark Chocolate', 'Malt', 'Brown Sugar'],
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 10,
+    dateObtained: '2022-12-16',
+
+    reviewerBarNotes: 'Quite tasty.',
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Cacao Bisiesto',
+      region: 'La Dalia',
+      country: 'Nicaragua',
+    },
+  },
+  {
     id: 'd425bc9f89',
     releaseDate: '2023-03-18',
     name: 'Venezuela Rio Caribe 100%',

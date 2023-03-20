@@ -280,6 +280,22 @@ const makers = [
     id: '2491a11b9e',
     name: 'Chapon Chocolatier',
   },
+  {
+    id: 'faa8a0aac3',
+    name: 'Goodio',
+  },
+  {
+    id: '5df9afaaf8',
+    name: 'French Broad Chocolate',
+  },
+  {
+    id: '5df9afaaf8',
+    name: 'French Broad Chocolate',
+  },
+  {
+    id: '498760eba9',
+    name: 'Luisa Abram', // Caputo's Market & Deli
+  },
 ]
 
 /**

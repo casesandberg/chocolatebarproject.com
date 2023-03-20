@@ -13,20 +13,6 @@ interface Bar {
 
 const vault: Array<Bar> = [
   {
-    name: "Caputo's Wild Jurua 70%",
-    subtitle: 'by Luisa Abram',
-    maker: "Caputo's Market & Deli",
-    slug: 'caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli',
-    productUrl:
-      'https://caputos.com/product/caputos-wild-jurua-70-luisa-abram/',
-    productionCountry: 'United States',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 14.99,
-    dateObtained: '2023-03-09',
-  },
-  {
     name: 'Nicaliso 70%',
     maker: 'Friis-Holm Chokolade',
     slug: 'nicaliso-70-friis-holm-chokolade',
@@ -53,19 +39,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-03-09',
   },
   {
-    name: 'Pure Nacional',
-    subtitle: '80% Pure Nacional from Peru',
-    maker: 'Goodio',
-    slug: 'pure-nacional-80-pure-nacional-from-peru-goodio',
-    productUrl: 'https://caputos.com/product/goodio-pure-nacional-80/',
-    productionCountry: 'Finland',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 6.99,
-    dateObtained: '2023-03-09',
-  },
-  {
     name: 'Forest',
     subtitle: 'Chocolate Topped with Birch Leaves & Forest Crystals',
     maker: 'Goodio',
@@ -76,20 +49,6 @@ const vault: Array<Bar> = [
     retailer: "Caputo's",
     location: 'https://caputos.com/',
     retailPrice: 9.99,
-    dateObtained: '2023-03-09',
-  },
-  {
-    name: 'The Big Gorilla Bar',
-    subtitle: 'Virunga Congo 77%',
-    maker: 'Rózsavölgyi Csokoládé',
-    slug: 'the-big-gorilla-bar-virunga-congo-77-rozsavolgyi-csokolade',
-    productUrl:
-      'https://www.rozsavolgyi.com/en/chocolate/single-origin-tablets/123/virunga-77',
-    productionCountry: 'Hungary',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 13.99,
     dateObtained: '2023-03-09',
   },
   {
@@ -113,20 +72,6 @@ const vault: Array<Bar> = [
     slug: '70-rio-acara-luisa-abram',
     productUrl: 'https://barandcocoa.com/products/luisa-abram-rio-acara-70', // https://luisaabram.com/product/rio-acara-70-cacau/
     productionCountry: 'Brazil',
-
-    retailer: 'Erewhon',
-    location: 'Venice',
-    retailPrice: 12.99,
-    dateObtained: '2023-02-25',
-  },
-  {
-    name: 'Bejofo Estate MADAGASCAR',
-    subtitle: '64% Dark Milk Chocolate',
-    maker: 'Monsoon Chocolate',
-    slug: 'bejofo-estate-madagascar-64-dark-milk-chocolate-monsoon-chocolate',
-    productUrl:
-      'https://monsoonchocolate.com/products/bejofo-estate-madagascar-64-dark-chocolate',
-    productionCountry: 'United States',
 
     retailer: 'Erewhon',
     location: 'Venice',
@@ -291,16 +236,6 @@ const vault: Array<Bar> = [
   },
 
   //
-  {
-    name: 'Black Fig',
-    maker: 'Dick Taylor',
-    productUrl: 'https://dicktaylorchocolate.com/products/black-fig',
-
-    retailer: 'Dick Taylor',
-    location: 'https://dicktaylorchocolate.com',
-    retailPrice: 10,
-    dateObtained: '2023-01-28',
-  },
   {
     name: '70% Ben Tre',
     maker: 'Solstice Chocolate',
@@ -485,14 +420,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Dark Milk',
-    maker: 'Schoki Chocolate',
-    retailer: 'les amis du FROMAGE',
-    location: 'E Hastings',
-    retailPrice: 0,
-    dateObtained: '2022-12-27',
-  },
-  {
     name: 'Espresso',
     maker: 'Seed and Bean',
     retailer: 'les amis du FROMAGE',
@@ -587,14 +514,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: 'Commuter',
-    maker: 'Xocolatl',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 10,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: '67% Cacao Nibs',
     maker: 'Olive & Sinclair',
     retailer: 'Blackmarket Bakery',
@@ -616,14 +535,6 @@ const vault: Array<Bar> = [
     retailer: 'Blackmarket Bakery',
     location: 'North Park',
     retailPrice: 9.5,
-    dateObtained: '2022-12-16',
-  },
-  {
-    name: 'Dark Milk',
-    maker: 'French Broad Chocolate',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 5.5,
     dateObtained: '2022-12-16',
   },
   {
