@@ -288,17 +288,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-01-20',
   },
   {
-    name: 'Dark Chocolate with Citrus and Licorice',
-    maker: 'Chocolate Naive',
-    productUrl:
-      'https://chocolatenaive.com/s/chocolates/equator/dark-chocolate-with-orange-and-liquorice/',
-
-    retailer: 'Bar & Cocoa',
-    location: 'https://barandcocoa.com/',
-    retailPrice: 10.25,
-    dateObtained: '2023-01-11',
-  },
-  {
     name: 'Japanese Sea Salt & Cocoa Nibs',
     maker: 'Amano Chocolate',
     productUrl:

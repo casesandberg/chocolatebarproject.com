@@ -181,6 +181,86 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '39aa18613b',
+    releaseDate: '2023-03-29',
+    name: 'Citrus Licorice Crunch',
+    maker: 'Chocolate Naive',
+    slug: 'citrus-licorice-crunch-chocolate-naive',
+    productUrl:
+      'https://chocolatenaive.com/s/chocolates/equator/dark-chocolate-with-orange-and-liquorice/',
+    productionCountry: 'Lithuania',
+    description: [
+      `"This bar is not for everyone but it leaves no one indifferent. The deep and complex flavors of crunchy licorice combine well with multilayered taste of chocolate, while fresh and bright citruses act like a bridge and connects all temperamental aromas into one. Just give it a minute and you will find out for yourself!"`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/citrus-licorice-crunch-chocolate-naive.jpg',
+        alt: 'Citrus Licorice Crunch bar made by Chocolate Naive in Lithuania macro shot of bar dripping with chocolate',
+      },
+      BAR_FRONT: {
+        src: '/bars/citrus-licorice-crunch-chocolate-naive-bar-front.jpg',
+        alt: 'Front of Citrus Licorice Crunch bar made by Chocolate Naive in Lithuania',
+      },
+      BAR_BACK: {
+        src: '/bars/citrus-licorice-crunch-chocolate-naive-bar-back.jpg',
+        alt: 'Back of Citrus Licorice Crunch bar made by Chocolate Naive in Lithuania',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/citrus-licorice-crunch-chocolate-naive-package-front.jpg',
+        alt: 'Front of Citrus Licorice Crunch bar made by Chocolate Naive in Lithuania package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/citrus-licorice-crunch-chocolate-naive-package-back.jpg',
+        alt: 'Back of Citrus Licorice Crunch bar made by Chocolate Naive in Lithuania package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 67,
+    barWeight: 57,
+    barDimensions: [113, 97, 8],
+    ingredients: [
+      'Organic Specialty Cacao',
+      'Organic Cane Sugar',
+      'Organic Pure Cacao Butter',
+      'Organic Licorice Extract',
+      'Organic Dried Lemon',
+      'Organic Dried Orange',
+      'Sea Salt',
+    ],
+    facilityAllergen: ['Treenuts', 'Peanuts', 'Wheat', 'Milk'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [157, 122, 9],
+    wrapper: 'Eco Bag', // White
+    marketingTerms: ['Limited Release', 'Made with Renewables'],
+    packageLanguages: ['English', 'Lithuanian'],
+    awards: [
+      {
+        body: 'Academy of Chocolates',
+        level: 'Gold for Packaging',
+        year: 2015,
+      },
+      {
+        body: 'Next Organic Berlin',
+        level: 'Best New Start-up',
+        year: 2015,
+      },
+    ],
+
+    retailer: 'Bar & Cocoa',
+    location: 'https://barandcocoa.com/',
+    retailPrice: 10.25,
+    dateObtained: '2023-01-11',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'c14a9a550b',
     releaseDate: '2023-03-28',
     name: '70% Ecuador',
