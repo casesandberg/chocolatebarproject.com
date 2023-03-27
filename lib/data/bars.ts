@@ -181,6 +181,71 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'c14a9a550b',
+    releaseDate: '2023-03-28',
+    name: '70% Ecuador',
+    maker: 'Spinnaker Chocolate',
+    slug: '70-ecuador-spinnaker-chocolate',
+    productUrl: 'https://spinnakerchocolate.com/shop/70-ecuador',
+    productionCountry: 'United States',
+    description: [
+      `"You like chocolate pudding, chocolate fudge, or dark, earthy chocolate. Heirloom cacao beans like these have a terrific balance of complex, lasting flavor."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/70-ecuador-spinnaker-chocolate.jpg',
+        alt: '70% Ecuador bar made by Spinnaker Chocolate in the United States with in a bag of cacao beans with a scooper',
+      },
+      BAR_FRONT: {
+        src: '/bars/70-ecuador-spinnaker-chocolate-bar-front.jpg',
+        alt: 'Front of 70% Ecuador bar made by Spinnaker Chocolate in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/70-ecuador-spinnaker-chocolate-bar-back.jpg',
+        alt: 'Back of 70% Ecuador bar made by Spinnaker Chocolate in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/70-ecuador-spinnaker-chocolate-package-front.jpg',
+        alt: 'Front of 70% Ecuador bar made by Spinnaker Chocolate in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/70-ecuador-spinnaker-chocolate-package-back.jpg',
+        alt: 'Back of 70% Ecuador bar made by Spinnaker Chocolate in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 57,
+    barDimensions: [129, 77, 5],
+    ingredients: ['Cacao', 'Organic Cane Sugar'],
+    facilityAllergen: ['Milk Powder', 'Nuts'],
+
+    packagingType: 'Biodegradable Bag',
+    packagingDimensions: [169, 109, 7],
+    marketingTerms: ['Heirloom Cacao', 'Recycle'],
+    tastingNotes: [
+      'Chocolate Pudding',
+      'Chocolate Fudge',
+      'Dark, Earthy Chocolate',
+    ],
+
+    retailer: 'Spinnaker Chocolate',
+    location: 'https://spinnakerchocolate.com/',
+    retailPrice: 12,
+    dateObtained: '2023-03-25',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      producer: 'Costa Esmeraldas',
+      locality: 'Muisne',
+      region: 'Esmeraldas',
+      country: 'Ecuador',
+    },
+  },
+  {
     id: 'c9e638dd76',
     releaseDate: '2023-03-27',
     name: '75% Dark',
@@ -764,7 +829,7 @@ const bars: Array<Bar> = [
     releaseDate: '2023-03-19',
     name: 'Commuter',
     subtitle: 'East Pole Coffee with Coconut Milk',
-    maker: 'Xocolatl',
+    maker: 'Xocolatl Small Batch Chocolate',
     slug: 'commuter-east-pole-coffee-with-coconut-milk-xocolatl',
     productUrl: 'https://xocolatlchocolate.com/products/commuter',
     productionCountry: 'United States',

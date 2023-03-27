@@ -278,27 +278,31 @@ const makers = [
   },
   {
     id: '2491a11b9e',
-    name: 'Chapon Chocolatier',
+    name: 'Chapon Chocolatier' as const,
   },
   {
     id: 'faa8a0aac3',
-    name: 'Goodio',
+    name: 'Goodio' as const,
   },
   {
     id: '5df9afaaf8',
-    name: 'French Broad Chocolate',
+    name: 'French Broad Chocolate' as const,
   },
   {
     id: '5df9afaaf8',
-    name: 'French Broad Chocolate',
+    name: 'French Broad Chocolate' as const,
   },
   {
     id: '498760eba9',
-    name: 'Luisa Abram', // Caputo's Market & Deli
+    name: 'Luisa Abram' as const, // Caputo's Market & Deli
+  },
+  {
+    id: 'cfed0153b3',
+    name: 'Monsoon Chocolate' as const,
   },
   {
     id: 'f042937f9b',
-    name: 'Lydgate Farms',
+    name: 'Lydgate Farms' as const,
   },
 ]
 
