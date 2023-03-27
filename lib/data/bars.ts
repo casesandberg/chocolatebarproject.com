@@ -181,6 +181,77 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'c9e638dd76',
+    releaseDate: '2023-03-27',
+    name: '75% Dark',
+    subtitle: 'Made with Koloa Hawaiian Rum',
+    maker: 'Lydgate Farms',
+    slug: '75-dark-made-with-koloa-hawaiian-rum-lydgate-farms',
+    productUrl:
+      'https://lydgatefarms.shop/products/75-dark-chocolate-with-koloa-hawaiian-rum',
+    productionCountry: 'United States',
+    description: [
+      `"This completely Kauai-made chocolate bar is a must-try. The characteristic, warm, nutty, and caramel notes of gold rum are absorbed by Lydgate cacao in the rum-making process and make an exquisite pair with the bright, florals notes in our extra smooth dark chocolate. This chocolate is like none you have tasted before. Unmistakably fudgy with warm molasses, golden rum flavor. It is a triumph of Kauai-grown ingredients and chocolate as nature intended it."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/75-dark-made-with-koloa-hawaiian-rum-lydgate-farms.jpg',
+        alt: '75% Dark Made with Koloa Hawaiian Rum bar made by Lydgate Farms in the United States on a shelf with drift wood and green plants',
+      },
+      BAR_FRONT: {
+        src: '/bars/75-dark-made-with-koloa-hawaiian-rum-lydgate-farms-bar-front.jpg',
+        alt: 'Front of 75% Dark Made with Koloa Hawaiian Rum bar made by Lydgate Farms in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/75-dark-made-with-koloa-hawaiian-rum-lydgate-farms-bar-back.jpg',
+        alt: 'Back of 75% Dark Made with Koloa Hawaiian Rum bar made by Lydgate Farms in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/75-dark-made-with-koloa-hawaiian-rum-lydgate-farms-package-front.jpg',
+        alt: 'Front of 75% Dark Made with Koloa Hawaiian Rum bar made by Lydgate Farms in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/75-dark-made-with-koloa-hawaiian-rum-lydgate-farms-package-back.jpg',
+        alt: 'Back of 75% Dark Made with Koloa Hawaiian Rum bar made by Lydgate Farms in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 75,
+    barWeight: 62,
+    barDimensions: [139, 69, 7],
+    ingredients: [
+      'KOLOA Hawaiian Rum Soaked Lydgate Farms Cacao Nibs',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [165, 84, 9],
+    wrapper: 'Cellulose Bag',
+    marketingTerms: ['Single-estate', 'Recycled'],
+    insidePrinting: true,
+
+    retailer: 'Hanalei Market',
+    location: 'Hanalei',
+    retailPrice: 19.99,
+    dateObtained: '2023-03-24',
+
+    reviewerBarNotes: 'Tastes like a dark milk with oats?',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingNotes: 'Envelope with a 3 fixed sides.',
+
+    origin: {
+      producer: 'Wailua',
+      locality: "Kapa'a",
+      region: 'Hawaii',
+      country: 'United States',
+    },
+    beanVariety: '',
+    harvestYear: '2022', // Fall
+  },
+  {
     id: '0fb6e2d88e',
     releaseDate: '2023-03-26',
     name: '70% Dark with Black Fig',
@@ -412,29 +483,29 @@ const bars: Array<Bar> = [
     productionCountry: 'Brazil',
     description: [
       `"Wild about cacao? Hidden for centuries along the Amazon Rainforest's Juruá River, this extremely rare cacao is pure pleasure. Lush nuances of malt, sweet spice, and moss in a velvety finish.`,
-      `Magnificent and mysterious like the jaguar—a national symbol of Brazil—we cannot let this heirloom fruit disappear. Caputo's Wild Juruá 70% bar is sponsored by Caputo's Preservation Program which fights to preserve wild cacao and its biodiversity.`,
+      `Magnificent and mysterious like the jaguar—a national symbol of Brazil—we cannot let this heirloom fruit disappear. Caputo's Wild Juruá 70% bar is sponsored by Caputo's Preservation Program which fights to preserve wild cacao and its biodiversity."`,
     ],
 
     images: {
       HERO: {
         src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli.jpg',
-        alt: "Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States with the packaging standing open and the postcard visible",
+        alt: "Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in Brazil with the packaging standing open and the postcard visible",
       },
       BAR_FRONT: {
         src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-bar-front.jpg',
-        alt: "Front of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States",
+        alt: "Front of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in Brazil",
       },
       BAR_BACK: {
         src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-bar-back.jpg',
-        alt: "Back of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States",
+        alt: "Back of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in Brazil",
       },
       PACKAGE_FRONT: {
         src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-package-front.jpg',
-        alt: "Front of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States package",
+        alt: "Front of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in Brazil package",
       },
       PACKAGE_BACK: {
         src: '/bars/caputos-wild-jurua-70-by-luisa-abram-caputos-market-deli-package-back.jpg',
-        alt: "Back of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in the United States package",
+        alt: "Back of Caputo's Wild Jurua 70% bar by Luisa Abram made with Caputo's Market & Deli in Brazil package",
       },
     },
 

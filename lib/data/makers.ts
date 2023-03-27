@@ -296,6 +296,10 @@ const makers = [
     id: '498760eba9',
     name: 'Luisa Abram', // Caputo's Market & Deli
   },
+  {
+    id: 'f042937f9b',
+    name: 'Lydgate Farms',
+  },
 ]
 
 /**
