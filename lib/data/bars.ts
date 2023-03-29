@@ -181,6 +181,91 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'd023988ac6',
+    releaseDate: '2023-03-31',
+    name: 'Salted Honeycomb',
+    subtitle: 'Milk Chocolate 41%',
+    maker: 'Artisan du Chocolat',
+    slug: 'salted-honeycomb-milk-chocolate-41-artisan-du-chocolat',
+    productUrl:
+      'https://www.artisanduchocolat.com/products/salted-honeycomb-milk-bar',
+    productionCountry: 'England',
+    description: [
+      `"Airy, rigid and sponge-like, honeycomb candy is smothered in creamy milk chocolate and balanced with a touch of sea salt."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/salted-honeycomb-milk-chocolate-41-artisan-du-chocolat.jpg',
+        alt: 'Salted Honeycomb Milk Chocolate 41% bar made by Artisan du Chocolat in England macro shot with the box torn and the bar sticking out',
+      },
+      BAR_FRONT: {
+        src: '/bars/salted-honeycomb-milk-chocolate-41-artisan-du-chocolat-bar-front.jpg',
+        alt: 'Front of Salted Honeycomb Milk Chocolate 41% bar made by Artisan du Chocolat in England',
+      },
+      BAR_BACK: {
+        src: '/bars/salted-honeycomb-milk-chocolate-41-artisan-du-chocolat-bar-back.jpg',
+        alt: 'Back of Salted Honeycomb Milk Chocolate 41% bar made by Artisan du Chocolat in England',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/salted-honeycomb-milk-chocolate-41-artisan-du-chocolat-package-front.jpg',
+        alt: 'Front of Salted Honeycomb Milk Chocolate 41% bar made by Artisan du Chocolat in England package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/salted-honeycomb-milk-chocolate-41-artisan-du-chocolat-package-back.jpg',
+        alt: 'Back of Salted Honeycomb Milk Chocolate 41% bar made by Artisan du Chocolat in England package',
+      },
+    },
+
+    barType: 'Milk',
+    percent: 41,
+    barWeight: 45,
+    barDimensions: [142, 63, 5],
+    ingredients: [
+      [
+        'Milk Chocolate',
+        [
+          'Sugar',
+          'Cocoa Butter',
+          'Dried Whole Milk',
+          'Cocoa Mass',
+          'Soya Lecithin',
+          'Natural Vanilla Extract',
+        ],
+      ],
+      [
+        'Honeycome Nibbles',
+        [
+          'Sugar',
+          'Glucose Syrup',
+          'Vegetable Fat',
+          'Bicarbonate of Soda',
+          'Rice Flour',
+          'Sea Salt',
+        ],
+      ],
+    ],
+    foodAllergen: ['Milk', 'Soy'],
+    facilityAllergen: ['Nuts', 'Wheat', 'Gluten'],
+
+    packagingType: 'Box',
+    packagingDimensions: [157, 76, 10],
+    wrapper: 'Clear Bag',
+    marketingTerms: ['Fine', 'Rare Cocoa', 'Crafted'],
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 6.99,
+    dateObtained: '2023-03-09',
+
+    reviewerBarNotes: 'Broken',
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Unknown',
+    },
+  },
+  {
     id: 'b6d66c7d29',
     releaseDate: '2023-03-30',
     name: 'Milk Chocolate',

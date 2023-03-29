@@ -25,20 +25,6 @@ const vault: Array<Bar> = [
     dateObtained: '2023-03-09',
   },
   {
-    name: 'Salted Honeycomb',
-    subtitle: 'Milk Chocolate 41%',
-    maker: 'Artisan du Chocolat',
-    slug: 'salted-honeycomb-milk-chocolate-41-artisan-du-chocolat',
-    productUrl:
-      'https://www.artisanduchocolat.com/products/salted-honeycomb-milk-bar',
-    productionCountry: 'England',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 6.99,
-    dateObtained: '2023-03-09',
-  },
-  {
     name: 'Forest',
     subtitle: 'Chocolate Topped with Birch Leaves & Forest Crystals',
     maker: 'Goodio',
