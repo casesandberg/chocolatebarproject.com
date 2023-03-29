@@ -181,6 +181,76 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'b6d66c7d29',
+    releaseDate: '2023-03-30',
+    name: 'Milk Chocolate',
+    maker: 'Mast',
+    slug: 'milk-chocolate-mast',
+    productUrl: 'https://www.mastmarket.com/shop/p/chocolate-bar-milk-50',
+    productionCountry: 'United States',
+    description: [
+      `"Rich, classic milk chocolate and never too sweet. Our handcrafted milk chocolate is made from bean to bar in-house - stone milled to a smooth, milky finish with organic cacao and vanilla bean."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/milk-chocolate-mast.jpg',
+        alt: 'Milk Chocolate bar made by Mast in the United States with on a wicker chair with textured white pillows',
+      },
+      BAR_FRONT: {
+        src: '/bars/milk-chocolate-mast-bar-front.jpg',
+        alt: 'Front of Milk Chocolate bar made by Mast in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/milk-chocolate-mast-bar-back.jpg',
+        alt: 'Back of Milk Chocolate bar made by Mast in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/milk-chocolate-mast-package-front.jpg',
+        alt: 'Front of Milk Chocolate bar made by Mast in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/milk-chocolate-mast-package-back.jpg',
+        alt: 'Back of Milk Chocolate bar made by Mast in the United States package',
+      },
+    },
+
+    barType: 'Milk',
+    percent: 50,
+    barWeight: 70,
+    barDimensions: [156, 71, 6],
+    ingredients: [
+      'Organic Cocoa Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Organic Milk',
+      'Organic Brown Sugar',
+      'Organic Vanilla',
+    ],
+    foodAllergen: ['Milk'],
+    facilityAllergen: ['Nuts'],
+
+    packagingType: 'Paper Envelope',
+    packagingDimensions: [159, 73, 9],
+    wrapper: 'Foil with Paper Backing', // Silver
+    certifiedLabels: ['USDA Organic'], // KFC
+
+    retailer: 'Pigment',
+    location: 'Point Loma',
+    retailPrice: 7.95,
+    dateObtained: '2023-03-28',
+
+    reviewerBarNotes: 'Had bloom and was likely slightly melted',
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Tanzania',
+      region: 'Morogoro Region',
+      locality: 'Kilombero Valley',
+      producer: 'Kokoa Kamili',
+    },
+  },
+  {
     id: '39aa18613b',
     releaseDate: '2023-03-29',
     name: 'Citrus Licorice Crunch',
