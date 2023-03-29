@@ -181,6 +181,80 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: 'ccccbfa323',
+    releaseDate: '2023-04-01',
+    name: 'Midnight Velvelt',
+    maker: "Lulu's Chocolate",
+    slug: 'midnight-velvet-lulus-chocolate',
+    productUrl: 'https://luluschocolate.com/shop/midnight-velvet/',
+    productionCountry: 'United States',
+    description: [
+      `"This deliciously dark cacao is seductively smooth as it melts on your tongue like velvet."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/midnight-velvet-lulus-chocolate.jpg',
+        alt: "Midnight Velvelt bar made by Lulu's Chocolate in the United States with on a purple background with a deep drop shadow",
+      },
+      BAR_FRONT: {
+        src: '/bars/midnight-velvet-lulus-chocolate-bar-front.jpg',
+        alt: "Front of Midnight Velvelt bar made by Lulu's Chocolate in the United States",
+      },
+      BAR_BACK: {
+        src: '/bars/midnight-velvet-lulus-chocolate-bar-back.jpg',
+        alt: "Back of Midnight Velvelt bar made by Lulu's Chocolate in the United States",
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/midnight-velvet-lulus-chocolate-package-front.jpg',
+        alt: "Front of Midnight Velvelt bar made by Lulu's Chocolate in the United States package",
+      },
+      PACKAGE_BACK: {
+        src: '/bars/midnight-velvet-lulus-chocolate-package-back.jpg',
+        alt: "Back of Midnight Velvelt bar made by Lulu's Chocolate in the United States package",
+      },
+    },
+
+    barType: 'Dark',
+    percent: 88,
+    barWeight: 28,
+    barDimensions: [56, 88, 5],
+    ingredients: [
+      'Organic Raw Cacao',
+      'Organic Coconut Sugar',
+      'Organic Cacao Butter',
+      'Sea Salt',
+      'Organic Vanilla Bean',
+      'Love',
+    ],
+    facilityAllergen: ['Tree Nuts'],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [119, 89, 7],
+    wrapper: 'Compostable Metallized Plastic',
+    certifiedLabels: ['Organic'], // CCOF
+    marketingTerms: [
+      'Heirloom',
+      'Pure',
+      'Plant based',
+      'Fair trade',
+      'Zero refined sugar',
+      'Unroasted',
+    ],
+
+    retailer: 'Kilauea Market + Cafe',
+    location: 'Kilauea',
+    retailPrice: 0, // ?
+    dateObtained: '2022-12-5',
+
+    reviewerBarNotes: 'very strong, unpleasant vanilla taste',
+    reviewerWouldEatAgain: false,
+
+    origin: {
+      country: 'Blend Ecuador & Belize',
+    },
+  },
+  {
     id: 'd023988ac6',
     releaseDate: '2023-03-31',
     name: 'Salted Honeycomb',

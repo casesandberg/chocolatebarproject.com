@@ -563,14 +563,6 @@ const vault: Array<Bar> = [
     retailPrice: 0, // ?
     dateObtained: '2022-12-5',
   },
-  {
-    name: 'Midnight Velvelt',
-    maker: 'Lulu"s',
-    retailer: 'Kilauea Market + Cafe',
-    location: 'Kilauea',
-    retailPrice: 0, // ?
-    dateObtained: '2022-12-5',
-  },
 ]
 
 export {}

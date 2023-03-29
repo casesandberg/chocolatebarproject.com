@@ -312,6 +312,10 @@ const makers = [
     id: '5fb04041ff',
     name: 'Artisan du Chocolat' as const,
   },
+  {
+    id: '9d77703997',
+    name: "Lulu's Chocolate" as const,
+  },
 ]
 
 /**
