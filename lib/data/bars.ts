@@ -181,6 +181,81 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '9252d97960',
+    releaseDate: '2023-04-04',
+    name: 'Born Fruity',
+    subtitle: 'Lush & Fruity Cacao Truffle Filled Dark Chocolate',
+    maker: 'TCHO',
+    slug: 'lush-fruity-cacao-truffle-filled-dark-chocolate-tcho',
+    productUrl: 'https://tcho.com/products/born-fruity',
+    productionCountry: 'United States',
+    description: [
+      `"A lush, fruit-forward cacao truffle filled dark chocolate from Peru, the birthplace of cacao. Deep fruit notes with a sweet and crisp finish."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/lush-fruity-cacao-truffle-filled-dark-chocolate-tcho.jpg',
+        alt: 'Born Fruity Lush & Fruity Cacao Truffle Filled Dark Chocolate bar made by TCHO in the United States macro shot of the bar inside the box packaging',
+      },
+      BAR_FRONT: {
+        src: '/bars/lush-fruity-cacao-truffle-filled-dark-chocolate-tcho-bar-front.jpg',
+        alt: 'Front of Born Fruity Lush & Fruity Cacao Truffle Filled Dark Chocolate bar made by TCHO in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/lush-fruity-cacao-truffle-filled-dark-chocolate-tcho-bar-back.jpg',
+        alt: 'Back of Born Fruity Lush & Fruity Cacao Truffle Filled Dark Chocolate bar made by TCHO in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/lush-fruity-cacao-truffle-filled-dark-chocolate-tcho-package-front.jpg',
+        alt: 'Front of Born Fruity Lush & Fruity Cacao Truffle Filled Dark Chocolate bar made by TCHO in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/lush-fruity-cacao-truffle-filled-dark-chocolate-tcho-package-back.jpg',
+        alt: 'Back of Born Fruity Lush & Fruity Cacao Truffle Filled Dark Chocolate bar made by TCHO in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 72,
+    barWeight: 70,
+    barDimensions: [92, 31, 9], // 3 per package
+    ingredients: [
+      'Organic Cacao Beans',
+      'Organic Cane Sugar',
+      'Organic Cocoa Butter',
+      'Organic Coconut Oil',
+      'Organic Sunflower Lecithin',
+    ],
+    foodAllergen: ['Coconut'],
+    facilityAllergen: ['Soy', 'Milk', 'Tree Nuts'],
+
+    packagingType: 'Box with Flap',
+    packagingDimensions: [111, 111, 13],
+    wrapper: 'Paper Wrapped Foil',
+    certifiedLabels: ['USDA Organic', 'B Corp', 'Fair Trade', 'Kosher'], // Fair Trade USA, Earch Kosher
+    uncertifiedLabels: ['100% Plant Based', 'Non GMO'],
+    marketingTerms: [
+      'Seed to Bean to Bar',
+      'Environment',
+      'Plant Based',
+      'Non GMO',
+    ],
+    insidePrinting: true,
+
+    retailer: 'Lazy Acres',
+    location: 'Hillcrest',
+    retailPrice: 3.99,
+    dateObtained: '2023-01-03',
+
+    reviewerBarNotes: 'Dont like the added coconut oil...',
+    reviewerWouldEatAgain: false,
+
+    origin: {
+      country: 'Peru',
+    },
+  },
+  {
     id: '3b1c89675b',
     releaseDate: '2023-04-03',
     name: '67% Cacao Nibs',

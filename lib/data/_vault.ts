@@ -328,14 +328,6 @@ const vault: Array<Bar> = [
 
   //
   {
-    name: 'Born Fruity',
-    maker: 'TCHO',
-    retailer: 'Lazy Acres',
-    location: 'Hillcrest',
-    retailPrice: 3.99,
-    dateObtained: '2023-01-03',
-  },
-  {
     name: 'Crispy Rice 73% Cacao',
     maker: 'Beyond Good',
     retailer: 'Lazy Acres',

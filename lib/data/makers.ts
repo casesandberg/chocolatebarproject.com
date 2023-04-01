@@ -320,6 +320,10 @@ const makers = [
     id: '732bb57a25',
     name: 'Standout Chocolate' as const,
   },
+  {
+    id: '4a2bd7f0d9',
+    name: 'TCHO' as const,
+  },
 ]
 
 /**
