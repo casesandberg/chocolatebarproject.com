@@ -37,19 +37,6 @@ const vault: Array<Bar> = [
     retailPrice: 9.99,
     dateObtained: '2023-03-09',
   },
-  {
-    name: 'Haiti Cap-Haïtien 70%',
-    maker: 'Standout Chocolate',
-    slug: 'haiti-cap-haitien-70-standout-chocolate',
-    productUrl:
-      'https://www.standoutchocolate.com/en/shop/single-origin-bars/haiti-cap-haitien-70',
-    productionCountry: 'Sweden',
-
-    retailer: "Caputo's",
-    location: 'https://caputos.com/',
-    retailPrice: 9.99,
-    dateObtained: '2023-03-09',
-  },
 
   //
   {

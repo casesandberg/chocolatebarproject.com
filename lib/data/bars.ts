@@ -181,9 +181,99 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '24369b6805',
+    releaseDate: '2023-04-02',
+    name: 'Cap-Haïtien Haiti 70%',
+    maker: 'Standout Chocolate',
+    slug: 'cap-haitien-haiti-70-standout-chocolate',
+    productUrl:
+      'https://www.standoutchocolate.com/en/shop/single-origin-bars/haiti-cap-haitien-70',
+    productionCountry: 'Sweden',
+    description: [
+      `"The cacao used comes from a network of around 1,500 smallholder farmers. It has a smooth and sweet chocolatey flavor with notes of vanilla, black olives and roasted nuts."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/cap-haitien-haiti-70-standout-chocolate.jpg',
+        alt: 'Cap-Haïtien Haiti 70% bar made by Standout Chocolate in Sweden with a shallow depth of field',
+      },
+      BAR_FRONT: {
+        src: '/bars/cap-haitien-haiti-70-standout-chocolate-bar-front.jpg',
+        alt: 'Front of Cap-Haïtien Haiti 70% bar made by Standout Chocolate in Sweden',
+      },
+      BAR_BACK: {
+        src: '/bars/cap-haitien-haiti-70-standout-chocolate-bar-back.jpg',
+        alt: 'Back of Cap-Haïtien Haiti 70% bar made by Standout Chocolate in Sweden',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/cap-haitien-haiti-70-standout-chocolate-package-front.jpg',
+        alt: 'Front of Cap-Haïtien Haiti 70% bar made by Standout Chocolate in Sweden package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/cap-haitien-haiti-70-standout-chocolate-package-back.jpg',
+        alt: 'Back of Cap-Haïtien Haiti 70% bar made by Standout Chocolate in Sweden package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 50,
+    barDimensions: [109, 74, 6],
+    ingredients: ['Organic Cacao Beans', 'Oragnic Cane Sugar'],
+    facilityAllergen: ['Milk'],
+
+    packagingType: 'Box',
+    packagingDimensions: [132, 91, 11],
+    wrapper: 'Cellulose Bag',
+    certifiedLabels: ['Organic'], // SE-EKO-01
+    marketingTerms: [
+      'Handcrafted',
+      'Single Origin',
+      'Bean to Bar',
+      'Source',
+      'Craft Chocolate',
+    ],
+    tastingNotes: ['Floral', 'Roasted Nuts', 'Black Olives'],
+    packageLanguages: ['German', 'English', 'Italian', 'Swedish'],
+    awards: [
+      {
+        body: 'Academy of Chocolate',
+        level: 'Bronze',
+        year: 2020,
+      },
+      {
+        body: 'Great Taste',
+        level: '3 Star',
+        year: 2020,
+      },
+      {
+        body: 'Great Taste',
+        level: 'Small artisan producer of the year',
+        year: 2020,
+      },
+    ],
+
+    retailer: "Caputo's",
+    location: 'https://caputos.com/',
+    retailPrice: 9.99,
+    dateObtained: '2023-03-09',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      // Sourced by Daarnhouwer // https://www.standoutchocolate.com/en/shop/single-origin-bars/haiti-cap-haitien-70
+      producer: 'PISA',
+      locality: '',
+      region: 'Cap-Haïtien',
+      country: 'Haiti',
+    },
+    harvestYear: '2017',
+  },
+  {
     id: 'ccccbfa323',
     releaseDate: '2023-04-01',
-    name: 'Midnight Velvelt',
+    name: 'Midnight Velvet',
     maker: "Lulu's Chocolate",
     slug: 'midnight-velvet-lulus-chocolate',
     productUrl: 'https://luluschocolate.com/shop/midnight-velvet/',
@@ -195,23 +285,23 @@ const bars: Array<Bar> = [
     images: {
       HERO: {
         src: '/bars/midnight-velvet-lulus-chocolate.jpg',
-        alt: "Midnight Velvelt bar made by Lulu's Chocolate in the United States with on a purple background with a deep drop shadow",
+        alt: "Midnight Velvet bar made by Lulu's Chocolate in the United States with on a purple background with a deep drop shadow",
       },
       BAR_FRONT: {
         src: '/bars/midnight-velvet-lulus-chocolate-bar-front.jpg',
-        alt: "Front of Midnight Velvelt bar made by Lulu's Chocolate in the United States",
+        alt: "Front of Midnight Velvet bar made by Lulu's Chocolate in the United States",
       },
       BAR_BACK: {
         src: '/bars/midnight-velvet-lulus-chocolate-bar-back.jpg',
-        alt: "Back of Midnight Velvelt bar made by Lulu's Chocolate in the United States",
+        alt: "Back of Midnight Velvet bar made by Lulu's Chocolate in the United States",
       },
       PACKAGE_FRONT: {
         src: '/bars/midnight-velvet-lulus-chocolate-package-front.jpg',
-        alt: "Front of Midnight Velvelt bar made by Lulu's Chocolate in the United States package",
+        alt: "Front of Midnight Velvet bar made by Lulu's Chocolate in the United States package",
       },
       PACKAGE_BACK: {
         src: '/bars/midnight-velvet-lulus-chocolate-package-back.jpg',
-        alt: "Back of Midnight Velvelt bar made by Lulu's Chocolate in the United States package",
+        alt: "Back of Midnight Velvet bar made by Lulu's Chocolate in the United States package",
       },
     },
 
