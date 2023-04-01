@@ -476,14 +476,6 @@ const vault: Array<Bar> = [
     dateObtained: '2022-12-16',
   },
   {
-    name: '67% Cacao Nibs',
-    maker: 'Olive & Sinclair',
-    retailer: 'Blackmarket Bakery',
-    location: 'North Park',
-    retailPrice: 7,
-    dateObtained: '2022-12-16',
-  },
-  {
     name: 'Cardamom Krumkake',
     maker: 'Terroir Chocolate',
     retailer: 'Blackmarket Bakery',

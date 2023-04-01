@@ -181,6 +181,70 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '3b1c89675b',
+    releaseDate: '2023-04-03',
+    name: '67% Cacao Nibs',
+    maker: 'Olive & Sinclair Chocolate Co',
+    slug: '67-cacao-nibs-olive-sinclair-chocolate-co',
+    productUrl: 'https://www.oliveandsinclair.com/shop/67-cacao-chocolate-bar',
+    productionCountry: 'United States',
+    description: [
+      `"Bold, brown, & fudgy, introduced by red stone fruit, brown butter and sorghum molasses."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/67-cacao-nibs-olive-sinclair-chocolate-co.jpg',
+        alt: '67% Cacao Nibs bar made by Olive & Sinclair Chocolate Co in the United States on an orange backgorund with cacao nibs scattered around',
+      },
+      BAR_FRONT: {
+        src: '/bars/67-cacao-nibs-olive-sinclair-chocolate-co-bar-front.jpg',
+        alt: 'Front of 67% Cacao Nibs bar made by Olive & Sinclair Chocolate Co in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/67-cacao-nibs-olive-sinclair-chocolate-co-bar-back.jpg',
+        alt: 'Back of 67% Cacao Nibs bar made by Olive & Sinclair Chocolate Co in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/67-cacao-nibs-olive-sinclair-chocolate-co-package-front.jpg',
+        alt: 'Front of 67% Cacao Nibs bar made by Olive & Sinclair Chocolate Co in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/67-cacao-nibs-olive-sinclair-chocolate-co-package-back.jpg',
+        alt: 'Back of 67% Cacao Nibs bar made by Olive & Sinclair Chocolate Co in the United States package',
+      },
+    },
+
+    barType: 'Dark',
+    percent: 67,
+    barWeight: 71,
+    barDimensions: [94, 131, 4],
+    ingredients: ['Cacao Beans', 'Brown Sugar', 'Roasted Cacao Nibs'],
+    facilityAllergen: ['Nuts'],
+
+    packagingType: 'Box',
+    packagingDimensions: [98, 134, 10],
+    wrapper: 'Metallised plastic',
+    uncertifiedLabels: ['Gluten Free', 'All Natural'],
+    marketingTerms: [
+      'Small Batch',
+      'Slow Roasted',
+      'Stone Ground',
+      'Hand Crafted',
+    ],
+
+    retailer: 'Blackmarket Bakery',
+    location: 'North Park',
+    retailPrice: 7,
+    dateObtained: '2022-12-16',
+
+    reviewerWouldEatAgain: true,
+
+    origin: {
+      country: 'Dominican Republic',
+    },
+  },
+  {
     id: '24369b6805',
     releaseDate: '2023-04-02',
     name: 'Cap-Haïtien Haiti 70%',
