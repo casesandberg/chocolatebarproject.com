@@ -52,6 +52,8 @@ export interface Bar {
     PACKAGE_INSIDE?: Image
   }
 
+  seo?: Record<string, string>
+
   barType?: 'Dark' | 'Dark Milk' | 'Milk' | 'White' | 'Flavored'
   percent?: number
   barWeight: number // in grams
@@ -180,6 +182,77 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 ] */
 
 const bars: Array<Bar> = [
+  {
+    id: '9c475f04f1',
+    releaseDate: '2023-04-05',
+    name: 'Cuba 75%',
+    maker: 'François Pralus',
+    slug: 'cuba-75-francois-pralus-chocolate',
+    productUrl: 'https://yaharachocolate.com/products/pralus-cuba-75',
+    productionCountry: 'France',
+    description: [
+      `"This is a true opportunity to taste chocolate from Cuba refined in Europe. Import bans, random supply make it increasingly rare... A shame, as you will be surprised by this chocolate. Close your eyes and start thinking about the island, its coffee, its cigars, its rum, its music... Now taste the richness and flavors of our Cuba."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/cuba-75-francois-pralus-chocolate.jpg',
+        alt: 'Cuba 75% bar made by François Pralus in France on a vertical cardboard background',
+      },
+      BAR_FRONT: {
+        src: '/bars/cuba-75-francois-pralus-chocolate-bar-front.jpg',
+        alt: 'Front of Cuba 75% bar made by François Pralus in France',
+      },
+      BAR_BACK: {
+        src: '/bars/cuba-75-francois-pralus-chocolate-bar-back.jpg',
+        alt: 'Back of Cuba 75% bar made by François Pralus in France',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/cuba-75-francois-pralus-chocolate-package-front.jpg',
+        alt: 'Front of Cuba 75% bar made by François Pralus in France package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/cuba-75-francois-pralus-chocolate-package-back.jpg',
+        alt: 'Back of Cuba 75% bar made by François Pralus in France package',
+      },
+    },
+
+    seo: {
+      about:
+        'The Cuba 75% bar is a unique dark chocolate creation from François Pralus. Crafted with Cuban cocoa beans, this bar stands out with its distinctive flavor profile. Herbaceous, spicy, and fresh notes coalesce to form a distinct note of licorice with some peppery spice, delivering a long finish that invites you to linger on its complexities.',
+      maker:
+        'François Pralus is the artisan behind the Cuba 75% bar. Following in the footsteps of his father Auguste Pralus, François has continued the legacy of artisan patisserie and chocolate making. Pralus is renowned in France and beyond for their "Praluline" brioche and their range of single-origin chocolate bars. François Pralus is one of only three "Maîtres Chocolatiers" in all of France, recognized for his meticulous sourcing of beans from more than twenty cacao-growing regions around the world, and his expertise in creating single-origin bars.',
+      origin: `Cuba, while traditionally known for its production of cane sugar and tobacco, has a long history with cocoa dating back to 1540. The eastern provinces of Cuba, with their optimal climate for cocoa cultivation, have been producing cocoa beans for centuries. The Cuban Revolution in 1959 sought to diversify the country's agriculture, and cocoa production has been on the rise ever since. Due to an ongoing US embargo, Cuban cocoa beans are mainly exported to Europe and Asia, which may account for their distinctive flavor profile and the unique taste.`,
+      taste: `To fully appreciate the Cuba 75% bar by François Pralus, allow a piece to slowly melt in your mouth. This method allows the complex flavors of the bar to unfold gradually. The initial herbaceous and spicy notes will give way to a distinct licorice flavor, eventually leaving a lingering peppery spice on the palate. This bar is an invitation to take a moment to yourself, to savor and explore the rich depths of its flavor.`,
+    },
+
+    barType: 'Dark',
+    percent: 75,
+    barWeight: 100,
+    barDimensions: [79, 158, 7],
+    ingredients: ['Cocoa', 'Sugar', 'Cocoa Butter', 'Sunflower Lecithin'],
+    facilityAllergen: ['Milk', 'Nuts'],
+
+    packagingType: 'Paper Wrap',
+    packagingDimensions: [160, 82, 9],
+    wrapper: 'Foil', // Gold
+
+    retailer: '',
+    location: '',
+    retailPrice: 0,
+    dateObtained: '',
+
+    reviewerBarFavorite: false,
+    reviewerBarNotes: '',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: false,
+    reviewerPackagingNotes: '',
+
+    origin: {
+      country: 'Cuba',
+    },
+    beanVariety: 'Trinitario',
+  },
   {
     id: '9252d97960',
     releaseDate: '2023-04-04',

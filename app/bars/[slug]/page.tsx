@@ -226,6 +226,9 @@ export default async function BarSlugPage({ params }: { params?: any }) {
             />
           )}
         >
+          {bar.seo?.about ? (
+            <p className="mb-2 text-primary-900/50">{bar.seo?.about}</p>
+          ) : null}
           <Metadata>
             <MetadataItem label="Type" value={bar.barType} />
             <MetadataItem
@@ -288,6 +291,9 @@ export default async function BarSlugPage({ params }: { params?: any }) {
 
         {maker ? (
           <ItemBlock title="Maker">
+            {bar.seo?.maker ? (
+              <p className="mb-2 text-primary-900/50">{bar.seo?.maker}</p>
+            ) : null}
             <Metadata>
               <MetadataItem label="Name" value={maker.name} />
               <MetadataItem
@@ -300,6 +306,9 @@ export default async function BarSlugPage({ params }: { params?: any }) {
 
         {origin ? (
           <ItemBlock title="Origin">
+            {bar.seo?.origin ? (
+              <p className="mb-2 text-primary-900/50">{bar.seo?.origin}</p>
+            ) : null}
             <Metadata>
               <MetadataItem label="Producer" value={origin.producer} />
               <MetadataItem label="Locality" value={origin.locality} />
@@ -309,12 +318,21 @@ export default async function BarSlugPage({ params }: { params?: any }) {
           </ItemBlock>
         ) : typeof bar.origin !== 'string' ? (
           <ItemBlock title="Origin">
+            {bar.seo?.origin ? (
+              <p className="mb-2 text-primary-900/50">{bar.seo?.origin}</p>
+            ) : null}
             <Metadata>
               <MetadataItem label="Producer" value={bar.origin.producer} />
               <MetadataItem label="Locality" value={bar.origin.locality} />
               <MetadataItem label="Region" value={bar.origin.region} />
               <MetadataItem label="Country" value={bar.origin.country} />
             </Metadata>
+          </ItemBlock>
+        ) : null}
+
+        {bar.seo?.taste ? (
+          <ItemBlock title="How to Enjoy the Bar">
+            <p className="mb-2 text-primary-900/50">{bar.seo?.taste}</p>
           </ItemBlock>
         ) : null}
       </Container>

@@ -2,9 +2,9 @@
 
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Route } from 'next'
 import Link from 'next/link'
 import { Fragment } from 'react'
+import { UrlObject } from 'url'
 import { Container } from './Container'
 
 function NavItem({
@@ -12,7 +12,7 @@ function NavItem({
   children,
   highlight,
 }: {
-  href: Route
+  href: string | UrlObject
   children: string
   highlight?: boolean
 }) {

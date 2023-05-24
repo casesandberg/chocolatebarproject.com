@@ -324,6 +324,10 @@ const makers = [
     id: '4a2bd7f0d9',
     name: 'TCHO' as const,
   },
+  {
+    id: 'a54811605e',
+    name: 'François Pralus' as const,
+  },
 ]
 
 /**
