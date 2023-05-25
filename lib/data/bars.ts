@@ -140,6 +140,13 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
       },
     },
 
+    seo: {
+      about: ``,
+      maker: ``,
+      origin: ``,
+      taste: ``,
+    },
+
     barType: '',
     percent: 0,
     barWeight: 0,
@@ -182,6 +189,81 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 ] */
 
 const bars: Array<Bar> = [
+  {
+    id: '419476ec63',
+    releaseDate: '2023-04-06',
+    name: '70% Karkar Island',
+    maker: 'Kasama Chocolate',
+    slug: '70-karkar-island-kasama-chocolate',
+    productUrl: 'https://kasamachocolate.com/product/70-papua-new-guinea/',
+    productionCountry: 'Canada',
+    description: [
+      `"This chocolate is made from heirloom Trinitario cacao beans grown on the volcanic Karkar Island off the north coast of Papua New Guinea. The beans from this estate, where cacao trees mingle with coconut palms, have a unique and multilayered aroma profile with notes of blackberry, plum, and molasses."`,
+    ],
+
+    images: {
+      HERO: {
+        src: '/bars/70-karkar-island-kasama-chocolate.jpg',
+        alt: '70% Karkar Island bar made by Kasama Chocolate in Canada on a purple gradient background',
+      },
+      BAR_FRONT: {
+        src: '/bars/70-karkar-island-kasama-chocolate-bar-front.jpg',
+        alt: 'Front of 70% Karkar Island bar made by Kasama Chocolate in Canada',
+      },
+      BAR_BACK: {
+        src: '/bars/70-karkar-island-kasama-chocolate-bar-back.jpg',
+        alt: 'Back of 70% Karkar Island bar made by Kasama Chocolate in Canada',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/70-karkar-island-kasama-chocolate-package-front.jpg',
+        alt: 'Front of 70% Karkar Island bar made by Kasama Chocolate in Canada package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/70-karkar-island-kasama-chocolate-package-back.jpg',
+        alt: 'Back of 70% Karkar Island bar made by Kasama Chocolate in Canada package',
+      },
+    },
+
+    seo: {
+      about: `The 70% Karkar Island bar is made by Kasama Chocolate, a Vancouver-based chocolate brand. This particular chocolate is made from heirloom Trinitario cacao beans grown on the volcanic Karkar Island off the north coast of Papua New Guinea. The beans from this estate, where cacao trees mingle with coconut palms, have a unique and multilayered aroma profile with notes of blackberry, plum, and molasses. The ingredients in the bar include organic cacao beans, unrefined cane sugar, and cacao butter.`,
+      maker: `Kasama Chocolate was founded by four friends, Vince Garcia, Stefan Klopp, Dom Voser, and Oliver Koth-Kappus. They started making homemade chocolate bars as a hobby using cacao beans from Garcia's family plot in the Philippines. After learning how to make chocolate through trial and error, they turned their hobby into a home-based business in 2015. They initially sold their products at farmers markets, craft fairs, and specialty shops before opening their own retail space on Granville Island in 2021.`,
+      origin: `Kasama Chocolate sources 40% to 50% of their ingredients from the Philippines, including cacao, durian, and mango. They have faced challenges due to the COVID-19 pandemic, particularly with disruptions in their supply chain. Despite these challenges, they have found ways to adapt and continue their operations. They have a very collaborative and inclusive company culture, which includes incorporating product ideas from team members and even customers​.`,
+      taste: `You can consider fruits like blackberries and plums to complement its tasting notes, or other foods that pair well with dark chocolate, such as figs, grapes, currants, apricots, mango, bananas, tart sour berries like cherry, espresso beans, or red wine.`,
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 55,
+    barDimensions: [143, 69, 7],
+    ingredients: [
+      'Cacao Beans',
+      'Organic Unrefined Cane Sugar',
+      'Organic Cacao Butter',
+    ],
+    facilityAllergen: ['Nuts'],
+
+    packagingType: 'Box',
+    packagingDimensions: [147, 89, 9],
+    wrapper: 'Clear Bag',
+    marketingTerms: ['Award-winning', 'Handmade', 'Bean to Bar', 'Source'],
+
+    retailer: 'Kasama Chocolate',
+    location: 'Granville',
+    retailPrice: 7.35,
+    dateObtained: '2023-04-01',
+
+    reviewerBarFavorite: false,
+    reviewerBarNotes: '',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: false,
+    reviewerPackagingNotes: '',
+
+    origin: {
+      region: 'Madang',
+      country: 'Papua New Guinea',
+    },
+    beanVariety: 'Trinitario',
+  },
   {
     id: '9c475f04f1',
     releaseDate: '2023-04-05',
@@ -237,10 +319,10 @@ const bars: Array<Bar> = [
     packagingDimensions: [160, 82, 9],
     wrapper: 'Foil', // Gold
 
-    retailer: '',
-    location: '',
-    retailPrice: 0,
-    dateObtained: '',
+    retailer: 'Bi-Rite Market',
+    location: 'Mission',
+    retailPrice: 11,
+    dateObtained: '2023-04-03',
 
     reviewerBarFavorite: false,
     reviewerBarNotes: '',
