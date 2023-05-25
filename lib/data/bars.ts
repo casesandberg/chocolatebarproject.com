@@ -190,6 +190,81 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '24c6a8a43c',
+    releaseDate: '2023-04-08',
+    name: 'Powerhouse Bar',
+    subtitle: '70% Cocoa',
+    maker: 'Chocolat Hanalei',
+    slug: 'powerhouse-bar-70-cocoa-chocolat-hanalei',
+    productUrl:
+      'https://www.chocolathanalei.com/our-products/wainiha-powerhouse-bars',
+    productionCountry: 'United States',
+
+    images: {
+      HERO: {
+        src: '/bars/powerhouse-bar-70-cocoa-chocolat-hanalei.jpg',
+        alt: 'Powerhouse Bar 70% Cocoa bar made by Chocolat Hanalei in the United States macro shot of the bar on top of cacao beans.',
+      },
+      BAR_FRONT: {
+        src: '/bars/powerhouse-bar-70-cocoa-chocolat-hanalei-bar-front.jpg',
+        alt: 'Front of Powerhouse Bar 70% Cocoa bar made by Chocolat Hanalei in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/powerhouse-bar-70-cocoa-chocolat-hanalei-bar-back.jpg',
+        alt: 'Back of Powerhouse Bar 70% Cocoa bar made by Chocolat Hanalei in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/powerhouse-bar-70-cocoa-chocolat-hanalei-package-front.jpg',
+        alt: 'Front of Powerhouse Bar 70% Cocoa bar made by Chocolat Hanalei in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/powerhouse-bar-70-cocoa-chocolat-hanalei-package-back.jpg',
+        alt: 'Back of Powerhouse Bar 70% Cocoa bar made by Chocolat Hanalei in the United States package',
+      },
+    },
+
+    seo: {
+      about: `Indulge your senses with the Powerhouse Bar 70% Cocoa by Chocolat Hanalei, a dark chocolate delight crafted to satisfy the most discerning chocolate connoisseur. It's a chocolate experience unlike any other, offering a potent blend of rich flavors and a bold cocoa intensity that comes from using the finest quality 70% dark cocoa. This gourmet bar is the epitome of chocolate indulgence, carefully crafted to deliver a unique taste that's both robust and exquisitely balanced.`,
+      maker: `Chocolat Hanalei is a three-generation family business rooted in passion, drive, and talent. The brainchild of the Wainiha Wonder Woman herself, Irmgard, Chocolat Hanalei is the result of an unyielding passion for the precise alchemy of chocolate-making. Irmgard, at an age where most people enjoy leisurely activities, embarked on a journey of chocolate mastery, buying acres of land in the Wainiha valley, planting over 300 cacao trees from seed, and launching her business. With a strong background in agriculture from her years as a vintner and business skills from her previous bakery, Irmgard's work quickly gained rave reviews from locals and visitors alike.`,
+      origin: `The cacao comes from the heart of Wainiha Valley on Kaua'i, a place known for its fertile soil, ample water, swirling winds, and breathtaking views. The farm, nestled between the Wainiha River and the Power House Stream, is a lush and scenic valley with a unique climate that's perfect for growing cacao trees. The farm has four fields of cacao, each reacting uniquely to the varying wind, soil, and water conditions of the Wainiha valley. Some trees even date back to the previous owner of the land, Ashawna Hailey. While the trees were young, they used sliced banana plants to attract the small insects needed for pollination. Some of the cacao trees are found near the commercial kitchen and auwai, others near the Power House Stream with lots of bamboo for windbreak, and some tucked between the bamboo grove and the Wainiha River. The diversity of the cacao tree fields contributes to the complex flavor profile.​`,
+      taste: `Dark chocolate pairs beautifully with sweet fruits, creating a balance of bitter and sweet. Try pairing the Powerhouse Bar with raspberries, cherries, strawberries, bananas, kiwi, raisins, or coconut for a delightful contrast of flavors.`,
+    },
+
+    barType: 'Dark',
+    percent: 70,
+    barWeight: 56,
+    barDimensions: [147, 75, 7],
+    ingredients: [
+      'Kauai Grown Cocoa Beans',
+      'Cane Sugar',
+      'Cocoa Butter',
+      'Vanilla Beans',
+    ],
+
+    packagingType: 'Envelope',
+    packagingDimensions: [158, 89, 11],
+    wrapper: 'Foil', // Gold
+    marketingTerms: ['Single Origin', 'Estate Grown'],
+
+    retailer: 'Chocolate Hanalei',
+    location: 'Hanalei',
+    retailPrice: 0,
+    dateObtained: '', // TODO
+
+    reviewerBarFavorite: false,
+    reviewerBarNotes: '',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: false,
+    reviewerPackagingNotes: '',
+
+    origin: {
+      producer: 'Wainiha Valley',
+      locality: 'Kauai',
+      region: 'Hawaii',
+      country: 'United States',
+    },
+  },
+  {
     id: '1c23283baf',
     releaseDate: '2023-04-07',
     name: 'Dominican Republic, Zorzal',
