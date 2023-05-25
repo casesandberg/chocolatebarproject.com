@@ -190,6 +190,77 @@ export type Ingridients = Array<Ingredient | CompoundIngredient>
 
 const bars: Array<Bar> = [
   {
+    id: '1c23283baf',
+    releaseDate: '2023-04-07',
+    name: 'Dominican Republic, Zorzal',
+    subtitle: '72% Cacao',
+    maker: '9th and Larkin',
+    slug: 'dominican-republic-zorzal-72-cacao',
+    productUrl:
+      'https://www.9thandlarkin.com/product-page/zorzal-dominican-republic-72-cacao',
+    productionCountry: 'United States',
+    description: [`"72% cacao single origin dark chocolate."`],
+
+    images: {
+      HERO: {
+        src: '/bars/dominican-republic-zorzal-72-cacao.jpg',
+        alt: 'Dominican Republic, Zorzal 72% Cacao bar made by 9th and Larkin in the United States macro shot of the bar.',
+      },
+      BAR_FRONT: {
+        src: '/bars/dominican-republic-zorzal-72-cacao-bar-front.jpg',
+        alt: 'Front of Dominican Republic, Zorzal 72% Cacao bar made by 9th and Larkin in the United States',
+      },
+      BAR_BACK: {
+        src: '/bars/dominican-republic-zorzal-72-cacao-bar-back.jpg',
+        alt: 'Back of Dominican Republic, Zorzal 72% Cacao bar made by 9th and Larkin in the United States',
+      },
+      PACKAGE_FRONT: {
+        src: '/bars/dominican-republic-zorzal-72-cacao-package-front.jpg',
+        alt: 'Front of Dominican Republic, Zorzal 72% Cacao bar made by 9th and Larkin in the United States package',
+      },
+      PACKAGE_BACK: {
+        src: '/bars/dominican-republic-zorzal-72-cacao-package-back.jpg',
+        alt: 'Back of Dominican Republic, Zorzal 72% Cacao bar made by 9th and Larkin in the United States package',
+      },
+    },
+
+    seo: {
+      about: `The Dominican Republic, Zorzal 72% Cacao bar from 9th & Larkin is a sumptuous single-origin dark chocolate delight. This bar is made from premium quality cacao beans, cane sugar, and cocoa butter. The beans are harvested from Reserva Zorzal in San Francisco de Macoris, Cibao, Dominican Republic. Tasting notes of this dark chocolate include cherries, plum, molasses, and spice, all set on a rich dark chocolate background.`,
+      maker: `9th & Larkin, a San Francisco-based chocolate maker, is helmed by Lan Phan. Lan was inspired to make chocolate during her time as an analyst interacting with manufacturing startups. She was driven by the idea of creating something tangible with her own hands, and thus, with a deep love for chocolate, she began experimenting in her home kitchen in 2014. \n\n The team at 9th & Larkin meticulously chooses beans based on taste and curiosity. They explore new origins and aim to bring out unique flavors from the beans. A unique feature of their chocolate bars is the wrapper design. Inspired by the cacao pod, the colors of the wrappers reflect the tasting profile of each origin. For instance, the bright copper patterns on the Tanzania bar reflect its bright chocolate background and cherries and berries notes. \n\nDespite the challenges of being a small business and the technical difficulties of tempering, Lan finds the process of making chocolate fascinating and enjoyable. To her, chocolate holds much sentimental value - it's a fond memory from her childhood, a comfort during late nights, and a connection to her home country, Vietnam.`,
+      origin: `The cacao beans for this chocolate bar originate from Reserva Zorzal, located in the Dominican Republic. This bird sanctuary is the country's first private preserve and serves as a model for conservation and access to global markets. Seventy percent of the land on this sanctuary is set aside to be forever wild. The beans are carefully picked at optimal ripeness and undergo a process of natural fermentation and drying to bring out the nuanced flavor profiles found in the high mountain rainforests of the Dominican Republic.\n\nReserva Zorzal is also dedicated to uplifting local communities by creating jobs in wildlife monitoring, education services, and employment on the reserve and at the Fermentorium. They also support neighboring farms by sharing best practices to garner higher prices for their products.`,
+      taste: `You can savor this chocolate bar by enjoying it slowly, allowing it to melt on your tongue to fully appreciate its complex flavors. Dark chocolate like this pairs well with a variety of foods and beverages. For instance, it often complements fruits like cherries and berries, which aligns with the tasting notes of this bar. You could also try pairing it with a full-bodied red wine or a strong coffee to enhance the rich, dark chocolate notes.`,
+    },
+
+    barType: 'Dark',
+    percent: 72,
+    barWeight: 65,
+    barDimensions: [99, 99, 7],
+    ingredients: ['Cacao Beans', 'Cane Sugar', 'Cocoa Butter'],
+    facilityAllergen: ['Nuts', 'Milk'],
+
+    packagingType: 'Box',
+    packagingDimensions: [105, 106, 9],
+    wrapper: 'Foil', // Gold
+    marketingTerms: ['Bean to Bar', 'Single Origin', 'Craft'],
+
+    retailer: 'The Epicurean Trader',
+    location: 'Bernal Heights',
+    retailPrice: 12.5,
+    dateObtained: '2023-04-01',
+
+    reviewerBarFavorite: true,
+    reviewerBarNotes: '',
+    reviewerWouldEatAgain: true,
+    reviewerPackagingFavorite: true,
+    reviewerPackagingNotes: '',
+
+    origin: {
+      producer: 'Reserva Zorzal',
+      country: 'Dominican Republic',
+    },
+    harvestYear: '2022',
+  },
+  {
     id: '419476ec63',
     releaseDate: '2023-04-06',
     name: '70% Karkar Island',
